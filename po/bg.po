@@ -1,0 +1,1998 @@
+# translation of bg.po to Bulgarian
+# translation of system-config-lvm.po to Bulgarian
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Doncho N. Gunchev <mr700@globalnet.bg>, 2004, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bg\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-31 09:04-0500\n"
+"PO-Revision-Date: 2005-03-04 23:09+0200\n"
+"Last-Translator: Doncho N. Gunchev <mr700@globalnet.bg>\n"
+"Language-Team: Bulgarian <Bulgarian translators' team <dict@fsa-bg.org>>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: src/InputController.py:39 src/Properties_Renderer.py:24
+#: src/Volume_Tab_View.py:32
+#, python-format
+msgid ""
+"\n"
+"  Unable to initialize graphical environment. Most likely cause of failure\n"
+"  is that the tool was not run using a graphical environment. Please either\n"
+"  start your graphical user interface or set your DISPLAY variable.\n"
+"                                                                                \n"
+"  Caught exception: %s\n"
+msgstr ""
+"\n"
+"  Невъзможност за инициализиране на графичната среда. Проблема по\n"
+"  всяка вероятност е, че инструмента не е стартиран под графична среда.\n"
+"  Моля или стартирайте графичния си потребителски интерфейс или\n"
+"  установете променливата DISPLAY.\n"
+"                                                                                \n"
+"  Уловено изключение: %s\n"
+
+#. ##TRANSLATOR: The string below is seen when adding a new Physical
+#. ##Volume to an existing Volume Group.
+#: src/InputController.py:59
+#, fuzzy, python-format
+msgid "Select a Volume Group to add %s to:"
+msgstr "Изберете към коя група томове да се добави този ФТ:"
+
+#. ##TRANSLATOR: The two strings below refer to the name and type of
+#. ##available disk entities on the system. There are two types --
+#. ##The first is an 'unallocated physical volume' which is a disk or
+#. ##partition that has been initialized for use with LVM, by writing
+#. ##a special label onto the first block of the partition. The other type
+#. ##is an 'uninitialized entity', which is an available disk or partition
+#. ##that is NOT yet initialized to be used with LVM. Hope this helps give
+#. ##some context.
+#: src/InputController.py:87
+msgid "Name"
+msgstr "Име"
+
+#: src/InputController.py:88
+msgid "Size"
+msgstr "Размер"
+
+#: src/InputController.py:89
+msgid "Entity Type"
+msgstr "Тип елемент"
+
+#: src/InputController.py:91
+msgid "Unallocated Physical Volume"
+msgstr "Свободен физически том"
+
+#: src/InputController.py:92
+msgid "Uninitialized Disk Entity"
+msgstr "Не-инициализиран дисков елемент"
+
+#: src/InputController.py:93
+#, fuzzy, python-format
+msgid "Select disk entities to add to the %s Volume Group:"
+msgstr "Изберете дисков елемент за добавка към група томове %s:"
+
+#: src/InputController.py:95
+msgid ""
+"A Volume Group must be made up of two or more Physical Volumes to support "
+"striping. This Volume Group does not meet that requirement."
+msgstr ""
+"Група томове следва да бъде съставена от два или повече физически тома за да "
+"поддържа редуване. Тази група томове не удовлетворява това изискване."
+
+#: src/InputController.py:97
+#, python-format
+msgid ""
+"A Logical Volume with the name %s already exists in this Volume Group. "
+"Please choose a unique name."
+msgstr ""
+"Логически том с име %s вече съществува в тази група томове. Моля изберете "
+"уникално име."
+
+#: src/InputController.py:99
+#, python-format
+msgid ""
+"A Volume Group with the name %s already exists. Please choose a unique name."
+msgstr "Група томове с име %s вече съществува. Моля изберете уникално име."
+
+#: src/InputController.py:101
+msgid "A Name must be provided for the new Logical Volume"
+msgstr "Необходимо е име за новия логически том"
+
+#: src/InputController.py:103
+msgid "A Name must be provided for the new Volume Group"
+msgstr "Необходимо е име за новата група томове"
+
+#: src/InputController.py:105
+#, python-format
+msgid ""
+"The specified mount point, %s, does not exist. Do you wish to create it?"
+msgstr ""
+"Указаната точка на монтиране, %s, не съществува. Искате ли да я създадете?"
+
+#: src/InputController.py:107
+#, python-format
+msgid "The creation of mount point %s unexpectedly failed."
+msgstr "Създаването на точка на монтиране %s неочаквано не успя."
+
+#: src/InputController.py:109
+msgid "This capability is not yet implemented in this version"
+msgstr "Тази възможност все още не е реалирана в настоящата версия"
+
+#: src/InputController.py:111
+msgid ""
+"The number of Logical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "Броя логически томове в тази група стигна своя максимален брой."
+
+#: src/InputController.py:113
+msgid ""
+"The number of Physical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "Броя физически томове в тази група стигна своя максимален брой."
+
+#: src/InputController.py:115
+#, fuzzy, python-format
+msgid ""
+"At most %s Physical Volumes can be added to this Volume Group before the "
+"limit is reached."
+msgstr "Броя физически томове в тази група стигна своя максимален брой."
+
+#: src/InputController.py:117
+#, fuzzy, python-format
+msgid ""
+"Volume Group %s does not have enough space for new Logical Volumes. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"Група томове %s няма достатъчно свободно място за да поеме данните от %s. "
+"Възможно решение е добавянето на допълнителни физически томове към групата."
+
+#: src/InputController.py:119
+msgid "A snapshot of a snapshot is not supported."
+msgstr ""
+
+#: src/InputController.py:120
+msgid "A snapshot of a mirrored Logical Volume is not supported."
+msgstr ""
+
+#: src/InputController.py:122
+#, python-format
+msgid ""
+"Logical volume %s has snapshot %s currently associated with it. Please "
+"remove the snapshot first."
+msgstr ""
+
+#: src/InputController.py:123
+#, python-format
+msgid ""
+"Logical volume %s has snapshots: %s currently associated with it. Please "
+"remove snapshots first."
+msgstr ""
+
+#: src/InputController.py:125
+msgid ""
+"Undefined type conversion error in model factory. Unable to complete task."
+msgstr ""
+"Недефинирано конвертиране на тип в model factory. Невъзможно е завършването "
+"на задачата."
+
+#: src/InputController.py:127
+#, python-format
+msgid ""
+"BIG WARNING: Logical Volume %s has an %s file system on it and is currently "
+"mounted on %s. Are you absolutely certain that you wish to discard the data "
+"on this mounted filesystem?"
+msgstr ""
+"ВАЖНО ПРЕДУПРЕЖДЕНИЕ: Логическия том %s съдържа %s файлова система, която в "
+"момента е монтирана в %s. Абсолютно сигурни ли сте, че желаете да се "
+"откажете от данните на тази файлова система?"
+
+#: src/InputController.py:129
+#, python-format
+msgid ""
+"Logical Volume %s is currently mounted on %s. In order to complete request, "
+"it has to be unmounted. Are you sure you want it unmounted?"
+msgstr ""
+
+#. ##TRANSLATOR: An extent below is an abstract unit of storage. The size
+#. ##of an extent is user-definable.
+#: src/InputController.py:135
+#, python-format
+msgid "Unused space on %s"
+msgstr "Свободно място на %s"
+
+#: src/InputController.py:136
+#, python-format
+msgid "%s megabytes"
+msgstr "%s мегабайта"
+
+#: src/InputController.py:137
+#, python-format
+msgid "%s kilobytes"
+msgstr "%s килобайта"
+
+#: src/InputController.py:138
+#, python-format
+msgid "%s gigabytes"
+msgstr "%s гигабайта"
+
+#: src/InputController.py:139
+#, python-format
+msgid "%s extents"
+msgstr "%s разширения"
+
+#: src/InputController.py:141
+#, fuzzy
+msgid "Remaining free space in Volume Group:\n"
+msgstr ""
+"Създаване нова \n"
+"група томове"
+
+#: src/InputController.py:142
+msgid "Remaining space for this Volume:\n"
+msgstr ""
+
+#: src/InputController.py:144
+msgid "Extents"
+msgstr "Разширения"
+
+#: src/InputController.py:145
+msgid "Gigabytes"
+msgstr "Гигабайта"
+
+#: src/InputController.py:146
+msgid "Megabytes"
+msgstr "Мегабайта"
+
+#: src/InputController.py:147
+msgid "Kilobytes"
+msgstr "Килобайта"
+
+#: src/InputController.py:149
+#, python-format
+msgid "The %s should only contain number values"
+msgstr "%s следва да съдържа само цифрови стойности"
+
+#: src/InputController.py:150
+#, fuzzy
+msgid ""
+"The Maximum Physical Volumes field should contain only integer values "
+"between 1 and 256"
+msgstr ""
+"Полето максимален брой физически томове следва да съдържа само цели числа в "
+"интервала от 1 до 256"
+
+#: src/InputController.py:151
+#, fuzzy
+msgid ""
+"The Maximum Logical Volumes field should contain only integer values between "
+"1 and 256"
+msgstr ""
+"Полето максимален брой логически томове следва да съдържа само цели числа в "
+"интервала от 1 до 256"
+
+#: src/InputController.py:153
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from Logical Volume "
+"Management?"
+msgstr ""
+"Напълно сигурен ли сте, че искате да махнете %s от мениджъра на логически "
+"томове?"
+
+#: src/InputController.py:155
+#, fuzzy, python-format
+msgid ""
+"The Physical Volume named %s, that you wish to remove, has data from active "
+"Logical Volume(s) mapped to its extents. Because it is the only Physical "
+"Volume in the Volume Group, there is no place to move the data to. "
+"Recommended action is either to add a new Physical Volume before removing "
+"this one, or else remove the Logical Volumes that are associated with this "
+"Physical Volume."
+msgstr ""
+"Физическия том с име %s, който искате да премахнете, съдържа данни от активен"
+"(ни) логически дял(ове) разположени върху неговите разширения. Понеже той е "
+"единствения физически дял в групата томове, няма къде да бъдат преместени "
+"данните. Препоръчително е, или да добавите нов физически том преди "
+"премахването на този, или да премахнете логическите томове асоциирани с този "
+"физически том."
+
+#: src/InputController.py:156
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from the %s Volume Group?"
+msgstr "Напълно сигурен ли сте, че искате да махнете %s от група томове %s?"
+
+#: src/InputController.py:157
+#, python-format
+msgid ""
+"Removing Physical Volume %s from the Volume Group %s will leave the Volume "
+"group empty, and it will be removed as well. Do you wish to proceed?"
+msgstr ""
+"Премахването на физическия том %s от групата томове %s ще я остави празна и "
+"тя също ще бъде премахната. Желаете ли да продължите?"
+
+#: src/InputController.py:158
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space to move the data stored on %s. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"Група томове %s няма достатъчно свободно място за да поеме данните от %s. "
+"Възможно решение е добавянето на допълнителни физически томове към групата."
+
+#: src/InputController.py:159
+msgid ""
+"The dm-mirror module is either not loaded in your kernel, or your kernel "
+"does not support the dm-mirror target. If it is supported, try running "
+"\"modprobe dm-mirror\". Otherwise, operations that require moving data on "
+"Physical Extents are unavailable."
+msgstr ""
+"Модула dm-mirror или не е зареден в ядрото, или Вашето ядро не поддържа dm-"
+"mirror. Ако се поддържа, опитайте да изпълните\"modprobe dm-mirror\". В "
+"противен случай, операциите изискващи преместване на данни на физически "
+"разширения са недостъпниe."
+
+#: src/InputController.py:160
+#, fuzzy
+msgid ""
+"The dm-snapshot module is either not loaded in your kernel, or your kernel "
+"does not support the dm-snapshot target. If it is supported, try running "
+"\"modprobe dm-snapshot\". Otherwise, creation of snapshots is unavailable."
+msgstr ""
+"Модула dm-mirror или не е зареден в ядрото, или Вашето ядро не поддържа dm-"
+"mirror. Ако се поддържа, опитайте да изпълните\"modprobe dm-mirror\". В "
+"противен случай, операциите изискващи преместване на данни на физически "
+"разширения са недостъпниe."
+
+#: src/InputController.py:162
+#, fuzzy, python-format
+msgid "Are you quite certain that you wish to remove logical volume %s?"
+msgstr "Напълно сигурен ли сте, че искате да премахнете логическия том %s?"
+
+#: src/InputController.py:163
+#, fuzzy, python-format
+msgid ""
+"Logical volume %s contains %s filesystem. All data on it will be lost! Are "
+"you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"ВАЖНО ПРЕДУПРЕЖДЕНИЕ: Логическия том %s съдържа %s файлова система, която в "
+"момента е монтирана в %s. Абсолютно сигурни ли сте, че желаете да се "
+"откажете от данните на тази файлова система?"
+
+#: src/InputController.py:164
+#, python-format
+msgid ""
+"Logical volume %s contains data from directory %s. All data in it will be "
+"lost! Are you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+
+#: src/InputController.py:309
+msgid ""
+"In order for Volume Group to be safely used in clustered environment, lvm2-"
+"cluster rpm has to be installed, `lvmconf --enable-cluster` has to be "
+"executed and clvmd service has to be running"
+msgstr ""
+
+#: src/InputController.py:368
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror log of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+
+#: src/InputController.py:371
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror image of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+
+#: src/InputController.py:374
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, a snapshot of %s. "
+"Snapshots are not yet migratable, so %s is not removable."
+msgstr ""
+
+#: src/InputController.py:379
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshot %"
+"s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+
+#: src/InputController.py:381
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshots "
+"%s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+
+#: src/InputController.py:568
+#, python-format
+msgid ""
+"Logical Volume \"%s\" has snapshots that are not selected for removal. They "
+"must be removed as well."
+msgstr ""
+
+#: src/InputController.py:583
+#, python-format
+msgid ""
+"\"%s\", an origin of snapshot \"%s\", has been deleted from removal list."
+msgstr ""
+
+#: src/InputController.py:614
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a mirror. Mirrors are "
+"not migratable, so %s is not removable."
+msgstr ""
+
+#: src/InputController.py:617
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a snapshot or a "
+"snapshot's origin. Snapshots are not migratable, so %s is not removable."
+msgstr ""
+
+#: src/InputController.py:682
+msgid "The path you specified does not exist."
+msgstr ""
+
+#: src/InputController.py:689
+msgid "The path you specified is not a Block Device."
+msgstr ""
+
+#: src/InputController.py:760
+#, python-format
+msgid "Initialization of %s failed"
+msgstr ""
+
+#: src/InputController.py:998 src/InputController.py:1001
+msgid "Please select some extents first"
+msgstr ""
+
+#: src/InputController.py:1035
+msgid ""
+"There are not enough free extents to perform the necessary migration. Adding "
+"more physical volumes would solve the problem."
+msgstr ""
+
+#: src/InputController.py:1091
+#, python-format
+msgid ""
+"iSCSI Initiator rpm is not installed. \n"
+"Install %s rpm, and try again."
+msgstr ""
+
+#: src/InputController.py:1208
+#, fuzzy
+msgid "Migrate extents"
+msgstr "%s разширения"
+
+#: src/InputController.py:1336
+msgid "Options"
+msgstr ""
+
+#: src/InputController.py:1370
+#, python-format
+msgid "Create A Snapshot of %s"
+msgstr ""
+
+#: src/InputController.py:1372
+#, fuzzy
+msgid "Create New Logical Volume"
+msgstr "Създаване на нов логически том"
+
+#: src/InputController.py:1375
+#, python-format
+msgid "Edit %s, a Snapshot of %s"
+msgstr ""
+
+#: src/InputController.py:1378
+#, fuzzy
+msgid "Edit Logical Volume"
+msgstr "Логически том"
+
+#: src/InputController.py:1531
+msgid "Underlying Logical Volume Management does not support mirroring"
+msgstr ""
+
+#: src/InputController.py:1538
+msgid "Striped Logical Volumes cannot be mirrored."
+msgstr ""
+
+#: src/InputController.py:1545
+msgid "Logical Volumes with associated snapshots cannot be mirrored yet."
+msgstr ""
+
+#. mirror images placement: diff HDs or anywhere
+#. prompt
+#: src/InputController.py:1552
+msgid ""
+"The primary purpose of mirroring is to protect data in the case of hard "
+"drive failure. Do you want to place mirror images onto different hard drives?"
+msgstr ""
+
+#: src/InputController.py:1561
+msgid ""
+"Less than 3 hard drives are available with free space. Disabling mirroring."
+msgstr ""
+
+#: src/InputController.py:1566
+msgid ""
+"There must be free space on at least three Physical Volumes to enable "
+"mirroring"
+msgstr ""
+
+#: src/InputController.py:1574
+msgid ""
+"The size of the Logical Volume has been adjusted to the maximum available "
+"size for mirrors."
+msgstr ""
+
+#: src/InputController.py:1579
+#, python-format
+msgid ""
+"There is not enough free space to add mirroring. Reduce size of Logical "
+"Volume to at most %s, or add Physical Volumes."
+msgstr ""
+
+#: src/InputController.py:1943
+msgid "Names beginning with \"snapshot\" or \"pvmove\" are reserved keywords."
+msgstr ""
+
+#: src/InputController.py:1945
+msgid "Names containing \"_mlog\" or \"_mimage\" are reserved keywords."
+msgstr ""
+
+#: src/InputController.py:1947
+msgid "Names beginning with a \"-\" are invalid"
+msgstr ""
+
+#: src/InputController.py:1949
+msgid "Name can be neither \".\" nor \"..\""
+msgstr ""
+
+#: src/InputController.py:1955
+msgid "Whitespaces are not allowed in Logical Volume names"
+msgstr ""
+
+#: src/InputController.py:1958
+#, python-format
+msgid "Invalid character \"%s\" in Logical Volume name"
+msgstr ""
+
+#: src/InputController.py:1978
+msgid "Please specify mount point"
+msgstr ""
+
+#: src/InputController.py:2044
+msgid "Do you want to upgrade ext2 to ext3 preserving data on Logical Volume?"
+msgstr ""
+
+#: src/InputController.py:2078
+msgid ""
+"Changing the filesystem will destroy all data on the Logical Volume! Are you "
+"sure you want to proceed?"
+msgstr ""
+
+#. migration not performed, continue process with no mirroring
+#: src/InputController.py:2179
+msgid "Mirror not created. Completing remaining tasks."
+msgstr ""
+
+#. create mirror
+#: src/InputController.py:2182
+msgid ""
+"Underlaying LVM doesn't support addition of mirrors to existing Logical "
+"Volumes. Completing remaining tasks."
+msgstr ""
+
+#: src/InputController.py:2231
+msgid "In order to add mirroring, some extents need to be migrated."
+msgstr ""
+
+#: src/InputController.py:2231
+msgid "Do you want to migrate specified extents?"
+msgstr ""
+
+#: src/CommandHandler.py:55
+#, fuzzy
+msgid "Creating Logical Volume"
+msgstr ""
+"Създаване на нов\n"
+"логически том"
+
+#: src/CommandHandler.py:74 src/CommandHandler.py:91
+#, fuzzy
+msgid "Resizing Logical Volume"
+msgstr "Логически том"
+
+#: src/CommandHandler.py:124
+#, fuzzy
+msgid "Adding Mirror to Logical Volume"
+msgstr "Логически том"
+
+#: src/CommandHandler.py:135
+#, fuzzy
+msgid "Removing Mirror from Logical Volume"
+msgstr ""
+"Премахване \n"
+"логически том"
+
+#: src/CommandHandler.py:160
+#, fuzzy
+msgid "Initializing Physical Volume"
+msgstr "Физически том"
+
+#: src/CommandHandler.py:171
+#, fuzzy
+msgid "Adding Physical Volume to Volume Group"
+msgstr "Добавяне на физически том към ГТ"
+
+#: src/CommandHandler.py:203
+#, fuzzy
+msgid "Creating Volume Group"
+msgstr ""
+"Създаване нова \n"
+"група томове"
+
+#: src/CommandHandler.py:225
+#, fuzzy
+msgid "Removing Volume Group"
+msgstr "Нова група томове"
+
+#: src/CommandHandler.py:235
+#, fuzzy
+msgid "Removing Physical Volume"
+msgstr "Физически том"
+
+#: src/CommandHandler.py:248
+#, fuzzy
+msgid "Removing Logical Volume"
+msgstr ""
+"Премахване \n"
+"логически том"
+
+#: src/CommandHandler.py:263
+#, fuzzy
+msgid "Renaming Logical Volume"
+msgstr ""
+"Премахване \n"
+"логически том"
+
+#: src/CommandHandler.py:285
+#, fuzzy
+msgid "Removing Physical Volume from Volume Group"
+msgstr ""
+"Премахване том от\n"
+"група томове"
+
+#: src/CommandHandler.py:320
+msgid "Migrating Extents"
+msgstr ""
+
+#: src/CommandHandler.py:332
+msgid "Completing Extent Migration"
+msgstr ""
+
+#: src/CommandHandler.py:383
+msgid "Rereading partition table"
+msgstr ""
+
+#: src/lvm_model.py:45 src/lvmui_constants.py:83
+msgid "Unused"
+msgstr "Свободно"
+
+#: src/lvm_model.py:46
+msgid "Unused Space"
+msgstr "Свободно място"
+
+#: src/lvm_model.py:48
+msgid "Unmounted"
+msgstr "Демонтиран"
+
+#: src/lvm_model.py:58
+msgid "Volume Group Name:   "
+msgstr "Име на група томове:   "
+
+#: src/lvm_model.py:59
+msgid "System ID:   "
+msgstr "Системно ID:   "
+
+#: src/lvm_model.py:60
+msgid "Format:   "
+msgstr "Формат:   "
+
+#: src/lvm_model.py:61 src/lvm_model.py:78 src/lvm_model.py:93
+msgid "Attributes:   "
+msgstr "Атрибути:   "
+
+#: src/lvm_model.py:62
+msgid "Volume Group Size:   "
+msgstr "Размер на група томове:   "
+
+#: src/lvm_model.py:63
+msgid "Available Space:   "
+msgstr "Свободно място:   "
+
+#: src/lvm_model.py:64
+msgid "Total Number of Extents:   "
+msgstr "Общ брой разширения:   "
+
+#: src/lvm_model.py:65
+msgid "Number of Free Extents:   "
+msgstr "Брой свободни разширения:   "
+
+#: src/lvm_model.py:66
+msgid "Extent Size:   "
+msgstr "Размер на разширение:   "
+
+#: src/lvm_model.py:67
+msgid "Maximum Allowed Physical Volumes:   "
+msgstr "Максимално позволени физически томове:   "
+
+#: src/lvm_model.py:68
+msgid "Number of Physical Volumes:   "
+msgstr "Брой физически томове:   "
+
+#: src/lvm_model.py:69
+msgid "Maximum Allowed Logical Volumes:   "
+msgstr "Максимално позволени логически томове:   "
+
+#: src/lvm_model.py:70
+msgid "Number of Logical Volumes:   "
+msgstr "Брой логически томове:   "
+
+#: src/lvm_model.py:71
+msgid "VG UUID:   "
+msgstr "ГТ UUID:   "
+
+#: src/lvm_model.py:73
+msgid "Logical Volume Name:   "
+msgstr "Име на логическия том:   "
+
+#: src/lvm_model.py:74
+msgid "Logical Volume Size:   "
+msgstr "Размер на логическия том:   "
+
+#: src/lvm_model.py:75
+msgid "Number of Segments:   "
+msgstr "Брой сегменти:   "
+
+#: src/lvm_model.py:76
+msgid "Number of Stripes:   "
+msgstr "Брой полета за редуване:   "
+
+#: src/lvm_model.py:77
+msgid "Stripe Size:   "
+msgstr "Размер на поле за редуване:   "
+
+#: src/lvm_model.py:79
+msgid "LV UUID:   "
+msgstr "ЛТ UUID:   "
+
+#: src/lvm_model.py:81
+msgid "Partition Type:   "
+msgstr "Тип дял:   "
+
+#: src/lvm_model.py:82
+msgid "Size:   "
+msgstr "Размер:   "
+
+#: src/lvm_model.py:83
+msgid "Mount Point:   "
+msgstr "Точка на монтиране:   "
+
+#: src/lvm_model.py:84
+#, fuzzy
+msgid "Mount Point when Rebooted:   "
+msgstr "Точка на монтиране:   "
+
+#: src/lvm_model.py:85
+msgid "File System:   "
+msgstr "Файлова система:   "
+
+#: src/lvm_model.py:87
+msgid "Physical Volume Name:   "
+msgstr "Име на физическия том:   "
+
+#: src/lvm_model.py:88
+msgid "Physical Volume Size:   "
+msgstr "Размер на физическия том:   "
+
+#: src/lvm_model.py:89
+msgid "Space Used:   "
+msgstr "Заето място:   "
+
+#: src/lvm_model.py:90
+msgid "Space Free:   "
+msgstr "Свободно място:   "
+
+#: src/lvm_model.py:91
+msgid "Total Physical Extents:   "
+msgstr "Общо физически разширения:   "
+
+#: src/lvm_model.py:92
+msgid "Allocated Physical Extents:   "
+msgstr "Заети физически разширения:   "
+
+#: src/lvm_model.py:94
+msgid "PV UUID:   "
+msgstr "ФТ UUID:   "
+
+#: src/lvm_model.py:96
+#, fuzzy
+msgid "Not initializable:"
+msgstr "Неинициализиран"
+
+#: src/lvm_model.py:97
+msgid "Extended partition"
+msgstr ""
+
+#. Translator: the line below refers to a standard linux swap partition.
+#: src/lvm_model.py:99
+msgid "Swap partition currently in use"
+msgstr ""
+
+#: src/lvm_model.py:100
+msgid "Foreign boot partition"
+msgstr ""
+
+#: src/lvm_model.py:101
+msgid "Autopartition failure"
+msgstr ""
+
+#: src/lvm_model.py:259
+#, fuzzy
+msgid "Partition manually"
+msgstr "Тип дял:   "
+
+#: src/lvm_model.py:295
+msgid "Multipath device"
+msgstr ""
+
+#: src/lvm_model.py:298
+#, fuzzy
+msgid "Note:"
+msgstr "Формат:   "
+
+#: src/lvm_model.py:298
+#, fuzzy
+msgid "Initialize manually"
+msgstr "Инициал. на елемент"
+
+#: src/lvm_model.py:741
+msgid "Clustered:   "
+msgstr ""
+
+#: src/lvm_model.py:743 src/lvm_model.py:971
+msgid "True"
+msgstr ""
+
+#: src/lvm_model.py:745
+msgid "False"
+msgstr ""
+
+#: src/lvm_model.py:803
+#, fuzzy
+msgid "Number of mirror images:"
+msgstr "Брой полета за редуване:   "
+
+#: src/lvm_model.py:806
+msgid "Snapshots:"
+msgstr ""
+
+#: src/lvm_model.py:812
+msgid "Snapshot origin:"
+msgstr ""
+
+#: src/lvm_model.py:819
+msgid "Snapshot usage:"
+msgstr ""
+
+#: src/lvm_model.py:842 src/lvm_model.py:848 src/lvm_model.py:891
+#: src/lvm_model.py:907
+#, fuzzy
+msgid "/   Root Filesystem"
+msgstr "Няма файлова система"
+
+#: src/lvm_model.py:910 src/Filesystem.py:137
+msgid "None"
+msgstr ""
+
+#: src/lvm_model.py:961
+#, fuzzy
+msgid "SCSI ID:   "
+msgstr "Системно ID:   "
+
+#: src/lvm_model.py:965
+msgid "NONE"
+msgstr ""
+
+#: src/lvm_model.py:970
+msgid "iSCSI Device:   "
+msgstr ""
+
+#. INIT_ENTITY=_("Are you certain that you wish to initialize disk entity %s? All data will be lost on this device/partition.")
+#: src/lvmui_constants.py:51
+#, python-format
+msgid ""
+"All data on disk entity %s will be lost! Are you certain that you wish to "
+"initialize it?"
+msgstr ""
+
+#: src/lvmui_constants.py:52
+#, python-format
+msgid ""
+"Disk entity %s contains %s filesystem. All data on it will be lost! Are you "
+"certain that you wish to initialize disk entity %s?"
+msgstr ""
+
+#: src/lvmui_constants.py:53
+#, python-format
+msgid ""
+"Disk entity %s contains data from directory %s. All data in it will be lost! "
+"Are you certain that you wish to initialize disk entity %s?"
+msgstr ""
+
+#: src/lvmui_constants.py:54
+#, fuzzy, python-format
+msgid ""
+"Are you certain that you wish to initialize %s of free space on disk %s?"
+msgstr ""
+"Съвсем сигурен ли сте, че искате да инициализирате дисковия елемент %s? "
+"Всички данни на това устройство/дял ще бъдат загубени."
+
+#: src/lvmui_constants.py:55
+#, python-format
+msgid ""
+"You are about to initialize unpartitioned disk %s. It is advisable, although "
+"not required, to create a partition on it. Do you want to create a single "
+"partition encompassing the whole drive?"
+msgstr ""
+
+#: src/lvmui_constants.py:57
+msgid "Reloading LVM. Please wait."
+msgstr ""
+
+#: src/lvmui_constants.py:59
+#, python-format
+msgid ""
+"Changes will take effect after computer is restarted. If device %s is used, "
+"before restart, data corruption WILL occur. It is advisable to restart your "
+"computer now."
+msgstr ""
+
+#: src/lvmui_constants.py:61
+msgid "Mirror Log"
+msgstr ""
+
+#: src/lvmui_constants.py:63
+msgid "Unable to process request"
+msgstr ""
+
+#: src/lvmui_constants.py:65
+#, fuzzy, python-format
+msgid "%s command failed. Command attempted: \"%s\" - System Error Message: %s"
+msgstr ""
+"командата pvmove не успя. Опитана команда: \"%s\" - системно съобщение за "
+"грешка: %s"
+
+#: src/lvmui_constants.py:84
+msgid "Free"
+msgstr "Свободно"
+
+#: src/lvmui_constants.py:85
+msgid "Free space"
+msgstr ""
+
+#: src/lvmui_constants.py:87
+msgid "Unpartitioned space"
+msgstr ""
+
+#: src/lvmui_constants.py:88
+#, fuzzy, python-format
+msgid "Unpartitioned space on %s"
+msgstr "Свободно място на %s"
+
+#: src/lvmui_constants.py:90
+#, fuzzy
+msgid "GB"
+msgstr "B"
+
+#: src/lvmui_constants.py:91
+#, fuzzy
+msgid "MB"
+msgstr "B"
+
+#: src/lvmui_constants.py:92
+#, fuzzy
+msgid "KB"
+msgstr "B"
+
+#: src/lvmui_constants.py:93
+msgid "Bytes"
+msgstr ""
+
+#. File System Types
+#: src/lvmui_constants.py:97
+msgid "No Filesystem"
+msgstr "Няма файлова система"
+
+#: src/lvmui_constants.py:98
+msgid "Ext2"
+msgstr "Ext2"
+
+#: src/lvmui_constants.py:99
+msgid "Ext3"
+msgstr "Ext3"
+
+#: src/lvmui_constants.py:100
+msgid "JFS"
+msgstr "JFS"
+
+#: src/lvmui_constants.py:101
+msgid "MSDOS"
+msgstr "MSDOS"
+
+#: src/lvmui_constants.py:102
+msgid "Reiserfs"
+msgstr "Reiserfs"
+
+#: src/lvmui_constants.py:103
+msgid "VFAT"
+msgstr "VFAT"
+
+#: src/lvmui_constants.py:104
+msgid "XFS"
+msgstr "XFS"
+
+#: src/lvmui_constants.py:105
+msgid "Cramfs"
+msgstr "Cramfs"
+
+#: src/Properties_Renderer.py:42
+msgid "Properties for"
+msgstr "Свойства на"
+
+#: src/Properties_Renderer.py:43 src/renderer.py:37
+msgid "Physical Volume"
+msgstr "Физически том"
+
+#. UNALLOCATED_MESSAGE=_("This Volume has not been allocated \n to a Volume Group yet.")
+#: src/Properties_Renderer.py:44 src/renderer.py:36
+msgid "Logical Volume"
+msgstr "Логически том"
+
+#: src/Properties_Renderer.py:45
+msgid "Unallocated Volume"
+msgstr "Свободен том"
+
+#: src/Properties_Renderer.py:46 src/renderer.py:43
+msgid "Disk Entity"
+msgstr "Дисков елемент"
+
+#: src/Properties_Renderer.py:47 src/Properties_Renderer.py:48
+#: src/Properties_Renderer.py:49 src/renderer.py:38
+msgid "Volume Group"
+msgstr "Група томове"
+
+#. UNINITIALIZED_MESSAGE=_("This extent has not yet been \n initialized for use with LVM.")
+#: src/renderer.py:33
+msgid "No Volume Selected"
+msgstr "Не е избран том"
+
+#: src/renderer.py:34
+msgid "Multiple selection"
+msgstr ""
+
+#: src/renderer.py:39 src/Volume_Tab_View.py:48
+msgid "Logical View"
+msgstr "Логически изглед"
+
+#: src/renderer.py:40 src/Volume_Tab_View.py:47
+msgid "Physical View"
+msgstr "Физически изглед"
+
+#: src/renderer.py:41
+msgid "Unallocated"
+msgstr "Свободен"
+
+#: src/renderer.py:42
+msgid "Uninitialized"
+msgstr "Неинициализиран"
+
+#: src/renderer.py:195
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a mirror log of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+
+#: src/renderer.py:197
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to mirror image of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+
+#: src/renderer.py:199
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to %s, a snapshot of %"
+"s. Snapshots are not yet migratable, so the extents are not selectable."
+msgstr ""
+
+#: src/renderer.py:201
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a snapshot origin %"
+"s. Snapshot origins are not yet migratable, so the extents are not "
+"selectable."
+msgstr ""
+
+#: src/renderer.py:388
+#, python-format
+msgid "Snapshot of %s"
+msgstr ""
+
+#: src/renderer.py:490
+msgid "Origin"
+msgstr ""
+
+#: src/renderer.py:496
+msgid "Snapshot"
+msgstr ""
+
+#: src/renderer.py:540
+#, fuzzy
+msgid "extent view"
+msgstr "разширения"
+
+#: src/Volume_Tab_View.py:44
+msgid "Volume Groups"
+msgstr "Групи томове"
+
+#: src/Volume_Tab_View.py:45
+msgid "Unallocated Volumes"
+msgstr "Свободни томове"
+
+#: src/Volume_Tab_View.py:46
+msgid "Uninitialized Entities"
+msgstr "Неинициализирани елементи"
+
+#: src/Volume_Tab_View.py:233
+msgid "Clustered VG"
+msgstr ""
+
+#: src/Volume_Tab_View.py:619
+#, python-format
+msgid "%s mirror synchronisation"
+msgstr ""
+
+#. no existing partitions, write
+#: src/fdisk_wrapper.py:192
+msgid "Please wait while partition is being created"
+msgstr ""
+
+#: src/Filesystem.py:20
+#, python-format
+msgid "Creating %s filesystem"
+msgstr ""
+
+#: src/Filesystem.py:21
+#, python-format
+msgid "Resizing %s filesystem"
+msgstr ""
+
+#: src/Filesystem.py:22
+#, python-format
+msgid "Checking %s filesystem"
+msgstr ""
+
+#: src/Filesystem.py:23
+#, python-format
+msgid "Upgrading %s filesystem to %s"
+msgstr ""
+
+#: src/Filesystem.py:24
+#, fuzzy, python-format
+msgid ""
+"Creation of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"командата vgcreate не успя. Опитана команда: \"%s\" - системно съобщение за "
+"грешка: %s"
+
+#: src/Filesystem.py:25
+#, fuzzy, python-format
+msgid ""
+"Resize of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"командата pvmove не успя. Опитана команда: \"%s\" - системно съобщение за "
+"грешка: %s"
+
+#: src/Filesystem.py:26
+#, fuzzy, python-format
+msgid ""
+"Check of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"командата pvmove не успя. Опитана команда: \"%s\" - системно съобщение за "
+"грешка: %s"
+
+#: src/Filesystem.py:27
+#, fuzzy, python-format
+msgid ""
+"Upgrade of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"командата vgreduce не успя. Опитана команда: \"%s\" - системно съобщение за "
+"грешка: %s"
+
+#: src/Filesystem.py:143
+#, fuzzy
+msgid "Unknown filesystem"
+msgstr "Няма файлова система"
+
+#: src/Filesystem.py:387
+msgid "GFS (local)"
+msgstr ""
+
+#: src/Filesystem.py:485
+msgid "GFS (clustered)"
+msgstr ""
+
+#: src/Filesystem.py:517 src/Filesystem.py:761
+msgid "Cluster name contains illegal character "
+msgstr ""
+
+#: src/Filesystem.py:520 src/Filesystem.py:764
+msgid "GFS name contains illegal character "
+msgstr ""
+
+#: src/Filesystem.py:523 src/Filesystem.py:767
+msgid "Missing Cluster Name"
+msgstr ""
+
+#: src/Filesystem.py:526 src/Filesystem.py:770
+msgid "Missing GFS Name"
+msgstr ""
+
+#: src/Filesystem.py:631
+msgid "GFS2 (local)"
+msgstr ""
+
+#: src/Filesystem.py:729
+msgid "GFS2 (clustered)"
+msgstr ""
+
+#: src/Segment.py:44
+#, fuzzy
+msgid "Stripe"
+msgstr "редуващ се"
+
+#: src/Segment.py:68
+msgid "Linear Mapping"
+msgstr "Линейна връзка"
+
+#: src/Segment.py:109
+msgid "Mirror"
+msgstr ""
+
+#: src/PhysicalVolume.py:142
+#, fuzzy, python-format
+msgid "Partition %s"
+msgstr "Тип дял:   "
+
+#: src/lvui.glade.h:1 src/lv_edit_props.glade.h:1 src/iscsi.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: src/lvui.glade.h:2
+msgid "1024"
+msgstr "1024"
+
+#: src/lvui.glade.h:3
+msgid "128"
+msgstr "128"
+
+#: src/lvui.glade.h:4
+msgid "16"
+msgstr "16"
+
+#: src/lvui.glade.h:5
+msgid "2"
+msgstr "2"
+
+#: src/lvui.glade.h:6
+msgid "256"
+msgstr "256"
+
+#: src/lvui.glade.h:7
+msgid "32"
+msgstr "32"
+
+#: src/lvui.glade.h:8
+msgid "4"
+msgstr "4"
+
+#: src/lvui.glade.h:9
+msgid "512"
+msgstr "512"
+
+#: src/lvui.glade.h:10
+msgid "64"
+msgstr "64"
+
+#: src/lvui.glade.h:11
+msgid "8"
+msgstr "8"
+
+#: src/lvui.glade.h:12
+msgid "Add Physical Volume to VG"
+msgstr "Добавяне на физически том към ГТ"
+
+#: src/lvui.glade.h:13
+msgid ""
+"Add to existing \n"
+"Volume Group"
+msgstr ""
+"Добавяне към налична \n"
+"група томове"
+
+#: src/lvui.glade.h:15
+msgid "Clustered"
+msgstr ""
+
+#: src/lvui.glade.h:16
+msgid ""
+"Create New\n"
+"Logical Volume"
+msgstr ""
+"Създаване на нов\n"
+"логически том"
+
+#: src/lvui.glade.h:18
+msgid "Create Snapshot"
+msgstr ""
+
+#: src/lvui.glade.h:19
+msgid ""
+"Create new \n"
+"Volume Group"
+msgstr ""
+"Създаване нова \n"
+"група томове"
+
+#: src/lvui.glade.h:21
+#, fuzzy
+msgid "Edit Properties"
+msgstr "Свойства на"
+
+#: src/lvui.glade.h:22
+msgid "Enter path of Block Device to initialize"
+msgstr ""
+
+#: src/lvui.glade.h:23
+msgid ""
+"Extend\n"
+"Volume Group"
+msgstr ""
+"Разширяване\n"
+"група томове"
+
+#: src/lvui.glade.h:25
+msgid "Extend Volume Group"
+msgstr "Разширяване на групата"
+
+#: src/lvui.glade.h:26
+#, fuzzy
+msgid "Format"
+msgstr "Формат:   "
+
+#: src/lvui.glade.h:27
+#, fuzzy
+msgid "Initialize"
+msgstr "Неинициализиран"
+
+#: src/lvui.glade.h:28
+#, fuzzy
+msgid "Initialize Block Device"
+msgstr "Инициал. на елемент"
+
+#: src/lvui.glade.h:29
+msgid "Initialize Entity"
+msgstr "Инициал. на елемент"
+
+#: src/lvui.glade.h:30
+msgid "Initialize _Block Device"
+msgstr ""
+
+#: src/lvui.glade.h:31
+msgid "Kilo"
+msgstr "Кило"
+
+#: src/lvui.glade.h:32
+msgid "Logical Volume Management"
+msgstr "Управление на логически томове"
+
+#: src/lvui.glade.h:33
+msgid "Manage Volumes"
+msgstr "Управление на томове"
+
+#: src/lvui.glade.h:34
+msgid "Mark Volume Group as 'clustered'"
+msgstr ""
+
+#: src/lvui.glade.h:35
+#, fuzzy
+msgid "Maximum Logical Volumes"
+msgstr "Максимум логически томове: "
+
+#: src/lvui.glade.h:36
+#, fuzzy
+msgid "Maximum Physical Volumes"
+msgstr "Максимум физически томове: "
+
+#: src/lvui.glade.h:37
+msgid "Meg"
+msgstr "Мега"
+
+#: src/lvui.glade.h:38
+msgid ""
+"Migrate Selected\n"
+"Extent(s) From Volume"
+msgstr ""
+"Мигриране избраните\n"
+"разширения от тома"
+
+#: src/lvui.glade.h:40
+msgid "New Volume Group"
+msgstr "Нова група томове"
+
+#: src/lvui.glade.h:41
+#, fuzzy
+msgid "Physical Extent Size"
+msgstr "Размер на физическо разширение: "
+
+#: src/lvui.glade.h:42
+msgid ""
+"Remove \n"
+"Logical Volume"
+msgstr ""
+"Премахване \n"
+"логически том"
+
+#: src/lvui.glade.h:44
+msgid ""
+"Remove Selected\n"
+"Logical Volume(s)"
+msgstr ""
+"Премахване избран(ите)\n"
+"логически том(ове)"
+
+#: src/lvui.glade.h:46
+msgid ""
+"Remove Selected\n"
+"Physical Volume(s)"
+msgstr ""
+"Премахване избран(ите)\n"
+"физически том(ове)"
+
+#: src/lvui.glade.h:48
+msgid ""
+"Remove Volume from\n"
+"Volume Group"
+msgstr ""
+"Премахване том от\n"
+"група томове"
+
+#: src/lvui.glade.h:50
+msgid ""
+"Remove volume \n"
+"from LVM"
+msgstr ""
+"Премахване том \n"
+"от МЛТ"
+
+#: src/lvui.glade.h:52
+msgid "Select a Volume Group to add this PV to:"
+msgstr "Изберете към коя група томове да се добави този ФТ:"
+
+#: src/lvui.glade.h:53
+msgid "Some text"
+msgstr ""
+
+#: src/lvui.glade.h:54
+#, fuzzy
+msgid "Volume Group Name"
+msgstr "Име на група томове:   "
+
+#: src/lvui.glade.h:55
+msgid "_Reload"
+msgstr ""
+
+#: src/lvui.glade.h:56
+msgid "_Tools"
+msgstr ""
+
+#: src/lvui.glade.h:57
+msgid "_iSCSI Configuration"
+msgstr ""
+
+#: src/lvui.glade.h:58
+msgid "extend vg message:"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:2
+msgid ""
+"4\n"
+"8\n"
+"16\n"
+"32\n"
+"64\n"
+"128\n"
+"256\n"
+"512"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:10
+#, fuzzy
+msgid "<b>Filesystem</b>"
+msgstr "Файлова система: "
+
+#: src/lv_edit_props.glade.h:11
+msgid "<b>LV Properties</b>"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:12
+msgid "<b>Size</b>"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:13
+msgid "Add entry to /etc/fstab"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:14
+#, fuzzy
+msgid "Create New Logical Volume (LV)"
+msgstr "Създаване на нов логически том"
+
+#: src/lv_edit_props.glade.h:15
+msgid "Filesystem is not resizable"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:16
+#, fuzzy
+msgid "Free space in Volume Group label"
+msgstr ""
+"Създаване нова \n"
+"група томове"
+
+#: src/lv_edit_props.glade.h:17
+#, fuzzy
+msgid "Free space remaining label"
+msgstr "Ползване оставащото място"
+
+#: src/lv_edit_props.glade.h:18
+#, fuzzy
+msgid "Kilobytes granularity"
+msgstr "Килобайта"
+
+#: src/lv_edit_props.glade.h:19
+msgid "LV name:"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:20
+msgid "LV size"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:21
+msgid "LVs under snapshots are not resizable"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:22
+msgid "Linear"
+msgstr "Линеен"
+
+#: src/lv_edit_props.glade.h:23
+msgid "Mirrored"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:24
+msgid "Mirrored LVs are not resizable"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:25
+msgid "Mount"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:26
+#, fuzzy
+msgid "Mount point:"
+msgstr "Точка на монтиране:   "
+
+#: src/lv_edit_props.glade.h:27
+msgid "Mount when rebooted"
+msgstr ""
+
+#: src/lv_edit_props.glade.h:28
+#, fuzzy
+msgid "Size beg"
+msgstr "Размер"
+
+#: src/lv_edit_props.glade.h:29
+#, fuzzy
+msgid "Size end"
+msgstr "Размер"
+
+#: src/lv_edit_props.glade.h:30
+msgid "Striped"
+msgstr "редуващ се"
+
+#: src/lv_edit_props.glade.h:31
+#, fuzzy
+msgid "Use remaining"
+msgstr "Ползване оставащото място"
+
+#: src/lv_edit_props.glade.h:32
+#, fuzzy
+msgid "stripes"
+msgstr "редуващ се"
+
+#: src/migrate_extents.glade.h:1
+msgid "<b>Destination</b>"
+msgstr ""
+
+#: src/migrate_extents.glade.h:2
+msgid "<b>Migration Policy</b>"
+msgstr ""
+
+#: src/migrate_extents.glade.h:3
+msgid "Anywhere - not implemented"
+msgstr ""
+
+#: src/migrate_extents.glade.h:4
+msgid "Automatically choose PVs to migrate to"
+msgstr ""
+
+#: src/migrate_extents.glade.h:5
+msgid "Contiguous"
+msgstr ""
+
+#: src/migrate_extents.glade.h:6
+msgid "Destination:"
+msgstr ""
+
+#: src/migrate_extents.glade.h:7
+msgid ""
+"In order to remove PV, extents in use have to be migrated.\n"
+"Select extents' destination and migration policy."
+msgstr ""
+
+#: src/migrate_extents.glade.h:9
+msgid "Inherit"
+msgstr ""
+
+#: src/migrate_extents.glade.h:10
+#, fuzzy
+msgid "Inherit policy from Volume Group"
+msgstr ""
+"Премахване том от\n"
+"група томове"
+
+#: src/migrate_extents.glade.h:11
+#, fuzzy
+msgid "Migrate Extents"
+msgstr "разширения"
+
+#: src/migrate_extents.glade.h:12
+msgid "Migrate anywhere even if that reduces performance"
+msgstr ""
+
+#: src/migrate_extents.glade.h:13
+msgid "New extents are adjacent to existing ones"
+msgstr ""
+
+#: src/migrate_extents.glade.h:14
+msgid "Normal"
+msgstr ""
+
+#: src/migrate_extents.glade.h:15
+#, fuzzy
+msgid "Only migrate extents belonging to LV"
+msgstr ""
+"Мигриране избраните\n"
+"разширения от тома"
+
+#: src/migrate_extents.glade.h:16
+msgid "Use common sense"
+msgstr ""
+
+#: src/iscsi.glade.h:2
+#, fuzzy
+msgid "3260"
+msgstr "32"
+
+#: src/iscsi.glade.h:3
+msgid "Active iSCSI targets are selected "
+msgstr ""
+
+#: src/iscsi.glade.h:4
+msgid "Add New Target"
+msgstr ""
+
+#: src/iscsi.glade.h:5
+msgid "Default port is 3260"
+msgstr ""
+
+#: src/iscsi.glade.h:6
+msgid "Enter a hostname (or an IP address) of new target to add"
+msgstr ""
+
+#: src/iscsi.glade.h:7
+msgid "Hostname"
+msgstr ""
+
+#: src/iscsi.glade.h:8
+msgid "New iSCSI Target"
+msgstr ""
+
+#: src/iscsi.glade.h:9
+#, fuzzy
+msgid "Port"
+msgstr "Формат:   "
+
+#: src/iscsi.glade.h:10
+msgid ""
+"Specify a hostname of new target \n"
+"to add, and click \"OK\". "
+msgstr ""
+
+#: src/iscsi.glade.h:12
+msgid "iSCSI Initiator"
+msgstr ""
+
+#~ msgid "Name for Volume Group: "
+#~ msgstr "Име на групата томове: "
+
+#~ msgid "New Volume Group Form"
+#~ msgstr "Форма за нова група томове"
+
+#~ msgid ""
+#~ "vgextend command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата vgextend не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#~ msgid ""
+#~ "pvcreate command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата pvcreate не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#~ msgid ""
+#~ "lvcreate command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата pvcreate не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#~ msgid ""
+#~ "pvremove command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата pvremove не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#~ msgid ""
+#~ "lvremove command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата lvremove не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#~ msgid ""
+#~ "vgremove command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата pvremove не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#~ msgid ""
+#~ "vgcreate command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата vgcreate не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#~ msgid ""
+#~ "vgchange command failed. Command attempted: \"%s\" - System Error Message "
+#~ "%s"
+#~ msgstr ""
+#~ "командата vgcreate не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#~ msgid ""
+#~ "vgreduce command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата vgreduce не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#~ msgid ""
+#~ "pvmove command failed. Command attempted: \"%s\" - System Error Message: %"
+#~ "s"
+#~ msgstr ""
+#~ "командата pvmove не успя. Опитана команда: \"%s\" - системно съобщение за "
+#~ "грешка: %s"
+
+#~ msgid ""
+#~ "umount command failed. Command attempted: \"%s\" - System Error Message: %"
+#~ "s"
+#~ msgstr ""
+#~ "командата umount не успя. Опитана команда: \"%s\" - системно съобщение за "
+#~ "грешка: %s"
+
+#~ msgid ""
+#~ "mount command failed. Command Attempted: %s  - System Error Message: \"%s"
+#~ "\""
+#~ msgstr ""
+#~ "командата umount не успя. Опитана команда: \"%s\" - системно съобщение за "
+#~ "грешка: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "lvresize command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата lvremove не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "lvrename command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата pvcreate не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "lvchange command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата vgcreate не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "lvconvert command failed. Command attempted: \"%s\" - System Error "
+#~ "Message: %s"
+#~ msgstr ""
+#~ "командата lvremove не успя. Опитана команда: \"%s\" - системно съобщение "
+#~ "за грешка: %s"
+
+#, fuzzy
+#~ msgid "Quering Volume Groups"
+#~ msgstr "Групи томове"
+
+#, fuzzy
+#~ msgid "Quering Logical Volumes"
+#~ msgstr "Логически том"
+
+#, fuzzy
+#~ msgid "Quering Physical Volumes"
+#~ msgstr "Физически том"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "M"
+#~ msgstr "M"
+
+#~ msgid "K"
+#~ msgstr "K"
+
+#, fuzzy
+#~ msgid ""
+#~ "dmsetup command failed. Command attempted: \"%s\" - System Error Message: "
+#~ "%s"
+#~ msgstr ""
+#~ "командата pvmove не успя. Опитана команда: \"%s\" - системно съобщение за "
+#~ "грешка: %s"
+
+#~ msgid ""
+#~ "There is a problem with the value entered in the Size field. The value "
+#~ "should be a numeric value with no alphabetical characters or symbols of "
+#~ "any other kind."
+#~ msgstr ""
+#~ "В полето за размер е въведена грешна стойност. Това поле следва да "
+#~ "съдържа цифрова стойност без букви и/или други символи."
+
+#~ msgid ""
+#~ "The size requested for the new Logical Volume exceeds the available free "
+#~ "space on Volume Group %s. The available space is: "
+#~ msgstr ""
+#~ "Изисквания размер за новия логически том надвишава свободното място на "
+#~ "група томове %s. Свободното място е: "
+
+#~ msgid "Stripe Size field"
+#~ msgstr "Размер за поле на редуване"
+
+#~ msgid "Number of Stripes field"
+#~ msgstr "Брой полета за редуване"
+
+#~ msgid "40 megabytes"
+#~ msgstr "40 мегабайта"
+
+#~ msgid "Create New LV"
+#~ msgstr "Създаване нов ЛТ"
+
+#~ msgid ""
+#~ "Extend \n"
+#~ "Logical Volume"
+#~ msgstr ""
+#~ "Разширяване\n"
+#~ "логически том"
+
+#~ msgid "Mount point (If blank, LV will not be mounted):"
+#~ msgstr "Точка на монтиране (при празна ЛТ няма да се монтира):"
+
+#~ msgid "Name for new LV:"
+#~ msgstr "Име за нов ЛТ:"
+
+#~ msgid "Number of Stripes: "
+#~ msgstr "Брой полета за редуване: "
+
+#~ msgid "Select a disk entity to add to Volume Group:"
+#~ msgstr "Изберете дисков елемент за добавяне към групата томове:"
+
+#~ msgid "Size:"
+#~ msgstr "Размер:"
+
+#~ msgid "Stripe Size:"
+#~ msgstr "Размер на поле за редуване:"
+
+#~ msgid "Unused space on VG1:"
+#~ msgstr "Свободно място на ГТ1:"
+
+#~ msgid "ext2"
+#~ msgstr "ext2"
+
+#~ msgid "ext3"
+#~ msgstr "ext3"
+
+#~ msgid "No File System"
+#~ msgstr "Няма файлова система"
+
+#~ msgid ""
+#~ "This extent has not yet been \n"
+#~ " initialized for use with LVM."
+#~ msgstr ""
+#~ "Това разширение все още не е \n"
+#~ " инициализиран за употреба с МЛТ."
+
+#~ msgid ""
+#~ "This Volume has not been allocated \n"
+#~ " to a Volume Group yet."
+#~ msgstr ""
+#~ "Този том не е зачислен \n"
+#~ " към група томове все още."

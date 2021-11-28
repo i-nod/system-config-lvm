@@ -1,0 +1,18 @@
+AC_INIT()
+AM_INIT_AUTOMAKE(system-config-lvm,1.1.18)
+AM_PATH_PYTHON(2.3)
+
+ALL_LINGUAS=`ls po/ | grep \\.po\$ | sed s/\\.po// | xargs`
+
+dnl prevent to copy po/Makefile.in.in
+GETTEXT_PACKAGE=system-config-lvm
+AC_SUBST(GETTEXT_PACKAGE)
+#AM_GLIB_GNU_GETTEXT
+AC_PROG_INTLTOOL
+AC_PROG_LN_S
+
+AC_OUTPUT([
+	Makefile
+	src/Makefile
+	po/Makefile.in
+])

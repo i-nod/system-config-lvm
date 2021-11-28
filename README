@@ -1,0 +1,12 @@
+This application, system-config-lvm, is a GUI for LVM2 commands.
+It is very much an alpha grade application in this release. Please
+file any bugs that you discover against the package at 
+bugzilla.redhat.com and select the system-config-lvm app.
+For general discussion of system-config-lvm, please post to
+linux-lvm@redhat.com, and include 'GUI' in the subject line.
+
+Notes on building system-config-lvm:
+You will need automake-1.7 and aclocal-1.7
+type './autogen.sh'
+type 'make'
+type 'make srpm'

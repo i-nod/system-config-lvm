@@ -1,0 +1,1828 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-lvm\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-31 09:04-0500\n"
+"PO-Revision-Date: 2006-09-24 00:32+0100\n"
+"Last-Translator: Renato Pavicic <renato@translator-shop.org>\n"
+"Language-Team: Renato Pavicic <www.translator-shop.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Croatian\n"
+"X-Poedit-Country: CROATIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: src/InputController.py:39 src/Properties_Renderer.py:24
+#: src/Volume_Tab_View.py:32
+#, python-format
+msgid ""
+"\n"
+"  Unable to initialize graphical environment. Most likely cause of failure\n"
+"  is that the tool was not run using a graphical environment. Please either\n"
+"  start your graphical user interface or set your DISPLAY variable.\n"
+"                                                                                \n"
+"  Caught exception: %s\n"
+msgstr ""
+"\n"
+"  Inicijalizacija grafičkog okruženja nije moguća. Vjerojatan uzrok\n"
+"  problema je da alat nije bio pokrenut putem grafičkog okruženja.\n"
+"  Pokrenite grafičko sučelje ili podesite varijablu DISPLAY.\n"
+"                                                                                \n"
+"  Uhvaćeno odstupanje: %s\n"
+
+#. ##TRANSLATOR: The string below is seen when adding a new Physical
+#. ##Volume to an existing Volume Group.
+#: src/InputController.py:59
+#, python-format
+msgid "Select a Volume Group to add %s to:"
+msgstr "Odaberite grupu volumena kojemu će %s biti pridodan:"
+
+#. ##TRANSLATOR: The two strings below refer to the name and type of
+#. ##available disk entities on the system. There are two types --
+#. ##The first is an 'unallocated physical volume' which is a disk or
+#. ##partition that has been initialized for use with LVM, by writing
+#. ##a special label onto the first block of the partition. The other type
+#. ##is an 'uninitialized entity', which is an available disk or partition
+#. ##that is NOT yet initialized to be used with LVM. Hope this helps give
+#. ##some context.
+#: src/InputController.py:87
+msgid "Name"
+msgstr "Naziv"
+
+#: src/InputController.py:88
+msgid "Size"
+msgstr "Veličina"
+
+#: src/InputController.py:89
+msgid "Entity Type"
+msgstr "Vrsta entiteta"
+
+#: src/InputController.py:91
+msgid "Unallocated Physical Volume"
+msgstr "Nedodijeljeni fizički volumen"
+
+#: src/InputController.py:92
+msgid "Uninitialized Disk Entity"
+msgstr "Neinicijaliziran entitet diska"
+
+#: src/InputController.py:93
+#, python-format
+msgid "Select disk entities to add to the %s Volume Group:"
+msgstr "Odaberite entitete diskova koje želite dodati u grupu volumena %s:"
+
+#: src/InputController.py:95
+msgid ""
+"A Volume Group must be made up of two or more Physical Volumes to support "
+"striping. This Volume Group does not meet that requirement."
+msgstr ""
+"Da bi bio oduzimanje bilo podržano, grupa volumena mora se sastojati od dva "
+"ili više fizičkih volumena. Ova grupa volumena ne ispunjava ovaj zahtjev."
+
+#: src/InputController.py:97
+#, python-format
+msgid ""
+"A Logical Volume with the name %s already exists in this Volume Group. "
+"Please choose a unique name."
+msgstr ""
+"Logički volumen naziva %s već postoji u u ovoj grupi volumena. Odaberite "
+"drugi jedinstveni naziv."
+
+#: src/InputController.py:99
+#, python-format
+msgid ""
+"A Volume Group with the name %s already exists. Please choose a unique name."
+msgstr ""
+"Logički volumena naziva %s već postoji. Odaberite drugi jedinstveni naziv."
+
+#: src/InputController.py:101
+msgid "A Name must be provided for the new Logical Volume"
+msgstr "Novom logičkom volumenu potrebno je dodijeliti naziv."
+
+#: src/InputController.py:103
+msgid "A Name must be provided for the new Volume Group"
+msgstr "Novoj logičkoj grupi volumena potrebno je dodijeliti naziv."
+
+#: src/InputController.py:105
+#, python-format
+msgid ""
+"The specified mount point, %s, does not exist. Do you wish to create it?"
+msgstr ""
+"Točka pristupa %s ne postoji u obliku kako je određena. Želite li ju "
+"izraditi?"
+
+#: src/InputController.py:107
+#, python-format
+msgid "The creation of mount point %s unexpectedly failed."
+msgstr "Izrada točke pristupa %s neočekivano nije uspjela."
+
+#: src/InputController.py:109
+msgid "This capability is not yet implemented in this version"
+msgstr "Ova mogućnost trenutno nije implementirana u ovoj verziji."
+
+#: src/InputController.py:111
+msgid ""
+"The number of Logical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr ""
+"Broj logičkih volumena u ovoj grupi volumena dostigao je najveći dopušteni "
+"iznos."
+
+#: src/InputController.py:113
+msgid ""
+"The number of Physical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr ""
+"Broj fizičkih volumena u ovoj grupi volumena dostigao je najveći dopušteni "
+"iznos."
+
+#: src/InputController.py:115
+#, python-format
+msgid ""
+"At most %s Physical Volumes can be added to this Volume Group before the "
+"limit is reached."
+msgstr "Ovoj je grupi volumena moguće dodati najviše %s fizičkih volumena."
+
+#: src/InputController.py:117
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space for new Logical Volumes. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"U grupi volumena %s ne postoji dovoljno prostora za nove logičke volumene. "
+"Moguće rješenje problema predstavlja dodavanje fizičkih volumena u grupu "
+"volumena."
+
+#: src/InputController.py:119
+msgid "A snapshot of a snapshot is not supported."
+msgstr "Izrada snimka od snimke nije podržana."
+
+#: src/InputController.py:120
+msgid "A snapshot of a mirrored Logical Volume is not supported."
+msgstr "Izrada snimka zrcaljenog logičkog volumena nije podržana."
+
+#: src/InputController.py:122
+#, python-format
+msgid ""
+"Logical volume %s has snapshot %s currently associated with it. Please "
+"remove the snapshot first."
+msgstr ""
+"Logički volumen %s ima uz sebe trenutno povezanu snimku %s. Potrebno je prvo "
+"ukloniti snimku."
+
+#: src/InputController.py:123
+#, python-format
+msgid ""
+"Logical volume %s has snapshots: %s currently associated with it. Please "
+"remove snapshots first."
+msgstr ""
+"Logički volumen %s ima uz sebe trenutno povezane snimke: %s. Potrebno je "
+"prvo ukloniti snimke."
+
+#: src/InputController.py:125
+msgid ""
+"Undefined type conversion error in model factory. Unable to complete task."
+msgstr ""
+"Nedefinirana pogreška pretvaranja vrste pri tvornici modela. Nije moguće "
+"završiti zadatak."
+
+#: src/InputController.py:127
+#, python-format
+msgid ""
+"BIG WARNING: Logical Volume %s has an %s file system on it and is currently "
+"mounted on %s. Are you absolutely certain that you wish to discard the data "
+"on this mounted filesystem?"
+msgstr ""
+"VELIKO UPOZORENJE: Logički volumen %s sadrži datotečni sustav %s, kojemu je "
+"trenutno pristupljeno putem %s. Jeste li potpuno sigurni da želite uništiti "
+"podatke na ovom pristupljenom datotečnom sustavu?"
+
+#: src/InputController.py:129
+#, python-format
+msgid ""
+"Logical Volume %s is currently mounted on %s. In order to complete request, "
+"it has to be unmounted. Are you sure you want it unmounted?"
+msgstr ""
+" Logičkom volumena %s trenutno je pristupljeno putem %s. Da bi se zahtjev "
+"mogao ispuniti potrebno ga je napustiti. Jeste li sigurni da ga želite "
+"napustiti?"
+
+#. ##TRANSLATOR: An extent below is an abstract unit of storage. The size
+#. ##of an extent is user-definable.
+#: src/InputController.py:135
+#, python-format
+msgid "Unused space on %s"
+msgstr "Neiskorišteni prostor na %s"
+
+#: src/InputController.py:136
+#, python-format
+msgid "%s megabytes"
+msgstr "%s megabajta"
+
+#: src/InputController.py:137
+#, python-format
+msgid "%s kilobytes"
+msgstr "%s kilobajta"
+
+#: src/InputController.py:138
+#, python-format
+msgid "%s gigabytes"
+msgstr "%s gigabajta"
+
+#: src/InputController.py:139
+#, python-format
+msgid "%s extents"
+msgstr "%s proširenja"
+
+#: src/InputController.py:141
+msgid "Remaining free space in Volume Group:\n"
+msgstr "Preostalo slobodnog prostora u grupi volumena:\n"
+
+#: src/InputController.py:142
+msgid "Remaining space for this Volume:\n"
+msgstr "Preostalo slobodnog prostora u ovom volumenu:\n"
+
+#: src/InputController.py:144
+msgid "Extents"
+msgstr "Proširenja"
+
+#: src/InputController.py:145
+msgid "Gigabytes"
+msgstr "Gigabajta"
+
+#: src/InputController.py:146
+msgid "Megabytes"
+msgstr "Megabajta"
+
+#: src/InputController.py:147
+msgid "Kilobytes"
+msgstr "Kilobajta"
+
+#: src/InputController.py:149
+#, python-format
+msgid "The %s should only contain number values"
+msgstr "%s mora sadržavati samo brojčane vrijednosti."
+
+#: src/InputController.py:150
+msgid ""
+"The Maximum Physical Volumes field should contain only integer values "
+"between 1 and 256"
+msgstr ""
+"Polje najvećeg dopuštenog broja fizičkih volumena može sadržavati samo "
+"cijele brojeve između 1 i 256."
+
+#: src/InputController.py:151
+msgid ""
+"The Maximum Logical Volumes field should contain only integer values between "
+"1 and 256"
+msgstr ""
+"Polje najvećeg dopuštenog broja logičkih volumena može sadržavati samo "
+"cijele brojeve između 1 i 256."
+
+#: src/InputController.py:153
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from Logical Volume "
+"Management?"
+msgstr ""
+"Jeste li potpuno sigurni da iz upravljanja logičkim volumenima želite "
+"ukloniti %s?"
+
+#: src/InputController.py:155
+#, python-format
+msgid ""
+"The Physical Volume named %s, that you wish to remove, has data from active "
+"Logical Volume(s) mapped to its extents. Because it is the only Physical "
+"Volume in the Volume Group, there is no place to move the data to. "
+"Recommended action is either to add a new Physical Volume before removing "
+"this one, or else remove the Logical Volumes that are associated with this "
+"Physical Volume."
+msgstr ""
+"Fizički volumen kojeg želite ukloniti %s, sadrži podatke iz aktivnih "
+"logičkih volumena mapiranih u njegovim proširenjima. S obzirom da je to "
+"jedini fizički volumen u grupi volumena, nema prostora u koji bi podaci "
+"mogli biti premješteni. Preporučuje se dodavanje novog fizičkog volumena "
+"prije uklanjanja ovoga, ili uklanjanje logičkih volumena povezanih s ovim "
+"fizičkim volumenom."
+
+#: src/InputController.py:156
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from the %s Volume Group?"
+msgstr "Jeste li potpuno sigurni da želite ukloniti %s iz grupe volumena %s?"
+
+#: src/InputController.py:157
+#, python-format
+msgid ""
+"Removing Physical Volume %s from the Volume Group %s will leave the Volume "
+"group empty, and it will be removed as well. Do you wish to proceed?"
+msgstr ""
+"Uklanjane fizičkog volumena %s iz grupe volumena %s, dana grupa volumena bit "
+"će prazna i kao takva bit će uklonjena. Želite li nastaviti?"
+
+#: src/InputController.py:158
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space to move the data stored on %s. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"Grupa volumena %s nema dovoljno prostora za premještanje podataka "
+"pohranjenih pri %s. Moguće rješenje problema predstavlja dodavanje fizičkih "
+"volumena u grupu volumena."
+
+#: src/InputController.py:159
+msgid ""
+"The dm-mirror module is either not loaded in your kernel, or your kernel "
+"does not support the dm-mirror target. If it is supported, try running "
+"\"modprobe dm-mirror\". Otherwise, operations that require moving data on "
+"Physical Extents are unavailable."
+msgstr ""
+"Modul dm-mirror ili nije učitan u kernel, ili kernel ne podržava dm-mirror "
+"odredište. Ako postoji podrška, pokušajte pokrenuti naredbu \"modprobe dm-"
+"mirror\". U protivnom, postupci koji zahtijevaju premještanje podataka na "
+"fizičko proširenje neće biti na raspolaganju."
+
+#: src/InputController.py:160
+msgid ""
+"The dm-snapshot module is either not loaded in your kernel, or your kernel "
+"does not support the dm-snapshot target. If it is supported, try running "
+"\"modprobe dm-snapshot\". Otherwise, creation of snapshots is unavailable."
+msgstr ""
+"Modul dm-snapshot ili nije učitan u kernel, ili kernel ne podržava dm-"
+"snapshot odredište. Ako postoji podrška, pokušajte pokrenuti naredbu "
+"\"modprobe dm-snapshot\". U protivnom, izrada slika neće biti raspoloživa."
+
+#: src/InputController.py:162
+#, python-format
+msgid "Are you quite certain that you wish to remove logical volume %s?"
+msgstr "Jeste li zaista sigurni da želite ukloniti logički volumen %s?"
+
+#: src/InputController.py:163
+#, python-format
+msgid ""
+"Logical volume %s contains %s filesystem. All data on it will be lost! Are "
+"you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"Logički volumen %s sadrži datotečni sustav %s. Svi podaci na njemu bit će "
+"izgubljeni! Jeste li zaista sigurni da želite ukloniti logički volumen %s?"
+
+#: src/InputController.py:164
+#, python-format
+msgid ""
+"Logical volume %s contains data from directory %s. All data in it will be "
+"lost! Are you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"Logički volumen %s sadrži podatke iz mape %s. Svi podaci u njoj bit će "
+"izgubljeni! Jeste li zaista sigurni da želite ukloniti logički volumen %s?"
+
+#: src/InputController.py:309
+#, fuzzy
+msgid ""
+"In order for Volume Group to be safely used in clustered environment, lvm2-"
+"cluster rpm has to be installed, `lvmconf --enable-cluster` has to be "
+"executed and clvmd service has to be running"
+msgstr ""
+"Da bi se grupa volumena mogla sigurno upotrebljavati u okolišu skupine, "
+"potrebno je instalirati rpm paket lvm2-cluster i pokrenuti uslugu clvmd."
+
+#: src/InputController.py:368
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror log of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"Fizički volumen %s sadrži proširenja koja pripadaju zrcalnom zapisniku "
+"logičkog volumena %s.  S obzirom da zrcalne logičke volumene još uvijek nije "
+"moguće preseljavati, uklanjanje %s nije moguće."
+
+#: src/InputController.py:371
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror image of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"Fizički volumen %s sadrži proširenja koja pripadaju zrcalnoj preslici "
+"logičkog volumena %s. S obzirom da zrcalne logičke volumene još uvijek nije "
+"moguće preseljavati, uklanjanje %s nije moguće."
+
+#: src/InputController.py:374
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, a snapshot of %s. "
+"Snapshots are not yet migratable, so %s is not removable."
+msgstr ""
+"Fizički volumen %s sadrži proširenja koja pripadaju %s, slici od %s. S "
+"obzirom da slike još uvijek nije moguće preseljavati, uklanjanje %s nije "
+"moguće."
+
+#: src/InputController.py:379
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshot %"
+"s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"Fizički volumen %s sadrži proširenja koja pripadaju %s, izvoru slike od %s. "
+"S obzirom da izvore slika još uvijek nije moguće preseljavati, uklanjanje %s "
+"nije moguće."
+
+#: src/InputController.py:381
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshots "
+"%s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"Fizički volumen %s sadrži proširenja koja pripadaju %s, izvoru slika od %s. "
+"S obzirom da izvore slika još uvijek nije moguće preseljavati, uklanjanje %s "
+"nije moguće."
+
+#: src/InputController.py:568
+#, python-format
+msgid ""
+"Logical Volume \"%s\" has snapshots that are not selected for removal. They "
+"must be removed as well."
+msgstr ""
+"Logički volumen \"%s\" ima snimke koje nisu odabrane za uklanjanje. Potrebno "
+"je ukloniti i njih."
+
+#: src/InputController.py:583
+#, python-format
+msgid ""
+"\"%s\", an origin of snapshot \"%s\", has been deleted from removal list."
+msgstr "\"%s\", izvor slike \"%s\", izbrisan je s popisa uklanjanja."
+
+#: src/InputController.py:614
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a mirror. Mirrors are "
+"not migratable, so %s is not removable."
+msgstr ""
+"Fizički volumen \"%s\" sadrži proširenja koja pripadaju zrcalu. Zrcala nije "
+"moguće preseljavati, pa preseljenje %s nije moguće izvesti."
+
+#: src/InputController.py:617
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a snapshot or a "
+"snapshot's origin. Snapshots are not migratable, so %s is not removable."
+msgstr ""
+"Fizički volumen \"%s\" sadrži proširenja koja pripadaju slici ili izvoru "
+"slike. Slike nije moguće preseljavati, pa preseljenje %s nije moguće izvesti."
+
+#: src/InputController.py:682
+msgid "The path you specified does not exist."
+msgstr "Putanja koju ste odredili ne postoji."
+
+#: src/InputController.py:689
+msgid "The path you specified is not a Block Device."
+msgstr "Putanja koju ste odredili nije blok uređaj."
+
+#: src/InputController.py:760
+#, python-format
+msgid "Initialization of %s failed"
+msgstr "Inicijalizacija %s nije uspjela"
+
+#: src/InputController.py:998 src/InputController.py:1001
+msgid "Please select some extents first"
+msgstr "Prvo je potrebno odabrati proširenje."
+
+#: src/InputController.py:1035
+msgid ""
+"There are not enough free extents to perform the necessary migration. Adding "
+"more physical volumes would solve the problem."
+msgstr ""
+"Za izvršavanje potrebnih preseljenja nema dovoljno slobodnih proširenja. "
+"Problem se može riješiti dodavanjem fizičkih volumena."
+
+#: src/InputController.py:1091
+#, python-format
+msgid ""
+"iSCSI Initiator rpm is not installed. \n"
+"Install %s rpm, and try again."
+msgstr ""
+
+#: src/InputController.py:1208
+msgid "Migrate extents"
+msgstr "Preseljenje proširenja"
+
+#: src/InputController.py:1336
+msgid "Options"
+msgstr "Opcije"
+
+#: src/InputController.py:1370
+#, python-format
+msgid "Create A Snapshot of %s"
+msgstr "Izradi sliku od %s"
+
+#: src/InputController.py:1372
+msgid "Create New Logical Volume"
+msgstr "Izrada novog logičkog volumena"
+
+#: src/InputController.py:1375
+#, python-format
+msgid "Edit %s, a Snapshot of %s"
+msgstr "Uredi %s, sliku od %s"
+
+#: src/InputController.py:1378
+msgid "Edit Logical Volume"
+msgstr "Uređivanje logičkog volumena"
+
+#: src/InputController.py:1531
+msgid "Underlying Logical Volume Management does not support mirroring"
+msgstr "Temeljno upravljanje logičkim volumenima ne podržava zrcaljenje"
+
+#: src/InputController.py:1538
+msgid "Striped Logical Volumes cannot be mirrored."
+msgstr "Oduzimajući logički volumen nije moguće zrcaliti."
+
+#: src/InputController.py:1545
+msgid "Logical Volumes with associated snapshots cannot be mirrored yet."
+msgstr "Logičke volumene s povezanim slikama još uvijek nije moguće zrcaliti."
+
+#. mirror images placement: diff HDs or anywhere
+#. prompt
+#: src/InputController.py:1552
+msgid ""
+"The primary purpose of mirroring is to protect data in the case of hard "
+"drive failure. Do you want to place mirror images onto different hard drives?"
+msgstr ""
+"Osnovna namjena zrcaljenja je zaštita podataka u slučaju kvara tvrdog diska. "
+"Želite li zrcalne preslike smjestiti na druge tvrde diskove?"
+
+#: src/InputController.py:1561
+msgid ""
+"Less than 3 hard drives are available with free space. Disabling mirroring."
+msgstr ""
+"Manje od 3 tvrda diska ima raspoloživi slobodni prostor. Zrcaljenje će biti "
+"onemogućeno."
+
+#: src/InputController.py:1566
+msgid ""
+"There must be free space on at least three Physical Volumes to enable "
+"mirroring"
+msgstr ""
+"Za omogućavanja zrcaljenja potrebno je da najmanje 3 fizička volumena imaju "
+"raspoloživog slobodnog prostora."
+
+#: src/InputController.py:1574
+msgid ""
+"The size of the Logical Volume has been adjusted to the maximum available "
+"size for mirrors."
+msgstr ""
+"Veličina logičkih volumena prilagođena je najvećoj raspoloživoj veličini "
+"potrebnoj za zrcaljenje."
+
+#: src/InputController.py:1579
+#, python-format
+msgid ""
+"There is not enough free space to add mirroring. Reduce size of Logical "
+"Volume to at most %s, or add Physical Volumes."
+msgstr ""
+"Nema dovoljno slobodnog prostora za dodavanje zrcaljenja. Smanjite veličinu "
+"logičkog volumena na najviše %s ili dodajte još neki fizički volumen."
+
+#: src/InputController.py:1943
+msgid "Names beginning with \"snapshot\" or \"pvmove\" are reserved keywords."
+msgstr ""
+"Nazivi koji započinju s \"snapshot\" ili \"pvmove\" rezervirane su ključne "
+"riječi."
+
+#: src/InputController.py:1945
+msgid "Names containing \"_mlog\" or \"_mimage\" are reserved keywords."
+msgstr ""
+"Nazivi koji sadržavaju \"_mlog\" ili \"_mimage\" rezervirani su za ključne "
+"riječi."
+
+#: src/InputController.py:1947
+msgid "Names beginning with a \"-\" are invalid"
+msgstr "Nazivi koji započinju s \"-\" nisu ispravni."
+
+#: src/InputController.py:1949
+msgid "Name can be neither \".\" nor \"..\""
+msgstr "Naziv ne može biti \".\" niti \"..\""
+
+#: src/InputController.py:1955
+msgid "Whitespaces are not allowed in Logical Volume names"
+msgstr "Prazna mjesta (razmaci) nisu dopušteni u nazivima logičkih volumena."
+
+#: src/InputController.py:1958
+#, python-format
+msgid "Invalid character \"%s\" in Logical Volume name"
+msgstr "Neispravan znak \"%s\" u nazivu logičkog volumena"
+
+#: src/InputController.py:1978
+msgid "Please specify mount point"
+msgstr "Odredite točku pristupa"
+
+#: src/InputController.py:2044
+msgid "Do you want to upgrade ext2 to ext3 preserving data on Logical Volume?"
+msgstr ""
+"Želite li ext2 nadograditi na ext3 uz očuvanje podataka na logičkom volumenu?"
+
+#: src/InputController.py:2078
+msgid ""
+"Changing the filesystem will destroy all data on the Logical Volume! Are you "
+"sure you want to proceed?"
+msgstr ""
+"Izmjena datotečnog sustava uništit će sve podatke na logičkom volumenu! "
+"Jeste li sigurni da želite nastaviti?"
+
+#. migration not performed, continue process with no mirroring
+#: src/InputController.py:2179
+msgid "Mirror not created. Completing remaining tasks."
+msgstr "Zrcaljenje nije izrađeno. Preostali će zadaci biti dovršeni."
+
+#. create mirror
+#: src/InputController.py:2182
+msgid ""
+"Underlaying LVM doesn't support addition of mirrors to existing Logical "
+"Volumes. Completing remaining tasks."
+msgstr ""
+"Temeljno upravljanje logičkim volumenima ne podržava dodavanje zrcala "
+"postojećim logičkim volumenima. Preostali će zadaci biti dovršeni."
+
+#: src/InputController.py:2231
+msgid "In order to add mirroring, some extents need to be migrated."
+msgstr ""
+"Da bi se moglo dodati zrcaljenje, potrebno je preseljenje nekih proširenja."
+
+#: src/InputController.py:2231
+msgid "Do you want to migrate specified extents?"
+msgstr "Želite li preseliti određena proširenja?"
+
+#: src/CommandHandler.py:55
+msgid "Creating Logical Volume"
+msgstr "Izrada logičkog volumena"
+
+#: src/CommandHandler.py:74 src/CommandHandler.py:91
+msgid "Resizing Logical Volume"
+msgstr "Promjena veličine logičkog volumena"
+
+#: src/CommandHandler.py:124
+msgid "Adding Mirror to Logical Volume"
+msgstr "Dodavanje zrcala logičkom volumenu"
+
+#: src/CommandHandler.py:135
+msgid "Removing Mirror from Logical Volume"
+msgstr "Uklanjanje zrcala iz logičkog volumena"
+
+#: src/CommandHandler.py:160
+msgid "Initializing Physical Volume"
+msgstr "Inicijalizacija fizičkog volumena"
+
+#: src/CommandHandler.py:171
+msgid "Adding Physical Volume to Volume Group"
+msgstr "Dodavanje fizičkog volumena u grupu volumena"
+
+#: src/CommandHandler.py:203
+msgid "Creating Volume Group"
+msgstr "Izrada grupe volumena"
+
+#: src/CommandHandler.py:225
+msgid "Removing Volume Group"
+msgstr "Uklanjanja grupe volumena"
+
+#: src/CommandHandler.py:235
+msgid "Removing Physical Volume"
+msgstr "Uklanjanje fizičkog volumena"
+
+#: src/CommandHandler.py:248
+msgid "Removing Logical Volume"
+msgstr "Uklanjanje logičkog volumena"
+
+#: src/CommandHandler.py:263
+msgid "Renaming Logical Volume"
+msgstr "Preimenovanje logičkog volumena"
+
+#: src/CommandHandler.py:285
+msgid "Removing Physical Volume from Volume Group"
+msgstr "Uklanjanje fizičkog volumena iz grupe volumena"
+
+#: src/CommandHandler.py:320
+msgid "Migrating Extents"
+msgstr "Preseljavanje proširenja"
+
+#: src/CommandHandler.py:332
+msgid "Completing Extent Migration"
+msgstr "Dovršavanje preseljenja proširenja"
+
+#: src/CommandHandler.py:383
+msgid "Rereading partition table"
+msgstr "Ponovno čitanje tablice particija"
+
+#: src/lvm_model.py:45 src/lvmui_constants.py:83
+msgid "Unused"
+msgstr "Neiskorišteno"
+
+#: src/lvm_model.py:46
+msgid "Unused Space"
+msgstr "Neiskorišteni prostor"
+
+#: src/lvm_model.py:48
+msgid "Unmounted"
+msgstr "Nije pristupljeno"
+
+#: src/lvm_model.py:58
+msgid "Volume Group Name:   "
+msgstr "Naziv grupe volumena:   "
+
+#: src/lvm_model.py:59
+msgid "System ID:   "
+msgstr "ID sustava:  "
+
+#: src/lvm_model.py:60
+msgid "Format:   "
+msgstr "Oblik:     "
+
+#: src/lvm_model.py:61 src/lvm_model.py:78 src/lvm_model.py:93
+msgid "Attributes:   "
+msgstr "Atributi:     "
+
+#: src/lvm_model.py:62
+msgid "Volume Group Size:   "
+msgstr "Veličina grupe volumena:   "
+
+#: src/lvm_model.py:63
+msgid "Available Space:   "
+msgstr "Raspoloživi prostor:   "
+
+#: src/lvm_model.py:64
+msgid "Total Number of Extents:   "
+msgstr "Ukupan broj proširenja:   "
+
+#: src/lvm_model.py:65
+msgid "Number of Free Extents:   "
+msgstr "Broj slobodnih proširenja:   "
+
+#: src/lvm_model.py:66
+msgid "Extent Size:   "
+msgstr "Veličina proširenja:   "
+
+#: src/lvm_model.py:67
+msgid "Maximum Allowed Physical Volumes:   "
+msgstr "Najveći dopušteni broj fizičkih volumena:   "
+
+#: src/lvm_model.py:68
+msgid "Number of Physical Volumes:   "
+msgstr "Broj fizičkih volumena:   "
+
+#: src/lvm_model.py:69
+msgid "Maximum Allowed Logical Volumes:   "
+msgstr "Najveći dopušteni broj logičkih volumena:   "
+
+#: src/lvm_model.py:70
+msgid "Number of Logical Volumes:   "
+msgstr "Broj logičkih volumena:   "
+
+#: src/lvm_model.py:71
+msgid "VG UUID:   "
+msgstr "VG UUID:   "
+
+#: src/lvm_model.py:73
+msgid "Logical Volume Name:   "
+msgstr "Naziv logičkog volumena:   "
+
+#: src/lvm_model.py:74
+msgid "Logical Volume Size:   "
+msgstr "Veličina logičkog volumena:   "
+
+#: src/lvm_model.py:75
+msgid "Number of Segments:   "
+msgstr "Broj segmenata:   "
+
+#: src/lvm_model.py:76
+msgid "Number of Stripes:   "
+msgstr "Broj oduzimanja:   "
+
+#: src/lvm_model.py:77
+msgid "Stripe Size:   "
+msgstr "Veličina oduzimanja:   "
+
+#: src/lvm_model.py:79
+msgid "LV UUID:   "
+msgstr "LV UUID:   "
+
+#: src/lvm_model.py:81
+msgid "Partition Type:   "
+msgstr "Vrsta particije:   "
+
+#: src/lvm_model.py:82
+msgid "Size:   "
+msgstr "Veličina:   "
+
+#: src/lvm_model.py:83
+msgid "Mount Point:   "
+msgstr "Točka pristupa:   "
+
+#: src/lvm_model.py:84
+msgid "Mount Point when Rebooted:   "
+msgstr "Točka pristupa pri ponovnom pokretanju:   "
+
+#: src/lvm_model.py:85
+msgid "File System:   "
+msgstr "Datotečni sustav:   "
+
+#: src/lvm_model.py:87
+msgid "Physical Volume Name:   "
+msgstr "Naziv fizičkog volumena:   "
+
+#: src/lvm_model.py:88
+msgid "Physical Volume Size:   "
+msgstr "Veličina fizičkog volumena:   "
+
+#: src/lvm_model.py:89
+msgid "Space Used:   "
+msgstr "Iskorišteni prostor:   "
+
+#: src/lvm_model.py:90
+msgid "Space Free:   "
+msgstr "Slobodan prostor:   "
+
+#: src/lvm_model.py:91
+msgid "Total Physical Extents:   "
+msgstr "Ukupno fizičkih proširenja:   "
+
+#: src/lvm_model.py:92
+msgid "Allocated Physical Extents:   "
+msgstr "Dodijeljeno fizičkih proširenja:   "
+
+#: src/lvm_model.py:94
+msgid "PV UUID:   "
+msgstr "PV UUID:   "
+
+#: src/lvm_model.py:96
+msgid "Not initializable:"
+msgstr "Nije za inicijalizaciju:"
+
+#: src/lvm_model.py:97
+msgid "Extended partition"
+msgstr "Proširena particija"
+
+#. Translator: the line below refers to a standard linux swap partition.
+#: src/lvm_model.py:99
+msgid "Swap partition currently in use"
+msgstr "Trenutno upotrebljavana razmjenska particija"
+
+#: src/lvm_model.py:100
+msgid "Foreign boot partition"
+msgstr "Strana pokretačka particija"
+
+#: src/lvm_model.py:101
+msgid "Autopartition failure"
+msgstr "Automatsko particioniranje nije uspjelo"
+
+#: src/lvm_model.py:259
+msgid "Partition manually"
+msgstr "Ručno particioniranje"
+
+#: src/lvm_model.py:295
+msgid "Multipath device"
+msgstr "Uređaj s više putanji"
+
+#: src/lvm_model.py:298
+msgid "Note:"
+msgstr "Napomena:"
+
+#: src/lvm_model.py:298
+msgid "Initialize manually"
+msgstr "Ručna inicijalizacija"
+
+#: src/lvm_model.py:741
+msgid "Clustered:   "
+msgstr "U skupini:   "
+
+#: src/lvm_model.py:743 src/lvm_model.py:971
+msgid "True"
+msgstr "Točno"
+
+#: src/lvm_model.py:745
+msgid "False"
+msgstr "Netočno"
+
+#: src/lvm_model.py:803
+msgid "Number of mirror images:"
+msgstr "Broj zrcalnih preslika:"
+
+#: src/lvm_model.py:806
+msgid "Snapshots:"
+msgstr "Slike:"
+
+#: src/lvm_model.py:812
+msgid "Snapshot origin:"
+msgstr "Izvori slika:"
+
+#: src/lvm_model.py:819
+msgid "Snapshot usage:"
+msgstr "Iskoristivost slika:"
+
+#: src/lvm_model.py:842 src/lvm_model.py:848 src/lvm_model.py:891
+#: src/lvm_model.py:907
+msgid "/   Root Filesystem"
+msgstr "/   Root datotečni sustav"
+
+#: src/lvm_model.py:910 src/Filesystem.py:137
+msgid "None"
+msgstr "Nijedan"
+
+#: src/lvm_model.py:961
+#, fuzzy
+msgid "SCSI ID:   "
+msgstr "ID sustava:  "
+
+#: src/lvm_model.py:965
+msgid "NONE"
+msgstr ""
+
+#: src/lvm_model.py:970
+msgid "iSCSI Device:   "
+msgstr ""
+
+#. INIT_ENTITY=_("Are you certain that you wish to initialize disk entity %s? All data will be lost on this device/partition.")
+#: src/lvmui_constants.py:51
+#, python-format
+msgid ""
+"All data on disk entity %s will be lost! Are you certain that you wish to "
+"initialize it?"
+msgstr ""
+"Svi podaci na entitetu diska %s bit će izgubljeni! Jeste li sigurni da "
+"želite inicijalizaciju?"
+
+#: src/lvmui_constants.py:52
+#, python-format
+msgid ""
+"Disk entity %s contains %s filesystem. All data on it will be lost! Are you "
+"certain that you wish to initialize disk entity %s?"
+msgstr ""
+"Entitet diska %s sadrži datotečni sustav %s. Svi podaci bit će izgubljeni! "
+"Jeste li sigurni da želite inicijalizaciju entiteta diska %s?"
+
+#: src/lvmui_constants.py:53
+#, python-format
+msgid ""
+"Disk entity %s contains data from directory %s. All data in it will be lost! "
+"Are you certain that you wish to initialize disk entity %s?"
+msgstr ""
+"Entitet diska %s sadrži podatke iz mape %s. Svi podaci bit će izgubljeni! "
+"Jeste li sigurni da želite inicijalizaciju entiteta diska %s?"
+
+#: src/lvmui_constants.py:54
+#, python-format
+msgid ""
+"Are you certain that you wish to initialize %s of free space on disk %s?"
+msgstr ""
+"Jeste li sigurni da želite inicijalizaciju %s slobodnog prostora na disku %s?"
+
+#: src/lvmui_constants.py:55
+#, python-format
+msgid ""
+"You are about to initialize unpartitioned disk %s. It is advisable, although "
+"not required, to create a partition on it. Do you want to create a single "
+"partition encompassing the whole drive?"
+msgstr ""
+"Namjeravate izvesti inicijalizaciju neparticioniranog diska %s. "
+"Preporučljiva je, iako ne i potrebna, izrada particija na disku. Želite li "
+"izraditi samo jednu particiju koja će se protezati preko cijelog diska?"
+
+#: src/lvmui_constants.py:57
+msgid "Reloading LVM. Please wait."
+msgstr "Ponovno učitavanje LVM-a. Pričekajte..."
+
+#: src/lvmui_constants.py:59
+#, python-format
+msgid ""
+"Changes will take effect after computer is restarted. If device %s is used, "
+"before restart, data corruption WILL occur. It is advisable to restart your "
+"computer now."
+msgstr ""
+"Izmjene će poprimiti učinak nakon ponovnog pokretanja računala. Ako se prije "
+"ovog ponovnog pokretanja računala upotrijebit uređaj %s, doći će do "
+"OŠTEĆIVANJA podataka. Preporučuje se da računalo odmah ponovo pokrenete."
+
+#: src/lvmui_constants.py:61
+msgid "Mirror Log"
+msgstr "Zapisnik zrcala"
+
+#: src/lvmui_constants.py:63
+msgid "Unable to process request"
+msgstr "Obrada zahtijeva nije moguća"
+
+#: src/lvmui_constants.py:65
+#, python-format
+msgid "%s command failed. Command attempted: \"%s\" - System Error Message: %s"
+msgstr ""
+"Naredba %s nije uspjela. Naredba je pokušala: \"%s\" - Poruka sustava o "
+"pogrešci: %s"
+
+#: src/lvmui_constants.py:84
+msgid "Free"
+msgstr "Slobodno"
+
+#: src/lvmui_constants.py:85
+msgid "Free space"
+msgstr "Slobodan prostor"
+
+#: src/lvmui_constants.py:87
+msgid "Unpartitioned space"
+msgstr "Neparticionirani prostor"
+
+#: src/lvmui_constants.py:88
+#, python-format
+msgid "Unpartitioned space on %s"
+msgstr "Neparticionirani prostor na %s"
+
+#: src/lvmui_constants.py:90
+msgid "GB"
+msgstr "GB"
+
+#: src/lvmui_constants.py:91
+msgid "MB"
+msgstr "MB"
+
+#: src/lvmui_constants.py:92
+msgid "KB"
+msgstr "kB"
+
+#: src/lvmui_constants.py:93
+msgid "Bytes"
+msgstr "Bajtova"
+
+#. File System Types
+#: src/lvmui_constants.py:97
+msgid "No Filesystem"
+msgstr "Nema datotečnog sustava"
+
+#: src/lvmui_constants.py:98
+msgid "Ext2"
+msgstr "Ext2"
+
+#: src/lvmui_constants.py:99
+msgid "Ext3"
+msgstr "Ext3"
+
+#: src/lvmui_constants.py:100
+msgid "JFS"
+msgstr "JFS"
+
+#: src/lvmui_constants.py:101
+msgid "MSDOS"
+msgstr "MSDOS"
+
+#: src/lvmui_constants.py:102
+msgid "Reiserfs"
+msgstr "Reiserfs"
+
+#: src/lvmui_constants.py:103
+msgid "VFAT"
+msgstr "VFAT"
+
+#: src/lvmui_constants.py:104
+msgid "XFS"
+msgstr "XFS"
+
+#: src/lvmui_constants.py:105
+msgid "Cramfs"
+msgstr "Cramfs"
+
+#: src/Properties_Renderer.py:42
+msgid "Properties for"
+msgstr "Svojstva za"
+
+#: src/Properties_Renderer.py:43 src/renderer.py:37
+msgid "Physical Volume"
+msgstr "Fizički volumen"
+
+#. UNALLOCATED_MESSAGE=_("This Volume has not been allocated \n to a Volume Group yet.")
+#: src/Properties_Renderer.py:44 src/renderer.py:36
+msgid "Logical Volume"
+msgstr "Logički volumen"
+
+#: src/Properties_Renderer.py:45
+msgid "Unallocated Volume"
+msgstr "Nedodijeljen volumen"
+
+#: src/Properties_Renderer.py:46 src/renderer.py:43
+msgid "Disk Entity"
+msgstr "Entitet diska"
+
+#: src/Properties_Renderer.py:47 src/Properties_Renderer.py:48
+#: src/Properties_Renderer.py:49 src/renderer.py:38
+msgid "Volume Group"
+msgstr "Grupa volumena"
+
+#. UNINITIALIZED_MESSAGE=_("This extent has not yet been \n initialized for use with LVM.")
+#: src/renderer.py:33
+msgid "No Volume Selected"
+msgstr "Nema odabranog volumena"
+
+#: src/renderer.py:34
+msgid "Multiple selection"
+msgstr "Višestruki odabir"
+
+#: src/renderer.py:39 src/Volume_Tab_View.py:48
+msgid "Logical View"
+msgstr "Logički prikaz"
+
+#: src/renderer.py:40 src/Volume_Tab_View.py:47
+msgid "Physical View"
+msgstr "Fizički prikaz"
+
+#: src/renderer.py:41
+msgid "Unallocated"
+msgstr "Nedodijeljen"
+
+#: src/renderer.py:42
+msgid "Uninitialized"
+msgstr "Nije inicijalizirano"
+
+#: src/renderer.py:195
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a mirror log of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"Proširenje koje pokušavate odabrati pripada zrcalnom zapisniku logičkog "
+"volumena %s. Zrcaljenja logičkih volumena još uvijek nije moguće "
+"preseljavati, pa proširenja nije moguće odabirati."
+
+#: src/renderer.py:197
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to mirror image of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"Proširenje koje pokušavate odabrati pripada zrcalnoj preslici logičkog "
+"volumena %s. Zrcaljenja logičkih volumena još uvijek nije moguće "
+"preseljavati, pa proširenja nije moguće odabirati."
+
+#: src/renderer.py:199
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to %s, a snapshot of %"
+"s. Snapshots are not yet migratable, so the extents are not selectable."
+msgstr ""
+"Proširenje koje pokušavate odabrati pripada %s, slici od %s. Slike još "
+"uvijek nije moguće preseljavati, pa proširenja nije moguće odabirati."
+
+#: src/renderer.py:201
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a snapshot origin %"
+"s. Snapshot origins are not yet migratable, so the extents are not "
+"selectable."
+msgstr ""
+"Proširenje koje pokušavate odabrati pripada zrcaljenju logičkog volumena %s. "
+"Zrcaljenja logičkih volumena još uvijek nije moguće preseljavati, pa "
+"proširenja nije moguće odabirati."
+
+#: src/renderer.py:388
+#, python-format
+msgid "Snapshot of %s"
+msgstr "Slika od %s"
+
+#: src/renderer.py:490
+msgid "Origin"
+msgstr "Izvor"
+
+#: src/renderer.py:496
+msgid "Snapshot"
+msgstr "Slika"
+
+#: src/renderer.py:540
+msgid "extent view"
+msgstr "prikaz proširenja"
+
+#: src/Volume_Tab_View.py:44
+msgid "Volume Groups"
+msgstr "Grupe volumena"
+
+#: src/Volume_Tab_View.py:45
+msgid "Unallocated Volumes"
+msgstr "Nedodijeljeni volumeni"
+
+#: src/Volume_Tab_View.py:46
+msgid "Uninitialized Entities"
+msgstr "Neinicijaliziran entiteti"
+
+#: src/Volume_Tab_View.py:233
+msgid "Clustered VG"
+msgstr "VG u skupini"
+
+#: src/Volume_Tab_View.py:619
+#, python-format
+msgid "%s mirror synchronisation"
+msgstr "%s zrcalna sinkronizacija"
+
+#. no existing partitions, write
+#: src/fdisk_wrapper.py:192
+msgid "Please wait while partition is being created"
+msgstr "Pričekajte dok se dovrši izrada particije"
+
+#: src/Filesystem.py:20
+#, python-format
+msgid "Creating %s filesystem"
+msgstr "Izrada datotečnog sustava %s"
+
+#: src/Filesystem.py:21
+#, python-format
+msgid "Resizing %s filesystem"
+msgstr "Izmjena veličine datotečnog sustava %s"
+
+#: src/Filesystem.py:22
+#, python-format
+msgid "Checking %s filesystem"
+msgstr "Provjeravanje datotečnog sustava %s"
+
+#: src/Filesystem.py:23
+#, python-format
+msgid "Upgrading %s filesystem to %s"
+msgstr "Nadogradnja datotečnog sustava %s na %s"
+
+#: src/Filesystem.py:24
+#, python-format
+msgid ""
+"Creation of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"Izrada datotečnog sustava nije uspjela. Pokušana je naredba: \"%s\" - Poruka "
+"sustava o pogrešci: %s"
+
+#: src/Filesystem.py:25
+#, python-format
+msgid ""
+"Resize of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"Izmjena veličine datotečnog sustava nije uspjela. Pokušana je naredba: \"%s"
+"\" - Poruka sustava o pogrešci: %s"
+
+#: src/Filesystem.py:26
+#, python-format
+msgid ""
+"Check of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"Provjeravanje datotečnog sustava nije uspjela. Pokušana je naredba: \"%s\" - "
+"Poruka sustava o pogrešci: %s"
+
+#: src/Filesystem.py:27
+#, python-format
+msgid ""
+"Upgrade of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"Nadogradnja datotečnog sustava nije uspjela. Pokušana je naredba: \"%s\" - "
+"Poruka sustava o pogrešci: %s"
+
+#: src/Filesystem.py:143
+msgid "Unknown filesystem"
+msgstr "Nepoznati datotečni sustav"
+
+#: src/Filesystem.py:387
+msgid "GFS (local)"
+msgstr "GFS (lokalno)"
+
+#: src/Filesystem.py:485
+msgid "GFS (clustered)"
+msgstr "GFS (u skupini)"
+
+#: src/Filesystem.py:517 src/Filesystem.py:761
+msgid "Cluster name contains illegal character "
+msgstr "Naziv skupine sadrži nedozvoljen znak"
+
+#: src/Filesystem.py:520 src/Filesystem.py:764
+msgid "GFS name contains illegal character "
+msgstr "GFS naziv sadrži nedozvoljen znak"
+
+#: src/Filesystem.py:523 src/Filesystem.py:767
+msgid "Missing Cluster Name"
+msgstr "Nedostaje naziv skupine"
+
+#: src/Filesystem.py:526 src/Filesystem.py:770
+msgid "Missing GFS Name"
+msgstr "Nedostaje GFS naziv"
+
+#: src/Filesystem.py:631
+msgid "GFS2 (local)"
+msgstr "GFS2 (lokalno)"
+
+#: src/Filesystem.py:729
+msgid "GFS2 (clustered)"
+msgstr "GFS2 (u skupini)"
+
+#: src/Segment.py:44
+msgid "Stripe"
+msgstr "Oduzimanje"
+
+#: src/Segment.py:68
+msgid "Linear Mapping"
+msgstr "Linearno mapiranje"
+
+#: src/Segment.py:109
+msgid "Mirror"
+msgstr "Zrcalo"
+
+#: src/PhysicalVolume.py:142
+#, python-format
+msgid "Partition %s"
+msgstr "Particija %s"
+
+#: src/lvui.glade.h:1 src/lv_edit_props.glade.h:1 src/iscsi.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: src/lvui.glade.h:2
+msgid "1024"
+msgstr "1024"
+
+#: src/lvui.glade.h:3
+msgid "128"
+msgstr "128"
+
+#: src/lvui.glade.h:4
+msgid "16"
+msgstr "16"
+
+#: src/lvui.glade.h:5
+msgid "2"
+msgstr "2"
+
+#: src/lvui.glade.h:6
+msgid "256"
+msgstr "256"
+
+#: src/lvui.glade.h:7
+msgid "32"
+msgstr "32"
+
+#: src/lvui.glade.h:8
+msgid "4"
+msgstr "4"
+
+#: src/lvui.glade.h:9
+msgid "512"
+msgstr "512"
+
+#: src/lvui.glade.h:10
+msgid "64"
+msgstr "64"
+
+#: src/lvui.glade.h:11
+msgid "8"
+msgstr "8"
+
+#: src/lvui.glade.h:12
+msgid "Add Physical Volume to VG"
+msgstr "Grupi volumena dodaj FV"
+
+#: src/lvui.glade.h:13
+msgid ""
+"Add to existing \n"
+"Volume Group"
+msgstr ""
+"Dodaj u postojeću\n"
+"grupu volumena"
+
+#: src/lvui.glade.h:15
+msgid "Clustered"
+msgstr "U skupini"
+
+#: src/lvui.glade.h:16
+msgid ""
+"Create New\n"
+"Logical Volume"
+msgstr ""
+"Izradi novi\n"
+"logički volumen"
+
+#: src/lvui.glade.h:18
+msgid "Create Snapshot"
+msgstr "Izradi sliku"
+
+#: src/lvui.glade.h:19
+msgid ""
+"Create new \n"
+"Volume Group"
+msgstr ""
+"Izradi novu\n"
+"grupu volumena"
+
+#: src/lvui.glade.h:21
+msgid "Edit Properties"
+msgstr "Uredi svojstva"
+
+#: src/lvui.glade.h:22
+msgid "Enter path of Block Device to initialize"
+msgstr "Unesite putanju blok uređaja za inicijalizaciju"
+
+#: src/lvui.glade.h:23
+msgid ""
+"Extend\n"
+"Volume Group"
+msgstr ""
+"Proširi\n"
+"grupu volumena"
+
+#: src/lvui.glade.h:25
+msgid "Extend Volume Group"
+msgstr "Proširi grupu volumena"
+
+#: src/lvui.glade.h:26
+msgid "Format"
+msgstr "Oblikovanje"
+
+#: src/lvui.glade.h:27
+msgid "Initialize"
+msgstr "Inicijalizacija"
+
+#: src/lvui.glade.h:28
+msgid "Initialize Block Device"
+msgstr "Inicijalizacija blok uređaja"
+
+#: src/lvui.glade.h:29
+msgid "Initialize Entity"
+msgstr "Inicijalizacija entiteta"
+
+#: src/lvui.glade.h:30
+msgid "Initialize _Block Device"
+msgstr "Inicijalizacija _blok uređaja"
+
+#: src/lvui.glade.h:31
+msgid "Kilo"
+msgstr "Kilo"
+
+#: src/lvui.glade.h:32
+msgid "Logical Volume Management"
+msgstr "Upravljanje logičkim volumenima"
+
+#: src/lvui.glade.h:33
+msgid "Manage Volumes"
+msgstr "Upravljanje volumenima"
+
+#: src/lvui.glade.h:34
+msgid "Mark Volume Group as 'clustered'"
+msgstr "Grupu volumena označiti kao 'u skupini'"
+
+#: src/lvui.glade.h:35
+msgid "Maximum Logical Volumes"
+msgstr "Najviše logičkih volumena"
+
+#: src/lvui.glade.h:36
+msgid "Maximum Physical Volumes"
+msgstr "Najmanje fizičkih volumena"
+
+#: src/lvui.glade.h:37
+msgid "Meg"
+msgstr "Meg"
+
+#: src/lvui.glade.h:38
+msgid ""
+"Migrate Selected\n"
+"Extent(s) From Volume"
+msgstr ""
+"Odabrana proširenja\n"
+"preseli iz volumena"
+
+#: src/lvui.glade.h:40
+msgid "New Volume Group"
+msgstr "Nova grupa volumena"
+
+#: src/lvui.glade.h:41
+msgid "Physical Extent Size"
+msgstr "Veličina fizičkog proširenja"
+
+#: src/lvui.glade.h:42
+msgid ""
+"Remove \n"
+"Logical Volume"
+msgstr ""
+"Ukloni\n"
+"logički volumen"
+
+#: src/lvui.glade.h:44
+msgid ""
+"Remove Selected\n"
+"Logical Volume(s)"
+msgstr ""
+"Ukloni odabrane\n"
+"logičke volumene"
+
+#: src/lvui.glade.h:46
+msgid ""
+"Remove Selected\n"
+"Physical Volume(s)"
+msgstr ""
+"Ukloni odabrane\n"
+"fizičke volumene"
+
+#: src/lvui.glade.h:48
+msgid ""
+"Remove Volume from\n"
+"Volume Group"
+msgstr ""
+"Ukloni volumen iz\n"
+"grupe volumena"
+
+#: src/lvui.glade.h:50
+msgid ""
+"Remove volume \n"
+"from LVM"
+msgstr ""
+"Ukloni volumen\n"
+"upravljanja volumenima"
+
+#: src/lvui.glade.h:52
+msgid "Select a Volume Group to add this PV to:"
+msgstr "Odaberite grupu volumena koju želite dodati u ovaj FV:"
+
+#: src/lvui.glade.h:53
+msgid "Some text"
+msgstr "Nekakav tekst"
+
+#: src/lvui.glade.h:54
+msgid "Volume Group Name"
+msgstr "Naziv grupe volumena"
+
+#: src/lvui.glade.h:55
+msgid "_Reload"
+msgstr "_Osvježi"
+
+#: src/lvui.glade.h:56
+msgid "_Tools"
+msgstr "_Alati"
+
+#: src/lvui.glade.h:57
+msgid "_iSCSI Configuration"
+msgstr ""
+
+#: src/lvui.glade.h:58
+msgid "extend vg message:"
+msgstr "proširi GV poruku:"
+
+#: src/lv_edit_props.glade.h:2
+msgid ""
+"4\n"
+"8\n"
+"16\n"
+"32\n"
+"64\n"
+"128\n"
+"256\n"
+"512"
+msgstr ""
+"4\n"
+"8\n"
+"16\n"
+"32\n"
+"64\n"
+"128\n"
+"256\n"
+"512"
+
+#: src/lv_edit_props.glade.h:10
+msgid "<b>Filesystem</b>"
+msgstr "<b>Datotečni sustav</b>"
+
+#: src/lv_edit_props.glade.h:11
+msgid "<b>LV Properties</b>"
+msgstr "<b>LV svojstva</b>"
+
+#: src/lv_edit_props.glade.h:12
+msgid "<b>Size</b>"
+msgstr "<b>Veličina</b>"
+
+#: src/lv_edit_props.glade.h:13
+msgid "Add entry to /etc/fstab"
+msgstr "Dodaj unos u /etc/fstab"
+
+#: src/lv_edit_props.glade.h:14
+msgid "Create New Logical Volume (LV)"
+msgstr "Izradi novi logički volumen (LV)"
+
+#: src/lv_edit_props.glade.h:15
+msgid "Filesystem is not resizable"
+msgstr "Veličinu datotečnog sustava nije moguće izmijeniti"
+
+#: src/lv_edit_props.glade.h:16
+msgid "Free space in Volume Group label"
+msgstr "Oznaka slobodnog prostora u grupi volumena"
+
+#: src/lv_edit_props.glade.h:17
+msgid "Free space remaining label"
+msgstr "Oznaka preostalog slobodnog prostora"
+
+#: src/lv_edit_props.glade.h:18
+msgid "Kilobytes granularity"
+msgstr "Zrnatost kilobajta"
+
+#: src/lv_edit_props.glade.h:19
+msgid "LV name:"
+msgstr "LV naziv:"
+
+#: src/lv_edit_props.glade.h:20
+msgid "LV size"
+msgstr "LV veličina"
+
+#: src/lv_edit_props.glade.h:21
+msgid "LVs under snapshots are not resizable"
+msgstr "Veličinu LV sa snimkama nije moguće izmijeniti"
+
+#: src/lv_edit_props.glade.h:22
+msgid "Linear"
+msgstr "Linearno"
+
+#: src/lv_edit_props.glade.h:23
+msgid "Mirrored"
+msgstr "Zrcaljeno"
+
+#: src/lv_edit_props.glade.h:24
+msgid "Mirrored LVs are not resizable"
+msgstr "Zrcaljenim LV nije moguće izmijeniti veličinu"
+
+#: src/lv_edit_props.glade.h:25
+msgid "Mount"
+msgstr "Pristupi"
+
+#: src/lv_edit_props.glade.h:26
+msgid "Mount point:"
+msgstr "Točka pristupa:"
+
+#: src/lv_edit_props.glade.h:27
+msgid "Mount when rebooted"
+msgstr "Pristupi po ponovnom pokretanju"
+
+#: src/lv_edit_props.glade.h:28
+msgid "Size beg"
+msgstr "Poč. vel."
+
+#: src/lv_edit_props.glade.h:29
+msgid "Size end"
+msgstr "Zav. vel."
+
+#: src/lv_edit_props.glade.h:30
+msgid "Striped"
+msgstr "Oduzeto"
+
+#: src/lv_edit_props.glade.h:31
+msgid "Use remaining"
+msgstr "Upotrijebi preostalo"
+
+#: src/lv_edit_props.glade.h:32
+msgid "stripes"
+msgstr "oduzimanja"
+
+#: src/migrate_extents.glade.h:1
+msgid "<b>Destination</b>"
+msgstr "<b>Odredište</b>"
+
+#: src/migrate_extents.glade.h:2
+msgid "<b>Migration Policy</b>"
+msgstr "<b>Pravila preseljenja</b>"
+
+#: src/migrate_extents.glade.h:3
+msgid "Anywhere - not implemented"
+msgstr "Bilo gdje - još nije implementirano"
+
+#: src/migrate_extents.glade.h:4
+msgid "Automatically choose PVs to migrate to"
+msgstr "Automatski odaberi FV na koje će biti preseljeno"
+
+#: src/migrate_extents.glade.h:5
+msgid "Contiguous"
+msgstr "Povezano"
+
+#: src/migrate_extents.glade.h:6
+msgid "Destination:"
+msgstr "Odredište:"
+
+#: src/migrate_extents.glade.h:7
+msgid ""
+"In order to remove PV, extents in use have to be migrated.\n"
+"Select extents' destination and migration policy."
+msgstr ""
+"Da biste ukloniti FV potrebno je preseliti upotrebljavana proširenja.\n"
+"Odaberite odredište proširenja i pravila preseljenja."
+
+#: src/migrate_extents.glade.h:9
+msgid "Inherit"
+msgstr "Nasljedno"
+
+#: src/migrate_extents.glade.h:10
+msgid "Inherit policy from Volume Group"
+msgstr "Pravila naslijedi od grupe volumena"
+
+#: src/migrate_extents.glade.h:11
+msgid "Migrate Extents"
+msgstr "Preseli proširenja"
+
+#: src/migrate_extents.glade.h:12
+msgid "Migrate anywhere even if that reduces performance"
+msgstr "Preseli bilo kamo, iako bi to moglo smanjiti performanse."
+
+#: src/migrate_extents.glade.h:13
+msgid "New extents are adjacent to existing ones"
+msgstr "Nova su proširenja jedno pokraj drugoga"
+
+#: src/migrate_extents.glade.h:14
+msgid "Normal"
+msgstr "Normalno"
+
+#: src/migrate_extents.glade.h:15
+msgid "Only migrate extents belonging to LV"
+msgstr "Preseli samo proširenja koja pripadaju LV-u"
+
+#: src/migrate_extents.glade.h:16
+msgid "Use common sense"
+msgstr "Upotrijebi zdravi razum"
+
+#: src/iscsi.glade.h:2
+#, fuzzy
+msgid "3260"
+msgstr "32"
+
+#: src/iscsi.glade.h:3
+msgid "Active iSCSI targets are selected "
+msgstr ""
+
+#: src/iscsi.glade.h:4
+msgid "Add New Target"
+msgstr ""
+
+#: src/iscsi.glade.h:5
+msgid "Default port is 3260"
+msgstr ""
+
+#: src/iscsi.glade.h:6
+msgid "Enter a hostname (or an IP address) of new target to add"
+msgstr ""
+
+#: src/iscsi.glade.h:7
+msgid "Hostname"
+msgstr ""
+
+#: src/iscsi.glade.h:8
+msgid "New iSCSI Target"
+msgstr ""
+
+#: src/iscsi.glade.h:9
+#, fuzzy
+msgid "Port"
+msgstr "Oblikovanje"
+
+#: src/iscsi.glade.h:10
+msgid ""
+"Specify a hostname of new target \n"
+"to add, and click \"OK\". "
+msgstr ""
+
+#: src/iscsi.glade.h:12
+msgid "iSCSI Initiator"
+msgstr ""
+
+#~ msgid ""
+#~ "LVM locks are disabled!!! \n"
+#~ "Massive data corruption may occur.\n"
+#~ "Enable locking (locking_type=1 or 2 in /etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "LVM zaključavanja su onemogućena!!! \n"
+#~ "Može doći do masovnog oštećivanja podataka.\n"
+#~ "Omogućite zaključavanje (locking_type=1 ili 2 u /etc/lvm/lvm.conf)."
+
+#~ msgid ""
+#~ "LVM is configured to use Cluster Locking mechanism, but clvmd daemon is "
+#~ "not running. Start daemon with command:\n"
+#~ "service clvmd start \n"
+#~ "or, turn off cluster locking (locking_type=1 in /etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "LVM je konfiguriran za upotrebu mehanizma zaključavanja skupine, ali "
+#~ "demon clvmd nije pokrenut. Pokrenite demon pomoću naredbe:\n"
+#~ "service clvmd start \n"
+#~ "ili isključite zaključavanje skupine (locking_type=1 u /etc/lvm/lvm.conf)."
+
+#~ msgid ""
+#~ "LVM is configured to use Cluster Locking mechanism, but cluster is not "
+#~ "quorate.\n"
+#~ "Either wait until cluster is quorate or turn off cluster locking "
+#~ "(locking_type=1 in /etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "LVM je konfiguriran za upotrebu mehanizma zaključavanja skupine, ali "
+#~ "skupina nema kvorum.\n"
+#~ "Ili pričekajte da skupina postigne kvorum ili isključite zaključavanje "
+#~ "skupine (locking_type=1 u /etc/lvm/lvm.conf)."
+
+#~ msgid ""
+#~ "%s only supports file and cluster based locking (locking_type=1 or 2 in /"
+#~ "etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "%s podržava samo zaključavanje na osnovi datoteke ili skupine "
+#~ "(locking_type=1 ili 2 u /etc/lvm/lvm.conf)."
+
+#~ msgid "Name for Volume Group: "
+#~ msgstr "Naziv grupe volumena: "
+
+#~ msgid "New Volume Group Form"
+#~ msgstr "Nova grupa volumena od"

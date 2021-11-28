@@ -1,0 +1,1772 @@
+# translation of system-config-lvm.master.hi.po to Maithili
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Rajesh Ranjan <rranjan@redhat.com>, 2004, 2005, 2006, 2007.
+# Rajesh Ranjan <rajesh672@gmail.com>, 2009.
+# Rajesh Ranjan <rajesh672 at gmail dot com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-lvm.master.hi\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-16 02:34+0000\n"
+"PO-Revision-Date: 2011-01-17 14:55+0530\n"
+"Last-Translator: Rajesh Ranjan <rajesh672 at gmail dot com>\n"
+"Language-Team: Maithili <bhashaghar@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"\n"
+"\n"
+
+#: ../src/InputController.py:37 ../src/Properties_Renderer.py:24
+#: ../src/Volume_Tab_View.py:30 ../src/system-config-lvm.py:37
+#, python-format
+msgid ""
+"\n"
+"  Unable to initialize graphical environment. Most likely cause of failure\n"
+"  is that the tool was not run using a graphical environment. Please either\n"
+"  start your graphical user interface or set your DISPLAY variable.\n"
+"                                                                                \n"
+"  Caught exception: %s\n"
+msgstr ""
+"\n"
+"  आलेखीय वातावरण शुरू करने में असमर्थ. विफलता का अधिकतम संभव कारण है कि\n"
+"  उपकरण आलेखीय वातावरण के प्रयोग से नहीं चलता है. कृपया या तो\n"
+"  अपना आलेखीय उपयोक्ता शुरू करें या अपने DISPLAY चर को व्यवस्थित करें.\n"
+"                                                                                \n"
+"  अपवाद मिला: %s\n"
+
+#. ##TRANSLATOR: The string below is seen when adding a new Physical
+#. ##Volume to an existing Volume Group.
+#: ../src/InputController.py:57
+#, python-format
+msgid "Select a Volume Group to add %s to:"
+msgstr "%s को इसमें जोड़ने के लिये वॉल्यूम ग्रूप चुनें:"
+
+#. ##TRANSLATOR: The two strings below refer to the name and type of
+#. ##available disk entities on the system. There are two types --
+#. ##The first is an 'unallocated physical volume' which is a disk or
+#. ##partition that has been initialized for use with LVM, by writing
+#. ##a special label onto the first block of the partition. The other type
+#. ##is an 'uninitialized entity', which is an available disk or partition
+#. ##that is NOT yet initialized to be used with LVM. Hope this helps give
+#. ##some context.
+#: ../src/InputController.py:85
+msgid "Name"
+msgstr "नाम"
+
+#: ../src/InputController.py:86
+msgid "Size"
+msgstr "आकार"
+
+#: ../src/InputController.py:87
+msgid "Entity Type"
+msgstr "एंटिटी प्रकार"
+
+#: ../src/InputController.py:89
+msgid "Unallocated Physical Volume"
+msgstr "असंभाजित फिजिकल वॉल्यूम"
+
+#: ../src/InputController.py:90
+msgid "Uninitialized Disk Entity"
+msgstr "अप्रारंभीकृत डिस्क एंटिटी"
+
+#: ../src/InputController.py:91
+#, python-format
+msgid "Select disk entities to add to the %s Volume Group:"
+msgstr "%s वॉल्यूम ग्रूप में जोड़ने के लिये एक डिस्क एंटिटी चुनें:"
+
+#: ../src/InputController.py:93
+msgid ""
+"A Volume Group must be made up of two or more Physical Volumes to support "
+"striping. This Volume Group does not meet that requirement."
+msgstr ""
+"एक वॉल्यूम ग्रूप के स्ट्रिपिंग को समर्थन देने के लिये दो या ज्यादा फिजिकल वॉल्यूम से मिलकर "
+"जरूर बना होना चाहिये. यह वॉल्यूम ग्रूप जरूरतों को पूरा नहीं करता है."
+
+#: ../src/InputController.py:95
+#, python-format
+msgid ""
+"A Logical Volume with the name %s already exists in this Volume Group. "
+"Please choose a unique name."
+msgstr ""
+"%s नाम के साथ एक लॉजिकल वॉल्यूम पहले से ही इस वॉल्यूम ग्रूप में मौजूद है. कृपया एक अद्वितीय "
+"नाम चुनें."
+
+#: ../src/InputController.py:97
+#, python-format
+msgid "A Volume Group with the name %s already exists. Please choose a unique name."
+msgstr "%s नाम के साथ पहले से ही एक वॉल्यूम ग्रूप मौजूद है. कृपया एक अद्वितीय नाम चुनें."
+
+#: ../src/InputController.py:99
+msgid "A Name must be provided for the new Logical Volume"
+msgstr "नये लॉजिकल वॉल्यूम के लिये एक नाम जरूर दिया जाना चाहिये"
+
+#: ../src/InputController.py:101
+msgid "A Name must be provided for the new Volume Group"
+msgstr "नये वॉल्यूम ग्रूप के लिये एक नाम जरूर दिया जाना चाहिये"
+
+#: ../src/InputController.py:103
+#, python-format
+msgid "The specified mount point, %s, does not exist. Do you wish to create it?"
+msgstr "निर्दिष्ट आरोह बिंदु %s मौजूद नहीं है. क्या आप इसे बनाना चाहते हैं?"
+
+#: ../src/InputController.py:105
+#, python-format
+msgid "The creation of mount point %s unexpectedly failed."
+msgstr "आरोह बिंदु %s का निर्माण अप्रत्याशित रूप से विफल रहा."
+
+#: ../src/InputController.py:107
+msgid "This capability is not yet implemented in this version"
+msgstr "यह क्षमता इस संस्करण में अबतक लागू नहीं की गई है."
+
+#: ../src/InputController.py:109
+msgid ""
+"The number of Logical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "इस वॉल्यूम ग्रूप में लॉजिकल वॉल्यूम की संख्या इसके अधिकतम सीमा तक पहुंच गई है."
+
+#: ../src/InputController.py:111
+msgid ""
+"The number of Physical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "इस वॉल्यूम ग्रूप में फिजिकल वॉल्यूम की संख्या इसके अधिकतम सीमा तक पहुंच गई है."
+
+#: ../src/InputController.py:113
+#, python-format
+msgid ""
+"At most %s Physical Volumes can be added to this Volume Group before the "
+"limit is reached."
+msgstr ""
+"इस वॉल्यूम ग्रूप में ज्यादा से ज्यादा %s फिजिकल वॉल्यूम जोड़ा जा सकता है जबतक कि अधिकतम "
+"सीमा तक पहुंच गई है."
+
+#: ../src/InputController.py:115
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space for new Logical Volumes. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"वॉल्यूम ग्रूप %s के पास नये लॉजिकल वॉल्यूम को हटाने के लिये पर्याप्त स्थान नहीं है. एक "
+"संभावित हल एक अतिरिक्त फिजिकल वॉल्यूम को वॉल्यूम ग्रूप में जोड़ा जाना होगा."
+
+#: ../src/InputController.py:117
+msgid "A snapshot of a snapshot is not supported."
+msgstr "स्नेपशॉट का स्नेपशॉट समर्थित नहीं है."
+
+#: ../src/InputController.py:118
+msgid "A snapshot of a mirrored Logical Volume is not supported."
+msgstr "मिरर किये लॉजिकल वॉल्यूम का स्नेपशॉट समर्थित नहीं है."
+
+#: ../src/InputController.py:120
+#, python-format
+msgid ""
+"Logical volume %s has snapshot %s currently associated with it. Please "
+"remove the snapshot first."
+msgstr "%s लॉजिकल वॉल्यूम के पास %s स्नेपशॉट अभी इसके साथ जुड़ा है. पहले स्नेपशॉट हटायें."
+
+#: ../src/InputController.py:121
+#, python-format
+msgid ""
+"Logical volume %s has snapshots: %s currently associated with it. Please "
+"remove snapshots first."
+msgstr "लॉजिकल वॉल्यूम %s के पास स्नेपशॉट है: %s अभी इसके साथ जुड़ा. पहले स्नेपशॉट हटायें."
+
+#: ../src/InputController.py:123
+msgid "Undefined type conversion error in model factory. Unable to complete task."
+msgstr "मॉडल फैक्टरी में अपरिभाषित प्रकार कनवर्सन त्रुटि. कार्य पूरा करने में असमर्थ."
+
+#: ../src/InputController.py:125
+#, python-format
+msgid ""
+"BIG WARNING: Logical Volume %s has an %s file system on it and is currently "
+"mounted on %s. Are you absolutely certain that you wish to discard the data "
+"on this mounted filesystem?"
+msgstr ""
+"गंभीर चेतावनी: %s लॉजिकल वॉल्यूम के पास %s फाइल सिस्टम है और अभी %s पर आरोहित है. "
+"क्या आप पूरी तरह से निश्चित हैं कि आप इस आरोहित फाइल सिस्टम के आंकड़े को छोड़ना चाहते हैं?"
+
+#: ../src/InputController.py:127
+#, python-format
+msgid ""
+"Logical Volume %s is currently mounted on %s. In order to complete request, "
+"it has to be unmounted. Are you sure you want it unmounted?"
+msgstr ""
+"%s लॉजिकल वॉल्यूम %s पर आरोहित है. आग्रह पूरा करने के लिये, इसे अनारोहित किया जाना है. "
+"क्या आप इसे अनारोहित करने के लिये निश्चित हैं?"
+
+#. ##TRANSLATOR: An extent below is an abstract unit of storage. The size
+#. ##of an extent is user-definable.
+#: ../src/InputController.py:133
+#, python-format
+msgid "Unused space on %s"
+msgstr "%s पर अप्रयुक्त स्थान"
+
+#: ../src/InputController.py:134
+#, python-format
+msgid "%s megabytes"
+msgstr "%s मेगाबाइट"
+
+#: ../src/InputController.py:135
+#, python-format
+msgid "%s kilobytes"
+msgstr "%s किलोबाइट"
+
+#: ../src/InputController.py:136
+#, python-format
+msgid "%s gigabytes"
+msgstr "%s गीगाबाइट"
+
+#: ../src/InputController.py:137
+#, python-format
+msgid "%s extents"
+msgstr "%s विस्तार"
+
+#: ../src/InputController.py:139
+msgid "Remaining free space in Volume Group:\n"
+msgstr "वॉल्यूम ग्रूप में बचा मुक्त स्थान:\n"
+
+#: ../src/InputController.py:140
+msgid "Remaining space for this Volume:\n"
+msgstr "इस आयतन के लिये शेष स्थान:\n"
+
+#: ../src/InputController.py:142
+msgid "Extents"
+msgstr "विस्तार"
+
+#: ../src/InputController.py:143
+msgid "Gigabytes"
+msgstr "गीगाबाइट"
+
+#: ../src/InputController.py:144
+msgid "Megabytes"
+msgstr "मेगाबाइट"
+
+#: ../src/InputController.py:145
+msgid "Kilobytes"
+msgstr "किलोबाइट"
+
+#: ../src/InputController.py:147
+#, python-format
+msgid "The %s should only contain number values"
+msgstr "%s को सिर्फ संख्या मान रखना चाहिये"
+
+#: ../src/InputController.py:148
+msgid ""
+"The Maximum Physical Volumes field should contain only integer values "
+"between 1 and 256"
+msgstr "अधिकतम फिजिकल वॉल्यूम क्षेत्र को 1 और 256 के बीच का पूर्णांक मान सिर्फ रखना चाहिये."
+
+#: ../src/InputController.py:149
+msgid ""
+"The Maximum Logical Volumes field should contain only integer values between "
+"1 and 256"
+msgstr "अधिकतम लॉजिकल वॉल्यूम क्षेत्र को 1 और 256 के बीच का पूर्णांक मान सिर्फ रखना चाहिये."
+
+#: ../src/InputController.py:151
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from Logical Volume "
+"Management?"
+msgstr "क्या आप पूरी तरह निश्चित हैं कि आप लॉजिकल वॉल्यूम प्रबंधन से %s को हटाना चाहते हैं?"
+
+#: ../src/InputController.py:153
+#, python-format
+msgid ""
+"The Physical Volume named %s, that you wish to remove, has data from active "
+"Logical Volume(s) mapped to its extents. Because it is the only Physical "
+"Volume in the Volume Group, there is no place to move the data to. "
+"Recommended action is either to add a new Physical Volume before removing "
+"this one, or else remove the Logical Volumes that are associated with this "
+"Physical Volume."
+msgstr ""
+"%s नामक फिजिकल वॉल्यूम, जिसे आप हटाना चाहते हैं, के पास सक्रिय लॉजिकल वॉल्यूम से इसके "
+"विस्तार पर मैप किया आंकड़ा है. चूंकि यह वॉल्यूम ग्रूप में एकमात्र फिजिकल वॉल्यूम है, इसलिये "
+"आंकड़ों को हटाने के लिये कोई स्थान नहीं है. अनुशंसित क्रिया या तो एक नये फिजिकल वॉल्यूम को "
+"इसे हटाने के पहले जोड़ना है, या लॉजिकल वॉल्यूम को हटायें जो इस फिजिकल वॉल्यूम से जुड़ा है."
+
+#: ../src/InputController.py:154
+#, python-format
+msgid "Are you quite certain that you wish to remove %s from the %s Volume Group?"
+msgstr "क्या आप पूरी तरह से निश्चित हैं कि %s वॉल्यूम ग्रूप से %s को हटाना चाहते हैं?"
+
+#: ../src/InputController.py:155
+#, python-format
+msgid ""
+"Removing Physical Volume %s from the Volume Group %s will leave the Volume "
+"group empty, and it will be removed as well. Do you wish to proceed?"
+msgstr ""
+"फिजिकल वॉल्यूम %s को वॉल्यूम ग्रूप %s से हटाना वॉल्यूम ग्रूप को खाली कर देगा, और साथ ही "
+"यह हटा दिया जायेगा. क्या आप आगे बढ़ना चाहते हैं?"
+
+#: ../src/InputController.py:156
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space to move the data stored on %s. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"वॉल्यूम ग्रूप %s के पास %s पर जमा आंकड़ों को हटाने के लिये पर्याप्त स्थान नहीं. एक संभावित "
+"हल एक अतिरिक्त फिजिकल वॉल्यूम को वॉल्यूम ग्रूप में जोड़ा जाना होगा."
+
+#: ../src/InputController.py:157
+msgid ""
+"The dm-mirror module is either not loaded in your kernel, or your kernel "
+"does not support the dm-mirror target. If it is supported, try running "
+"\"modprobe dm-mirror\". Otherwise, operations that require moving data on "
+"Physical Extents are unavailable."
+msgstr ""
+"dm-mirror मौड्यूल या तो आपके कर्नेल में भारित नहीं किया गया है या आपका कर्नेल dm-mirror "
+"लक्ष्य को समर्थन नहीं देता है. अगर यह समर्थन दिया जाता है तो \"modprobe dm-mirror\" "
+"को चलाने की कोशिश करें. अन्यथा, वह संक्रिया जिसके लिये भौतिक विस्तार पर से आंकड़ों को "
+"हटाने की जरूरत है, अनुपलब्ध है."
+
+#: ../src/InputController.py:158
+msgid ""
+"The dm-snapshot module is either not loaded in your kernel, or your kernel "
+"does not support the dm-snapshot target. If it is supported, try running "
+"\"modprobe dm-snapshot\". Otherwise, creation of snapshots is unavailable."
+msgstr ""
+"dm-snapshot मौड्यूल या तो आपके कर्नेल में भारित नहीं किया गया है या आपका कर्नेल dm-"
+"snapshot लक्ष्य को समर्थन नहीं देता है. अगर यह समर्थन दिया जाता है तो \"modprobe dm-"
+"snapshot\" को चलाने की कोशिश करें. अन्यथा, स्नेपशॉट का निर्माण अनुपलब्ध है."
+
+#: ../src/InputController.py:160
+#, python-format
+msgid "Are you quite certain that you wish to remove logical volume %s?"
+msgstr "क्या आप पूरी तरह से निश्चित हैं कि आप लॉजिकल वॉल्यूम %s को हटाना चाहते हैं?"
+
+#: ../src/InputController.py:161
+#, python-format
+msgid ""
+"Logical volume %s contains %s filesystem. All data on it will be lost! Are "
+"you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"%s लॉजिकल वॉल्यूम के पास %s फाइल सिस्टम है. क्या आप पूरी तरह से निश्चित हैं कि आप इस %s "
+"लॉजिकल वॉल्यूम छोड़ना चाहते हैं?"
+
+#: ../src/InputController.py:162
+#, python-format
+msgid ""
+"Logical volume %s contains data from directory %s. All data in it will be "
+"lost! Are you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"लॉजिकल वॉल्यूम %s में %s निर्देशिका से आंकड़ा समाहित है. इसमें मौजूद सारे आंकड़े समाप्त हो "
+"जायेंगे! क्या आप पूरी तरह से निश्चित हैं कि आप लॉजिकल वॉल्यूम %s हटाना चाहते हैं?"
+
+#: ../src/InputController.py:308
+msgid ""
+"In order for Volume Group to be safely used in clustered environment, lvm2-"
+"cluster rpm has to be installed, `lvmconf --enable-cluster` has to be "
+"executed and clvmd service has to be running"
+msgstr ""
+"क्लस्टर किये वातावरण में वॉल्यूम समूह को सुरक्षित रूप से प्रयोग करने के लिये, lvm2-क्लस्टर rpm "
+"अधिष्ठापित किया जाना है, `lvmconf --enable-cluster` को निष्पादित किया जाना है और "
+"clvmd सेवा को चलना चाहिये"
+
+#: ../src/InputController.py:367
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror log of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"फिजिकल वॉल्यूम %s में लॉजिकल वॉल्यूम %s के मिरर लॉग में रहने वाली सामग्री समाहित करता "
+"है. मिरर किया लॉजिकल वॉल्यूम अबतक प्रवासन के योग्य नहीं है, इसलिये %s हटाने योग्य नहीं है."
+
+#: ../src/InputController.py:370
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror image of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"फिजिकल वॉल्यूम %s में लॉजिकल वॉल्यूम %s के मिरर लॉग में रहने वाली सामग्री समाहित करता "
+"है. मिरर किया लॉजिकल वॉल्यूम अबतक प्रवासन के योग्य नहीं है, इसलिये %s हटाने योग्य नहीं है."
+
+#: ../src/InputController.py:373
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, a snapshot of %s. "
+"Snapshots are not yet migratable, so %s is not removable."
+msgstr ""
+"फिजिकल वॉल्यूम %s में %s के स्नेपशॉट %s समाहित करता है. स्पेशॉट अबतक प्रवासन के योग्य नहीं "
+"है, इसलिये %s हटाने योग्य नहीं है."
+
+#: ../src/InputController.py:378
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshot %"
+"s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"फिजिकल वॉल्यूम %s में %s का अवयव समाहित है, %s का मूल. स्नेपशॉट का मूल, इसलिये %s हटाने "
+"योग्य नहीं है."
+
+#: ../src/InputController.py:380
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshots "
+"%s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"फिजिकल वॉल्यूम %s में %s को समाहित करता विस्तार समाहित है, स्नेपशॉट का मूल%s. स्नेपशॉट "
+"मूल अबतक भेजे जाने योग्य नहीं है, इसलिये %s हटाने योग्य नहीं है."
+
+#: ../src/InputController.py:567
+#, python-format
+msgid ""
+"Logical Volume \"%s\" has snapshots that are not selected for removal. They "
+"must be removed as well."
+msgstr ""
+"लॉजिकल वॉल्यूम \"%s\" के पास स्नेपशॉट है जो कि हटाने के लिये समर्थित नहीं है. उन्हे जरूर "
+"हटाया जाना चाहिये."
+
+#: ../src/InputController.py:582
+#, python-format
+msgid "\"%s\", an origin of snapshot \"%s\", has been deleted from removal list."
+msgstr "\"%s\", \"%s\" स्नेपशॉट का मूल, को हटाये जाने वाली सूची से मिटाया जा रहा है."
+
+#: ../src/InputController.py:613
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a mirror. Mirrors are "
+"not migratable, so %s is not removable."
+msgstr ""
+"फिजिकल वॉल्यूम \"%s\" मिरर में शामिल विस्तार को शामिल करता है. मिरर उत्प्रवासनीय नहीं "
+"है, इसलिये %s हटाने योग्य नहीं है."
+
+#: ../src/InputController.py:616
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a snapshot or a "
+"snapshot's origin. Snapshots are not migratable, so %s is not removable."
+msgstr ""
+"फिजिकल वॉल्यूम \"%s\" में स्नेपशॉट में विस्तार समाहित है या एक स्नेपशॉट मूल. स्नेपशॉट भेजे "
+"जाने योग्य नहीं है, इसलिये %s हटाने योग्य नहीं है."
+
+#: ../src/InputController.py:681
+msgid "The path you specified does not exist."
+msgstr "आपके द्वारा निर्दिष्ट पथ मौजूद नहीं है."
+
+#: ../src/InputController.py:688
+msgid "The path you specified is not a Block Device."
+msgstr "आपके द्वारा निर्दिष्ट पथ एक ब्लॉक युक्ति नहीं है."
+
+#: ../src/InputController.py:759
+#, python-format
+msgid "Initialization of %s failed"
+msgstr "%s का आरंभीकरण विफल रहा"
+
+#: ../src/InputController.py:1007 ../src/InputController.py:1010
+msgid "Please select some extents first"
+msgstr "कृपया पहले कुछ विस्तार चुनें"
+
+#: ../src/InputController.py:1044
+msgid ""
+"There are not enough free extents to perform the necessary migration. Adding "
+"more physical volumes would solve the problem."
+msgstr ""
+"आवश्यक उत्प्रवासन के संपादन के लिये पर्याप्त मुक्त स्थान नहीं है. ज्यादा फिजिकल वॉल्यूम समस्या "
+"का हल करेगा."
+
+#: ../src/InputController.py:1206
+msgid "Migrate extents"
+msgstr "विस्तार उत्प्रवासित करें"
+
+#: ../src/InputController.py:1334
+msgid "Options"
+msgstr "विकल्प"
+
+#: ../src/InputController.py:1368
+#, python-format
+msgid "Create A Snapshot of %s"
+msgstr "%s का एक स्नेपशॉट बनायें"
+
+#: ../src/InputController.py:1370
+msgid "Create New Logical Volume"
+msgstr "नया लॉजिकल वॉल्यूम बनायें"
+
+#: ../src/InputController.py:1373
+#, python-format
+msgid "Edit %s, a Snapshot of %s"
+msgstr "%s संपादित करें, %s का स्नेपशॉट"
+
+#: ../src/InputController.py:1376
+msgid "Edit Logical Volume"
+msgstr "लॉजिकल वॉल्यूम संपादित करें"
+
+#: ../src/InputController.py:1536
+msgid "Underlying Logical Volume Management does not support mirroring"
+msgstr "अंतरनिहित लॉजिकल वॉल्यूम मिरर को समर्थन नहीं करता है"
+
+#: ../src/InputController.py:1543
+msgid "Striped Logical Volumes cannot be mirrored."
+msgstr "स्ट्रिप लॉजिकल वॉल्यूम मिरर नहीं किया जा सकता है."
+
+#: ../src/InputController.py:1550
+msgid "Logical Volumes with associated snapshots cannot be mirrored yet."
+msgstr "जुड़े स्नेपशॉट के साथ लॉजिकल वॉल्यूम को अबतक मिरर नहीं किया जा सकता है."
+
+#. mirror images placement: diff HDs or anywhere
+#. prompt
+#: ../src/InputController.py:1557
+msgid ""
+"The primary purpose of mirroring is to protect data in the case of hard "
+"drive failure. Do you want to place mirror images onto different hard drives?"
+msgstr ""
+"मिरर करने का प्राथमिक उद्देश्य आंकड़ो को सुरक्षित रखना है हार्ड ड्राइव विफल रहने की स्थिति "
+"में. क्या आप मिरर बिंब रखना चाहते हैं अलग हार्ड ड्राइव पर?"
+
+#: ../src/InputController.py:1566
+msgid "Less than 3 hard drives are available with free space. Disabling mirroring."
+msgstr "3 से कम हार्ड ड्राइव मुक्त स्थान के साथ उपलब्ध है. मिरर को निष्क्रिय कर रहा है."
+
+#: ../src/InputController.py:1571
+msgid ""
+"There must be free space on at least three Physical Volumes to enable "
+"mirroring"
+msgstr "कम से कम तीन फिजिकल वॉल्यूम पर मिरर को समर्थ करने के लिये मुक्त स्थान जरूर होना चाहिये"
+
+#: ../src/InputController.py:1579
+msgid ""
+"The size of the Logical Volume has been adjusted to the maximum available "
+"size for mirrors."
+msgstr "लॉजिकल वॉल्यूम का आकार मिरर के अधिकतम उपलब्ध आकार के लिये समायोजित किया गया है."
+
+#: ../src/InputController.py:1584
+#, python-format
+msgid ""
+"There is not enough free space to add mirroring. Reduce size of Logical "
+"Volume to at most %s, or add Physical Volumes."
+msgstr ""
+"मिरर जोड़ने के लिये पर्याप्त मुक्त स्थान नहीं है. लॉजिकल वॉल्यूम का आकार घटायें ज्यादा से "
+"ज्यादा %s तक, या फिजिकल वॉल्यूम जोड़ें."
+
+#: ../src/InputController.py:1948
+msgid "Names beginning with \"snapshot\" or \"pvmove\" are reserved keywords."
+msgstr "\"snapshot\" या \"pvmove\" से शुरू नाम सुरक्षित बीजशब्द है."
+
+#: ../src/InputController.py:1950
+msgid "Names containing \"_mlog\" or \"_mimage\" are reserved keywords."
+msgstr "\"_mlog\" या \"_mimage\" को समाहित करता नाम सुरक्षित बीजशब्द है."
+
+#: ../src/InputController.py:1952
+msgid "Names beginning with a \"-\" are invalid"
+msgstr "\"-\" के साथ शुरू नाम अवैध है"
+
+#: ../src/InputController.py:1954
+msgid "Name can be neither \".\" nor \"..\""
+msgstr "नाम न तो \".\" न \"..\" हो सकता है."
+
+#: ../src/InputController.py:1960
+msgid "Whitespaces are not allowed in Logical Volume names"
+msgstr "लॉजिकल वॉल्यूम नाम में खाली स्थान अनुमति प्राप्त है."
+
+#: ../src/InputController.py:1963
+#, python-format
+msgid "Invalid character \"%s\" in Logical Volume name"
+msgstr "अवैध संप्रतीक \"%s\" लॉजिकल वॉल्यूम नाम में"
+
+#: ../src/InputController.py:1983
+msgid "Please specify mount point"
+msgstr "आरोह बिंदु निर्दिष्ट करें"
+
+#: ../src/InputController.py:2049
+msgid "Do you want to upgrade ext2 to ext3 preserving data on Logical Volume?"
+msgstr "क्या आप ext2 को ext3 में लॉजिकल वॉल्यूम पर आंकड़ा को सुरक्षित रखते हुये उन्नत करना चाहते हैं?"
+
+#. # LV is probably exported to another computer(s)
+#: ../src/InputController.py:2089
+msgid ""
+"Logical volume is not mounted but is in use. Please close all applications "
+"using this device (eg iscsi)"
+msgstr "लॉजिकल वॉल्यूम आरोहित नहीं है लेकिन प्रयोग में है. इस युक्ति के उपयोग से होने वाले सभी अनुप्रयोगों को बंद करें (उदा iscsi)"
+
+#: ../src/InputController.py:2093
+msgid ""
+"Changing the filesystem will destroy all data on the Logical Volume! Are you "
+"sure you want to proceed?"
+msgstr ""
+"फाइलसिस्टम का बदलना लॉजिकल वॉल्यूम पर के आंकड़ों को समाप्त कर देगा! क्या आप आगे बढ़ने के "
+"लिये निश्चित हैं?"
+
+#. migration not performed, continue process with no mirroring
+#: ../src/InputController.py:2194
+msgid "Mirror not created. Completing remaining tasks."
+msgstr "मिरर नहीं बनाया गया. शेष कार्य पूरा कर रहा है."
+
+#. create mirror
+#: ../src/InputController.py:2197
+msgid ""
+"Underlaying LVM doesn't support addition of mirrors to existing Logical "
+"Volumes. Completing remaining tasks."
+msgstr ""
+"अंतर्निहित LVM मिरर के योग का समर्थन मौजूदा लॉजिकल वॉल्यूम में नहीं करता है. बचे काम पूरा "
+"कर रहा है."
+
+#: ../src/InputController.py:2252
+msgid "In order to add mirroring, some extents need to be migrated."
+msgstr "मिरर जोड़ने के लिये, कुछ विस्तार को भेजे जाने की जरूरत है."
+
+#: ../src/InputController.py:2252
+msgid "Do you want to migrate specified extents?"
+msgstr "क्या आप निर्दिष्ट विस्तार उत्प्रवासित करना चाहते हैं?"
+
+#: ../src/CommandHandler.py:55
+msgid "Creating Logical Volume"
+msgstr "लॉजिकल वॉल्यूम बना रहा है"
+
+#: ../src/CommandHandler.py:76 ../src/CommandHandler.py:95
+msgid "Resizing Logical Volume"
+msgstr "लॉजिकल वॉल्यूम फिर आकार बढा रहा है"
+
+#: ../src/CommandHandler.py:134
+msgid "Adding Mirror to Logical Volume"
+msgstr "लॉजिकल वॉल्यूम में मिरर जोड़ रहा है"
+
+#: ../src/CommandHandler.py:147
+msgid "Removing Mirror from Logical Volume"
+msgstr "लॉजिकल वॉल्यूम से मिरर हटा रहा है"
+
+#: ../src/CommandHandler.py:172
+msgid "Initializing Physical Volume"
+msgstr "फिजिकल वॉल्यूम आरंभ कर रहा है"
+
+#: ../src/CommandHandler.py:185
+msgid "Adding Physical Volume to Volume Group"
+msgstr "फिजिकल वॉल्यूम वॉल्यूम ग्रूप में जोड़ रहा है"
+
+#: ../src/CommandHandler.py:217
+msgid "Creating Volume Group"
+msgstr "वॉल्यूम ग्रूप बना रहा है"
+
+#: ../src/CommandHandler.py:243
+msgid "Removing Volume Group"
+msgstr "वॉल्यूम ग्रूप हटा रहा है"
+
+#: ../src/CommandHandler.py:255
+msgid "Removing Physical Volume"
+msgstr "फिजिकल वॉल्यूम हटा रहा है"
+
+#: ../src/CommandHandler.py:272
+msgid "Removing Logical Volume"
+msgstr "लॉजिकल वॉल्यूम को हटा रहा है"
+
+#: ../src/CommandHandler.py:289
+msgid "Renaming Logical Volume"
+msgstr "लॉजिकल वॉल्यूम का फिर नाम कर रहा है"
+
+#: ../src/CommandHandler.py:313
+msgid "Removing Physical Volume from Volume Group"
+msgstr "वॉल्यूम ग्रूप से फिजिकल वॉल्यूम हटा रहा है"
+
+#: ../src/CommandHandler.py:350
+msgid "Migrating Extents"
+msgstr "विस्तार उत्प्रवासित कर रहा है"
+
+#: ../src/CommandHandler.py:364
+msgid "Completing Extent Migration"
+msgstr "विस्तार उत्प्रवासन पूरा कर रहा है"
+
+#: ../src/CommandHandler.py:415
+msgid "Rereading partition table"
+msgstr "विभाजन तालिका फिर से पढ़ रहा है"
+
+#: ../src/lvm_model.py:45 ../src/lvmui_constants.py:83
+msgid "Unused"
+msgstr "अप्रयुक्त"
+
+#: ../src/lvm_model.py:46
+msgid "Unused Space"
+msgstr "अप्रयुक्त स्थान"
+
+#: ../src/lvm_model.py:48
+msgid "Unmounted"
+msgstr "अनारोहित"
+
+#: ../src/lvm_model.py:58
+msgid "Volume Group Name:   "
+msgstr "वॉल्यूम ग्रूप नाम:   "
+
+#: ../src/lvm_model.py:59
+msgid "System ID:   "
+msgstr "सिस्टम ID:   "
+
+#: ../src/lvm_model.py:60
+msgid "Format:   "
+msgstr "प्रारूप:   "
+
+#: ../src/lvm_model.py:61 ../src/lvm_model.py:78 ../src/lvm_model.py:93
+msgid "Attributes:   "
+msgstr "गुण:   "
+
+#: ../src/lvm_model.py:62
+msgid "Volume Group Size:   "
+msgstr "वॉल्यूम ग्रूप आकार:   "
+
+#: ../src/lvm_model.py:63
+msgid "Available Space:   "
+msgstr "उपलब्ध स्थान:   "
+
+#: ../src/lvm_model.py:64
+msgid "Total Number of Extents:   "
+msgstr "विस्तार की कुल संख्या:   "
+
+#: ../src/lvm_model.py:65
+msgid "Number of Free Extents:   "
+msgstr "मुक्त विस्तार की संख्या:   "
+
+#: ../src/lvm_model.py:66
+msgid "Extent Size:   "
+msgstr "विस्तार आकार:   "
+
+#: ../src/lvm_model.py:67
+msgid "Maximum Allowed Physical Volumes:   "
+msgstr "अधिकतम अनुमति प्राप्त फिजिकल वॉल्यूम:   "
+
+#: ../src/lvm_model.py:68
+msgid "Number of Physical Volumes:   "
+msgstr "फिजिकल वॉल्यूम की संख्या:   "
+
+#: ../src/lvm_model.py:69
+msgid "Maximum Allowed Logical Volumes:   "
+msgstr "अधिकतम अनुमति प्राप्त लॉजिकल वॉल्यूम:   "
+
+#: ../src/lvm_model.py:70
+msgid "Number of Logical Volumes:   "
+msgstr "लॉजिकल वॉल्यूम की संख्या:   "
+
+#: ../src/lvm_model.py:71
+msgid "VG UUID:   "
+msgstr "VG UUID:   "
+
+#: ../src/lvm_model.py:73
+msgid "Logical Volume Name:   "
+msgstr "लॉजिकल वॉल्यूम नाम:   "
+
+#: ../src/lvm_model.py:74
+msgid "Logical Volume Size:   "
+msgstr "लॉजिकल वॉल्यूम आकार:   "
+
+#: ../src/lvm_model.py:75
+msgid "Number of Segments:   "
+msgstr "खंड की संख्या:   "
+
+#: ../src/lvm_model.py:76
+msgid "Number of Stripes:   "
+msgstr "स्ट्राइप्स की संख्या:   "
+
+#: ../src/lvm_model.py:77
+msgid "Stripe Size:   "
+msgstr "स्ट्राइप आकार:   "
+
+#: ../src/lvm_model.py:79
+msgid "LV UUID:   "
+msgstr "LV UUID:   "
+
+#: ../src/lvm_model.py:81
+msgid "Partition Type:   "
+msgstr "विभाजन प्रकार:   "
+
+#: ../src/lvm_model.py:82
+msgid "Size:   "
+msgstr "आकार:   "
+
+#: ../src/lvm_model.py:83
+msgid "Mount Point:   "
+msgstr "आरोह बिंदु:   "
+
+#: ../src/lvm_model.py:84
+msgid "Mount Point when Rebooted:   "
+msgstr "फिर बूट पर आरोह बिंदु:   "
+
+#: ../src/lvm_model.py:85
+msgid "File System:   "
+msgstr "फाइल सिस्टम:   "
+
+#: ../src/lvm_model.py:87
+msgid "Physical Volume Name:   "
+msgstr "फिजिकल वॉल्यूम नाम:   "
+
+#: ../src/lvm_model.py:88
+msgid "Physical Volume Size:   "
+msgstr "फिजिकल वॉल्यूम आकार:   "
+
+#: ../src/lvm_model.py:89
+msgid "Space Used:   "
+msgstr "प्रयुक्त स्थान:   "
+
+#: ../src/lvm_model.py:90
+msgid "Space Free:   "
+msgstr "स्थान मुक्त:   "
+
+#: ../src/lvm_model.py:91
+msgid "Total Physical Extents:   "
+msgstr "कुल भौतिक विस्तार:   "
+
+#: ../src/lvm_model.py:92
+msgid "Allocated Physical Extents:   "
+msgstr "संभाजित भौतिक विस्तार:   "
+
+#: ../src/lvm_model.py:94
+msgid "PV UUID:   "
+msgstr "PV UUID:   "
+
+#: ../src/lvm_model.py:96
+msgid "Not initializable:"
+msgstr "नहीं आरंभ करने योग्य:"
+
+#: ../src/lvm_model.py:97
+msgid "Extended partition"
+msgstr "विस्तारित विभाजन"
+
+#. Translator: the line below refers to a standard linux swap partition.
+#: ../src/lvm_model.py:99
+msgid "Swap partition currently in use"
+msgstr "प्रयोग में अभी स्वैप विभाजन"
+
+#: ../src/lvm_model.py:100
+msgid "Foreign boot partition"
+msgstr "विजातीय बूट विभाजन"
+
+#: ../src/lvm_model.py:101
+msgid "Autopartition failure"
+msgstr "स्वविभाजन विफलता"
+
+#: ../src/lvm_model.py:259
+msgid "Partition manually"
+msgstr "विभाजन दस्ती रूप से करें"
+
+#: ../src/lvm_model.py:295
+msgid "Multipath device"
+msgstr "बहु पथ युक्ति"
+
+#: ../src/lvm_model.py:298
+msgid "Note:"
+msgstr "नोट:"
+
+#: ../src/lvm_model.py:298
+msgid "Initialize manually"
+msgstr "दस्ती प्रारंभीकृत करें"
+
+#: ../src/lvm_model.py:760
+msgid "Clustered:   "
+msgstr "क्लस्टर किया:   "
+
+#: ../src/lvm_model.py:762
+msgid "True"
+msgstr "सही"
+
+#: ../src/lvm_model.py:764
+msgid "False"
+msgstr "गलत"
+
+#: ../src/lvm_model.py:822
+msgid "Number of mirror images:"
+msgstr "मिरर बिंब की संख्या:"
+
+#: ../src/lvm_model.py:825
+msgid "Snapshots:"
+msgstr "स्नेपशॉट:"
+
+#: ../src/lvm_model.py:831
+msgid "Snapshot origin:"
+msgstr "स्नेपशॉट मूल:"
+
+#: ../src/lvm_model.py:838
+msgid "Snapshot usage:"
+msgstr "स्नेपशॉट प्रयोग:"
+
+#: ../src/lvm_model.py:861 ../src/lvm_model.py:867 ../src/lvm_model.py:928
+#: ../src/lvm_model.py:944
+msgid "/   Root Filesystem"
+msgstr "/   रूट फाइलसिस्टम"
+
+#: ../src/lvm_model.py:947 ../src/Filesystem.py:135
+msgid "None"
+msgstr "कोई नहीं"
+
+#: ../src/lvm_model.py:1001
+msgid "SCSI Address:  "
+msgstr "SCSI पता:  "
+
+#: ../src/lvm_model.py:1003
+msgid "SCSI ID:  "
+msgstr "SCSI ID:  "
+
+#. INIT_ENTITY=_("Are you certain that you wish to initialize disk entity %s? All data will be lost on this device/partition.")
+#: ../src/lvmui_constants.py:51
+#, python-format
+msgid ""
+"All data on disk entity %s will be lost! Are you certain that you wish to "
+"initialize it?"
+msgstr "डिस्क एंटिटी पर सारे आंकड़े %s समाप्त हो जायेंगे! क्या आप इसे आरंभ करने के लिये निश्चित हैं?"
+
+#: ../src/lvmui_constants.py:52
+#, python-format
+msgid ""
+"Disk entity %s contains %s filesystem. All data on it will be lost! Are you "
+"certain that you wish to initialize disk entity %s?"
+msgstr ""
+"डिस्क एंटिटी %s में %s फाइलसिस्टम है. इसपर सारे आंकड़े समाप्त हो जायेंगे! क्या आप निश्चित हैं "
+"कि आप डिस्क एंटिटी %s को आंरभी कृत करने की इच्छा रखते हैं?"
+
+#: ../src/lvmui_constants.py:53
+#, python-format
+msgid ""
+"Disk entity %s contains data from directory %s. All data in it will be lost! "
+"Are you certain that you wish to initialize disk entity %s?"
+msgstr ""
+"डिस्क एंटिटी %s में %s निर्देशिका से आंकड़ा समाहित है. इसमें सारे आंकड़ा समाप्त हो जायेंगे! क्या "
+"आप निश्चित हैं कि आप डिस्क एंटिटी %s को आरंभीकृत करना चाहते हैं?"
+
+#: ../src/lvmui_constants.py:54
+#, python-format
+msgid "Are you certain that you wish to initialize %s of free space on disk %s?"
+msgstr "क्या आप निश्चित हैं कि आप डिस्क एंटिटी %s को प्रारंभीकृत करना चाहते हैं %s डिस्क पर?"
+
+#: ../src/lvmui_constants.py:55
+#, python-format
+msgid ""
+"You are about to initialize unpartitioned disk %s. It is advisable, although "
+"not required, to create a partition on it. Do you want to create a single "
+"partition encompassing the whole drive?"
+msgstr ""
+"आप अविभाजित डिस्क %s को आरंभ करने के करीब हैं. यह सलाह योग्य है, हालांकि जरूरी नहीं है, "
+"इसपर एक विभाजन का निर्माण करना. क्या आप एकल विभाजन पूरी ड्राइव को समेटते हुये बनाना "
+"चाहते हैं?"
+
+#: ../src/lvmui_constants.py:57
+msgid "Reloading LVM. Please wait."
+msgstr "LVM फिर लोड कर रहा है. कृपया प्रतीक्षा करें."
+
+#: ../src/lvmui_constants.py:59
+#, python-format
+msgid ""
+"Changes will take effect after computer is restarted. If device %s is used, "
+"before restart, data corruption WILL occur. It is advisable to restart your "
+"computer now."
+msgstr ""
+"बदलाव प्रभावी होगा कंप्यूटर के फिर आरंभ होने पर. अगर युक्ति %s प्रयुक्त होता है, फिर आंरभ "
+"के पहले, आंकड़ा खराबी आयेगी. यह सलाह योग्य है आप कंप्यूटर फिर आंरभ करें."
+
+#: ../src/lvmui_constants.py:61
+msgid "Mirror Log"
+msgstr "मिरर लॉग"
+
+#: ../src/lvmui_constants.py:63
+msgid "Unable to process request"
+msgstr "आग्रह की प्रक्रिया में असमर्थ"
+
+#: ../src/lvmui_constants.py:65
+#, python-format
+msgid "%s command failed. Command attempted: \"%s\" - System Error Message: %s"
+msgstr "%s कमांड विफल. प्रयास किया गया समादेश: \"%s\" - सिस्टम त्रुटि संदेश: %s"
+
+#: ../src/lvmui_constants.py:84
+msgid "Free"
+msgstr "मुक्त"
+
+#: ../src/lvmui_constants.py:85
+msgid "Free space"
+msgstr "मुक्त स्थान"
+
+#: ../src/lvmui_constants.py:87
+msgid "Unpartitioned space"
+msgstr "अविभाजित स्थान"
+
+#: ../src/lvmui_constants.py:88
+#, python-format
+msgid "Unpartitioned space on %s"
+msgstr "%s पर अविभाजित स्थान"
+
+#: ../src/lvmui_constants.py:90
+msgid "GB"
+msgstr "GB"
+
+#: ../src/lvmui_constants.py:91
+msgid "MB"
+msgstr "MB"
+
+#: ../src/lvmui_constants.py:92
+msgid "KB"
+msgstr "KB"
+
+#: ../src/lvmui_constants.py:93
+msgid "Bytes"
+msgstr "बाइट्स"
+
+#. File System Types
+#: ../src/lvmui_constants.py:97
+msgid "No Filesystem"
+msgstr "कोई फाइलसिस्टम नहीं"
+
+#: ../src/lvmui_constants.py:98
+msgid "Ext2"
+msgstr "Ext2"
+
+#: ../src/lvmui_constants.py:99
+msgid "Ext3"
+msgstr "Ext3"
+
+#: ../src/lvmui_constants.py:100
+msgid "JFS"
+msgstr "JFS"
+
+#: ../src/lvmui_constants.py:101
+msgid "MSDOS"
+msgstr "MSDOS"
+
+#: ../src/lvmui_constants.py:102
+msgid "Reiserfs"
+msgstr "Reiserfs"
+
+#: ../src/lvmui_constants.py:103
+msgid "VFAT"
+msgstr "VFAT"
+
+#: ../src/lvmui_constants.py:104
+msgid "XFS"
+msgstr "XFS"
+
+#: ../src/lvmui_constants.py:105
+msgid "Cramfs"
+msgstr "Cramfs"
+
+#: ../src/Properties_Renderer.py:42
+msgid "Properties for"
+msgstr "इसके लिये गुण"
+
+#: ../src/Properties_Renderer.py:43 ../src/renderer.py:37
+msgid "Physical Volume"
+msgstr "फिजिकल वॉल्यूम"
+
+#. UNALLOCATED_MESSAGE=_("This Volume has not been allocated \n to a Volume Group yet.")
+#: ../src/Properties_Renderer.py:44 ../src/renderer.py:36
+msgid "Logical Volume"
+msgstr "लॉजिकल वॉल्यूम"
+
+#: ../src/Properties_Renderer.py:45
+msgid "Unallocated Volume"
+msgstr "असंभाजित आयतन"
+
+#: ../src/Properties_Renderer.py:46 ../src/renderer.py:43
+msgid "Disk Entity"
+msgstr "डिस्क एंटिटी"
+
+#: ../src/Properties_Renderer.py:47 ../src/Properties_Renderer.py:48
+#: ../src/Properties_Renderer.py:49 ../src/renderer.py:38
+msgid "Volume Group"
+msgstr "वॉल्यूम ग्रूप"
+
+#. UNINITIALIZED_MESSAGE=_("This extent has not yet been \n initialized for use with LVM.")
+#: ../src/renderer.py:33
+msgid "No Volume Selected"
+msgstr "कोई आयतन नहीं चुना गया"
+
+#: ../src/renderer.py:34
+msgid "Multiple selection"
+msgstr "कई चयन"
+
+#: ../src/renderer.py:39 ../src/Volume_Tab_View.py:46
+msgid "Logical View"
+msgstr "तार्किक दृश्य"
+
+#: ../src/renderer.py:40 ../src/Volume_Tab_View.py:45
+msgid "Physical View"
+msgstr "भौतिक दृश्य"
+
+#: ../src/renderer.py:41
+msgid "Unallocated"
+msgstr "असंभाजित"
+
+#: ../src/renderer.py:42
+msgid "Uninitialized"
+msgstr "अप्रारंभीकृत"
+
+#: ../src/renderer.py:195
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a mirror log of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"विस्तार जिसे आप चुनने का प्रयास कर रहे हैं %s के लॉजिकल वॉल्यूम के मिरर लॉग का अवयव है. "
+"मिरर किया लॉजिकल वॉल्यूम उत्प्रवासनीय नहीं है, इसिलये विस्तार चुनने योग्य नहीं है."
+
+#: ../src/renderer.py:197
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to mirror image of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"विस्तार जिसे आप चुनने का प्रयास कर रहे हैं %s के लॉजिकल वॉल्यूम का अवयव है. मिरर किया "
+"लॉजिकल वॉल्यूम उत्प्रवासनीय नहीं है, इसिलये विस्तार चुनने योग्य नहीं है."
+
+#: ../src/renderer.py:199
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to %s, a snapshot of %"
+"s. Snapshots are not yet migratable, so the extents are not selectable."
+msgstr ""
+"विस्तार जिसे आप चुनने का प्रयास कर रहे हैं %s का अवयव है, %s का स्नेपशॉट. स्नेपशॉट मूल "
+"अबतक उत्प्रवासनीय नहीं है, इसलिये विस्तार चयन योग्य नहीं है."
+
+#: ../src/renderer.py:201
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a snapshot origin %"
+"s. Snapshot origins are not yet migratable, so the extents are not "
+"selectable."
+msgstr ""
+"विस्तार जिसे आप चुनने का प्रयास कर रहे हैं स्नेपशॉट मूल %s का अवयव है. स्नेपशॉट मूल अबतक "
+"उत्प्रवासनीय नहीं है, इसलिये विस्तार चयन योग्य नहीं है."
+
+#: ../src/renderer.py:388
+#, python-format
+msgid "Snapshot of %s"
+msgstr "%s का स्नेपशॉट"
+
+#: ../src/renderer.py:491
+msgid "Origin"
+msgstr "मूल"
+
+#: ../src/renderer.py:497
+msgid "Snapshot"
+msgstr "स्नेपशॉट"
+
+#: ../src/renderer.py:541
+msgid "extent view"
+msgstr "विस्तार दृश्य"
+
+#: ../src/Volume_Tab_View.py:42
+msgid "Volume Groups"
+msgstr "वॉल्यूम ग्रूप"
+
+#: ../src/Volume_Tab_View.py:43
+msgid "Unallocated Volumes"
+msgstr "असंभाजित आयतन"
+
+#: ../src/Volume_Tab_View.py:44
+msgid "Uninitialized Entities"
+msgstr "अप्रारंभीकृत एंटिटी"
+
+#: ../src/Volume_Tab_View.py:231
+msgid "Clustered VG"
+msgstr "क्लस्टर किया VG"
+
+#: ../src/Volume_Tab_View.py:617
+#, python-format
+msgid "%s mirror synchronisation"
+msgstr "%s मिरर तुल्यकालन "
+
+#. no existing partitions, write
+#: ../src/fdisk_wrapper.py:192
+msgid "Please wait while partition is being created"
+msgstr "प्रतीक्षा करें जबकि विभाजन किया जा रहा है"
+
+#: ../src/Filesystem.py:20
+#, python-format
+msgid "Creating %s filesystem"
+msgstr "%s फाइल सिस्टम बना रहा है"
+
+#: ../src/Filesystem.py:21
+#, python-format
+msgid "Resizing %s filesystem"
+msgstr "%s फाइलसिस्टम को फिर आकार दे रहा है"
+
+#: ../src/Filesystem.py:22
+#, python-format
+msgid "Checking %s filesystem"
+msgstr "%s फाइल सिस्टम जांच रहा है"
+
+#: ../src/Filesystem.py:23
+#, python-format
+msgid "Upgrading %s filesystem to %s"
+msgstr "%s फाइल सिस्टम को %s में उन्नत कर रहा है"
+
+#: ../src/Filesystem.py:24
+#, python-format
+msgid ""
+"Creation of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr "फाइलसिस्टम निर्माण विफल. प्रयास किया गया समादेश: \"%s\" - सिस्टम त्रुटि संदेश: %s"
+
+#: ../src/Filesystem.py:25
+#, python-format
+msgid ""
+"Resize of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"फाइलसिस्टम का फिर आकार करना विफल. प्रयास किया गया समादेश: \"%s\" - सिस्टम त्रुटि "
+"संदेश: %s"
+
+#: ../src/Filesystem.py:26
+#, python-format
+msgid ""
+"Check of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr "फाइलसिस्टम की जांच विफल. कमांड चलाया गया: \"%s\" - सिस्टम त्रुटि संदेश: %s"
+
+#: ../src/Filesystem.py:27
+#, python-format
+msgid ""
+"Upgrade of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr "फाइलसिस्टम का उन्नयन विफल. प्रयास किया गया समादेश: \"%s\" - सिस्टम त्रुटि संदेश: %s"
+
+#: ../src/Filesystem.py:141
+msgid "Unknown filesystem"
+msgstr "अनजान फाइलसिस्टम"
+
+#: ../src/Filesystem.py:491
+msgid "GFS (local)"
+msgstr "GFS (स्थानीय)"
+
+#: ../src/Filesystem.py:606
+msgid "GFS (clustered)"
+msgstr "GFS (क्लस्टर)"
+
+#: ../src/Filesystem.py:640 ../src/Filesystem.py:976
+msgid "Cluster name contains illegal character "
+msgstr "क्लस्टर नाम में अवैध संप्रतीक है"
+
+#: ../src/Filesystem.py:643 ../src/Filesystem.py:979
+msgid "GFS name contains illegal character "
+msgstr "GFS नाम में अवैध संप्रतीक है"
+
+#: ../src/Filesystem.py:646 ../src/Filesystem.py:982
+msgid "Missing Cluster Name"
+msgstr "गुम क्लस्टर नाम"
+
+#: ../src/Filesystem.py:649 ../src/Filesystem.py:985
+msgid "Missing GFS Name"
+msgstr "गुम GFS नाम"
+
+#: ../src/Filesystem.py:828
+msgid "GFS2 (local)"
+msgstr "GFS2 (local)"
+
+#: ../src/Filesystem.py:942
+msgid "GFS2 (clustered)"
+msgstr "GFS2 (क्लस्टर किया)"
+
+#: ../src/Filesystem.glade.h:1 ../src/lvui.glade.h:1
+#: ../src/lv_edit_props.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../src/Filesystem.glade.h:2
+msgid "Cluster name"
+msgstr "क्लस्टर नाम"
+
+#: ../src/Filesystem.glade.h:3
+msgid "Clustered GFS Properties"
+msgstr "क्लस्टर किया जीएफएस गुण"
+
+#: ../src/Filesystem.glade.h:4
+msgid "DLM"
+msgstr "DLM"
+
+#: ../src/Filesystem.glade.h:5
+msgid "GFS name"
+msgstr "GFS नाम"
+
+#: ../src/Filesystem.glade.h:6
+msgid "GULM"
+msgstr "GULM"
+
+#: ../src/Filesystem.glade.h:7
+msgid "Locking type"
+msgstr "लॉकिंग प्रकार"
+
+#: ../src/Filesystem.glade.h:8
+msgid "Number of journals"
+msgstr "जर्नल की संख्या:"
+
+#: ../src/Filesystem.glade.h:9
+msgid "Number of journals (one journal per cluster node)"
+msgstr "जर्नल की संख्या (एक जर्नल प्रति क्लस्टर नोड)"
+
+#: ../src/Filesystem.glade.h:10
+msgid "Unique GFS name"
+msgstr "अद्वितीय GFS नाम"
+
+#: ../src/Segment.py:44
+msgid "Stripe"
+msgstr "स्ट्राइप"
+
+#: ../src/Segment.py:68
+msgid "Linear Mapping"
+msgstr "रैखिक मैपिंग"
+
+#: ../src/Segment.py:109
+msgid "Mirror"
+msgstr "मिरर"
+
+#: ../src/PhysicalVolume.py:142
+#, python-format
+msgid "Partition %s"
+msgstr "विभाजन %s"
+
+#: ../src/lvui.glade.h:2
+msgid "1024"
+msgstr "1024"
+
+#: ../src/lvui.glade.h:3
+msgid "128"
+msgstr "128"
+
+#: ../src/lvui.glade.h:4
+msgid "16"
+msgstr "16"
+
+#: ../src/lvui.glade.h:5
+msgid "2"
+msgstr "2"
+
+#: ../src/lvui.glade.h:6
+msgid "256"
+msgstr "256"
+
+#: ../src/lvui.glade.h:7
+msgid "32"
+msgstr "32"
+
+#: ../src/lvui.glade.h:8
+msgid "4"
+msgstr "4"
+
+#: ../src/lvui.glade.h:9
+msgid "512"
+msgstr "512"
+
+#: ../src/lvui.glade.h:10
+msgid "64"
+msgstr "64"
+
+#: ../src/lvui.glade.h:11
+msgid "8"
+msgstr "8"
+
+#: ../src/lvui.glade.h:12
+msgid "Add Physical Volume to VG"
+msgstr "VG में फिजिकल वॉल्यूम जोड़ें"
+
+#: ../src/lvui.glade.h:13
+msgid ""
+"Add to existing \n"
+"Volume Group"
+msgstr ""
+"मौजूदा वॉल्यूम ग्रूप\n"
+"में जोड़ें"
+
+#: ../src/lvui.glade.h:15
+msgid "Clustered"
+msgstr "क्लस्टर"
+
+#: ../src/lvui.glade.h:16
+msgid ""
+"Create New\n"
+"Logical Volume"
+msgstr ""
+"नया लॉजिकल वॉल्यूम\n"
+"बनायें"
+
+#: ../src/lvui.glade.h:18
+msgid "Create Snapshot"
+msgstr "स्नेपशॉट बनायें"
+
+#: ../src/lvui.glade.h:19
+msgid ""
+"Create new \n"
+"Volume Group"
+msgstr ""
+"बनायें एक नया\n"
+"वॉल्यूम ग्रूप"
+
+#: ../src/lvui.glade.h:21
+msgid "Edit Properties"
+msgstr "गुण संपादित करें"
+
+#: ../src/lvui.glade.h:22
+msgid "Enter path of Block Device to initialize"
+msgstr "आरंभ करने के लिये ब्लॉक युक्ति का पथ डालें"
+
+#: ../src/lvui.glade.h:23
+msgid ""
+"Extend\n"
+"Volume Group"
+msgstr ""
+"विस्तार दें\n"
+"वॉल्यूम ग्रूप को"
+
+#: ../src/lvui.glade.h:25
+msgid "Extend Volume Group"
+msgstr "वॉल्यूम ग्रूप को विस्तार दें"
+
+#: ../src/lvui.glade.h:26
+msgid "Format"
+msgstr "प्रारूप"
+
+#: ../src/lvui.glade.h:27
+msgid "Initialize"
+msgstr "प्रारंभीकृत"
+
+#: ../src/lvui.glade.h:28
+msgid "Initialize Block Device"
+msgstr "ब्लॉक युक्ति प्रारंभीकृत करें"
+
+#: ../src/lvui.glade.h:29
+msgid "Initialize Entity"
+msgstr "एंटिटी को प्रारंभीकृत करें"
+
+#: ../src/lvui.glade.h:30
+msgid "Initialize _Block Device"
+msgstr "ब्लॉक युक्ति आरंभ करें (_B)"
+
+#: ../src/lvui.glade.h:31
+msgid "Kilo"
+msgstr "किलो"
+
+#: ../src/lvui.glade.h:32 ../system-config-lvm.desktop.in.h:3
+msgid "Logical Volume Management"
+msgstr "लॉजिकल वॉल्यूम प्रबंधन"
+
+#: ../src/lvui.glade.h:33
+msgid "Manage Volumes"
+msgstr "आयतन का प्रबंधन करें"
+
+#: ../src/lvui.glade.h:34
+msgid "Mark Volume Group as 'clustered'"
+msgstr "'क्लस्टर' के रूप में वॉल्यूम समूह चिह्नित करें"
+
+#: ../src/lvui.glade.h:35
+msgid "Maximum Logical Volumes"
+msgstr "अधिकतम लॉजिकल वॉल्यूम"
+
+#: ../src/lvui.glade.h:36
+msgid "Maximum Physical Volumes"
+msgstr "अधिकतम फिजिकल वॉल्यूम"
+
+#: ../src/lvui.glade.h:37
+msgid "Meg"
+msgstr "Meg"
+
+#: ../src/lvui.glade.h:38
+msgid ""
+"Migrate Selected\n"
+"Extent(s) From Volume"
+msgstr ""
+"आयतन से चयनित\n"
+"विस्तार प्रवासित करें"
+
+#: ../src/lvui.glade.h:40
+msgid "New Volume Group"
+msgstr "नया वॉल्यूम ग्रूप"
+
+#: ../src/lvui.glade.h:41
+msgid "Physical Extent Size"
+msgstr "भौतिक विस्तार आकार"
+
+#: ../src/lvui.glade.h:42
+msgid ""
+"Remove \n"
+"Logical Volume"
+msgstr ""
+"हटायें \n"
+"लॉजिकल वॉल्यूम को"
+
+#: ../src/lvui.glade.h:44
+msgid ""
+"Remove Selected\n"
+"Logical Volume(s)"
+msgstr ""
+"हटायें चुने हुये\n"
+"लॉजिकल वॉल्यूम को"
+
+#: ../src/lvui.glade.h:46
+msgid ""
+"Remove Selected\n"
+"Physical Volume(s)"
+msgstr ""
+"हटायें चुने हुये \n"
+"फिजिकल वॉल्यूम को"
+
+#: ../src/lvui.glade.h:48
+msgid ""
+"Remove Volume from\n"
+"Volume Group"
+msgstr ""
+"आयतन हटायें\n"
+"वॉल्यूम ग्रूप से"
+
+#: ../src/lvui.glade.h:50
+msgid ""
+"Remove volume \n"
+"from LVM"
+msgstr ""
+"आयतन हटायें \n"
+"LVM से"
+
+#: ../src/lvui.glade.h:52
+msgid "Select a Volume Group to add this PV to:"
+msgstr "इस PV में जोड़ने के लिये एक वॉल्यूम ग्रूप चुनें:"
+
+#: ../src/lvui.glade.h:53
+msgid "Some text"
+msgstr "कुछ पाठ"
+
+#: ../src/lvui.glade.h:54
+msgid "Volume Group Name"
+msgstr "वॉल्यूम ग्रूप नाम"
+
+#: ../src/lvui.glade.h:55
+msgid "_Reload"
+msgstr "फिर लोड करें (_R)"
+
+#: ../src/lvui.glade.h:56
+msgid "_Tools"
+msgstr "उपकरण (_T)"
+
+#: ../src/lvui.glade.h:57
+msgid "extend vg message:"
+msgstr "vg संदेश बढायें:"
+
+#: ../src/lv_edit_props.glade.h:2
+msgid "<b>Filesystem</b>"
+msgstr "<b>फाइलसिस्टम</b>"
+
+#: ../src/lv_edit_props.glade.h:3
+msgid "<b>LV Properties</b>"
+msgstr "<b>LV गुण</b>"
+
+#: ../src/lv_edit_props.glade.h:4
+msgid "<b>Size</b>"
+msgstr "<b>आकार</b>"
+
+#: ../src/lv_edit_props.glade.h:5
+msgid "Add entry to /etc/fstab"
+msgstr "/etc/fstab में प्रविष्टि जोड़ें"
+
+#: ../src/lv_edit_props.glade.h:6
+msgid "Create New Logical Volume (LV)"
+msgstr "नया लॉजिकल वॉल्यूम बनायें (LV)"
+
+#: ../src/lv_edit_props.glade.h:7
+msgid "Filesystem is not resizable"
+msgstr "फाइलसिस्टम फिर आकार करने योग्य नहीं है"
+
+#: ../src/lv_edit_props.glade.h:8
+msgid "Free space in Volume Group label"
+msgstr "वॉल्यूम ग्रूप स्तर में मुक्त स्थान"
+
+#: ../src/lv_edit_props.glade.h:9
+msgid "Free space remaining label"
+msgstr "मुक्त स्थान शेष स्तर"
+
+#: ../src/lv_edit_props.glade.h:10
+msgid "Kilobytes granularity"
+msgstr "किलोबाइट सूक्ष्मता"
+
+#: ../src/lv_edit_props.glade.h:11
+msgid "LV name:"
+msgstr "LV नाम: "
+
+#: ../src/lv_edit_props.glade.h:12
+msgid "LV size"
+msgstr "LV आकार"
+
+#: ../src/lv_edit_props.glade.h:13
+msgid "LVs under snapshots are not resizable"
+msgstr "LV स्नेपशॉट के अंदर फिर आकार बदलने योग्य नहीं है"
+
+#: ../src/lv_edit_props.glade.h:14
+msgid "Linear"
+msgstr "रैखिक"
+
+#: ../src/lv_edit_props.glade.h:15
+msgid "Mirrored"
+msgstr "मिरर किया"
+
+#: ../src/lv_edit_props.glade.h:16
+msgid "Mirrored LVs are not resizable"
+msgstr "मिरर किया LV फिर आकार के योग्य नहीं है"
+
+#: ../src/lv_edit_props.glade.h:17
+msgid "Mount"
+msgstr "आरोह"
+
+#: ../src/lv_edit_props.glade.h:18
+msgid "Mount point:"
+msgstr "आरोह बिंदु:"
+
+#: ../src/lv_edit_props.glade.h:19
+msgid "Mount when rebooted"
+msgstr "फिर बूट पर आरोहित करें"
+
+#: ../src/lv_edit_props.glade.h:20
+msgid "Size beg"
+msgstr "आकार शुरू"
+
+#: ../src/lv_edit_props.glade.h:21
+msgid "Size end"
+msgstr "आकार अंत"
+
+#: ../src/lv_edit_props.glade.h:22
+msgid "Striped"
+msgstr "स्ट्राइप किया हुआ"
+
+#: ../src/lv_edit_props.glade.h:23
+msgid "Use remaining"
+msgstr "शेष स्थान का प्रयोग करें"
+
+#: ../src/lv_edit_props.glade.h:24
+msgid "stripes"
+msgstr "स्ट्राइप"
+
+#: ../src/migrate_extents.glade.h:1
+msgid "<b>Destination</b>"
+msgstr "<b>गंतव्य</b>"
+
+#: ../src/migrate_extents.glade.h:2
+msgid "<b>Migration Policy</b>"
+msgstr "<b>उत्प्रवासन नीति</b>"
+
+#: ../src/migrate_extents.glade.h:3
+msgid "Anywhere - not implemented"
+msgstr "कहींभी - लागू नहीं"
+
+#: ../src/migrate_extents.glade.h:4
+msgid "Automatically choose PVs to migrate to"
+msgstr "इसमें उत्प्रवासित होने के लिये स्वतः चुनें"
+
+#: ../src/migrate_extents.glade.h:5
+msgid "Contiguous"
+msgstr "स्पर्श"
+
+#: ../src/migrate_extents.glade.h:6
+msgid "Destination:"
+msgstr "गंतव्य:"
+
+#: ../src/migrate_extents.glade.h:7
+msgid ""
+"In order to remove PV, extents in use have to be migrated.\n"
+"Select extents' destination and migration policy."
+msgstr ""
+"PV हटाने के क्रम में, प्रयोग में विस्तार उत्प्रवासित किया जाना चाहिये.\n"
+"गंतव्य और उत्प्रवासन नीति विस्तार चुनें."
+
+#: ../src/migrate_extents.glade.h:9
+msgid "Inherit"
+msgstr "उत्तराधिकार"
+
+#: ../src/migrate_extents.glade.h:10
+msgid "Inherit policy from Volume Group"
+msgstr "वॉल्यूम ग्रूप से नीति लें"
+
+#: ../src/migrate_extents.glade.h:11
+msgid "Migrate Extents"
+msgstr "विस्तार उत्प्रवासित करें"
+
+#: ../src/migrate_extents.glade.h:12
+msgid "Migrate anywhere even if that reduces performance"
+msgstr "कही उत्प्रवासित करें अगर वह प्रदर्शन कम करता है"
+
+#: ../src/migrate_extents.glade.h:13
+msgid "New extents are adjacent to existing ones"
+msgstr "नया विस्तार मौजूदा के समीप है"
+
+#: ../src/migrate_extents.glade.h:14
+msgid "Normal"
+msgstr "सामान्य"
+
+#: ../src/migrate_extents.glade.h:15
+msgid "Only migrate extents belonging to LV"
+msgstr "LV के अवयव विस्तार को सिर्फ उत्प्रवासित करें"
+
+#: ../src/migrate_extents.glade.h:16
+msgid "Use common sense"
+msgstr "सामान्य ज्ञान का प्रयोग करें"
+
+#: ../src/Partition.py:103 ../src/Partition.py:108
+msgid "Unknown"
+msgstr "अज्ञात"
+
+#: ../src/system-config-lvm.py:55
+msgid "system-config-lvm"
+msgstr "system-config-lvm"
+
+#: ../src/system-config-lvm.py:56
+#, python-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#: ../src/system-config-lvm.py:74
+msgid ""
+"LVM locks are disabled!!! \n"
+"Massive data corruption may occur.\n"
+"Enable locking (locking_type=1, 2 or 3 in /etc/lvm/lvm.conf)."
+msgstr ""
+"LVM लॉक निष्क्रिय है!!! \n"
+"बड़ी मात्रा में आँकड़ा खराबी आ सकती है.\n"
+"लॉकिंग सक्रिय करें (locking_type=1, 2 or 3 in /etc/lvm/lvm.conf)."
+
+#: ../src/system-config-lvm.py:79
+msgid ""
+"LVM is configured to use Cluster Locking mechanism, but clvmd daemon is not "
+"running. Start daemon with command:\n"
+"service clvmd start \n"
+"or, turn off cluster locking (locking_type=1 in /etc/lvm/lvm.conf)."
+msgstr ""
+"LVM को क्लस्टर लॉकिंग यांत्रिकी के प्रयोग के लिए विन्यस्त किया गया है, लेकिन clvmd डेमॉन "
+"चल नहीं रहा है. कमांड के साथ डेमॉन आरंभ करें:\n"
+"service clvmd start \n"
+"या, क्लस्टर लॉकिंग बंद करें (locking_type=1 in /etc/lvm/lvm.conf)."
+
+#: ../src/system-config-lvm.py:83
+msgid ""
+"LVM is configured to use Cluster Locking mechanism, but cluster is not "
+"quorate.\n"
+"Either wait until cluster is quorate or turn off cluster locking "
+"(locking_type=1 in /etc/lvm/lvm.conf)."
+msgstr ""
+"LVM क्लस्टर लॉकिंग यांत्रिकी के प्रयोग के लिए विन्यस्त है, लेकिन क्लस्टर कोरेट नहीं है.\n"
+"या तो प्रतीक्षा करें क्लस्टर के कोरेट होने तक या क्लस्टर लॉकिंग बंद करें (locking_type=1 /"
+"etc/lvm/lvm.conf में)."
+
+#: ../src/system-config-lvm.py:86
+#, python-format
+msgid ""
+"%s only supports file and cluster based lockings (locking_type=1, 2 or 3 in /"
+"etc/lvm/lvm.conf)."
+msgstr ""
+"%s केवल फ़ाइल और क्लस्टर आधारित लॉकिंग का समर्थन करता है (locking_type=1, 2 या 3 "
+"in /etc/lvm/lvm.conf)."
+
+#. ## Don't specify version - already in ABOUT_VERSION
+#: ../src/system-config-lvm.py:119
+msgid "Copyright (c) 2004 Red Hat, Inc. All rights reserved."
+msgstr "कॉपीराइट (c) 2004 Red Hat, Inc. सर्वाधिकार सुरक्षित."
+
+#: ../src/system-config-lvm.py:120
+msgid "This software is licensed under the terms of the GPL."
+msgstr "This software is licensed under the terms of the GPL."
+
+#: ../src/system-config-lvm.py:169
+#, python-format
+msgid "Please restart %s with root permissions!"
+msgstr "कृपया %s रूट अनुमति के साथ फिर शुरू करें!"
+
+#: ../system-config-lvm.desktop.in.h:1
+msgid "Configure LVM in a graphical setting"
+msgstr "LVM को आलेखी सेटिंग में विन्यस्त करें"
+
+#: ../system-config-lvm.desktop.in.h:2
+msgid "LVM"
+msgstr "LVM"
+

@@ -1,0 +1,1793 @@
+# translation of or.po to Oriya
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Subhransu Behera <sbehera@redhat.com>, 2006.
+# Manoj Kumar Giri <mgiri@redhat.com>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: or\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-14 15:50+0530\n"
+"PO-Revision-Date: 2010-04-14 18:55+0530\n"
+"Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
+"Language-Team: Oriya <Translation-team-or@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../src/InputController.py:37 ../src/Properties_Renderer.py:24
+#: ../src/Volume_Tab_View.py:30 ../src/system-config-lvm.py:40
+#, python-format
+msgid ""
+"\n"
+"  Unable to initialize graphical environment. Most likely cause of failure\n"
+"  is that the tool was not run using a graphical environment. Please either\n"
+"  start your graphical user interface or set your DISPLAY variable.\n"
+"                                                                                \n"
+"  Caught exception: %s\n"
+msgstr ""
+"\n"
+"  ଆଲେଖୀକ ପରିବେଶକୁ ପ୍ରାରମ୍ଭିକରଣ କରିବାରେ ଅସମର୍ଥ। ସମ୍ଭବତଃ ବିଫଳତାର କାରଣ\n"
+"  ଏହାହୋଇପାରେ ଯେ ଉପକରଣଟି ଗୋଟିଏ ଆଲେଖୀକ ପରିବେଶରେ ଚାଲୁନାହିଁ। ଦୟାକରି \n"
+"  ଆପଣଙ୍କ ଆଲେଖୀକ ଚାଳକ ଅନ୍ତରାପୃଷ୍ଠକୁ ପ୍ରାରମ୍ଭ କରନ୍ତୁ କିମ୍ବା ଆପଣଙ୍କ ପ୍ରଦର୍ଶନ ଚଳକୁ ବିନ୍ଯାସ "
+"କରନ୍ତୁ।                                                                                \n"
+"  ବ୍ଯତିକ୍ରମ ମିଳିଲା: %s\n"
+
+#. ##TRANSLATOR: The string below is seen when adding a new Physical
+#. ##Volume to an existing Volume Group.
+#: ../src/InputController.py:57
+#, python-format
+msgid "Select a Volume Group to add %s to:"
+msgstr "%s କୁ ଏଠାରେ ଯୋଗ କରିବା ପାଇଁ ଗୋଟିଏ ଘନଫଳ ସମୂହ ର ଚୟନ କରନ୍ତୁ"
+
+#. ##TRANSLATOR: The two strings below refer to the name and type of
+#. ##available disk entities on the system. There are two types --
+#. ##The first is an 'unallocated physical volume' which is a disk or
+#. ##partition that has been initialized for use with LVM, by writing
+#. ##a special label onto the first block of the partition. The other type
+#. ##is an 'uninitialized entity', which is an available disk or partition
+#. ##that is NOT yet initialized to be used with LVM. Hope this helps give
+#. ##some context.
+#: ../src/InputController.py:85
+msgid "Name"
+msgstr "ନାମ"
+
+#: ../src/InputController.py:86
+msgid "Size"
+msgstr "ଆକାର"
+
+#: ../src/InputController.py:87
+msgid "Entity Type"
+msgstr "ବସ୍ତୁ ର ପ୍ରକାର"
+
+#: ../src/InputController.py:89
+msgid "Unallocated Physical Volume"
+msgstr "ବଣ୍ଟାଯାଇ ନ ଥିବା ଭୌତିକ ଘନଫଳ ବଣ୍ଟାଯାଇ ନାହିଁ"
+
+#: ../src/InputController.py:90
+msgid "Uninitialized Disk Entity"
+msgstr "ପ୍ରାରମ୍ଭିକରଣ କରାଯାଇ ନ ଥିବା ଡିସ୍କ ବସ୍ତୁ"
+
+#: ../src/InputController.py:91
+#, python-format
+msgid "Select disk entities to add to the %s Volume Group:"
+msgstr "%s ଘନଫଳ ସମୂହରେ ଯୋଗ କରିବା ପାଇଁ ଡିସ୍କ ବସ୍ତୁ ମାନଙ୍କୁ ଚୟନ କରନ୍ତୁ"
+
+#: ../src/InputController.py:93
+msgid ""
+"A Volume Group must be made up of two or more Physical Volumes to support "
+"striping. This Volume Group does not meet that requirement."
+msgstr ""
+"ଷ୍ଟ୍ରାଇପିଙ୍ଗ ସହାୟତା ପାଇଁ ଗୋଟିଏ ଘନଫଳ ସମୂହକୁ ଦୁଇ କିମ୍ବା ଅଧିକ ଭୌତିକ ଘନଫଳରେ ପ୍ରସ୍ତୁତ କରାଯିବା ଉଚିତ। "
+"ଏହି ଘନଫଳ ସମୂହ ଆବଶ୍ଯକତାକୁ ପୂରା କରୁନାହିଁ।"
+
+#: ../src/InputController.py:95
+#, python-format
+msgid ""
+"A Logical Volume with the name %s already exists in this Volume Group. "
+"Please choose a unique name."
+msgstr ""
+"%s ନାମରେ ନାମିତ ଗୋଟିଏ ତାର୍କିକ ଘନଫଳ ପୂର୍ବରୁ ଘନଫଳ ସମୂହରେ ରହିଛି। ଦୟାକରି ଗୋଟିଏ ଅନନ୍ଯ ନାମ ଚୟନ "
+"କରନ୍ତୁ।"
+
+#: ../src/InputController.py:97
+#, python-format
+msgid "A Volume Group with the name %s already exists. Please choose a unique name."
+msgstr "%s ନାମରେ ନାମିତ ଗୋଟିଏ ଘନଫଳ ସମୂହ ପୂର୍ବରୁ ରହିଛି। ଗୋଟିଏ ଅନନ୍ଯ ନାମ ଚୟନ କରନ୍ତୁ।"
+
+#: ../src/InputController.py:99
+msgid "A Name must be provided for the new Logical Volume"
+msgstr "ନୂତନ ତାର୍କିକ ଘନଫଳ ପାଇଁ ଗୋଟିଏ ନାମ ଦିଆଯିବା ଉଚିତ"
+
+#: ../src/InputController.py:101
+msgid "A Name must be provided for the new Volume Group"
+msgstr "ନୂତନ ଘନଫଳ ସମୂହ ପାଇଁ ଗୋଟିଏ ନାମ ଦିଆଯିବା ଉଚିତ"
+
+#: ../src/InputController.py:103
+#, python-format
+msgid "The specified mount point, %s, does not exist. Do you wish to create it?"
+msgstr "ଉଲ୍ଲେଖିତ ଆରୋହଣ ବିନ୍ଦୁ, %s, ଅବସ୍ଥିତ ନାହିଁ। ଆପଣ ଏହାକୁ ସୃଷ୍ଟି କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି କି?"
+
+#: ../src/InputController.py:105
+#, python-format
+msgid "The creation of mount point %s unexpectedly failed."
+msgstr "%s ଆରୋହଣ ବିନ୍ଦୁର ସୃଷ୍ଟି ଅପ୍ରତ୍ଯାଶିତ ଭାବରେ ବିଫଳ ହୋଇଗଲା।"
+
+#: ../src/InputController.py:107
+msgid "This capability is not yet implemented in this version"
+msgstr "ଏହି ସଂସ୍କରଣରେ ଏହି ସାମର୍ଥ୍ଯକୁ ଏପର୍ଯ୍ଯନ୍ତ ନିଷ୍ପାଦନ କରାଯାଇ ନାହିଁ"
+
+#: ../src/InputController.py:109
+msgid ""
+"The number of Logical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "ଏହି ଘନଫଳ ସମୂହରେ ତାର୍କିକ ଘନଫଳର ସଂଖ୍ଯା ଏହାର ସର୍ବାଧିକ ପରିସୀମାରେ ପହଞ୍ଚି ସାରିଛି।"
+
+#: ../src/InputController.py:111
+msgid ""
+"The number of Physical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "ଏହି ଘନଫଳ ସମୂହରେ ଭୌତିକ ଘନଫଳର ସଂଖ୍ଯା ଏହାର ସର୍ବାଧିକ ପରିସୀମାରେ ପହଞ୍ଚି ସାରିଛି।"
+
+#: ../src/InputController.py:113
+#, python-format
+msgid ""
+"At most %s Physical Volumes can be added to this Volume Group before the "
+"limit is reached."
+msgstr "ପରିସୀମା ପହଞ୍ଚିବା ପୂର୍ବରୁ ଅତିବେଶୀରେ %s ଭୌତିକ ଘନଫଳକୁ ଘନଫଳ ସମୂହରେ ଯୋଗ କରାଯାଇ ପାରିବ।"
+
+#: ../src/InputController.py:115
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space for new Logical Volumes. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"ନୂତନ ଘନଫଳ ସମୂହ ପାଇଁ ଘନଫଳ ସମୂହ %s ନିକଟରେ ଯଥେଷ୍ଟ ଖାଲିସ୍ଥାନ ନାହିଁ। ଘନଫଳ ସମୂହ ସହିତ ଗୋଟିଏ "
+"ଅତିରିକ୍ତ ଭୌତିକ ଘନଫଳ ଯୋଗ କରିବା ଗୋଟିଏ ସମ୍ଭାବ୍ଯ ସମାଧାନ ହୋଇପାରେ।"
+
+#: ../src/InputController.py:117
+msgid "A snapshot of a snapshot is not supported."
+msgstr "ଗୋଟିଏ ଆଲୋକଚିତ୍ରର ଆଲୋକଚିତ୍ର ଉଠାଇବା ସମର୍ଥିତ ନୁହେଁ।"
+
+#: ../src/InputController.py:118
+msgid "A snapshot of a mirrored Logical Volume is not supported."
+msgstr "ଗୋଟିଏ ପ୍ରତିଫଳିତ ତାର୍କିକ ଘନଫଳର ଆଲୋକଚିତ୍ର ଉଠାଇବା ସମର୍ଥିତ ନୁହେଁ।"
+
+#: ../src/InputController.py:120
+#, python-format
+msgid ""
+"Logical volume %s has snapshot %s currently associated with it. Please "
+"remove the snapshot first."
+msgstr ""
+"ବର୍ତ୍ତମାନ %s ତାର୍କିକ ଘଲଫଳରେ ତାହା ସହିତ ସମ୍ପୃକ୍ତ %s ଆଲୋକଚିତ୍ର ଅଛି। ଦୟାକରି ପ୍ରଥମେ ଆଲୋକଚିତ୍ରକୁ "
+"ଅପସାରଣ କରନ୍ତୁ।"
+
+#: ../src/InputController.py:121
+#, python-format
+msgid ""
+"Logical volume %s has snapshots: %s currently associated with it. Please "
+"remove snapshots first."
+msgstr ""
+"ବର୍ତ୍ତମାନ %s ତାର୍କିକ ଘଲଫଳରେ ତାହା ସହିତ ସମ୍ପୃକ୍ତ ଆଲୋକଚିତ୍ର ଗୁଡିକ ଅଛି: %s। ଦୟାକରି ପ୍ରଥମେ "
+"ଆଲୋକଚିତ୍ର ମାନଙ୍କୁ ଅପସାରଣ କରନ୍ତୁ।"
+
+#: ../src/InputController.py:123
+msgid "Undefined type conversion error in model factory. Unable to complete task."
+msgstr "ନମୁନା କାରଖାନାରେ ଅପରିଭାଷିତ ପ୍ରକାର ରୂପାନ୍ତରଣ ତୃଟି। କାର୍ଯ୍ଯ ସମ୍ପନ୍ନ କରିବାରେ ଅସମର୍ଥ।"
+
+#: ../src/InputController.py:125
+#, python-format
+msgid ""
+"BIG WARNING: Logical Volume %s has an %s file system on it and is currently "
+"mounted on %s. Are you absolutely certain that you wish to discard the data "
+"on this mounted filesystem?"
+msgstr ""
+"ବଡ ଚେତାବନୀ: %s ତାର୍କିକ ଘନଫଳରେ %s ଫାଇଲତନ୍ତ୍ର ଅଛି ଏବଂ ଏହାକୁ ବର୍ତ୍ତମାନ %s ରେ ଆରୋହିତ "
+"କରାଯାଇଛି। ଆପଣ ସମ୍ପୂର୍ଣ୍ଣ ଭାବରେ ନିଶ୍ଚିତ କି ଆପଣ ଏହି ଆରୋହିତ ଫାଇଲତନ୍ତ୍ରରେ ତଥ୍ଯ ପ୍ରତ୍ଯାଖ୍ଯାନ କରିବା "
+"ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#: ../src/InputController.py:127
+#, python-format
+msgid ""
+"Logical Volume %s is currently mounted on %s. In order to complete request, "
+"it has to be unmounted. Are you sure you want it unmounted?"
+msgstr ""
+"%s ତାର୍କିକ ଘନଫଳ ବର୍ତ୍ତମାନ %s ରେ ଆରୋହିତ ହୋଇଛି। ନିବେଦନକୁ ସମ୍ପନ୍ନ କରିବା ପାଇଁ, ଏହାକୁ ଅନାରୋହିତ "
+"କରିବା ପାଇଁ ହେବ। ଆପଣ ନିଶ୍ତିତ କି ଆପଣ ଏହାକୁ ଅନାରୋହିତ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#. ##TRANSLATOR: An extent below is an abstract unit of storage. The size
+#. ##of an extent is user-definable.
+#: ../src/InputController.py:133
+#, python-format
+msgid "Unused space on %s"
+msgstr "%s ରେ ଅବ୍ଯବହ୍ରୁତ ଖାଲି ସ୍ଥାନ"
+
+#: ../src/InputController.py:134
+#, python-format
+msgid "%s megabytes"
+msgstr "%s ମେଗା-ବାଇଟ୍ସ"
+
+#: ../src/InputController.py:135
+#, python-format
+msgid "%s kilobytes"
+msgstr "%s କିଲୋ-ବାଇଟ୍ସ"
+
+#: ../src/InputController.py:136
+#, python-format
+msgid "%s gigabytes"
+msgstr "%s ଗିଗା-ବାଇଟ୍ସ"
+
+#: ../src/InputController.py:137
+#, python-format
+msgid "%s extents"
+msgstr "%s ସୀମା"
+
+#: ../src/InputController.py:139
+msgid "Remaining free space in Volume Group:\n"
+msgstr "ଘନଫଳ ସମୂହ ରେ ବଳକା ଖାଲି ସ୍ଥାନ:\n"
+
+#: ../src/InputController.py:140
+msgid "Remaining space for this Volume:\n"
+msgstr "ଏହି ଘନଫଳ ପାଇଁ ବଳକା ସ୍ଥାନ:\n"
+
+#: ../src/InputController.py:142
+msgid "Extents"
+msgstr "ସୀମା"
+
+#: ../src/InputController.py:143
+msgid "Gigabytes"
+msgstr "ଗିଗା-ବାଇଟ୍ସ"
+
+#: ../src/InputController.py:144
+msgid "Megabytes"
+msgstr "ମେଗା-ବାଇଟ୍ସ"
+
+#: ../src/InputController.py:145
+msgid "Kilobytes"
+msgstr "କିଲୋ-ବାଇଟ୍ସ"
+
+#: ../src/InputController.py:147
+#, python-format
+msgid "The %s should only contain number values"
+msgstr "%s କେବଳ ସଂଖ୍ଯାତ୍ମକ ମୂଲ୍ଯ ମାନଙ୍କୁ ଧାରଣ କରିବା ଉଚିତ"
+
+#: ../src/InputController.py:148
+msgid ""
+"The Maximum Physical Volumes field should contain only integer values "
+"between 1 and 256"
+msgstr ""
+"ସର୍ବାଧିକ ଭୌତିକ ଘନଫଳ କ୍ଷେତ୍ର ଟି କେବଳ ୧ ରୁ ୨୫୬ ମଦ୍ଧ୍ଯ ରେ ଥିବା ସଂଖ୍ଯାତ୍ମକ ମୂଲ୍ଯ ମାନଙ୍କୁ ଧାରଣ "
+"କରିବା ଉଚିତ"
+
+#: ../src/InputController.py:149
+msgid ""
+"The Maximum Logical Volumes field should contain only integer values between "
+"1 and 256"
+msgstr ""
+"ସର୍ବାଧିକ ତାର୍କିକ ଘନଫଳ କ୍ଷେତ୍ରଟି କେବଳ ୧ ରୁ ୨୫୬ ମଦ୍ଧ୍ଯ ରେ ଥିବା ସଂଖ୍ଯାତ୍ମକ ମୂଲ୍ଯ ମାନଙ୍କୁ ଧାରଣ "
+"କରିବା ଉଚିତ"
+
+#: ../src/InputController.py:151
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from Logical Volume "
+"Management?"
+msgstr "ଆପଣ ପୂରାପୂରି ନିଶ୍ତିତ କି ଆପଣ ତାର୍କିକ ଘନଫଳ ପରିଚାଳନାରୁ %s କୁ ଅପସାରଣ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#: ../src/InputController.py:153
+#, python-format
+msgid ""
+"The Physical Volume named %s, that you wish to remove, has data from active "
+"Logical Volume(s) mapped to its extents. Because it is the only Physical "
+"Volume in the Volume Group, there is no place to move the data to. "
+"Recommended action is either to add a new Physical Volume before removing "
+"this one, or else remove the Logical Volumes that are associated with this "
+"Physical Volume."
+msgstr ""
+"ଆପଣ ଅପସାରଣ କରିବା ପାଇଁ ଚାହୁଁଥିବା %s ଭୌତିକ ଘନଫଳରେ ସକ୍ରିୟ ତାର୍କିକ ଘନଫଳର ତଥ୍ଯ ଅଛି, ଯାହାକୁ "
+"ଏହାର ପରିସର ସହିତ ତୁଳନା କରାଯାଇଛି। ଯେହେତୁ ଏହା ଘନଫଳ ସମୂହରେ ଥିବା ଏକମାତ୍ର ଭୌତିକ ଘନଫଳ, ତେଣୁ "
+"ତଥ୍ଯକୁ ସ୍ଥାନାନ୍ତରିତ କରିବା ପାଇଁ କୌଣସି ସ୍ଥାନ ନାହିଁ। ପରାମର୍ଶିତ କାର୍ଯ୍ଯଟି ହେଉଛି ଏହାକୁ ଅପସାରଣ କରିବା "
+"ପୂର୍ବରୁ ଗୋଟିଏ ନୂତନ ଭୌତିକ ଘନଫଳ ଯୋଗ କରନ୍ତୁ, କିମ୍ବା ଏହି ଭୌତିକ ଘନଫଳ ସହିତ ସଂପୃକ୍ତ ଥିବା ତାର୍କିକ ଘନଫଳ "
+"ମାନଙ୍କୁ ଅପସାରଣ କରନ୍ତୁ।"
+
+#: ../src/InputController.py:154
+#, python-format
+msgid "Are you quite certain that you wish to remove %s from the %s Volume Group?"
+msgstr "ଆପଣ ପୂରାପୂରି ନିଶ୍ତିତ କି ଆପଣ %s ଘନଫଳ ସମୂହରୁ %s କୁ ଅପସାରଣ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#: ../src/InputController.py:155
+#, python-format
+msgid ""
+"Removing Physical Volume %s from the Volume Group %s will leave the Volume "
+"group empty, and it will be removed as well. Do you wish to proceed?"
+msgstr ""
+"%s ଭୌତିକ ଘନଫଳକୁ %s ଘନଫଳ ସମୂହରୁ ଅପସାରଣ କଲେ, ଘନଫଳ ସମୂହଟି ଖାଲି ହୋଇଯିବ, ଏବଂ ଆହୁରି ମଧ୍ଯ ଏହା "
+"ଅପସାରିତ ହୋଇଯିବ। ଆପଣ ଜାରି ରଖିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#: ../src/InputController.py:156
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space to move the data stored on %s. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"%s ଘନଫଳ ସମୂହରେ ସଂରକ୍ଷିତ ତଥ୍ଯ %s କୁ ଘୁଞ୍ଚାଇବା ପାଇଁ ଯଥେଷ୍ଟ ସ୍ଥାନ ନାହିଁ। ଘନଫଳ ସମୂହରେ ଗୋଟିଏ "
+"ଅତିରିକ୍ତ ଭୌତିକ ଘନଫଳ ସମୂହ ଯୋଗ କରିବା ଗୋଟିଏ ସମ୍ଭାବ୍ଯ ସମାଧାନ ହୋଇପାରେ।"
+
+#: ../src/InputController.py:157
+msgid ""
+"The dm-mirror module is either not loaded in your kernel, or your kernel "
+"does not support the dm-mirror target. If it is supported, try running "
+"\"modprobe dm-mirror\". Otherwise, operations that require moving data on "
+"Physical Extents are unavailable."
+msgstr ""
+"dm-mirror ଏକକାଂଶଟି ଆପଣଙ୍କ କର୍ଣ୍ଣଲରେ ସ୍ଥାପିତ ହୋଇନାହିଁ, କିମ୍ବା ଆପଣଙ୍କ କର୍ଣ୍ଣଲ dm-mirror "
+"ଲକ୍ଷ୍ଯକୁ ସହାୟତା ପ୍ରଦାନ କରେନାହିଁ। ଯଦି ଏହା ସମର୍ଥିତ, ତାହାହେଲେ \"modprobe dm-mirror\" କୁ "
+"ଚଳାଇବା ପାଇଁ ପ୍ରଚେଷ୍ଟା କରନ୍ତୁ। ନଚେତ, ଭୌତିକ ପରିସରରେ ତଥ୍ଯ ଘୁଞ୍ଚାଇବା ପାଇଁ ଆବଶ୍ଯକ ପ୍ରକ୍ରିୟା ଗୁଡିକ "
+"ଅନୁପଲବ୍ଧ।"
+
+#: ../src/InputController.py:158
+msgid ""
+"The dm-snapshot module is either not loaded in your kernel, or your kernel "
+"does not support the dm-snapshot target. If it is supported, try running "
+"\"modprobe dm-snapshot\". Otherwise, creation of snapshots is unavailable."
+msgstr ""
+"dm-snapshot ଏକକାଂଶଟି ଆପଣଙ୍କ କର୍ଣ୍ଣଲରେ ସ୍ଥାପିତ ହୋଇନାହିଁ, କିମ୍ବା ଆପଣଙ୍କ କର୍ଣ୍ଣଲ dm-snapshot "
+"ଲକ୍ଷ୍ଯକୁ ସହାୟତା ପ୍ରଦାନ କରେନାହିଁ। ଯଦି ଏହା ସମର୍ଥିତ, ତାହାହେଲେ \"modprobe dm-snapshot\" କୁ "
+"ଚଳାଇବା ପାଇଁ ପ୍ରଚେଷ୍ଟା କରନ୍ତୁ। ନଚେତ, snapshot ର ପ୍ରସ୍ତୁତି ପ୍ରକ୍ରିୟା ଅନୁପଲବ୍ଧ।"
+
+#: ../src/InputController.py:160
+#, python-format
+msgid "Are you quite certain that you wish to remove logical volume %s?"
+msgstr "ଆପଣ ପୂରାପୂରି ନିଶ୍ଚିତ କି ଆପଣ %s ତାର୍କିକ ଘନଫଳକୁ ଅପସାରଣ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#: ../src/InputController.py:161
+#, python-format
+msgid ""
+"Logical volume %s contains %s filesystem. All data on it will be lost! Are "
+"you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"%s ତାର୍କିକ ଘନଫଳ %s ଫାଇଲତନ୍ତ୍ର ଧାରଣ କରିଅଛି। ଏଥିରେ ଥିବା ସମସ୍ତ ତଥ୍ଯ ନଷ୍ଟ ହୋଇଯିବ! ଆପଣ ପୂରାପୂରି "
+"ନିଶ୍ଚିତ କି ଆପଣ %s ତାର୍କିକ ଘନଫଳକୁ ଅପସାରଣ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#: ../src/InputController.py:162
+#, python-format
+msgid ""
+"Logical volume %s contains data from directory %s. All data in it will be "
+"lost! Are you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"%s ତାର୍କିକ ଘନଫଳ %s ଡିରେକ୍ଟୋରିରେ ଥିବା ତଥ୍ଯ ଧାରଣ କରିଅଛି। ଏଥିରେ ଥିବା ସମସ୍ତ ତଥ୍ଯ ନଷ୍ଟ ହୋଇଯିବ! "
+"ଆପଣ ପୂରାପୂରି ନିଶ୍ଚିତ କି ଆପଣ %s ତାର୍କିକ ଘନଫଳକୁ ଅପସାରଣ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#: ../src/InputController.py:308
+msgid ""
+"In order for Volume Group to be safely used in clustered environment, lvm2-"
+"cluster rpm has to be installed, `lvmconf --enable-cluster` has to be "
+"executed and clvmd service has to be running"
+msgstr ""
+"ଏକତ୍ରିତ ପରିବେଶରେ ସୁରକ୍ଷିତ ଭାବରେ ତାର୍କିକ ଘନଫଳର ବ୍ଯବହାର ପାଇଁ, lvm2-cluster rpm ସ୍ଥାପିତ "
+"ହୋଇଥିବା ଆବଶ୍ଯକ, `lvmconf --enable-cluster` ନିଷ୍ପାଦିତ ହୋଇଥିବା ଆବଶ୍ୟକ ଏବଂ clvmd ସେବା "
+"ଚାଲୁଥିବା ଆବଶ୍ଯକ"
+
+#: ../src/InputController.py:367
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror log of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"%s ଭୌତିକ ଘନଫଳ %s ତାର୍କିକ ଘନଫଳର ଗୋଟିଏ ପ୍ରତଫଳିତ ଲଗ ସହିତ ସମ୍ପୃକ୍ତ ଥିବା ପରିସର ମାନଙ୍କୁ ଧାରଣ "
+"କରିଅଛି। ପ୍ରତିଫଳିତ ତାର୍କିକ ଘନଫଳ ଗୁଡିକ ଏ ପର୍ଯ୍ଯନ୍ତ ଉତ୍ପ୍ରବାସିତ ନୁହଁନ୍ତି, ତେଣୁ %s ଅପସାରଣ ଯୋଗ୍ଯ ନୁହେଁ।"
+
+#: ../src/InputController.py:370
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror image of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"%s ଭୌତିକ ଘନଫଳ %s ତାର୍କିକ ଘନଫଳର ଗୋଟିଏ ପ୍ରତଫଳିତ ପ୍ରତିଛବି ସହିତ ସମ୍ପୃକ୍ତ ଥିବା ପରିସର ମାନଙ୍କୁ ଧାରଣ "
+"କରିଅଛି। ପ୍ରତିଫଳିତ ତାର୍କିକ ଘନଫଳ ଗୁଡିକ ଏ ପର୍ଯ୍ଯନ୍ତ ଉତ୍ପ୍ରବାସିତ ନୁହଁନ୍ତି, ତେଣୁ %s ଅପସାରଣ ଯୋଗ୍ଯ ନୁହେଁ।"
+
+#: ../src/InputController.py:373
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, a snapshot of %s. "
+"Snapshots are not yet migratable, so %s is not removable."
+msgstr ""
+"%s ଭୌତିକ ଘନଫଳ %s (%s ର ଗୋଟିଏ ଆଲୋକଚିତ୍ର) ସହିତ ସମ୍ପୃକ୍ତ ଥିବା ପରିସର ମାନଙ୍କୁ ଧାରଣ କରିଅଛି। "
+"ଆଲୋକଚିତ୍ର ଗୁଡିକ ଏ ପର୍ଯ୍ଯନ୍ତ ଉତ୍ପ୍ରବାସିତ ନୁହଁନ୍ତି, ତେଣୁ %s ଅପସାରଣ ଯୋଗ୍ଯ ନୁହେଁ।"
+
+#: ../src/InputController.py:378
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshot %"
+"s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"%s ଭୌତିକ ଘନଫଳ %s (%s ଆଲୋକଚିତ୍ର ମାନଙ୍କର ଉତ୍ସ) ସହିତ ସମ୍ପୃକ୍ତ ଥିବା ପରିସର ମାନଙ୍କୁ ଧାରଣ କରିଅଛି। "
+"ଆଲୋକଚିତ୍ର ଉତ୍ସ ଗୁଡିକ ଏ ପର୍ଯ୍ଯନ୍ତ ଉତ୍ପ୍ରବାସିତ ନୁହଁନ୍ତି, ତେଣୁ %s ଅପସାରଣ ଯୋଗ୍ଯ ନୁହେଁ।"
+
+#: ../src/InputController.py:380
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshots "
+"%s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"%s ଭୌତିକ ଘନଫଳ %s (%s ଆଲୋକଚିତ୍ର ମାନଙ୍କର ଉତ୍ସ) ସହିତ ସମ୍ପୃକ୍ତ ଥିବା ପରିସର ମାନଙ୍କୁ ଧାରଣ କରିଅଛି। "
+"ଆଲୋକଚିତ୍ର ଉତ୍ସ ଗୁଡିକ ଏ ପର୍ଯ୍ଯନ୍ତ ଉତ୍ପ୍ରବାସିତ ନୁହଁନ୍ତି, ତେଣୁ %s ଅପସାରଣ ଯୋଗ୍ଯ ନୁହେଁ।"
+
+#: ../src/InputController.py:567
+#, python-format
+msgid ""
+"Logical Volume \"%s\" has snapshots that are not selected for removal. They "
+"must be removed as well."
+msgstr ""
+"\"%s\" ତାର୍କିକ ଘନଫଳ ନିକଟରେ ଆଲୋକଚିତ୍ର ମାନ ଅଛି ଯାହାକୁ ଅପସାରଣ କରିବା ପାଇଁ ଚୟନ କରାଯାଇ ନାହିଁ। "
+"ଆହୁରି ମଧ୍ଯ ସେମାନଙ୍କୁ ଅପସାରଣ କରାଯିବା ଉଚିତ।"
+
+#: ../src/InputController.py:582
+#, python-format
+msgid "\"%s\", an origin of snapshot \"%s\", has been deleted from removal list."
+msgstr "\"%s\", \"%s\" ଆଲୋକଚିତ୍ରର ଉତ୍ସ, କୁ ଅପସାରଣ ତାଲିକାରୁ କାଢି ଦିଆଯାଇଛି।"
+
+#: ../src/InputController.py:613
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a mirror. Mirrors are "
+"not migratable, so %s is not removable."
+msgstr ""
+"\"%s\" ଭୌତିକ ଘନଫଳ ଗୋଟିଏ ପ୍ରତିଫଳନ ସହିତ ସମ୍ପୃକ୍ତ ପରିସର ମାନଙ୍କୁ ଧାରଣ କରିଅଛି। ପ୍ରତିଫଳନ ଗୁଡିକ "
+"ଉତ୍ପ୍ରବାସିତ ନୁହଁନ୍ତି, ତେଣୁ %s ଅପସାରଣ ଯୋଗ୍ଯ ନୁହେଁ।"
+
+#: ../src/InputController.py:616
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a snapshot or a "
+"snapshot's origin. Snapshots are not migratable, so %s is not removable."
+msgstr ""
+"\"%s\" ଭୌତିକ ଘନଫଳ ଗୋଟିଏ ଆଲୋକଚିତ୍ର କିମ୍ବା ଗୋଟିଏ ଆଲୋକଚିତ୍ରର ଉତ୍ସ ସହିତ ସମ୍ପୃକ୍ତ ପରିସର ମାନଙ୍କୁ "
+"ଧାରଣ କରିଅଛି। ଆଲୋକଚିତ୍ର ଗୁଡକ ଅତ୍ପ୍ରବାସିତ ନୁହଁନ୍ତି, ତେଣୁ %s ଅପସାରଣ ଯୋଗ୍ଯ ନୁହେଁ।"
+
+#: ../src/InputController.py:681
+msgid "The path you specified does not exist."
+msgstr "ଆପଣ ଉଲ୍ଳଖିତ କରିଥିବା ପଥ ଅବସ୍ଥିତ ନାହିଁ।"
+
+#: ../src/InputController.py:688
+msgid "The path you specified is not a Block Device."
+msgstr "ଆପଣ ଉଲ୍ଳଖିତ କରିଥିବା ପଥ ଗୋଟିଏ ଅବରୋଧୀ ଉପକରଣ ନୁହେଁ।"
+
+#: ../src/InputController.py:759
+#, python-format
+msgid "Initialization of %s failed"
+msgstr "%s ର ବୈଧିକରଣ ବିଫଳ"
+
+#: ../src/InputController.py:1007 ../src/InputController.py:1010
+msgid "Please select some extents first"
+msgstr "ଦୟାକରି କିଛି ପରିମାଣ କୁ ପ୍ରଥମେ ଚୟନ କରନ୍ତୁ"
+
+#: ../src/InputController.py:1044
+msgid ""
+"There are not enough free extents to perform the necessary migration. Adding "
+"more physical volumes would solve the problem."
+msgstr ""
+"ଦରକାରୀ ଉତ୍ପ୍ରବାସନକୁ ପ୍ରଦର୍ଶନ କରିବା ପାଇଁ ଯଥେଷ୍ଟ ଖାଲି ପରିସର ନାହିଁ। ଅଧିକ ଭୌତିକ ଘନଫଳର ସଂଯୋଗ ଏହି "
+"ସମସ୍ଯାକୁ ସମାଧାନ କରିଦେବ।"
+
+#: ../src/InputController.py:1206
+msgid "Migrate extents"
+msgstr "ଏହି ପରିସୀମା କୁ ଛାଡି ଦିଅ"
+
+#: ../src/InputController.py:1334
+msgid "Options"
+msgstr "ପସନ୍ଦ ମାନ"
+
+#: ../src/InputController.py:1368
+#, python-format
+msgid "Create A Snapshot of %s"
+msgstr "%s ପାଇଁ ଗୋଟିଏ ଆଶୁଚିତ୍ର ସୃଷ୍ଟି କରନ୍ତୁ"
+
+#: ../src/InputController.py:1370
+msgid "Create New Logical Volume"
+msgstr "ନୂତନ ତାର୍କିକ ଘନଫଳ ସୃଷ୍ଟି କରନ୍ତୁ"
+
+#: ../src/InputController.py:1373
+#, python-format
+msgid "Edit %s, a Snapshot of %s"
+msgstr "%s କୁ ସମ୍ପାଦନ କରନ୍ତୁ, %s ର ଗୋଟିଏ ଆଶୁଚିତ୍ର"
+
+#: ../src/InputController.py:1376
+msgid "Edit Logical Volume"
+msgstr "ତାର୍କିକ ଘନଫଳକୁ ସମ୍ପାଦନ କରନ୍ତୁ"
+
+#: ../src/InputController.py:1536
+msgid "Underlying Logical Volume Management does not support mirroring"
+msgstr "ନିମ୍ନରେ ଥିବା ତାର୍କିକ ଘନଫଳ ପରିଚାଳନା ପ୍ରତିଫଳନକୁ ସମର୍ଥ କରେ ନାହିଁ"
+
+#: ../src/InputController.py:1543
+msgid "Striped Logical Volumes cannot be mirrored."
+msgstr "ଗାରଗାରିଆ ତାର୍କିକ ଘନଫଳକୁ ପ୍ରତିଫଳିତ କରିହେବ ନାହିଁ।"
+
+#: ../src/InputController.py:1550
+msgid "Logical Volumes with associated snapshots cannot be mirrored yet."
+msgstr "ସମ୍ମିଳିତ ଆଲୋକଚିତ୍ର ମାନଙ୍କ ସହିତ ତାର୍କିକ ଘନଫଳକୁ ଏ ପର୍ଯ୍ଯନ୍ତ ପ୍ରତିଫଳିତ କରାଯାଇ ନାହିଁ।"
+
+#. mirror images placement: diff HDs or anywhere
+#. prompt
+#: ../src/InputController.py:1557
+msgid ""
+"The primary purpose of mirroring is to protect data in the case of hard "
+"drive failure. Do you want to place mirror images onto different hard drives?"
+msgstr ""
+"ହାର୍ଡ ଡ୍ରାଇଭ ବିଫଳ ସମୟରେ ପ୍ରତିଫଳନର ମୌଳିକ କାର୍ଯ୍ଯ ହେଉଛି ତଥ୍ଯ ସୁରକ୍ଷିତ କରିବ। ଆପଣ ବିଭିନ୍ନ ହାର୍ଡ "
+"ଡ୍ରାଇଭରେ ପ୍ରତିଫଳକ ପ୍ରତିଛବି ମାନଙ୍କୁ ରଖିବା ପାଇଁ ଚାହୁଁଛନ୍ତି କି?"
+
+#: ../src/InputController.py:1566
+msgid "Less than 3 hard drives are available with free space. Disabling mirroring."
+msgstr "ଖାଲିସ୍ଥାନ ବିଶିଷ୍ଟ ୩ ରୁ କମ ହାର୍ଡ ଡ୍ରାଇଭ ଉପଲବ୍ଧ। ପ୍ରତିଫଳନ ପ୍ରକ୍ରିୟାକୁ ନିଷ୍କ୍ରିୟ କରୁଅଛି।"
+
+#: ../src/InputController.py:1571
+msgid ""
+"There must be free space on at least three Physical Volumes to enable "
+"mirroring"
+msgstr "ପ୍ରତିଫଳନ ପ୍ରକ୍ରିୟାକୁ ସକ୍ରିୟ କରିବା ପାଇଁ ସେଠାରେ ଅତିକମରେ ଖାଲିସ୍ଥାନ ବିଶିଷ୍ଟ ତିନିଟି ଭୌତିକ ଘନଫଳ ଥିବା ଉଚିତ"
+
+#: ../src/InputController.py:1579
+msgid ""
+"The size of the Logical Volume has been adjusted to the maximum available "
+"size for mirrors."
+msgstr "ପ୍ରତିଫଳନ ପ୍ରକ୍ରିୟା ପାଇଁ ତାର୍କିକ ଘନଫଳର ଆକାରକୁ ସର୍ବାଧିକ ଉପଲବ୍ଧ ଆକାର ସହିତ ଯଥାପୁଯକ୍ତ କରନ୍ତୁ।"
+
+#: ../src/InputController.py:1584
+#, python-format
+msgid ""
+"There is not enough free space to add mirroring. Reduce size of Logical "
+"Volume to at most %s, or add Physical Volumes."
+msgstr ""
+"ପ୍ରତିଫଳନ ପ୍ରକ୍ରିୟାକୁ ଯୋଗ କରିବା ପାଇଁ ସେଠାରେ ଯଥେଷ୍ଟ ସ୍ଥାନ ନାହିଁ। ତାର୍କିକକୁ ଘନଫଳର ଆକାରକୁ ସର୍ବାଧିକ "
+"%s ପର୍ଯ୍ଯନ୍ତ ହ୍ରାସ କରନ୍ତୁ, କିମ୍ବା ଭୌତିକ ଘନଫଳ ଗୁଡିକୁ ଯୋଗ କରନ୍ତୁ।"
+
+#: ../src/InputController.py:1948
+msgid "Names beginning with \"snapshot\" or \"pvmove\" are reserved keywords."
+msgstr "\"snapshot\" କିମ୍ବା \"pvmove\" ଦ୍ବାରା ପ୍ରାରମ୍ଭିତ ନାମ ଗୁଡିକ ସଂରକ୍ଷିତ ସୂଚକ ଶବ୍ଦ ଅଟନ୍ତି।"
+
+#: ../src/InputController.py:1950
+msgid "Names containing \"_mlog\" or \"_mimage\" are reserved keywords."
+msgstr "\"_mlog\" କିମ୍ବା \"_mimage\" ଧାରଣ କରିଥିବା ନାମ ଗୁଡିକ ସଂରକ୍ଷିତ ସୂଚକ ଶବ୍ଦ ଅଟନ୍ତି।"
+
+#: ../src/InputController.py:1952
+msgid "Names beginning with a \"-\" are invalid"
+msgstr "ଗୋଟିଏ \"-\" ସହିତ ପ୍ରାରମ୍ଭିତ ନାମ ଗୁଡିକ ଅବୌଧ ଅଟନ୍ତି"
+
+#: ../src/InputController.py:1954
+msgid "Name can be neither \".\" nor \"..\""
+msgstr "ନାମଟି କେବେହେଲେ \".\" କିମ୍ବା \"..\" ହୋଇପାରିବ ନାହିଁ"
+
+#: ../src/InputController.py:1960
+msgid "Whitespaces are not allowed in Logical Volume names"
+msgstr "ତାର୍କିକ ଘନଫଳ ନାମରେ ଖାଲିସ୍ଥାନ ଗୃହୀତ ନୁହେଁ"
+
+#: ../src/InputController.py:1963
+#, python-format
+msgid "Invalid character \"%s\" in Logical Volume name"
+msgstr "ତାର୍କିକ ଘନଫଳ ନାମରେ ଅବୈଧ ଅକ୍ଷର \"%s\""
+
+#: ../src/InputController.py:1983
+msgid "Please specify mount point"
+msgstr "ଦୟାକରି ସ୍ଥାପନ ବିନ୍ଦୁକୁ ଉଲ୍ଲଖିତ କରନ୍ତୁ"
+
+#: ../src/InputController.py:2049
+msgid "Do you want to upgrade ext2 to ext3 preserving data on Logical Volume?"
+msgstr "ଆପଣ ତାର୍କିକ ଘନଫଳରେ ତଥ୍ଯ ସଂରକ୍ଷଣ କରିବା ପାଇଁ ext2 କୁ ext3 ରେ ଉନ୍ନୟନ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି କି?"
+
+#. # LV is probably exported to another computer(s)
+#: ../src/InputController.py:2089
+msgid ""
+"Logical volume is not mounted but is in use. Please close all applications "
+"using this device (eg iscsi)"
+msgstr ""
+"ତାର୍କିକ ଭଲ୍ୟୁମ ସ୍ଥାପିତ ହୋଇନାହିଁ କିନ୍ତୁ ବ୍ୟବହାର ହେଉଅଛି। ଦୟାକରି ସମସ୍ତ ପ୍ରୟୋଗଗୁଡ଼ିକୁ ଏହି "
+"ଉପକରଣ ବ୍ୟବହାର କରି ବନ୍ଦ କରନ୍ତୁ (ଉଦାହରଣ ସ୍ୱରୂପ iscsi)"
+
+#: ../src/InputController.py:2093
+msgid ""
+"Changing the filesystem will destroy all data on the Logical Volume! Are you "
+"sure you want to proceed?"
+msgstr ""
+"ଫାଇଲ ତନ୍ତ୍ରର ପରିବର୍ତ୍ତନ ତାର୍କିକ ଘନଫଳରେ ସମସ୍ତ ତଥ୍ଯକୁ ନଷ୍ଟ କରିଦେବ! ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ଏହା ଜାରି "
+"ରଖିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#. migration not performed, continue process with no mirroring
+#: ../src/InputController.py:2194
+msgid "Mirror not created. Completing remaining tasks."
+msgstr "ପ୍ରତିଫଳନ ସୃଷ୍ଟା କରାଯାଇ ନାହିଁ। ବଳକା କାର୍ଯ୍ଯ ମାନଙ୍କୁ ସମ୍ପନ୍ନ କରୁଅଛି।"
+
+#. create mirror
+#: ../src/InputController.py:2197
+msgid ""
+"Underlaying LVM doesn't support addition of mirrors to existing Logical "
+"Volumes. Completing remaining tasks."
+msgstr ""
+"ନିମ୍ନରେ ଥିବା LVM ଅବସ୍ଥିତ ଭୌତିକ ଘନଫଳରେ ପ୍ରତିଫଳନ ପ୍ରକ୍ରିୟାର ସଂଯୋଗକୁ ସମର୍ଥ କରେନାହିଁ। ବଳକା "
+"କାର୍ଯ୍ଯ ମାନଙ୍କୁ ସମ୍ପୂର୍ଣ୍ଣ କରୁଅଛି।"
+
+#: ../src/InputController.py:2252
+msgid "In order to add mirroring, some extents need to be migrated."
+msgstr "ପ୍ରତିଫଳନକୁ ଯୋଗ କରିବା ପାଇଁ, କିଛି ପରିସର ମାନଙ୍କୁ ଉତ୍ପ୍ରବାସିତ କରାଯିବା ଉଚିତ।"
+
+#: ../src/InputController.py:2252
+msgid "Do you want to migrate specified extents?"
+msgstr "ନିର୍ଦ୍ଦିଷ୍ଟ ପରିସର ମାନଙ୍କୁ ଯିବା ପାଇଁ ଆପଣ ଚାହୁଁଛନ୍ତି କି?"
+
+#: ../src/CommandHandler.py:55
+msgid "Creating Logical Volume"
+msgstr "ତାର୍କିକ ଘନଫଳ ସୃଷ୍ଟି କରୁଅଛି"
+
+#: ../src/CommandHandler.py:76 ../src/CommandHandler.py:95
+msgid "Resizing Logical Volume"
+msgstr "ତାର୍କିକ ଘନଫଳ ର ଆକାର କୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
+
+#: ../src/CommandHandler.py:134
+msgid "Adding Mirror to Logical Volume"
+msgstr "ତାର୍କିକ ଘନଫଳ ରେ ପ୍ରତିଫଳକ କୁ ଯୋଗ କରୁଅଛି"
+
+#: ../src/CommandHandler.py:147
+msgid "Removing Mirror from Logical Volume"
+msgstr "ତାର୍କିକ ଘନଫଳ ରୁ ପ୍ରତିଫଳକ କୁ ଅପସାରଣ କରୁଅଛି"
+
+#: ../src/CommandHandler.py:172
+msgid "Initializing Physical Volume"
+msgstr "ଭୌତିକ ଘନଫଳ କୁ ପ୍ରାରମ୍ଭ କରୁଅଛି"
+
+#: ../src/CommandHandler.py:185
+msgid "Adding Physical Volume to Volume Group"
+msgstr "ଘନଫଳ ସମୂହ ରେ ଭୌତିକ ଘନଫଳ କୁ ଯୋଗ କରୁଅଛି"
+
+#: ../src/CommandHandler.py:217
+msgid "Creating Volume Group"
+msgstr "ଘନଫଳ ସମୂହ କୁ ସୃଷ୍ଟି କରୁଅଛି"
+
+#: ../src/CommandHandler.py:243
+msgid "Removing Volume Group"
+msgstr "ଘନଫଳ ସମୂହ କୁ ଅପସାରଣ କରୁଅଛି"
+
+#: ../src/CommandHandler.py:255
+msgid "Removing Physical Volume"
+msgstr "ଭୌତିକ ଘନଫଳ କୁ ଅପସାରଣ କରୁଅଛି"
+
+#: ../src/CommandHandler.py:272
+msgid "Removing Logical Volume"
+msgstr "ତାର୍କିକ ଘନଫଳ କୁ ଅପସାରଣ କରୁଅଛି"
+
+#: ../src/CommandHandler.py:289
+msgid "Renaming Logical Volume"
+msgstr "ତାର୍କିକ ଘନଫଳ ର ନାମ କୁ ପରିବର୍ତ୍ତିତ କରୁଅଛି"
+
+#: ../src/CommandHandler.py:313
+msgid "Removing Physical Volume from Volume Group"
+msgstr "ଘନଫଳ ସମୂହ ରୁ ଭୌତିକ ଘନଫଳ କୁ ଅପସାରଣ କରୁଅଛି"
+
+#: ../src/CommandHandler.py:350
+msgid "Migrating Extents"
+msgstr "ଏହି ପରିସୀମା କୁ ଛାଡି ଦିଅ"
+
+#: ../src/CommandHandler.py:364
+msgid "Completing Extent Migration"
+msgstr "ପରିସୀମା କୁ ଛାଡିବା ସମ୍ପୂର୍ଣ୍ଣ ହେଉ ଅଛି"
+
+#: ../src/CommandHandler.py:415
+msgid "Rereading partition table"
+msgstr "ବିଭାଜନ ସାରଣୀକୁ ପୁନଃପଠନ କରୁଅଛି"
+
+#: ../src/lvm_model.py:45 ../src/lvmui_constants.py:83
+msgid "Unused"
+msgstr "ଅବ୍ଯବହ୍ରୁତ"
+
+#: ../src/lvm_model.py:46
+msgid "Unused Space"
+msgstr "ଅବ୍ଯବହ୍ରୁତ ଖାଲି ସ୍ଥାନ"
+
+#: ../src/lvm_model.py:48
+msgid "Unmounted"
+msgstr "ଅସ୍ଥାପିତ"
+
+#: ../src/lvm_model.py:58
+msgid "Volume Group Name:   "
+msgstr "ଘନଫଳ ସମୂହ ର ନାମ:   "
+
+#: ../src/lvm_model.py:59
+msgid "System ID:   "
+msgstr "ତନ୍ତ୍ର ର ପରିଚୟ:   "
+
+#: ../src/lvm_model.py:60
+msgid "Format:   "
+msgstr "ସଜ୍ଜିକରଣ ଶୈଳୀ:   "
+
+#: ../src/lvm_model.py:61 ../src/lvm_model.py:78 ../src/lvm_model.py:93
+msgid "Attributes:   "
+msgstr "ଗୁଣ ମାନ:   "
+
+#: ../src/lvm_model.py:62
+msgid "Volume Group Size:   "
+msgstr "ଘନଫଳ ସମୂହ ର ଆକାର:   "
+
+#: ../src/lvm_model.py:63
+msgid "Available Space:   "
+msgstr "ଉପଲବ୍ଧ ଖାଲି ସ୍ଥାନ:   "
+
+#: ../src/lvm_model.py:64
+msgid "Total Number of Extents:   "
+msgstr "ସର୍ବମୋଟ ପରିମାଣ:   "
+
+#: ../src/lvm_model.py:65
+msgid "Number of Free Extents:   "
+msgstr "କେତେ ପରିମାଣ ମାଗଣା ରେ ଉପଲବ୍ଧ:   "
+
+#: ../src/lvm_model.py:66
+msgid "Extent Size:   "
+msgstr "ପରିସୀମା ର ଆକାର:   "
+
+#: ../src/lvm_model.py:67
+msgid "Maximum Allowed Physical Volumes:   "
+msgstr "ସର୍ବାଧିକ ସ୍ବୀକୃତ ଭୌତିକ ଘନଫଳ:   "
+
+#: ../src/lvm_model.py:68
+msgid "Number of Physical Volumes:   "
+msgstr "ଭୌତିକ ଘନଫଳ ର ସଂଖ୍ଯା:   "
+
+#: ../src/lvm_model.py:69
+msgid "Maximum Allowed Logical Volumes:   "
+msgstr "ସର୍ବାଧିକ ସ୍ବୀକୃତ ତାର୍କିକ ଘନଫଳ:   "
+
+#: ../src/lvm_model.py:70
+msgid "Number of Logical Volumes:   "
+msgstr "ତାର୍କିକ ଘନଫଳ ର ସଂଖ୍ଯା:   "
+
+#: ../src/lvm_model.py:71
+msgid "VG UUID:   "
+msgstr "VG UUID:   "
+
+#: ../src/lvm_model.py:73
+msgid "Logical Volume Name:   "
+msgstr "ତାର୍କିକ ଘନଫଳ ର ନାମ:   "
+
+#: ../src/lvm_model.py:74
+msgid "Logical Volume Size:   "
+msgstr "ତାର୍କିକ ଘନଫଳ ର ଆକାର:   "
+
+#: ../src/lvm_model.py:75
+msgid "Number of Segments:   "
+msgstr "ଅନୁଭାଗ ମାନଙ୍କ ର ସଂଖ୍ଯା:   "
+
+#: ../src/lvm_model.py:76
+msgid "Number of Stripes:   "
+msgstr "ରେଖା ମାନଙ୍କ ର ସଂଖ୍ଯା:   "
+
+#: ../src/lvm_model.py:77
+msgid "Stripe Size:   "
+msgstr "ରେଖା ର ଆକାର:   "
+
+#: ../src/lvm_model.py:79
+msgid "LV UUID:   "
+msgstr "LV UUID:   "
+
+#: ../src/lvm_model.py:81
+msgid "Partition Type:   "
+msgstr "ବିଭାଜନ ର ପ୍ରକାର:   "
+
+#: ../src/lvm_model.py:82
+msgid "Size:   "
+msgstr "ଆକାର:   "
+
+#: ../src/lvm_model.py:83
+msgid "Mount Point:   "
+msgstr "ସ୍ଥାପନ ବିନ୍ଦୁ:   "
+
+#: ../src/lvm_model.py:84
+msgid "Mount Point when Rebooted:   "
+msgstr "ପୁନଃ ଚାଳନ କରା ଗଲା ସମୟ ରେ ସ୍ଥାପନ ବିନ୍ଦୁ:   "
+
+#: ../src/lvm_model.py:85
+msgid "File System:   "
+msgstr "ଫାଇଲ ତନ୍ତ୍ର:   "
+
+#: ../src/lvm_model.py:87
+msgid "Physical Volume Name:   "
+msgstr "ଭୌତିକ ଘନଫଳ ର ନାମ:   "
+
+#: ../src/lvm_model.py:88
+msgid "Physical Volume Size:   "
+msgstr "ଭୌତିକ ଘନଫଳ ର ଆକାର:   "
+
+#: ../src/lvm_model.py:89
+msgid "Space Used:   "
+msgstr "ବ୍ଯବହ୍ରୁତ ଖାଲି ସ୍ଥାନ:   "
+
+#: ../src/lvm_model.py:90
+msgid "Space Free:   "
+msgstr "ଖାଲି ସ୍ଥାନ:   "
+
+#: ../src/lvm_model.py:91
+msgid "Total Physical Extents:   "
+msgstr "ସମ୍ପୂର୍ଣ୍ଣ ଭୌତିକ ପରିମାଣ:   "
+
+#: ../src/lvm_model.py:92
+msgid "Allocated Physical Extents:   "
+msgstr "ବଣ୍ଟା ଯାଇଥିବା ଭୌତିକ ପରିମାଣ:   "
+
+#: ../src/lvm_model.py:94
+msgid "PV UUID:   "
+msgstr "PV UUID:   "
+
+#: ../src/lvm_model.py:96
+msgid "Not initializable:"
+msgstr "ଅପ୍ରାରମ୍ଭିକୀୟ:"
+
+#: ../src/lvm_model.py:97
+msgid "Extended partition"
+msgstr "ବିସ୍ତାରିତ ବିଭାଜନ"
+
+#. Translator: the line below refers to a standard linux swap partition.
+#: ../src/lvm_model.py:99
+msgid "Swap partition currently in use"
+msgstr "ବର୍ତମାନ ବ୍ଯବହ୍ରୁତ ହେଉଥିବା ବିଭାଜନ କୁ ଅଦଳ ବଦଳ କରନ୍ତୁ"
+
+#: ../src/lvm_model.py:100
+msgid "Foreign boot partition"
+msgstr "ବୈଦେଶିକ ବୁଟ ବିଭାଜନ"
+
+#: ../src/lvm_model.py:101
+msgid "Autopartition failure"
+msgstr "ସ୍ବତଃ ବିଭାଜନ ବିଫଳ"
+
+#: ../src/lvm_model.py:259
+msgid "Partition manually"
+msgstr "ହସ୍ତକୃତ ଭାବରେ ବିଭାଜନ କରନ୍ତୁ"
+
+#: ../src/lvm_model.py:295
+msgid "Multipath device"
+msgstr "ବହୁପଥିକ ଉପକରଣ"
+
+#: ../src/lvm_model.py:298
+msgid "Note:"
+msgstr "ଦ୍ରଷ୍ଟବ୍ଯ:"
+
+#: ../src/lvm_model.py:298
+msgid "Initialize manually"
+msgstr "ହସ୍ତକୃତ ଭାବରେ ପ୍ରାରମ୍ଭିକରଣ କରନ୍ତୁ"
+
+#: ../src/lvm_model.py:758
+msgid "Clustered:   "
+msgstr "ଏକତ୍ରିତ:   "
+
+#: ../src/lvm_model.py:760
+msgid "True"
+msgstr "ସତ"
+
+#: ../src/lvm_model.py:762
+msgid "False"
+msgstr "ମିଛ"
+
+#: ../src/lvm_model.py:820
+msgid "Number of mirror images:"
+msgstr "ପ୍ରତିଫଳିତ ପ୍ରତିଛବି ସଂଖ୍ଯା:"
+
+#: ../src/lvm_model.py:823
+msgid "Snapshots:"
+msgstr "ଆଶୁଚିତ୍ର:"
+
+#: ../src/lvm_model.py:829
+msgid "Snapshot origin:"
+msgstr "ଆଶୁଚିତ୍ରର ଉତ୍ପତ୍ତି:"
+
+#: ../src/lvm_model.py:836
+msgid "Snapshot usage:"
+msgstr "ଆଶୁଚିତ୍ର ର ବ୍ଯବହାର ବିଧି:"
+
+#: ../src/lvm_model.py:859 ../src/lvm_model.py:865 ../src/lvm_model.py:926
+#: ../src/lvm_model.py:942
+msgid "/   Root Filesystem"
+msgstr "/   ପ୍ରମୂଖ ଚାଳକ ର ଫାଇଲ ତନ୍ତ୍ର"
+
+#: ../src/lvm_model.py:945 ../src/Filesystem.py:135
+msgid "None"
+msgstr "କିଛି ନୁହେଁ"
+
+#: ../src/lvm_model.py:999
+msgid "SCSI Address:  "
+msgstr "SCSI ଠିକଣା:  "
+
+#: ../src/lvm_model.py:1001
+msgid "SCSI ID:  "
+msgstr "SCSI ID:  "
+
+#. INIT_ENTITY=_("Are you certain that you wish to initialize disk entity %s? All data will be lost on this device/partition.")
+#: ../src/lvmui_constants.py:51
+#, python-format
+msgid ""
+"All data on disk entity %s will be lost! Are you certain that you wish to "
+"initialize it?"
+msgstr "%s ଡିସ୍କ ବସ୍ତୁର ସମସ୍ତ ତଥ୍ଯ ନଷ୍ଟ ହୋଇଯିବ! ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ଏହାକୁ ପ୍ରାରମ୍ଭିକୃତ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#: ../src/lvmui_constants.py:52
+#, python-format
+msgid ""
+"Disk entity %s contains %s filesystem. All data on it will be lost! Are you "
+"certain that you wish to initialize disk entity %s?"
+msgstr ""
+"%s ଡିସ୍କ ବସ୍ତୁ %s ଫାଇଲତନ୍ତ୍ରକୁ ଧାରଣ କରିଅଛି। ଏଥିରେ ଥିବା ସମସ୍ତ ତଥ୍ଯ ନଷ୍ଟ ହୋଇଯିବ! ଆପଣ ନିଶ୍ତିତ କି "
+"ଆପଣ %s ଡିସ୍କ ବସ୍ତୁକୁ ପ୍ରାରମ୍ଭିକୃତ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#: ../src/lvmui_constants.py:53
+#, python-format
+msgid ""
+"Disk entity %s contains data from directory %s. All data in it will be lost! "
+"Are you certain that you wish to initialize disk entity %s?"
+msgstr ""
+"%s ଡିସ୍କ ବସ୍ତୁ %s ଡିରେକ୍ଟୋରିରେ ଥିବା ତଥ୍ଯ ମାନଙ୍କୁ ଧାରଣ କରିଅଛି। ଏଥିରେ ଥିବା ସମସ୍ତ ତଥ୍ଯ ନଷ୍ଟ "
+"ହୋଇଯିବ! ଆପଣ ନିଶ୍ତିତ କି ଆପଣ %s ଡିସ୍କ ବସ୍ତୁକୁ ପ୍ରାରମ୍ଭିକୃତ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+
+#: ../src/lvmui_constants.py:54
+#, python-format
+msgid "Are you certain that you wish to initialize %s of free space on disk %s?"
+msgstr "%s ଖାଲି ସ୍ଥାନକୁ %s ଡିସ୍କରେ ଆପଣ ପ୍ରାରମ୍ଭିକରଣ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି କି?"
+
+#: ../src/lvmui_constants.py:55
+#, python-format
+msgid ""
+"You are about to initialize unpartitioned disk %s. It is advisable, although "
+"not required, to create a partition on it. Do you want to create a single "
+"partition encompassing the whole drive?"
+msgstr ""
+"ଆପଣ ଅବିଭାଜିତ ଡିସ୍କ %s କୁ ସ୍ଥାପନ କରିବା ପାଇଁ ଯାଉଛନ୍ତି। ଯଦିଚ ଆବଶ୍ଯକ ନୁହେଁ, ଏଥିରେ ଗୋଟିଏ ବିଭାଜନ "
+"ସୃଷ୍ଟି କରିବା ପରାମର୍ଶିତ। ଆପଣ ସମଗ୍ର ଡ୍ରାଇଭକୁ ଆଧାରୀଭୂତ କରି ଗୋଟିଏ ବିଭାଜନ ସୃଷ୍ଟି କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି "
+"କି?"
+
+#: ../src/lvmui_constants.py:57
+msgid "Reloading LVM. Please wait."
+msgstr "ଏଲଭିଏମ କୁ ପୁନର୍ଧାରଣ କରୁୁଅଛି । ଦୟାକରି ଅପେକ୍ଷା କରନ୍ତୁ"
+
+#: ../src/lvmui_constants.py:59
+#, python-format
+msgid ""
+"Changes will take effect after computer is restarted. If device %s is used, "
+"before restart, data corruption WILL occur. It is advisable to restart your "
+"computer now."
+msgstr ""
+"କମ୍ପୁଟରଟି ପୁନଃପ୍ରାରମ୍ଭ ହୋଇ ସାରିବା ପରେ ପରିବର୍ତ୍ତନ ଗୁଡିକ ପ୍ରଭାବିତ ହେବେ। ଯଦି %s ଉପକରଣଟି "
+"ପୁନଃପ୍ରାରମ୍ଭ ହେବା ପୂର୍ବରୁ ବ୍ଯବହୃତ ହେଉଛି, ତାହାହେଲେ ତଥ୍ଯ ବିନ୍ଯାସ ହେବ। ଆପଣଙ୍କ କମ୍ପୁଟରକୁ "
+"ପୁନଃପ୍ରାରମ୍ଭ କରିବା ପରାମର୍ଶିତ।"
+
+#: ../src/lvmui_constants.py:61
+msgid "Mirror Log"
+msgstr "ପ୍ରତିଫଳକ ଲଗ"
+
+#: ../src/lvmui_constants.py:63
+msgid "Unable to process request"
+msgstr "ଅନୁରୋଧ କୁ ସଂସାଧନ କରିବା ପାଇଁ ଅସମର୍ଥ"
+
+#: ../src/lvmui_constants.py:65
+#, python-format
+msgid "%s command failed. Command attempted: \"%s\" - System Error Message: %s"
+msgstr "%s ନିର୍ଦ୍ଦେଶ ବିଫଳ। ପ୍ରଚେଷ୍ଟା କରାଯାଇଥିବା ନିର୍ଦ୍ଦେଶ: \"%s\" - ତନ୍ତ୍ର ତୃଟି ସନ୍ଦେଶ: %s"
+
+#: ../src/lvmui_constants.py:84
+msgid "Free"
+msgstr "ମାଗଣା"
+
+#: ../src/lvmui_constants.py:85
+msgid "Free space"
+msgstr "ମାଗଣା ଖାଲି ସ୍ଥାନ"
+
+#: ../src/lvmui_constants.py:87
+msgid "Unpartitioned space"
+msgstr "ଅବିଭାଜିତ ଖାଲି ସ୍ଥାନ"
+
+#: ../src/lvmui_constants.py:88
+#, python-format
+msgid "Unpartitioned space on %s"
+msgstr "%s ରେ ଅବିଭାଜିତ ଖାଲି ସ୍ଥାନ"
+
+#: ../src/lvmui_constants.py:90
+msgid "GB"
+msgstr "ଗିଗା-ବାଇଟ୍"
+
+#: ../src/lvmui_constants.py:91
+msgid "MB"
+msgstr "ମେଗା-ବାଇଟ୍"
+
+#: ../src/lvmui_constants.py:92
+msgid "KB"
+msgstr "କିଲୋ-ବାଇଟ୍"
+
+#: ../src/lvmui_constants.py:93
+msgid "Bytes"
+msgstr "ବାଇଟ୍ସ"
+
+#. File System Types
+#: ../src/lvmui_constants.py:97
+msgid "No Filesystem"
+msgstr "କୌଣସି ଫାଇଲ ତନ୍ତ୍ର ଉପଲବ୍ଧ ନାହିଁ"
+
+#: ../src/lvmui_constants.py:98
+msgid "Ext2"
+msgstr "Ext୨"
+
+#: ../src/lvmui_constants.py:99
+msgid "Ext3"
+msgstr "Ext୩"
+
+#: ../src/lvmui_constants.py:100
+msgid "JFS"
+msgstr "ଜେ.ଏଫ୍.ଏସ୍."
+
+#: ../src/lvmui_constants.py:101
+msgid "MSDOS"
+msgstr "MSDOS"
+
+#: ../src/lvmui_constants.py:102
+msgid "Reiserfs"
+msgstr "Reiserfs"
+
+#: ../src/lvmui_constants.py:103
+msgid "VFAT"
+msgstr "ଭି-ଫ୍ଯାଟ୍"
+
+#: ../src/lvmui_constants.py:104
+msgid "XFS"
+msgstr "ଏକ୍ସ.ଏଫ୍.ଏସ୍."
+
+#: ../src/lvmui_constants.py:105
+msgid "Cramfs"
+msgstr "କ୍ରାମ୍ଫସ୍"
+
+#: ../src/Properties_Renderer.py:42
+msgid "Properties for"
+msgstr "ଗୁଣଧର୍ମ ପାଇଁ"
+
+#: ../src/Properties_Renderer.py:43 ../src/renderer.py:37
+msgid "Physical Volume"
+msgstr "ଭୌତିକ ଘନଫଳ"
+
+#. UNALLOCATED_MESSAGE=_("This Volume has not been allocated \n to a Volume Group yet.")
+#: ../src/Properties_Renderer.py:44 ../src/renderer.py:36
+msgid "Logical Volume"
+msgstr "ତାର୍କିକ ଘନଫଳ"
+
+#: ../src/Properties_Renderer.py:45
+msgid "Unallocated Volume"
+msgstr "ବଣ୍ଟାଯାଇ ନ ଥିବା ଘନଫଳ"
+
+#: ../src/Properties_Renderer.py:46 ../src/renderer.py:43
+msgid "Disk Entity"
+msgstr "ଡିସ୍କ ର ବସ୍ତୁ"
+
+#: ../src/Properties_Renderer.py:47 ../src/Properties_Renderer.py:48
+#: ../src/Properties_Renderer.py:49 ../src/renderer.py:38
+msgid "Volume Group"
+msgstr "ଘନଫଳ ସମୂହ"
+
+#. UNINITIALIZED_MESSAGE=_("This extent has not yet been \n initialized for use with LVM.")
+#: ../src/renderer.py:33
+msgid "No Volume Selected"
+msgstr "କୌଣସି ଘନଫଳ ଚୟନ କରାଯାଇ ନାହିଁ"
+
+#: ../src/renderer.py:34
+msgid "Multiple selection"
+msgstr "ଏକାଧିକ ଚୟନ"
+
+#: ../src/renderer.py:39 ../src/Volume_Tab_View.py:46
+msgid "Logical View"
+msgstr "ତାର୍କିକ ପ୍ରଦର୍ଶନ"
+
+#: ../src/renderer.py:40 ../src/Volume_Tab_View.py:45
+msgid "Physical View"
+msgstr "ଭୌତିକ ପ୍ରଦର୍ଶନ"
+
+#: ../src/renderer.py:41
+msgid "Unallocated"
+msgstr "ବଣ୍ଟାଯାଇ ନ ଥିବା"
+
+#: ../src/renderer.py:42
+msgid "Uninitialized"
+msgstr "ପ୍ରାରମ୍ଭିକରଣ କରାଯାଇ ନ ଥିବା"
+
+#: ../src/renderer.py:195
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a mirror log of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"ଆପଣ ଚୟନ କରିବାକୁ ଚେଷ୍ଟା କରୁଥିବା ପରିସରଟି %s ତାର୍କିକ ଘନଫଳର ଗୋଟିଏ ପ୍ରତିଫଳିତ ଲଗ ସହିତ ସଂପୃକ୍ତ। "
+"ପ୍ରତିଫଳିତ ତାର୍କିକ ଘନଫଳ ଗୁଡିକ ଉତ୍ପ୍ରବାସିତ ନୁହଁନ୍ତି, ତେଣୁ ପରିସର ଗୁଡିକ ଚୟନ ଯୋଗ୍ଯ ନୁହଁନ୍ତି।"
+
+#: ../src/renderer.py:197
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to mirror image of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"ଆପଣ ଚୟନ କରିବାକୁ ଚେଷ୍ଟା କରୁଥିବା ପରିସରଟି %s ତାର୍କିକ ଘନଫଳର ଗୋଟିଏ ପ୍ରତିଫଳିତ ପ୍ରତିଛବି ସହିତ ସଂପୃକ୍ତ। "
+"ପ୍ରତିଫଳିତ ତାର୍କିକ ଘନଫଳ ଗୁଡିକ ଉତ୍ପ୍ରବାସିତ ନୁହଁନ୍ତି, ତେଣୁ ପରିସର ଗୁଡିକ ଚୟନ ଯୋଗ୍ଯ ନୁହଁନ୍ତି।"
+
+#: ../src/renderer.py:199
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to %s, a snapshot of %"
+"s. Snapshots are not yet migratable, so the extents are not selectable."
+msgstr ""
+"ଆପଣ ଚୟନ କରିବାକୁ ଚେଷ୍ଟା କରୁଥିବା ପରିସରଟି %s ସହିତ ସଂପୃକ୍ତ, ଯାହାକି %s ର ଗୋଟିଏ ଆଲୋକଚିତ୍ର ଅଟେ। "
+"ଆଲୋକଚିତ୍ର ଗୁଡିକ ଉତ୍ପ୍ରବାସିତ ନୁହଁନ୍ତି, ତେଣୁ ପରିସର ଗୁଡିକ ଚୟନ ଯୋଗ୍ଯ ନୁହଁନ୍ତି।"
+
+#: ../src/renderer.py:201
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a snapshot origin %"
+"s. Snapshot origins are not yet migratable, so the extents are not "
+"selectable."
+msgstr ""
+"ଆପଣ ଚୟନ କରିବାକୁ ଚେଷ୍ଟା କରୁଥିବା ପରିସରଟି %s ଆଲୋକଚିତ୍ର ଉତ୍ସ ସହିତ ସଂପୃକ୍ତ। ଆଲୋକଚିତ୍ର ଉତ୍ସ ଗୁଡିକ "
+"ଉତ୍ପ୍ରବାସିତ ନୁହଁନ୍ତି, ତେଣୁ ପରିସର ଗୁଡିକ ଚୟନ ଯୋଗ୍ଯ ନୁହଁନ୍ତି।"
+
+#: ../src/renderer.py:388
+#, python-format
+msgid "Snapshot of %s"
+msgstr "%s ର ଆଶୁଚିତ୍ର"
+
+#: ../src/renderer.py:491
+msgid "Origin"
+msgstr "ଉତ୍ପତ୍ତି"
+
+#: ../src/renderer.py:497
+msgid "Snapshot"
+msgstr "ଆଶୁଚିତ୍ର"
+
+#: ../src/renderer.py:541
+msgid "extent view"
+msgstr "ପରିସୀମା ର ପ୍ରଦର୍ଶନ"
+
+#: ../src/Volume_Tab_View.py:42
+msgid "Volume Groups"
+msgstr "ଘନଫଳ ସମୂହ"
+
+#: ../src/Volume_Tab_View.py:43
+msgid "Unallocated Volumes"
+msgstr "ବଣ୍ଟାଯାଇ ନ ଥିବା ଘନଫଳ ମାନ"
+
+#: ../src/Volume_Tab_View.py:44
+msgid "Uninitialized Entities"
+msgstr "ପ୍ରାରମ୍ଭିକରଣ କରାଯାଇ ନ ଥିବା ବସ୍ତୁ ମାନ"
+
+#: ../src/Volume_Tab_View.py:231
+msgid "Clustered VG"
+msgstr "ଏକତ୍ରିତ VG"
+
+#: ../src/Volume_Tab_View.py:617
+#, python-format
+msgid "%s mirror synchronisation"
+msgstr "%s ଦର୍ପଣ ର ସମକାଳନ"
+
+#. no existing partitions, write
+#: ../src/fdisk_wrapper.py:192
+msgid "Please wait while partition is being created"
+msgstr "ଦୟାକରି ବିଭାଜନ ଟି ସ୍ରୁଷ୍ଟ ହେବା ପର୍ଯ୍ଯନ୍ତ ଅପେକ୍ଷା କରନ୍ତୁ"
+
+#: ../src/Filesystem.py:20
+#, python-format
+msgid "Creating %s filesystem"
+msgstr "%s ଫାଇଲ ତନ୍ତ୍ର କୁ ସୃଷ୍ଟି କରୁଅଛି"
+
+#: ../src/Filesystem.py:21
+#, python-format
+msgid "Resizing %s filesystem"
+msgstr "%s ଫାଇଲ ତନ୍ତ୍ର ର ଆକାର କୁ ପରିବର୍ତ୍ତନ କରୁଅଛି"
+
+#: ../src/Filesystem.py:22
+#, python-format
+msgid "Checking %s filesystem"
+msgstr "%s ଫାଇଲ ତନ୍ତ୍ର କୁ ଯାଞ୍ଚ କରୁଅଛି"
+
+#: ../src/Filesystem.py:23
+#, python-format
+msgid "Upgrading %s filesystem to %s"
+msgstr "%s ଫାଇଲ ତନ୍ତ୍ର କୁ %s ରେ ଉନ୍ନୟନ କରୁଅଛି"
+
+#: ../src/Filesystem.py:24
+#, python-format
+msgid ""
+"Creation of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr "ଫାଇଲତନ୍ତ୍ରର ସୃଷ୍ଟି ବିଫଳ। ପ୍ରଚେଷ୍ଟା କରାଯାଇଥିବା ନିର୍ଦ୍ଦେଶ: \"%s\" - ତନ୍ତ୍ର ତୃଟି ସନ୍ଦେଶ: %s"
+
+#: ../src/Filesystem.py:25
+#, python-format
+msgid ""
+"Resize of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"ଫାଇଲତନ୍ତ୍ରର ଆକାର ପରିବର୍ତ୍ତନ ବିଫଳ। ପ୍ରଚେଷ୍ଟା କରାଯାଇଥିବା ନିର୍ଦ୍ଦେଶ: \"%s\" - ତନ୍ତ୍ର ତୃଟି "
+"ସନ୍ଦେଶ: %s"
+
+#: ../src/Filesystem.py:26
+#, python-format
+msgid ""
+"Check of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr "ଫାଇଲତନ୍ତ୍ରର ପରୀକ୍ଷଣ ବିଫଳ। ପ୍ରଚେଷ୍ଟା କରାଯାଇଥିବା ନିର୍ଦ୍ଦେଶ: \"%s\" - ତନ୍ତ୍ର ତୃଟି ସନ୍ଦେଶ: %s"
+
+#: ../src/Filesystem.py:27
+#, python-format
+msgid ""
+"Upgrade of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr "ଫାଇଲତନ୍ତ୍ରର ଉନ୍ନୟନ ବିଫଳ। ପ୍ରଚେଷ୍ଟା କରାଯାଇଥିବା ନିର୍ଦ୍ଦେଶ: \"%s\" - ତନ୍ତ୍ର ତୃଟି ସନ୍ଦେଶ: %s"
+
+#: ../src/Filesystem.py:141
+msgid "Unknown filesystem"
+msgstr "ଅଜଣା ଫାଇଲ ତନ୍ତ୍ର"
+
+#: ../src/Filesystem.py:491
+msgid "GFS (local)"
+msgstr "GFS (ସ୍ଥାନୀୟ)"
+
+#: ../src/Filesystem.py:606
+msgid "GFS (clustered)"
+msgstr "GFS (କ୍ଲଷ୍ଟର୍ଡ)"
+
+#: ../src/Filesystem.py:640 ../src/Filesystem.py:976
+msgid "Cluster name contains illegal character "
+msgstr "କ୍ଲଷ୍ଟର ନାମ ଅବୈଧ ଅକ୍ଷର ଧାରଣ କରିଅଛି"
+
+#: ../src/Filesystem.py:643 ../src/Filesystem.py:979
+msgid "GFS name contains illegal character "
+msgstr "GFS ନାମ ଅବୈଧ ଅକ୍ଷର ଧାରଣ କରିଅଛି"
+
+#: ../src/Filesystem.py:646 ../src/Filesystem.py:982
+msgid "Missing Cluster Name"
+msgstr "କ୍ଲଷ୍ଟର ନାମ ଅନୁପସ୍ଥିତ"
+
+#: ../src/Filesystem.py:649 ../src/Filesystem.py:985
+msgid "Missing GFS Name"
+msgstr "GFS ନାମ ଅନୁପସ୍ଥିତ"
+
+#: ../src/Filesystem.py:828
+msgid "GFS2 (local)"
+msgstr "GFS2 (ସ୍ଥାନୀୟ)"
+
+#: ../src/Filesystem.py:942
+msgid "GFS2 (clustered)"
+msgstr "GFS2 (କ୍ଲଷ୍ଟର୍ଡ)"
+
+#: ../src/Filesystem.glade.h:1 ../src/lvui.glade.h:1
+#: ../src/lv_edit_props.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../src/Filesystem.glade.h:2
+msgid "Cluster name"
+msgstr "କ୍ଲଷ୍ଟର ନାମ"
+
+#: ../src/Filesystem.glade.h:3
+msgid "Clustered GFS Properties"
+msgstr "ଏକତ୍ରିତ GFS ଗୁଣଧର୍ମ"
+
+#: ../src/Filesystem.glade.h:4
+msgid "DLM"
+msgstr "DLM"
+
+#: ../src/Filesystem.glade.h:5
+msgid "GFS name"
+msgstr "GFS ନାମ"
+
+#: ../src/Filesystem.glade.h:6
+msgid "GULM"
+msgstr "GULM"
+
+#: ../src/Filesystem.glade.h:7
+msgid "Locking type"
+msgstr "ପ୍ରକାର ନିରିକ୍ଷଣ କରୁଅଛି"
+
+#: ../src/Filesystem.glade.h:8
+msgid "Number of journals"
+msgstr "ପତ୍ରିକା ସଂଖ୍ଯା:"
+
+#: ../src/Filesystem.glade.h:9
+msgid "Number of journals (one journal per cluster node)"
+msgstr "ପତ୍ରିକା ସଂଖ୍ୟା (ପ୍ରତି ପତ୍ରିକା ପାଇଁ ଗୋଟିଏ କ୍ଲଷ୍ଟର ନୋଡ)"
+
+#: ../src/Filesystem.glade.h:10
+msgid "Unique GFS name"
+msgstr "ଅନନ୍ୟ GFS ନାମ"
+
+#: ../src/Segment.py:44
+msgid "Stripe"
+msgstr "ରେଖା"
+
+#: ../src/Segment.py:68
+msgid "Linear Mapping"
+msgstr "ସଳଖ ପ୍ରତିଚିତ୍ରଣ"
+
+#: ../src/Segment.py:109
+msgid "Mirror"
+msgstr "ଦର୍ପଣ"
+
+#: ../src/PhysicalVolume.py:142
+#, python-format
+msgid "Partition %s"
+msgstr "%s ବିଭାଜନ"
+
+#: ../src/lvui.glade.h:2
+msgid "1024"
+msgstr "୧୦୨୪"
+
+#: ../src/lvui.glade.h:3
+msgid "128"
+msgstr "୧୨୮"
+
+#: ../src/lvui.glade.h:4
+msgid "16"
+msgstr "୧୬"
+
+#: ../src/lvui.glade.h:5
+msgid "2"
+msgstr "୨"
+
+#: ../src/lvui.glade.h:6
+msgid "256"
+msgstr "୨୫୬"
+
+#: ../src/lvui.glade.h:7
+msgid "32"
+msgstr "୩୨"
+
+#: ../src/lvui.glade.h:8
+msgid "4"
+msgstr "୪"
+
+#: ../src/lvui.glade.h:9
+msgid "512"
+msgstr "୫୧୨"
+
+#: ../src/lvui.glade.h:10
+msgid "64"
+msgstr "୬୪"
+
+#: ../src/lvui.glade.h:11
+msgid "8"
+msgstr "୮"
+
+#: ../src/lvui.glade.h:12
+msgid "Add Physical Volume to VG"
+msgstr "ଭି.ଜି. ରେ ଭୌତିକ ଘନଫଳ କୁ ଯୋଗ କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:13
+msgid ""
+"Add to existing \n"
+"Volume Group"
+msgstr ""
+"ଅବସ୍ଥିତ ଘନଫଳ ସମୂହ ରେ \n"
+"ଯୋଗ କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:15
+msgid "Clustered"
+msgstr "ଏକତ୍ରିତ କରାଗଲା"
+
+#: ../src/lvui.glade.h:16
+msgid ""
+"Create New\n"
+"Logical Volume"
+msgstr ""
+"ନୂତନ ତାର୍କିକ ଘନଫଳ କୁ \n"
+"ସୃଷ୍ଟି କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:18
+msgid "Create Snapshot"
+msgstr "ଆଶୁଚିତ୍ର କୁ ସୃଷ୍ଟି କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:19
+msgid ""
+"Create new \n"
+"Volume Group"
+msgstr ""
+"ନୂତନ ଘନଫଳ କୁ \n"
+"ସୃଷ୍ଟି କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:21
+msgid "Edit Properties"
+msgstr "ଗୁଣଧର୍ମ ର ସମ୍ପାଦନ କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:22
+msgid "Enter path of Block Device to initialize"
+msgstr "ଅବରୋଧୀ ଉପକରଣ ର ପ୍ରାରମ୍ଭିକରଣ ପାଇଁ ପଥ କୁ ଭରଣ କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:23
+msgid ""
+"Extend\n"
+"Volume Group"
+msgstr ""
+"ଘନଫଳ ସମୂହ କୁ \n"
+"ବିସ୍ତାର କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:25
+msgid "Extend Volume Group"
+msgstr "ଘନଫଳ ସମୂହ କୁ ବିସ୍ତାର କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:26
+msgid "Format"
+msgstr "ସଜ୍ଜିକରଣ ଶୈଳୀ"
+
+#: ../src/lvui.glade.h:27
+msgid "Initialize"
+msgstr "ପ୍ରାରମ୍ଭିକରଣ"
+
+#: ../src/lvui.glade.h:28
+msgid "Initialize Block Device"
+msgstr "ଅବରୋଧୀ ଉପକରଣ ମାନଙ୍କ ର ପ୍ରାରମ୍ଭିକରଣ କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:29
+msgid "Initialize Entity"
+msgstr "ବସ୍ତୁ ର ପ୍ରାରମ୍ଭିକରଣ କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:30
+msgid "Initialize _Block Device"
+msgstr "ଅବରୋଧୀ ଉପକରଣ ମାନଙ୍କ ର ପ୍ରାରମ୍ଭିକରଣ କରନ୍ତୁ (_B)"
+
+#: ../src/lvui.glade.h:31
+msgid "Kilo"
+msgstr "କିଲୋ"
+
+#: ../src/lvui.glade.h:32 ../system-config-lvm.desktop.in.h:3
+msgid "Logical Volume Management"
+msgstr "ତାର୍କିକ ଘନଫଳ ର ପରିଚାଳନା"
+
+#: ../src/lvui.glade.h:33
+msgid "Manage Volumes"
+msgstr "ଘନଫଳ ର ପରିଚାଳନା କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:34
+msgid "Mark Volume Group as 'clustered'"
+msgstr "ଘନଫଳ ସମୂହକୁ 'ସ୍ତରୀଭୂତ' ଭାବରେ ସୂଚୀତ କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:35
+msgid "Maximum Logical Volumes"
+msgstr "ସର୍ବାଧିକ ତାର୍କିକ ଘନଫଳ"
+
+#: ../src/lvui.glade.h:36
+msgid "Maximum Physical Volumes"
+msgstr "ସର୍ବାଧିକ ଭୌତିକ ଘନଫଳ"
+
+#: ../src/lvui.glade.h:37
+msgid "Meg"
+msgstr "ମେଗା"
+
+#: ../src/lvui.glade.h:38
+msgid ""
+"Migrate Selected\n"
+"Extent(s) From Volume"
+msgstr ""
+"ଚୟିତ ପରିସର ମାନଙ୍କୁ ଘନଫଳରୁ\n"
+"ଉତ୍ପ୍ରବାସିତ କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:40
+msgid "New Volume Group"
+msgstr "ନୂତନ ଘନଫଳ ସମୂହ"
+
+#: ../src/lvui.glade.h:41
+msgid "Physical Extent Size"
+msgstr "ଭୌତିକ ପରିସୀମା ର ଆକାର"
+
+#: ../src/lvui.glade.h:42
+msgid ""
+"Remove \n"
+"Logical Volume"
+msgstr ""
+"ତାର୍କିକ ଘନଫଳ କୁ \n"
+"ଅପସାରଣ କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:44
+msgid ""
+"Remove Selected\n"
+"Logical Volume(s)"
+msgstr ""
+"ଚୟିତ ତାର୍କିକ ଘନଫଳ କୁ \n"
+"ଅପସାରଣ କରନ୍ତୁ (_s)"
+
+#: ../src/lvui.glade.h:46
+msgid ""
+"Remove Selected\n"
+"Physical Volume(s)"
+msgstr ""
+"ଚୟିତ ଭୌତିକ ଘନଫଳ କୁ \n"
+"ଅପସାରଣ କରନ୍ତୁ (_s)"
+
+#: ../src/lvui.glade.h:48
+msgid ""
+"Remove Volume from\n"
+"Volume Group"
+msgstr ""
+"ଘନଫଳ ସମୂହ ରୁ ଘନଫଳ କୁ \n"
+"ଅପସାରଣ କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:50
+msgid ""
+"Remove volume \n"
+"from LVM"
+msgstr ""
+"ଏଲ.ଭି.ଏମ୍. ରୁ ଘନଫଳ କୁ \n"
+"ଅପସାରଣ କରନ୍ତୁ"
+
+#: ../src/lvui.glade.h:52
+msgid "Select a Volume Group to add this PV to:"
+msgstr "ଏହି PV କୁ ଏହା ସହିତ ଯୋଗ କରିବା ପାଇଁ ଗୋଟିଏ ଘନଫଳ ସମୂହକୁ ଚୟନ କରନ୍ତୁ:"
+
+#: ../src/lvui.glade.h:53
+msgid "Some text"
+msgstr "କିଛି ବ୍ଯାଖ୍ଯାନ"
+
+#: ../src/lvui.glade.h:54
+msgid "Volume Group Name"
+msgstr "ଘନଫଳ ସମୂହ ର ନାମ"
+
+#: ../src/lvui.glade.h:55
+msgid "_Reload"
+msgstr "ପୁନର୍ଧାରଣ କରନ୍ତୁ (_R)"
+
+#: ../src/lvui.glade.h:56
+msgid "_Tools"
+msgstr "ଉପକରଣ ମାନ (_T)"
+
+#: ../src/lvui.glade.h:57
+msgid "extend vg message:"
+msgstr "ବିସ୍ରୁତ ଭି.ଜି. ସନ୍ଦେଶ:"
+
+#: ../src/lv_edit_props.glade.h:2
+msgid "<b>Filesystem</b>"
+msgstr "<b>ଫାଇଲ ତନ୍ତ୍ର</b>"
+
+#: ../src/lv_edit_props.glade.h:3
+msgid "<b>LV Properties</b>"
+msgstr "<b>ଏଲ.ଭି. ଗୁଣଧର୍ମ</b>"
+
+#: ../src/lv_edit_props.glade.h:4
+msgid "<b>Size</b>"
+msgstr "<b>ଆକାର</b>"
+
+#: ../src/lv_edit_props.glade.h:5
+msgid "Add entry to /etc/fstab"
+msgstr "/etc/fstab ରେ ବସ୍ତୁ କୁ ଯୋଗ କରନ୍ତୁ"
+
+#: ../src/lv_edit_props.glade.h:6
+msgid "Create New Logical Volume (LV)"
+msgstr "ନୂତନ ତାର୍କିକ ଘନଫଳ ସୃଷ୍ଟି କରନ୍ତୁ (LV)"
+
+#: ../src/lv_edit_props.glade.h:7
+msgid "Filesystem is not resizable"
+msgstr "ଫାଇଲ ତନ୍ତ୍ର ର ଆକାର ଅପରିବର୍ତ୍ତନୀୟ ଅଟେ"
+
+#: ../src/lv_edit_props.glade.h:8
+msgid "Free space in Volume Group label"
+msgstr "ଘନଫଳ ସମୂହ ଲେବଲ ରେ ଖାଲି ସ୍ଥାନ"
+
+#: ../src/lv_edit_props.glade.h:9
+msgid "Free space remaining label"
+msgstr "ଖାଲି ସ୍ଥାନ ବଳକା ସୂଚକ"
+
+#: ../src/lv_edit_props.glade.h:10
+msgid "Kilobytes granularity"
+msgstr "କିଲୋ-ବାଇଟ ସଂକ୍ଷିପ୍ତୀକରଣ"
+
+#: ../src/lv_edit_props.glade.h:11
+msgid "LV name:"
+msgstr "ଏଲ.ଭି. ନାମ:"
+
+#: ../src/lv_edit_props.glade.h:12
+msgid "LV size"
+msgstr "ଏଲ.ଭି. ଆକାର"
+
+#: ../src/lv_edit_props.glade.h:13
+msgid "LVs under snapshots are not resizable"
+msgstr "ଆଲୋକଚିତ୍ରରେ ଥିବା LV ମାନଙ୍କର ଆକାରକୁ ପରିବର୍ତ୍ତନ କରିହେବ ନାହିଁ"
+
+#: ../src/lv_edit_props.glade.h:14
+msgid "Linear"
+msgstr "ସଳଖ"
+
+#: ../src/lv_edit_props.glade.h:15
+msgid "Mirrored"
+msgstr "ପ୍ରତିଫଳିତ"
+
+#: ../src/lv_edit_props.glade.h:16
+msgid "Mirrored LVs are not resizable"
+msgstr "ପ୍ରତିଫଳିତ LV ମାନଙ୍କର ଆକାର ପରିବର୍ତ୍ତନ କରିହେବ ନାହିଁ"
+
+#: ../src/lv_edit_props.glade.h:17
+msgid "Mount"
+msgstr "ସ୍ଥାପନ"
+
+#: ../src/lv_edit_props.glade.h:18
+msgid "Mount point:"
+msgstr "ସ୍ଥାପନ ବିନ୍ଦୁ:"
+
+#: ../src/lv_edit_props.glade.h:19
+msgid "Mount when rebooted"
+msgstr "ପୁନଃ ଚାଳନ ସମୟ ରେ ସ୍ଥାପନ କରନ୍ତୁ"
+
+#: ../src/lv_edit_props.glade.h:20
+msgid "Size beg"
+msgstr "ଆକାର ଅନୁମତି"
+
+#: ../src/lv_edit_props.glade.h:21
+msgid "Size end"
+msgstr "ଆକାର ଶେଷ"
+
+#: ../src/lv_edit_props.glade.h:22
+msgid "Striped"
+msgstr "ଗାରଗାରିଆ"
+
+#: ../src/lv_edit_props.glade.h:23
+msgid "Use remaining"
+msgstr "ବଳକା ବ୍ଯବହାର କରନ୍ତୁ"
+
+#: ../src/lv_edit_props.glade.h:24
+msgid "stripes"
+msgstr "ରେଖା ମାନ"
+
+#: ../src/migrate_extents.glade.h:1
+msgid "<b>Destination</b>"
+msgstr "<b>ଗନ୍ତବ୍ଯ ସ୍ଥଳ</b>"
+
+#: ../src/migrate_extents.glade.h:2
+msgid "<b>Migration Policy</b>"
+msgstr "<b>ଉତ୍ପ୍ରବାସନ ନୀତି</b>"
+
+#: ../src/migrate_extents.glade.h:3
+msgid "Anywhere - not implemented"
+msgstr "ଯେ କୌଣସି ସ୍ଥାନରେ - ନିଷ୍ପାଦିତ ହୋଇ ନ ଥିବା"
+
+#: ../src/migrate_extents.glade.h:4
+msgid "Automatically choose PVs to migrate to"
+msgstr "ଏଠାକୁ ଉତ୍ପ୍ରବାସନ କରିବା ପାଇଁ ସ୍ବୟଂଚାଳିତ ଭାବରେ PV ମାନଙ୍କୁ ଚୟନ କରନ୍ତୁ"
+
+#: ../src/migrate_extents.glade.h:5
+msgid "Contiguous"
+msgstr "ନିକଟସ୍ଥ"
+
+#: ../src/migrate_extents.glade.h:6
+msgid "Destination:"
+msgstr "ଗନ୍ତବ୍ଯ:"
+
+#: ../src/migrate_extents.glade.h:7
+msgid ""
+"In order to remove PV, extents in use have to be migrated.\n"
+"Select extents' destination and migration policy."
+msgstr ""
+"PV କୁ ଅପସାରଣ କରିବା ପାଇଁ, ବ୍ଯବହୃତ ପରିସର ମାନଙ୍କୁ ଉତ୍ପ୍ରବାସନ କରିବାକୁ ହେବ।\n"
+"ପରିସର ମାନଙ୍କର ଗନ୍ତବ୍ଯ ସ୍ଥଳ ଏବଂ ଉତ୍ପ୍ରବାସନ ନୀତି ଚୟନ କରନ୍ତୁ।"
+
+#: ../src/migrate_extents.glade.h:9
+msgid "Inherit"
+msgstr "ଅଧିକାର କରନ୍ତୁ"
+
+#: ../src/migrate_extents.glade.h:10
+msgid "Inherit policy from Volume Group"
+msgstr "ଘନଫଳ ସମୂହରୁ ନୀତି ଅଧିକାର କରନ୍ତୁ"
+
+#: ../src/migrate_extents.glade.h:11
+msgid "Migrate Extents"
+msgstr "ପରିସର ମାନଙ୍କୁ ଉତ୍ପ୍ରବାସିତ କରନ୍ତୁ"
+
+#: ../src/migrate_extents.glade.h:12
+msgid "Migrate anywhere even if that reduces performance"
+msgstr "ଯେ କୌଣସି ସ୍ଥାନକୁ ଉତ୍ପ୍ରବାସିତ କରନ୍ତୁ ଯଦିଚ ଏହା ପ୍ରଦର୍ଶନ ହ୍ରାସ କରିବ"
+
+#: ../src/migrate_extents.glade.h:13
+msgid "New extents are adjacent to existing ones"
+msgstr "ନୂତନ ପରିସର ଗୁଡିକ ଅବସ୍ଥିତ ପରିସର ମାନଙ୍କ ନିକଟବର୍ତ୍ତୀ ଅଟନ୍ତି"
+
+#: ../src/migrate_extents.glade.h:14
+msgid "Normal"
+msgstr "ସାଧାରଣ"
+
+#: ../src/migrate_extents.glade.h:15
+msgid "Only migrate extents belonging to LV"
+msgstr "କେବଳ LV ଅଂଶଭୂକ୍ତ ପରିସରକୁ ଉତ୍ପ୍ରବାସିତ କରନ୍ତୁ"
+
+#: ../src/migrate_extents.glade.h:16
+msgid "Use common sense"
+msgstr "ସାଧାରଣ ଜ୍ଞାନ ବ୍ଯବହାର କରନ୍ତୁ"
+
+#: ../src/Partition.py:103 ../src/Partition.py:108
+msgid "Unknown"
+msgstr "ଅଜଣା"
+
+#: ../src/system-config-lvm.py:58
+msgid "system-config-lvm"
+msgstr "system-config-lvm"
+
+#: ../src/system-config-lvm.py:59
+#, python-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#: ../src/system-config-lvm.py:77
+msgid ""
+"LVM locks are disabled!!! \n"
+"Massive data corruption may occur.\n"
+"Enable locking (locking_type=1, 2 or 3 in /etc/lvm/lvm.conf)."
+msgstr ""
+"LVM ତାଳକ ମାନଙ୍କୁ ନିଷ୍କ୍ରିୟ କରାଯାଇଛି!!! \n"
+"ଅପେକ୍ଷାକୃତ ଅଧିକ ତଥ୍ଯ ବିନାଶ ଘଟିପାରେ।\n"
+"ତାଳକନ ପ୍ରକ୍ରିୟା (/etc/lvm/lvm.conf ରେ locking_type=1, 2 ଅଥବା 3) କୁ ସକ୍ରିୟ କରନ୍ତୁ।"
+
+#: ../src/system-config-lvm.py:82
+msgid ""
+"LVM is configured to use Cluster Locking mechanism, but clvmd daemon is not "
+"running. Start daemon with command:\n"
+"service clvmd start \n"
+"or, turn off cluster locking (locking_type=1 in /etc/lvm/lvm.conf)."
+msgstr ""
+"କ୍ଲଷ୍ଟର ତାଳକନ କୌଶଳ ବ୍ଯବହାର କରିବା ପାଇଁ LVM କୁ ବିନ୍ଯାସ କରାଯାଇଛି, କିନ୍ତୁ clvmd ଡେମନଟି "
+"ଚାଲୁନାହିଁ। ନିମ୍ନଲିଖିତ ନିର୍ଦ୍ଦେଶ ଦ୍ବାରା ଡେମନକୁ ପ୍ରାରମ୍ଭ କରନ୍ତୁ:\n"
+"service clvmd start \n"
+"କିମ୍ବା, କ୍ଲଷ୍ଟର ତାଳକନ ପ୍ରକ୍ରିୟା (/etc/lvm/lvm.conf ରେ locking_type=1) କୁ ବନ୍ଦ କରନ୍ତୁ।"
+
+#: ../src/system-config-lvm.py:86
+msgid ""
+"LVM is configured to use Cluster Locking mechanism, but cluster is not "
+"quorate.\n"
+"Either wait until cluster is quorate or turn off cluster locking "
+"(locking_type=1 in /etc/lvm/lvm.conf)."
+msgstr ""
+"କ୍ଲଷ୍ଟର ତାଳକନ କୌଶଳ ବ୍ଯବହାର କରିବା ପାଇଁ LVM କୁ ବିନ୍ଯାସ କରାଯାଇଛି, କିନ୍ତୁ କ୍ଲଷ୍ଟରଟି quorate "
+"ନୁହେଁ।\n"
+"କ୍ଲଷ୍ଟରଟି quorate ହେବା ପର୍ଯ୍ଯନ୍ତ ଅପେକ୍ଷା କରନ୍ତୁ କିମ୍ବା କ୍ଲଷ୍ଟର ତାଳକନ ପ୍ରକ୍ରିୟା (/etc/lvm/lvm."
+"conf ରେ locking_type=1) କୁ ବନ୍ଦ କରନ୍ତୁ।"
+
+#: ../src/system-config-lvm.py:89
+#, python-format
+msgid ""
+"%s only supports file and cluster based lockings (locking_type=1, 2 or 3 in /"
+"etc/lvm/lvm.conf)."
+msgstr ""
+"%s କେବଳ ଫାଇଲ ଏବଂ କ୍ଲଷ୍ଟର ଆଧାରିତ ତାଳକକୁ ସହାୟତା ପ୍ରଦାନ କରିଥାଏ (/etc/lvm/lvm.conf ରେ "
+"locking_type=1,2 କିମ୍ବା 3)।"
+
+#. ## Don't specify version - already in ABOUT_VERSION
+#: ../src/system-config-lvm.py:122
+msgid "Copyright (c) 2004 Red Hat, Inc. All rights reserved."
+msgstr "Copyright (c) 2004 Red Hat, Inc. All rights reserved."
+
+#: ../src/system-config-lvm.py:123
+msgid "This software is licensed under the terms of the GPL."
+msgstr "ଏହି ସଫ୍ଟୱେର GPL ନିତୀ ଅନ୍ତର୍ଗତରେ ଅନୁମତିପ୍ରାପ୍ତ ହୋଇଛି।"
+
+#: ../src/system-config-lvm.py:172
+#, python-format
+msgid "Please restart %s with root permissions!"
+msgstr "ଦୟାକରି %s କୁ ପ୍ରମୂଖ ଚାଳକ ର ଅନୁମତି ଦ୍ବାରା ପୁନଃ ସ୍ଥାପନ କରନ୍ତୁ!"
+
+#: ../system-config-lvm.desktop.in.h:1
+msgid "Configure LVM in a graphical setting"
+msgstr "ଗୋଟିଏ ଆଲେଖୀକ ସଂରଚନାରେ LVM କୁ ବିନ୍ୟାସ କରନ୍ତୁ"
+
+#: ../system-config-lvm.desktop.in.h:2
+msgid "LVM"
+msgstr "LVM"
+

@@ -1,0 +1,1800 @@
+# translation of system-config-lvm.master.as.po to Assamese
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006.
+# Amitakhya Phukan <aphukan@redhat.com>, 2008.
+# Amitakhya Phukan <aphukan@fedoraproject.org>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-lvm.master.as\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-14 15:50+0530\n"
+"PO-Revision-Date: 2010-04-16 13:53+0530\n"
+"Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
+"Language-Team: American English <fedora-trans-as@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../src/InputController.py:37 ../src/Properties_Renderer.py:24
+#: ../src/Volume_Tab_View.py:30 ../src/system-config-lvm.py:40
+#, python-format
+msgid ""
+"\n"
+"  Unable to initialize graphical environment. Most likely cause of failure\n"
+"  is that the tool was not run using a graphical environment. Please either\n"
+"  start your graphical user interface or set your DISPLAY variable.\n"
+"                                                                                \n"
+"  Caught exception: %s\n"
+msgstr ""
+"\n"
+"  চিত্ৰাঙ্কিত পৰিবশ আৰম্ভ কৰা সম্ভৱ নহয় । সম্ভৱত টুল চিত্ৰাঙ্কিত\n"
+"  পৰিবশত ব্যৱহাৰ নকৰাৰ ফলত এই সমস্যা হৈছে । অনুগ্ৰহ কৰি চিত্ৰাঙ্কিত ব্যৱহাৰকৰোঁতাৰ \n"
+"  সংযোগক্ষত্ৰ আৰম্ভ কৰক অথবা DISPLAY চলকৰ মান নিৰ্ধাৰণ কৰক ।\n"
+"                                                                                \n"
+"  চিনাক্ত কৰা অৱ্যাহতি: %s\n"
+
+#. ##TRANSLATOR: The string below is seen when adding a new Physical
+#. ##Volume to an existing Volume Group.
+#: ../src/InputController.py:57
+#, python-format
+msgid "Select a Volume Group to add %s to:"
+msgstr "%s-এ যোগ কৰাৰ বাব এটা আয়তন সমষ্টি নিৰ্ব্বাচন কৰক:"
+
+#. ##TRANSLATOR: The two strings below refer to the name and type of
+#. ##available disk entities on the system. There are two types --
+#. ##The first is an 'unallocated physical volume' which is a disk or
+#. ##partition that has been initialized for use with LVM, by writing
+#. ##a special label onto the first block of the partition. The other type
+#. ##is an 'uninitialized entity', which is an available disk or partition
+#. ##that is NOT yet initialized to be used with LVM. Hope this helps give
+#. ##some context.
+#: ../src/InputController.py:85
+msgid "Name"
+msgstr "নাম"
+
+#: ../src/InputController.py:86
+msgid "Size"
+msgstr "আকাৰ"
+
+#: ../src/InputController.py:87
+msgid "Entity Type"
+msgstr "স্বত্বাৰ ধৰন"
+
+#: ../src/InputController.py:89
+msgid "Unallocated Physical Volume"
+msgstr "আৰক্ষণ নকৰা দৈহিক আয়তন"
+
+#: ../src/InputController.py:90
+msgid "Uninitialized Disk Entity"
+msgstr "নিষ্ক্ৰিয় ডিস্কৰ স্বত্বা"
+
+#: ../src/InputController.py:91
+#, python-format
+msgid "Select disk entities to add to the %s Volume Group:"
+msgstr "%s আয়তন সমষ্টি যোগ কৰাৰ বাব ডিস্কৰ এটা স্বত্বা নিৰ্ব্বাচন কৰক:"
+
+#: ../src/InputController.py:93
+msgid ""
+"A Volume Group must be made up of two or more Physical Volumes to support "
+"striping. This Volume Group does not meet that requirement."
+msgstr ""
+"striping সমৰ্থন কৰাৰ বাব দুটা অথবা অধিক সংখ্যক প্ৰকৃত আয়তন ব্যৱহাৰ কৰি এটা আয়তন "
+"সমষ্টি নিৰ্মাণ কৰা আৱশ্যক । এই আয়তন সমষ্টিৰ বাব উল্লেখিত প্ৰয়োজনীয় চৰ্ত্ত পূৰণ কৰা "
+"নহয় ।"
+
+#: ../src/InputController.py:95
+#, python-format
+msgid ""
+"A Logical Volume with the name %s already exists in this Volume Group. "
+"Please choose a unique name."
+msgstr ""
+"এই আয়তন সমষ্টি %s নামক এটা লজিকেল আয়তন বৰ্তমান উপস্থিত আছে । অনুগ্ৰহ কৰি এটা পৃৰ "
+"পৰা নাম নিৰ্ব্বাচন কৰক ।"
+
+#: ../src/InputController.py:97
+#, python-format
+msgid "A Volume Group with the name %s already exists. Please choose a unique name."
+msgstr ""
+"%s নামক এটা আয়তন সমষ্টি বৰ্তমান উপস্থিত আছে । অনুগ্ৰহ কৰি এটা পৃৰ পৰা নাম নিৰ্ব্বাচন "
+"কৰক ।"
+
+#: ../src/InputController.py:99
+msgid "A Name must be provided for the new Logical Volume"
+msgstr "নতুন লজিকেল আয়তনৰ নাম নিৰ্ধাৰণ কৰা আৱশ্যক"
+
+#: ../src/InputController.py:101
+msgid "A Name must be provided for the new Volume Group"
+msgstr "নতুন আয়তন সমষ্টিৰ নাম নিৰ্ধাৰণ কৰা আৱশ্যক"
+
+#: ../src/InputController.py:103
+#, python-format
+msgid "The specified mount point, %s, does not exist. Do you wish to create it?"
+msgstr ""
+"উল্লেখিত অভ্যুত্থানৰ স্থান %s বৰ্তমান উপস্থিত নাই । আপুনি এইটো নিৰ্মাণ কৰিব বিচাৰে "
+"নেকি ?"
+
+#: ../src/InputController.py:105
+#, python-format
+msgid "The creation of mount point %s unexpectedly failed."
+msgstr "অভ্যুত্থানৰ স্থান %s-ৰ নিৰ্মাণ অপ্ৰত্যাশিতভাব বিফল হৈছে ।"
+
+#: ../src/InputController.py:107
+msgid "This capability is not yet implemented in this version"
+msgstr "বৰ্তমান সংস্কৰণ এই বৈশিষ্ট্য প্ৰয়োগ কৰা নহয়"
+
+#: ../src/InputController.py:109
+msgid ""
+"The number of Logical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "এই আয়তন সমষ্টিৰ সৰ্বাধিক অনুমোদিত লজিকেল আয়তনৰ সংখ্যা পূৰণ হৈ গৈছে ।"
+
+#: ../src/InputController.py:111
+msgid ""
+"The number of Physical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "এই আয়তন সমষ্টিৰ সৰ্বাধিক অনুমোদিত প্ৰকৃত আয়তনৰ সংখ্যা পূৰণ হৈ গৈছে ।"
+
+#: ../src/InputController.py:113
+#, python-format
+msgid ""
+"At most %s Physical Volumes can be added to this Volume Group before the "
+"limit is reached."
+msgstr ""
+"এই আয়তন সমষ্টিৰ সৰ্বাধিক অনুমোদিত প্ৰকৃত আয়তনৰ সংখ্যা পূৰণ হোৱাৰ পূৰ্ব %s প্ৰকৃত আয়তন "
+"যোগ কৰা যাব ।"
+
+#: ../src/InputController.py:115
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space for new Logical Volumes. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"আয়তন সমষ্টি %s-এ, নতুন লজিকেল আয়তন স্থাপন কৰাৰ বাব পৰ্যাপ্ত শূণ্যস্থান উপস্থিত নাই । "
+"এই আয়তন সমষ্টি এটা অতিৰিক্ত প্ৰকৃত আয়তন যোগ কৰি এই সমস্যাৰ সমাধান কৰা সম্ভৱ ।"
+
+#: ../src/InputController.py:117
+msgid "A snapshot of a snapshot is not supported."
+msgstr "স্ন্যাপশটৰ স্ন্যাপশট সমৰ্থিত নহয় ।"
+
+#: ../src/InputController.py:118
+msgid "A snapshot of a mirrored Logical Volume is not supported."
+msgstr "মিৰৰ কৰা লজিকেল আয়তনৰ স্ন্যাপশট সমৰ্থিত নহয় ।"
+
+#: ../src/InputController.py:120
+#, python-format
+msgid ""
+"Logical volume %s has snapshot %s currently associated with it. Please "
+"remove the snapshot first."
+msgstr ""
+"%s লজিকেল আয়তনৰ সৈতে বৰ্তমান %s স্ন্যাপশট সংযুক্ত আছে । অনুগ্ৰহ কৰি এই স্ন্যাপশটটি "
+"প্ৰথমে অপসাৰণ কৰক ।"
+
+#: ../src/InputController.py:121
+#, python-format
+msgid ""
+"Logical volume %s has snapshots: %s currently associated with it. Please "
+"remove snapshots first."
+msgstr ""
+"%s লজিকেল আয়তনৰ সৈতে স্ন্যাপশট: %s বৰ্তমান সংযুক্ত আছে । অনুগ্ৰহ কৰি প্ৰথম অপসাৰণ "
+"কৰক ।"
+
+#: ../src/InputController.py:123
+msgid "Undefined type conversion error in model factory. Unable to complete task."
+msgstr ""
+"মডেল ফ্যাক্টৰিত অনিৰ্ধাৰিত ধৰন পৰিবৰ্তন সংক্ৰান্ত সমস্যা হৈছে । কৰ্ম সম্পন্ন কৰোঁতে "
+"ব্যৰ্থ ।"
+
+#: ../src/InputController.py:125
+#, python-format
+msgid ""
+"BIG WARNING: Logical Volume %s has an %s file system on it and is currently "
+"mounted on %s. Are you absolutely certain that you wish to discard the data "
+"on this mounted filesystem?"
+msgstr ""
+"গুৰুত্বপূৰ্ণ সতৰ্কবাণী: %s লজিকেল আয়তনৰ উপৰ %s নথিপত্ৰ-প্ৰণালী উপস্থিত আছে । ইয়াক "
+"বৰ্তমানে %s-ৰ উপৰ তোলা হৈছে । আপুনি কি নিশ্চিতৰূপ তোলা এই নথিপত্ৰ-প্ৰণালী উপস্থিত "
+"সমস্ত তথ্য আঁতৰাবলৈ ইচ্ছুক?"
+
+#: ../src/InputController.py:127
+#, python-format
+msgid ""
+"Logical Volume %s is currently mounted on %s. In order to complete request, "
+"it has to be unmounted. Are you sure you want it unmounted?"
+msgstr ""
+"%s লজিকেল আয়তন বৰ্তমান %s-ৰ উপৰ তোলা আছে । অনুৰোধ পূৰণ কৰাৰ বাব প্ৰথম ইয়াক নমোৱা "
+"আৱশ্যক । আপুনি কি নিশ্চিতৰূপ ইয়াক নমাবলৈ ইচ্ছুক?"
+
+#. ##TRANSLATOR: An extent below is an abstract unit of storage. The size
+#. ##of an extent is user-definable.
+#: ../src/InputController.py:133
+#, python-format
+msgid "Unused space on %s"
+msgstr "%s-এ উপস্থিত অৱ্যৱহৃত স্থান"
+
+#: ../src/InputController.py:134
+#, python-format
+msgid "%s megabytes"
+msgstr "%s মেগাবাইট"
+
+#: ../src/InputController.py:135
+#, python-format
+msgid "%s kilobytes"
+msgstr "%s কিলোবাইট"
+
+#: ../src/InputController.py:136
+#, python-format
+msgid "%s gigabytes"
+msgstr "%s গিগাবাইট"
+
+#: ../src/InputController.py:137
+#, python-format
+msgid "%s extents"
+msgstr "%s এক্সটেন্ট"
+
+#: ../src/InputController.py:139
+msgid "Remaining free space in Volume Group:\n"
+msgstr "আয়তন সমষ্টি অৱশিষ্ট ৰিক্ত স্থান:\n"
+
+#: ../src/InputController.py:140
+msgid "Remaining space for this Volume:\n"
+msgstr "চিহ্নিত আয়তন অৱশিষ্ট স্থান:\n"
+
+#: ../src/InputController.py:142
+msgid "Extents"
+msgstr "এক্সটেন্ট"
+
+#: ../src/InputController.py:143
+msgid "Gigabytes"
+msgstr "গিগাবাইট"
+
+#: ../src/InputController.py:144
+msgid "Megabytes"
+msgstr "মেগাবাইট"
+
+#: ../src/InputController.py:145
+msgid "Kilobytes"
+msgstr "কিলোবাইট"
+
+#: ../src/InputController.py:147
+#, python-format
+msgid "The %s should only contain number values"
+msgstr "%s-ৰ মান অকল সংখ্যাৰ দ্বাৰা নিদিষ্ট কৰা আৱশ্যক"
+
+#: ../src/InputController.py:148
+msgid ""
+"The Maximum Physical Volumes field should contain only integer values "
+"between 1 and 256"
+msgstr "সৰ্বোচ্চ প্ৰকৃত আয়তন নামক ক্ষত্ৰত অকল ১ ৰ পৰা ২৫৬-ত কোনো পূৰ্ণসংখ্যা মান উল্লেখ কৰা যাব"
+
+#: ../src/InputController.py:149
+msgid ""
+"The Maximum Logical Volumes field should contain only integer values between "
+"1 and 256"
+msgstr ""
+"সৰ্বোচ্চ লজিকেল আয়তন নামক ক্ষত্ৰত অকল ১ ৰ পৰা ২৫৬-ত কোনো পূৰ্ণসংখ্যা মান উল্লেখ কৰা "
+"যাব"
+
+#: ../src/InputController.py:151
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from Logical Volume "
+"Management?"
+msgstr "আপুনি কি নিশ্চিতৰূপ %s-ক লজিকেল আয়তন ব্যৱস্থা (LVM) ৰ পৰা আঁতৰাবলৈ ইচ্ছুক?"
+
+#: ../src/InputController.py:153
+#, python-format
+msgid ""
+"The Physical Volume named %s, that you wish to remove, has data from active "
+"Logical Volume(s) mapped to its extents. Because it is the only Physical "
+"Volume in the Volume Group, there is no place to move the data to. "
+"Recommended action is either to add a new Physical Volume before removing "
+"this one, or else remove the Logical Volumes that are associated with this "
+"Physical Volume."
+msgstr ""
+"%s নামক প্ৰকৃত আয়তন আপুনি যি আঁতৰাবলৈ ইচ্ছুক, সেইটোৰ এক্সেটেন্টত কিছু সক্ৰিয় লজিকেল "
+"আয়তনৰ তথ্য মেপ কৰা আছে । এই আয়তন সমষ্টিৰ একমাত্ৰ প্ৰকৃত আয়তন হোৱাৰ ফলত এই তথ্য অন্য "
+"কোনো স্থানলৈ স্থানান্তৰ কৰা সম্ভৱ নহয় । সমাধান হিসাব প্ৰকৃত আয়তন আঁতৰুৱাৰ পূৰ্বে এটা "
+"নতুন প্ৰকৃত আয়তন যোগ কৰক অথবা এই প্ৰকৃত আয়তনৰ সৈতে যুক্ত লজিকেল আয়তনসমূহ আঁতৰাওঁক ।"
+
+#: ../src/InputController.py:154
+#, python-format
+msgid "Are you quite certain that you wish to remove %s from the %s Volume Group?"
+msgstr "আপুনি কি নিশ্চিতৰূপে %s-ক, %s আয়তন সমষ্টি ৰ পৰা আঁতৰাবলৈ ইচ্ছুক?"
+
+#: ../src/InputController.py:155
+#, python-format
+msgid ""
+"Removing Physical Volume %s from the Volume Group %s will leave the Volume "
+"group empty, and it will be removed as well. Do you wish to proceed?"
+msgstr ""
+"প্ৰকৃত আয়তন %s-ক %s আয়তন সমষ্টি ৰ পৰা সৰিয় ফলা হল, আয়তন সমষ্টিটি ৰিক্ত হয় যাব এবং "
+"সটিও মুছ ফলা হব । আপুনি কি অগ্ৰসৰ হত ইচ্ছুক?"
+
+#: ../src/InputController.py:156
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space to move the data stored on %s. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"আয়তন সমষ্টি %s-এ, %s-ত সংৰক্ষিত তথ্য স্থাপন কৰাৰ বাব পৰ্যাপ্ত শূণ্যস্থান উপস্থিত নাই । "
+"ঐ আয়তন সমষ্টি এটা অতিৰিক্ত প্ৰকৃত আয়তন যোগ কৰি এই সমস্যাৰ সমাধান কৰা সম্ভৱ ।"
+
+#: ../src/InputController.py:157
+msgid ""
+"The dm-mirror module is either not loaded in your kernel, or your kernel "
+"does not support the dm-mirror target. If it is supported, try running "
+"\"modprobe dm-mirror\". Otherwise, operations that require moving data on "
+"Physical Extents are unavailable."
+msgstr ""
+"dm-mirror মডিউলটি সম্ভৱত আপনাৰ প্ৰণালীৰ কাৰ্নল লোড কৰা নাই অথবা কাৰ্নল dm-mirror "
+"টাৰ্গট সমৰ্থন কৰি না । সমৰ্থিত হল \"modprobe dm-mirror\" সঞ্চালনৰ প্ৰচষ্টা কৰক । "
+"অন্যথা, প্ৰকৃত এক্সটন্ট (PE) তথ্য স্থানান্তৰণৰ বাব প্ৰয়োজনীয় কৰ্ম কৰা সম্ভৱ নহয় ।"
+
+#: ../src/InputController.py:158
+msgid ""
+"The dm-snapshot module is either not loaded in your kernel, or your kernel "
+"does not support the dm-snapshot target. If it is supported, try running "
+"\"modprobe dm-snapshot\". Otherwise, creation of snapshots is unavailable."
+msgstr ""
+"dm-mirror মডিউলটি সম্ভৱত আপনাৰ প্ৰণালীৰ কাৰ্নল লোড কৰা নাই অথবা কাৰ্নলৰ দ্বাৰা dm-"
+"mirror টাৰ্গট সমৰ্থন কৰা নহয় । সমৰ্থিত হল \"modprobe dm-mirror\" সঞ্চালনৰ প্ৰচষ্টা "
+"কৰক । অন্যথা, প্ৰকৃত এক্সটন্ট (PE) তথ্য স্থানান্তৰ কৰ্ম কৰা সম্ভৱ নহয় ।"
+
+#: ../src/InputController.py:160
+#, python-format
+msgid "Are you quite certain that you wish to remove logical volume %s?"
+msgstr "আপুনি কি নিশ্চিতৰূপ লজিকেল আয়তন %s আঁতৰাবলৈ ইচ্ছুক?"
+
+#: ../src/InputController.py:161
+#, python-format
+msgid ""
+"Logical volume %s contains %s filesystem. All data on it will be lost! Are "
+"you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"%s লজিকেল আয়তনৰ উপৰ %s নথিপত্ৰ-প্ৰণালী স্থাপিত আছে । এবং এটিত তথ্য উপস্থিত আছে । "
+"আপুনি কি নিশ্চিতৰূপ %s লজিকেল আয়তনটি আঁতৰাবলৈ ইচ্ছুক?"
+
+#: ../src/InputController.py:162
+#, python-format
+msgid ""
+"Logical volume %s contains data from directory %s. All data in it will be "
+"lost! Are you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"%s লজিকেল আয়তনত %s ডিৰক্টিৰ তথ্য উপস্থিত আছে । এই সমস্ত তথ্য মুছ ফলা হব! আপুনি কি "
+"নিশ্চিতৰূপ %s লজিকেল আয়তনটি আঁতৰাবলৈ ইচ্ছুক?"
+
+#: ../src/InputController.py:308
+msgid ""
+"In order for Volume Group to be safely used in clustered environment, lvm2-"
+"cluster rpm has to be installed, `lvmconf --enable-cluster` has to be "
+"executed and clvmd service has to be running"
+msgstr ""
+"ক্লাস্টাৰ বিশিষ্ট পৰিবশ নিৰাপদৰূপ আয়তন সমষ্টি ব্যৱহাৰৰ বাব lvm2-cluster rpm-ৰ "
+"ইনস্টলশন, `lvmconf --enable-cluster`-ৰ সঞ্চালন আৰু clvmd পৰিসবা সক্ৰিয় থাকা "
+"আৱশ্যক  ।"
+
+#: ../src/InputController.py:367
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror log of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"%s প্ৰকৃত আয়তনত লজিকেল আয়তন %s-ৰ মিৰৰ লগৰ মালিকানাধীন extent উপস্থিত আছে । মিৰৰ "
+"কৰা লজিকেল আয়তন মাইগ্ৰট কৰা সম্ভৱ নহয় যাৰ ফলত %s অপসাৰণ কৰা যাব না ।"
+
+#: ../src/InputController.py:370
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror image of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"%s প্ৰকৃত আয়তনত লজিকেল আয়তন %s-ৰ মিৰৰ ইমজৰ মালিকানাধীন extent উপস্থিত আছে । "
+"মিৰৰ কৰা লজিকেল আয়তন মাইগ্ৰট কৰা সম্ভৱ নহয় যাৰ ফলত %s অপসাৰণ কৰা যাব না ।"
+
+#: ../src/InputController.py:373
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, a snapshot of %s. "
+"Snapshots are not yet migratable, so %s is not removable."
+msgstr ""
+"%s প্ৰকৃত আয়তনত %s অৰ্থাৎ  %s-ৰ স্ন্যাপশটৰ মালিকানাধীন এক্সটন্ট উপস্থিত আছে । "
+"স্ন্যাপশট মাইগ্ৰট কৰা সম্ভৱ নহয় যাৰ ফলত %s অপসাৰণ কৰা যাব না ।"
+
+#: ../src/InputController.py:378
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshot %"
+"s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"%s প্ৰকৃত আয়তনত %s অৰ্থাৎ %s স্ন্যাপশটৰ মূল বস্তুৰ মালিকানাধীন এক্সটন্ট উপস্থিত আছে । "
+"স্ন্যাপশটৰ মূল বস্তু মাইগ্ৰট কৰা সম্ভৱ নহয় যাৰ ফলত %s অপসাৰণ কৰা যাব না ।"
+
+#: ../src/InputController.py:380
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshots "
+"%s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"%s প্ৰকৃত আয়তনত %s অৰ্থাৎ %s স্ন্যাপশটৰ মূল বস্তুৰ মালিকানাধীন extent উপস্থিত আছে । "
+"স্ন্যাপশটৰ মূল বস্তু মাইগ্ৰট কৰা সম্ভৱ নহয় যাৰ ফলত %s অপসাৰণ কৰা যাব না ।"
+
+#: ../src/InputController.py:567
+#, python-format
+msgid ""
+"Logical Volume \"%s\" has snapshots that are not selected for removal. They "
+"must be removed as well."
+msgstr ""
+"\"%s\" নামক লজিকেল আয়তনত স্ন্যাপশট উপস্থিত আছে যা অপসাৰণৰ বাব চিহ্নিত নহয় । "
+"এইসমূহ সৰানো আৱশ্যক ।"
+
+#: ../src/InputController.py:582
+#, python-format
+msgid "\"%s\", an origin of snapshot \"%s\", has been deleted from removal list."
+msgstr ""
+"\"%s\", অৰ্থাৎ \"%s\" স্ন্যাপশটৰ মূল বস্তুটি, অপসাৰণৰ বাব চিহ্নিত বস্তুৰ তালিকা ৰ পৰা "
+"মুছ ফলা হৈছে ।"
+
+#: ../src/InputController.py:613
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a mirror. Mirrors are "
+"not migratable, so %s is not removable."
+msgstr ""
+"\"%s\" নমাক প্ৰকৃত আয়তনত কোনো মিৰৰৰ মালিকানাধীন এক্সটন্ট উপস্থিত আছে । মিৰৰ "
+"মাইগ্ৰট কৰা সম্ভৱ নহয় যাৰ ফলত %s অপসাৰণ কৰা যাব না ।"
+
+#: ../src/InputController.py:616
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a snapshot or a "
+"snapshot's origin. Snapshots are not migratable, so %s is not removable."
+msgstr ""
+"\"%s\" নামক প্ৰকৃত আয়তনটিত কোনো স্ন্যাপশট অথবা স্ন্যাপশটৰ মূল বস্তুৰ মালিকানাধীন "
+"এক্সটন্ট উপস্থিত আছে । স্ন্যাপশট মাইগ্ৰট কৰা সম্ভৱ নহয় যাৰ ফলত %s মুছ ফলা যাব না ।"
+
+#: ../src/InputController.py:681
+msgid "The path you specified does not exist."
+msgstr "আপনাৰ চিহ্নিত পাথ উপস্থিত নাই ।"
+
+#: ../src/InputController.py:688
+msgid "The path you specified is not a Block Device."
+msgstr "চিহ্নিত পাথ ব্লক ডিভাইস নহয় ।"
+
+#: ../src/InputController.py:759
+#, python-format
+msgid "Initialization of %s failed"
+msgstr "%s আৰম্ভ কৰোঁতে ব্যৰ্থ"
+
+#: ../src/InputController.py:1007 ../src/InputController.py:1010
+msgid "Please select some extents first"
+msgstr "অনুগ্ৰহ কৰি প্ৰথম কিছু এক্সটন্ট নিৰ্ব্বাচন কৰক"
+
+#: ../src/InputController.py:1044
+msgid ""
+"There are not enough free extents to perform the necessary migration. Adding "
+"more physical volumes would solve the problem."
+msgstr ""
+"প্ৰয়োজনীয় মাইগ্ৰশনৰ বাব পৰ্যাপ্ত মূক্ত এক্সটন্ট উপস্থিত নাই । অতিৰিক্ত প্ৰকৃত আয়তন যোগ  "
+"কৰি এই সমস্যাৰ সমাধান কৰা সম্ভৱ ।"
+
+#: ../src/InputController.py:1206
+msgid "Migrate extents"
+msgstr "এক্সটন্ট মাইগ্ৰট কৰক"
+
+#: ../src/InputController.py:1334
+msgid "Options"
+msgstr "অপশন"
+
+#: ../src/InputController.py:1368
+#, python-format
+msgid "Create A Snapshot of %s"
+msgstr "%s-ৰ এটা স্ন্যাপশট নিৰ্মাণ কৰক"
+
+#: ../src/InputController.py:1370
+msgid "Create New Logical Volume"
+msgstr "নতুন লজিকেল আয়তন নিৰ্মাণ"
+
+#: ../src/InputController.py:1373
+#, python-format
+msgid "Edit %s, a Snapshot of %s"
+msgstr "%s সম্পাদনা, %s-ৰ স্ন্যাপশট"
+
+#: ../src/InputController.py:1376
+msgid "Edit Logical Volume"
+msgstr "লজিকেল আয়তন সম্পাদনা"
+
+#: ../src/InputController.py:1536
+msgid "Underlying Logical Volume Management does not support mirroring"
+msgstr "অন্তৰ্নিহিত লজিকেল আয়তন ব্যৱস্থাপনাৰ দ্বাৰা মিৰৰিং কৰ্ম সমৰ্থিত নহয়"
+
+#: ../src/InputController.py:1543
+msgid "Striped Logical Volumes cannot be mirrored."
+msgstr "স্ট্ৰাইপ কৰা লজিকেল আয়তন মিৰৰ কৰা হব না ।"
+
+#: ../src/InputController.py:1550
+msgid "Logical Volumes with associated snapshots cannot be mirrored yet."
+msgstr "সংযুক্ত স্ন্যাপশট সমত লজিকেল আয়তনৰ বাব মিৰৰ কৰা সম্ভৱ নহয় ।"
+
+#. mirror images placement: diff HDs or anywhere
+#. prompt
+#: ../src/InputController.py:1557
+msgid ""
+"The primary purpose of mirroring is to protect data in the case of hard "
+"drive failure. Do you want to place mirror images onto different hard drives?"
+msgstr ""
+"হাৰ্ড-ড্ৰাইভ বিপৰ্যয়ৰ ক্ষত্ৰ তথ্য-ৰ ক্ষয়ক্ষতি ৰোধ কৰাই মিৰৰিং ব্যৱস্থাৰ প্ৰধান উদ্দশ্য । "
+"আপুনি কি বিভিন্ন হাৰ্ড-ড্ৰাইভত মিৰৰ ইমজ স্থাপন কৰোঁতে ইচ্ছুক?"
+
+#: ../src/InputController.py:1566
+msgid "Less than 3 hard drives are available with free space. Disabling mirroring."
+msgstr "শূণ্যস্থান সমত উপলব্ধ হাৰ্ড-ড্ৰাইভৰ সংখ্যা ৩-ৰ কম । মিৰৰিং নিষ্ক্ৰিয় কৰা হচ্ছ ।"
+
+#: ../src/InputController.py:1571
+msgid ""
+"There must be free space on at least three Physical Volumes to enable "
+"mirroring"
+msgstr "মিৰৰিং-ৰ বাব অন্তত তিনটি প্ৰকৃত আয়তনত শূণ্যস্থান উপলব্ধ থাকা আৱশ্যক"
+
+#: ../src/InputController.py:1579
+msgid ""
+"The size of the Logical Volume has been adjusted to the maximum available "
+"size for mirrors."
+msgstr "মিৰৰসমূহৰ বাব লজিকেল আয়তনৰ আকাৰ সৰ্বাধিক উপলব্ধ আকাৰ হিসাব পৰিবৰ্তন কৰা আৱশ্যক ।"
+
+#: ../src/InputController.py:1584
+#, python-format
+msgid ""
+"There is not enough free space to add mirroring. Reduce size of Logical "
+"Volume to at most %s, or add Physical Volumes."
+msgstr ""
+"মিৰৰিং-ৰ বাব পৰ্যাপ্ত শূণ্যস্থান উপলব্ধ নাই । লজিকেল আয়তনৰ সৰ্বাধিক %s হিসাব স্থাপন "
+"কৰক অথবা অতিৰিক্ত প্ৰকৃত আয়তন যোগ কৰক ।"
+
+#: ../src/InputController.py:1948
+msgid "Names beginning with \"snapshot\" or \"pvmove\" are reserved keywords."
+msgstr "প্ৰাৰম্ভ \"snapshot\" আৰু \"pvmove\" সহ নামসমূহ সংৰক্ষিত অভিব্যক্তি ।"
+
+#: ../src/InputController.py:1950
+msgid "Names containing \"_mlog\" or \"_mimage\" are reserved keywords."
+msgstr "প্ৰাৰম্ভ \"_mlog\" আৰু \"_mimage\" সহ নামসমূহ সংৰক্ষিত অভিব্যক্তি ।"
+
+#: ../src/InputController.py:1952
+msgid "Names beginning with a \"-\" are invalid"
+msgstr "প্ৰাৰম্ভ \"-\" সমত নামসমূহ বৈধ নহয়"
+
+#: ../src/InputController.py:1954
+msgid "Name can be neither \".\" nor \"..\""
+msgstr "নাম \".\" অথবা \"..\" হোৱা সম্ভৱ নহয়"
+
+#: ../src/InputController.py:1960
+msgid "Whitespaces are not allowed in Logical Volume names"
+msgstr "লজিকেল আয়তনৰ নামত শূণ্যস্থান লখা সম্ভৱ নহয়"
+
+#: ../src/InputController.py:1963
+#, python-format
+msgid "Invalid character \"%s\" in Logical Volume name"
+msgstr "লজিকেল আয়তনৰ নামত অৱৈধ অক্ষৰ \"%s\""
+
+#: ../src/InputController.py:1983
+msgid "Please specify mount point"
+msgstr "অনুগ্ৰহ কৰি অভ্যুত্থানৰ স্থান নিৰ্ধাৰণ কৰক"
+
+#: ../src/InputController.py:2049
+msgid "Do you want to upgrade ext2 to ext3 preserving data on Logical Volume?"
+msgstr "লজিকেল আয়তনৰ তথ্য অক্ষত ৰখ আপুনি কি ext2 ৰ পৰা ext3-ত আপগ্ৰড কৰোঁতে ইচ্ছুক?"
+
+#. # LV is probably exported to another computer(s)
+#: ../src/InputController.py:2089
+msgid ""
+"Logical volume is not mounted but is in use. Please close all applications "
+"using this device (eg iscsi)"
+msgstr "লজিকেল আয়তনক তুলি লোৱা হোৱা নাই কিন্তু ই এতিয়া ব্যৱহৃত । এই যন্ত্ৰ ব্যৱহাৰ কৰা সকলো অনুপ্ৰয়োগ বন্ধ কৰক (যেনে iscsi)"
+
+#: ../src/InputController.py:2093
+msgid ""
+"Changing the filesystem will destroy all data on the Logical Volume! Are you "
+"sure you want to proceed?"
+msgstr ""
+"নথিপত্ৰ-প্ৰণালী পৰিবৰ্তন কৰা হল লজিকেল আয়তনত উপস্থিত সমস্ত তথ্য মুছ ফলা হব! অপনি কি "
+"নিশ্চিতৰূপ অগ্ৰসৰ হত ইচ্ছুক?"
+
+#. migration not performed, continue process with no mirroring
+#: ../src/InputController.py:2194
+msgid "Mirror not created. Completing remaining tasks."
+msgstr "মিৰৰ নিৰ্মাণ কৰা নহয় । অৱশিষ্ট কৰ্ম সআকাৰ্ত কৰা হচ্ছ ।"
+
+#. create mirror
+#: ../src/InputController.py:2197
+msgid ""
+"Underlaying LVM doesn't support addition of mirrors to existing Logical "
+"Volumes. Completing remaining tasks."
+msgstr ""
+"নিম্নস্থিত LVM-ৰ দ্বাৰা বিদ্যমান লজিকেল আয়তন মিৰৰ যোগ কৰাৰ ব্যৱস্থা সমৰ্থিত হয় না । "
+"অৱশিষ্ট কৰ্ম সআকাৰ্ত কৰা হচ্ছ ।"
+
+#: ../src/InputController.py:2252
+msgid "In order to add mirroring, some extents need to be migrated."
+msgstr "মিৰৰ যোগ কৰাৰ বাব কিছু এক্সটন্ট মাইগ্ৰট কৰা আৱশ্যক ।"
+
+#: ../src/InputController.py:2252
+msgid "Do you want to migrate specified extents?"
+msgstr "আপুনি কি সুনিৰ্দিষ্ট এক্সটন্ট মাইগ্ৰট কৰোঁতে ইচ্ছুক?"
+
+#: ../src/CommandHandler.py:55
+msgid "Creating Logical Volume"
+msgstr "লজিকেল আয়তন নিৰ্মাণ"
+
+#: ../src/CommandHandler.py:76 ../src/CommandHandler.py:95
+msgid "Resizing Logical Volume"
+msgstr "লজিকেল আয়তনৰ আকাৰ পৰিবৰ্তন"
+
+#: ../src/CommandHandler.py:134
+msgid "Adding Mirror to Logical Volume"
+msgstr "লজিকেল আয়তন মিৰৰ যোগৰ প্ৰণালী"
+
+#: ../src/CommandHandler.py:147
+msgid "Removing Mirror from Logical Volume"
+msgstr "লজিকেল আয়তন ৰ পৰা মিৰৰ অপসাৰণৰ প্ৰণালী"
+
+#: ../src/CommandHandler.py:172
+msgid "Initializing Physical Volume"
+msgstr "প্ৰকৃত আয়তন সক্ৰিয়কৰণৰ প্ৰণালী"
+
+#: ../src/CommandHandler.py:185
+msgid "Adding Physical Volume to Volume Group"
+msgstr "আয়তন সমষ্টি প্ৰকৃত আয়তন যোগ কৰাৰ প্ৰণালী"
+
+#: ../src/CommandHandler.py:217
+msgid "Creating Volume Group"
+msgstr "আয়তন সমষ্টি নিৰ্মাণ প্ৰণালী"
+
+#: ../src/CommandHandler.py:243
+msgid "Removing Volume Group"
+msgstr "আয়তন সমষ্টি অপসাৰণৰ প্ৰণালী"
+
+#: ../src/CommandHandler.py:255
+msgid "Removing Physical Volume"
+msgstr "প্ৰকৃত আয়তন অপসাৰণৰ প্ৰণালী"
+
+#: ../src/CommandHandler.py:272
+msgid "Removing Logical Volume"
+msgstr "লজিকেল আয়তন অপসাৰণৰ প্ৰণালী"
+
+#: ../src/CommandHandler.py:289
+msgid "Renaming Logical Volume"
+msgstr "লজিকেল আয়তনৰ নাম পৰিবৰ্তনৰ প্ৰণালী"
+
+#: ../src/CommandHandler.py:313
+msgid "Removing Physical Volume from Volume Group"
+msgstr "আয়তন সমষ্টি ৰ পৰা প্ৰকৃত আয়তন অপসাৰণৰ প্ৰণালী"
+
+#: ../src/CommandHandler.py:350
+msgid "Migrating Extents"
+msgstr "এক্সটন্ট মাইগ্ৰট প্ৰণালী"
+
+#: ../src/CommandHandler.py:364
+msgid "Completing Extent Migration"
+msgstr "এক্সটন্ট মাইগ্ৰট কৰ্ম সম্পন্ন কৰা হচ্ছ"
+
+#: ../src/CommandHandler.py:415
+msgid "Rereading partition table"
+msgstr "পাৰ্টিশান টবিল পুনৰায় পড়া হচ্ছ"
+
+#: ../src/lvm_model.py:45 ../src/lvmui_constants.py:83
+msgid "Unused"
+msgstr "অৱ্যৱহৃত"
+
+#: ../src/lvm_model.py:46
+msgid "Unused Space"
+msgstr "অৱ্যৱহৃত স্থান"
+
+#: ../src/lvm_model.py:48
+msgid "Unmounted"
+msgstr "আন-তোলা"
+
+#: ../src/lvm_model.py:58
+msgid "Volume Group Name:   "
+msgstr "আয়তন সমষ্টিৰ নাম:   "
+
+#: ../src/lvm_model.py:59
+msgid "System ID:   "
+msgstr "প্ৰণালীৰ ID:   "
+
+#: ../src/lvm_model.py:60
+msgid "Format:   "
+msgstr "বিন্যাস:   "
+
+#: ../src/lvm_model.py:61 ../src/lvm_model.py:78 ../src/lvm_model.py:93
+msgid "Attributes:   "
+msgstr "বৈশিষ্ট্যাবলী:   "
+
+#: ../src/lvm_model.py:62
+msgid "Volume Group Size:   "
+msgstr "আয়তন সমষ্টিৰ আকাৰ:   "
+
+#: ../src/lvm_model.py:63
+msgid "Available Space:   "
+msgstr "উপলব্ধ স্থান:   "
+
+#: ../src/lvm_model.py:64
+msgid "Total Number of Extents:   "
+msgstr "সৰ্বমোট এক্সটন্ট সংখ্যা:   "
+
+#: ../src/lvm_model.py:65
+msgid "Number of Free Extents:   "
+msgstr "মুক্ত এক্সটন্টৰ সংখ্যা:   "
+
+#: ../src/lvm_model.py:66
+msgid "Extent Size:   "
+msgstr "এক্সটন্টৰ আকাৰ:   "
+
+#: ../src/lvm_model.py:67
+msgid "Maximum Allowed Physical Volumes:   "
+msgstr "প্ৰকৃত আয়তনৰ সৰ্বমোট অনুমোদিত সংখ্যা:   "
+
+#: ../src/lvm_model.py:68
+msgid "Number of Physical Volumes:   "
+msgstr "প্ৰকৃত আয়তনৰ সংখ্যা:   "
+
+#: ../src/lvm_model.py:69
+msgid "Maximum Allowed Logical Volumes:   "
+msgstr "লজিকেল আয়তনৰ সৰ্বমোট অনুমোদিত সংখ্যা:   "
+
+#: ../src/lvm_model.py:70
+msgid "Number of Logical Volumes:   "
+msgstr "লজিকেল আয়তনৰ সংখ্যা:   "
+
+#: ../src/lvm_model.py:71
+msgid "VG UUID:   "
+msgstr "VG UUID:   "
+
+#: ../src/lvm_model.py:73
+msgid "Logical Volume Name:   "
+msgstr "লজিকেল আয়তনৰ নাম:   "
+
+#: ../src/lvm_model.py:74
+msgid "Logical Volume Size:   "
+msgstr "লজিকেল আয়তনৰ আকাৰ:   "
+
+#: ../src/lvm_model.py:75
+msgid "Number of Segments:   "
+msgstr "সগমন্টৰ সংখ্যা:   "
+
+#: ../src/lvm_model.py:76
+msgid "Number of Stripes:   "
+msgstr "স্ট্ৰাইপৰ সংখ্যা:   "
+
+#: ../src/lvm_model.py:77
+msgid "Stripe Size:   "
+msgstr "স্ট্ৰাইপৰ আকাৰ:   "
+
+#: ../src/lvm_model.py:79
+msgid "LV UUID:   "
+msgstr "LV UUID:   "
+
+#: ../src/lvm_model.py:81
+msgid "Partition Type:   "
+msgstr "পাৰ্টিশনৰ ধৰন:   "
+
+#: ../src/lvm_model.py:82
+msgid "Size:   "
+msgstr "আকাৰ:   "
+
+#: ../src/lvm_model.py:83
+msgid "Mount Point:   "
+msgstr "অভ্যুত্থানৰ স্থান:   "
+
+#: ../src/lvm_model.py:84
+msgid "Mount Point when Rebooted:   "
+msgstr "পুনৰায় বুট কৰাৰ পৰ ধাৰ্য কৰা অভ্যুত্থানৰ স্থান:   "
+
+#: ../src/lvm_model.py:85
+msgid "File System:   "
+msgstr "নথিপত্ৰ-প্ৰণালী:   "
+
+#: ../src/lvm_model.py:87
+msgid "Physical Volume Name:   "
+msgstr "প্ৰকৃত আয়তনৰ নাম:   "
+
+#: ../src/lvm_model.py:88
+msgid "Physical Volume Size:   "
+msgstr "প্ৰকৃত আয়তনৰ আকাৰ:   "
+
+#: ../src/lvm_model.py:89
+msgid "Space Used:   "
+msgstr "ব্যৱহৃত স্থান:   "
+
+#: ../src/lvm_model.py:90
+msgid "Space Free:   "
+msgstr "অৱ্যৱহৃত স্থান:   "
+
+#: ../src/lvm_model.py:91
+msgid "Total Physical Extents:   "
+msgstr "প্ৰকৃত এক্সটন্টৰ সৰ্বমোট সংখ্যা:   "
+
+#: ../src/lvm_model.py:92
+msgid "Allocated Physical Extents:   "
+msgstr "আৰক্ষিত প্ৰকৃত এক্সটন্ট (PE):   "
+
+#: ../src/lvm_model.py:94
+msgid "PV UUID:   "
+msgstr "PV UUID:   "
+
+#: ../src/lvm_model.py:96
+msgid "Not initializable:"
+msgstr "আৰম্ভ কৰা সম্ভৱ নহয়:"
+
+#: ../src/lvm_model.py:97
+msgid "Extended partition"
+msgstr "এক্সটন্ডড পাৰ্টিশান"
+
+#. Translator: the line below refers to a standard linux swap partition.
+#: ../src/lvm_model.py:99
+msgid "Swap partition currently in use"
+msgstr "বৰ্তমান ব্যৱহৃত Swap পাৰ্টিশন"
+
+#: ../src/lvm_model.py:100
+msgid "Foreign boot partition"
+msgstr "ফোৰন বুট পাৰ্টিশান"
+
+#: ../src/lvm_model.py:101
+msgid "Autopartition failure"
+msgstr "স্বয়ংক্ৰিয় পাৰ্টিশান কৰ্ম ব্যৰ্থ"
+
+#: ../src/lvm_model.py:259
+msgid "Partition manually"
+msgstr "ব্যৱহাৰকাৰীৰ দ্বাৰা পাৰ্টিশান"
+
+#: ../src/lvm_model.py:295
+msgid "Multipath device"
+msgstr "মাল্টিপাথ ডিভাইস"
+
+#: ../src/lvm_model.py:298
+msgid "Note:"
+msgstr "উল্লেখ্য:"
+
+#: ../src/lvm_model.py:298
+msgid "Initialize manually"
+msgstr "ব্যৱহাৰকাৰীৰ দ্বাৰা আৰম্ভ"
+
+#: ../src/lvm_model.py:758
+msgid "Clustered:   "
+msgstr "ক্লাস্টাৰ বিশিষ্ট:   "
+
+#: ../src/lvm_model.py:760
+msgid "True"
+msgstr "True"
+
+#: ../src/lvm_model.py:762
+msgid "False"
+msgstr "False"
+
+#: ../src/lvm_model.py:820
+msgid "Number of mirror images:"
+msgstr "মিৰৰ ইমজৰ সংখ্যা:"
+
+#: ../src/lvm_model.py:823
+msgid "Snapshots:"
+msgstr "স্ন্যাপশট:"
+
+#: ../src/lvm_model.py:829
+msgid "Snapshot origin:"
+msgstr "স্ন্যাপশটৰ মূল উৎস:"
+
+#: ../src/lvm_model.py:836
+msgid "Snapshot usage:"
+msgstr "স্ন্যাপশটৰ ব্যৱহাৰ:"
+
+#: ../src/lvm_model.py:859 ../src/lvm_model.py:865 ../src/lvm_model.py:926
+#: ../src/lvm_model.py:942
+msgid "/   Root Filesystem"
+msgstr "/   Root নথিপত্ৰ-প্ৰণালী"
+
+#: ../src/lvm_model.py:945 ../src/Filesystem.py:135
+msgid "None"
+msgstr "শূণ্য"
+
+#: ../src/lvm_model.py:999
+msgid "SCSI Address:  "
+msgstr "SCSI ঠিকানা:  "
+
+#: ../src/lvm_model.py:1001
+msgid "SCSI ID:  "
+msgstr "SCSI ID:  "
+
+#. INIT_ENTITY=_("Are you certain that you wish to initialize disk entity %s? All data will be lost on this device/partition.")
+#: ../src/lvmui_constants.py:51
+#, python-format
+msgid ""
+"All data on disk entity %s will be lost! Are you certain that you wish to "
+"initialize it?"
+msgstr ""
+"%s নামক ডিস্কৰ স্বত্বাত উপস্থিত সমস্ত তথ্য মুছ যাব! আপুনি কি নিশ্চিতৰূপ এটি আৰম্ভ কৰোঁতে "
+"ইচ্ছুক?"
+
+#: ../src/lvmui_constants.py:52
+#, python-format
+msgid ""
+"Disk entity %s contains %s filesystem. All data on it will be lost! Are you "
+"certain that you wish to initialize disk entity %s?"
+msgstr ""
+"%s নামক ডিস্ক স্বত্বাত %s নথিপত্ৰ-প্ৰণালী আছে । এত উপস্থিত সমস্ত তথ্য মুছ যাব! আপুনি "
+"কি নিশ্চিতৰূপ %s নামক ডিস্ক স্বত্বা আৰম্ভ কৰোঁতে ইচ্ছুক?"
+
+#: ../src/lvmui_constants.py:53
+#, python-format
+msgid ""
+"Disk entity %s contains data from directory %s. All data in it will be lost! "
+"Are you certain that you wish to initialize disk entity %s?"
+msgstr ""
+"%s নামক ডিস্ক স্বত্বাত %s ডিৰক্টৰিৰ তথ্য উপস্থিত আছে । এত উপস্থিত সমস্ত তথ্য মুছ যাব! "
+"আপুনি কি নিশ্চিতৰূপ %s নামক ডিস্ক স্বত্বা আৰম্ভ কৰোঁতে ইচ্ছুক?"
+
+#: ../src/lvmui_constants.py:54
+#, python-format
+msgid "Are you certain that you wish to initialize %s of free space on disk %s?"
+msgstr "আপুনি কি নিশ্চিতৰূপ %s ৰিক্ত স্থান, %s ডিস্কৰ উপৰ সক্ৰিয় কৰোঁতে ইচ্ছুক?"
+
+#: ../src/lvmui_constants.py:55
+#, python-format
+msgid ""
+"You are about to initialize unpartitioned disk %s. It is advisable, although "
+"not required, to create a partition on it. Do you want to create a single "
+"partition encompassing the whole drive?"
+msgstr ""
+"আপুনি পাৰ্টিশান নকৰা ডিস্ক %s সক্ৰিয় কৰোঁতে চলছন । আৱশ্যক না হলও এত এটা পাৰ্টিশান "
+"নিৰ্মাণ কৰা বাঞ্ছনীয় । সম্পূৰ্ণ ড্ৰাইভ জুড় আপুনি এটা পাৰ্টিশান নিৰ্মাণ কৰোঁতে ইচ্ছুক কি?"
+
+#: ../src/lvmui_constants.py:57
+msgid "Reloading LVM. Please wait."
+msgstr "LVM পুনৰায় লোড কৰা হচ্ছ । অনুগ্ৰহ কৰি অপক্ষা কৰক ।"
+
+#: ../src/lvmui_constants.py:59
+#, python-format
+msgid ""
+"Changes will take effect after computer is restarted. If device %s is used, "
+"before restart, data corruption WILL occur. It is advisable to restart your "
+"computer now."
+msgstr ""
+"কম্পিউটাৰ পুনৰাৰম্ভ কৰা হল পৰিবৰ্তন প্ৰয়োগ কৰা হব । পুনৰাৰম্ভ কৰাৰ পূৰ্ব যদি %s নামক "
+"ডিভাইসটি আৰম্ভ কৰা হয় তাহল তথ্য ক্ষতিগ্ৰস্ত হব । এই মুহূৰ্ত কম্পিউটাৰ পুনৰাম্ভ কৰা "
+"বাঞ্ছনীয় ।"
+
+#: ../src/lvmui_constants.py:61
+msgid "Mirror Log"
+msgstr "মিৰৰ লগ"
+
+#: ../src/lvmui_constants.py:63
+msgid "Unable to process request"
+msgstr "প্ৰসসৰ অনুৰোধ পালন কৰি ব্যৰ্থ"
+
+#: ../src/lvmui_constants.py:65
+#, python-format
+msgid "%s command failed. Command attempted: \"%s\" - System Error Message: %s"
+msgstr "%s কমান্ড ব্যৰ্থ । কমান্ড প্ৰচষ্টা কৰছিল: \"%s\" - প্ৰণালী ত্ৰুটিৰ বাৰ্তা: %s"
+
+#: ../src/lvmui_constants.py:84
+msgid "Free"
+msgstr "মুক্ত"
+
+#: ../src/lvmui_constants.py:85
+msgid "Free space"
+msgstr "শূণ্য স্থান"
+
+#: ../src/lvmui_constants.py:87
+msgid "Unpartitioned space"
+msgstr "পাৰ্টিশান নকৰা স্থান"
+
+#: ../src/lvmui_constants.py:88
+#, python-format
+msgid "Unpartitioned space on %s"
+msgstr "%s-এ উপস্থিত পাৰ্টিশান নকৰা স্থান"
+
+#: ../src/lvmui_constants.py:90
+msgid "GB"
+msgstr "গিগাবাইট"
+
+#: ../src/lvmui_constants.py:91
+msgid "MB"
+msgstr "মগাবাইট"
+
+#: ../src/lvmui_constants.py:92
+msgid "KB"
+msgstr "কিলোবাইট"
+
+#: ../src/lvmui_constants.py:93
+msgid "Bytes"
+msgstr "বাইট"
+
+#. File System Types
+#: ../src/lvmui_constants.py:97
+msgid "No Filesystem"
+msgstr "নথিপত্ৰ-প্ৰণালী বিহীন"
+
+#: ../src/lvmui_constants.py:98
+msgid "Ext2"
+msgstr "Ext2"
+
+#: ../src/lvmui_constants.py:99
+msgid "Ext3"
+msgstr "Ext3"
+
+#: ../src/lvmui_constants.py:100
+msgid "JFS"
+msgstr "JFS"
+
+#: ../src/lvmui_constants.py:101
+msgid "MSDOS"
+msgstr "MSDOS"
+
+#: ../src/lvmui_constants.py:102
+msgid "Reiserfs"
+msgstr "Reiserfs"
+
+#: ../src/lvmui_constants.py:103
+msgid "VFAT"
+msgstr "VFAT"
+
+#: ../src/lvmui_constants.py:104
+msgid "XFS"
+msgstr "XFS"
+
+#: ../src/lvmui_constants.py:105
+msgid "Cramfs"
+msgstr "Cramfs"
+
+#: ../src/Properties_Renderer.py:42
+msgid "Properties for"
+msgstr "বৈশিষ্ট্যাবলী"
+
+#: ../src/Properties_Renderer.py:43 ../src/renderer.py:37
+msgid "Physical Volume"
+msgstr "প্ৰকৃত আয়তন"
+
+#. UNALLOCATED_MESSAGE=_("This Volume has not been allocated \n to a Volume Group yet.")
+#: ../src/Properties_Renderer.py:44 ../src/renderer.py:36
+msgid "Logical Volume"
+msgstr "লজিকেল আয়তন"
+
+#: ../src/Properties_Renderer.py:45
+msgid "Unallocated Volume"
+msgstr "আৰক্ষণবিহীন আয়তন"
+
+#: ../src/Properties_Renderer.py:46 ../src/renderer.py:43
+msgid "Disk Entity"
+msgstr "ডিস্কৰ স্বত্বা"
+
+#: ../src/Properties_Renderer.py:47 ../src/Properties_Renderer.py:48
+#: ../src/Properties_Renderer.py:49 ../src/renderer.py:38
+msgid "Volume Group"
+msgstr "আয়তন সমষ্টি"
+
+#. UNINITIALIZED_MESSAGE=_("This extent has not yet been \n initialized for use with LVM.")
+#: ../src/renderer.py:33
+msgid "No Volume Selected"
+msgstr "কোনো আয়তন নিৰ্ব্বাচন কৰা নহয়"
+
+#: ../src/renderer.py:34
+msgid "Multiple selection"
+msgstr "একাধিক নিৰ্ব্বাচন"
+
+#: ../src/renderer.py:39 ../src/Volume_Tab_View.py:46
+msgid "Logical View"
+msgstr "লজিকেল প্ৰদৰ্শন"
+
+#: ../src/renderer.py:40 ../src/Volume_Tab_View.py:45
+msgid "Physical View"
+msgstr "প্ৰকৃত প্ৰদৰ্শন"
+
+#: ../src/renderer.py:41
+msgid "Unallocated"
+msgstr "আৰক্ষণবিহীন"
+
+#: ../src/renderer.py:42
+msgid "Uninitialized"
+msgstr "নিষ্ক্ৰিয়"
+
+#: ../src/renderer.py:195
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a mirror log of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"আপুনি য এক্সটন্টসমূহ নিৰ্ব্বাচন কৰোঁতে ইচ্ছুক সসমূহ বৰ্তমান লজিকেল আয়তন %s-ৰ মিৰৰ লগৰ "
+"মালিকানাধীন । মিৰৰ কৰা লজিকেল আয়তন বৰ্তমান মাইগ্ৰট কৰা সম্ভৱ নহয় যাৰ ফলত এই "
+"এক্সটন্টসমূহ নিৰ্ব্বাচনযোগ্য নহয় ।"
+
+#: ../src/renderer.py:197
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to mirror image of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"আপুনি য এক্সটন্টসমূহ নিৰ্ব্বাচন কৰোঁতে ইচ্ছুক সসমূহ বৰ্তমান লজিকেল আয়তন %s-ৰ মিৰৰ ইমজৰ "
+"মালিকানাধীন । মিৰৰ কৰা লজিকেল আয়তন বৰ্তমান মাইগ্ৰট কৰা সম্ভৱ নহয় যাৰ ফলত এই "
+"এক্সটন্টসমূহ নিৰ্ব্বাচনযোগ্য নহয় ।"
+
+#: ../src/renderer.py:199
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to %s, a snapshot of %"
+"s. Snapshots are not yet migratable, so the extents are not selectable."
+msgstr ""
+"আপুনি য এক্সটন্টসমূহ নিৰ্ব্বাচন কৰোঁতে ইচ্ছুক সসমূহ বৰ্তমান %s অৰ্থাত্‍‌ %s-ৰ এটা স্ন্যাপশটৰ "
+"মালিকানাধীন । স্ন্যাপশট বৰ্তমান মাইগ্ৰট কৰা সম্ভৱ নহয় যাৰ ফলত এই এক্সটন্টসমূহ "
+"নিৰ্ব্বাচনযোগ্য নহয় ।"
+
+#: ../src/renderer.py:201
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a snapshot origin %"
+"s. Snapshot origins are not yet migratable, so the extents are not "
+"selectable."
+msgstr ""
+"আপুনি য এক্সটন্টসমূহ নিৰ্ব্বাচন কৰোঁতে ইচ্ছুক সসমূহ বৰ্তমান %s অৰ্থাত্‍ স্ন্যাপশটৰ এটা মূল "
+"বস্তুৰ মালিকানাধীন । স্ন্যাপশটৰ মূল বস্তু বৰ্তমান মাইগ্ৰট কৰা সম্ভৱ নহয় যাৰ ফলত এই "
+"এক্সটন্টসমূহ নিৰ্ব্বাচনযোগ্য নহয় ।"
+
+#: ../src/renderer.py:388
+#, python-format
+msgid "Snapshot of %s"
+msgstr "%s-ৰ স্ন্যাপশট "
+
+#: ../src/renderer.py:491
+msgid "Origin"
+msgstr "মূল"
+
+#: ../src/renderer.py:497
+msgid "Snapshot"
+msgstr "স্ন্যাপশট"
+
+#: ../src/renderer.py:541
+msgid "extent view"
+msgstr "এক্সটন্ট অনুযায়ী প্ৰদৰ্শন"
+
+#: ../src/Volume_Tab_View.py:42
+msgid "Volume Groups"
+msgstr "আয়তন সমষ্টি"
+
+#: ../src/Volume_Tab_View.py:43
+msgid "Unallocated Volumes"
+msgstr "আৰক্ষণবিহীন আয়তন"
+
+#: ../src/Volume_Tab_View.py:44
+msgid "Uninitialized Entities"
+msgstr "নিষ্ক্ৰিয় স্বত্বা"
+
+#: ../src/Volume_Tab_View.py:231
+msgid "Clustered VG"
+msgstr "ক্লাস্টাৰ বিশিষ্ট VG"
+
+#: ../src/Volume_Tab_View.py:617
+#, python-format
+msgid "%s mirror synchronisation"
+msgstr "%s মিৰৰ সামঞ্জস্যকৰণ"
+
+#. no existing partitions, write
+#: ../src/fdisk_wrapper.py:192
+msgid "Please wait while partition is being created"
+msgstr "পাৰ্টিশান নিৰ্মাণ কৰা হচ্ছ । অনুগ্ৰহ কৰি অপক্ষা কৰক"
+
+#: ../src/Filesystem.py:20
+#, python-format
+msgid "Creating %s filesystem"
+msgstr "%s নথিপত্ৰ-প্ৰণালী নিৰ্মাণ কৰা হচ্ছ"
+
+#: ../src/Filesystem.py:21
+#, python-format
+msgid "Resizing %s filesystem"
+msgstr "%s নথিপত্ৰ-প্ৰণালীৰ আকাৰ পৰিবৰ্তন কৰা হচ্ছ"
+
+#: ../src/Filesystem.py:22
+#, python-format
+msgid "Checking %s filesystem"
+msgstr "%s নথিপত্ৰ-প্ৰণালী পৰীক্ষা কৰা হচ্ছ"
+
+#: ../src/Filesystem.py:23
+#, python-format
+msgid "Upgrading %s filesystem to %s"
+msgstr "%s নথিপত্ৰ-প্ৰণালী %s-এ আপগ্ৰড কৰা হচ্ছ"
+
+#: ../src/Filesystem.py:24
+#, python-format
+msgid ""
+"Creation of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"নথিপত্ৰ-প্ৰণালী নিৰ্মাণ ব্যৰ্থ । কমান্ড প্ৰচষ্টা কৰছিল: \"%s\" - প্ৰণালী ত্ৰুটিৰ বাৰ্তা: "
+"%s"
+
+#: ../src/Filesystem.py:25
+#, python-format
+msgid ""
+"Resize of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"নথিপত্ৰ-প্ৰণালীৰ আকাৰ পৰিবৰ্তন ব্যৰ্থ । কমান্ড প্ৰচষ্টা কৰছিল: \"%s\" - প্ৰণালী ত্ৰুটিৰ "
+"বাৰ্তা: %s"
+
+#: ../src/Filesystem.py:26
+#, python-format
+msgid ""
+"Check of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"নথিপত্ৰ-প্ৰণালী পৰীক্ষণ ব্যৰ্থ । কমান্ড প্ৰচষ্টা কৰছিল: \"%s\" - প্ৰণালী ত্ৰুটিৰ বাৰ্তা: "
+"%s"
+
+#: ../src/Filesystem.py:27
+#, python-format
+msgid ""
+"Upgrade of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"নথিপত্ৰ-প্ৰণালী আপগ্ৰড কৰোঁতে ব্যৰ্থ । কমান্ড প্ৰচষ্টা কৰছিল: \"%s\" - প্ৰণালী ত্ৰুটিৰ "
+"বাৰ্তা: %s"
+
+#: ../src/Filesystem.py:141
+msgid "Unknown filesystem"
+msgstr "অজ্ঞাত নথিপত্ৰ-প্ৰণালী"
+
+#: ../src/Filesystem.py:491
+msgid "GFS (local)"
+msgstr "GFS (স্থানীয়)"
+
+#: ../src/Filesystem.py:606
+msgid "GFS (clustered)"
+msgstr "GFS (ক্লাস্টাৰ বিশিষ্ট)"
+
+#: ../src/Filesystem.py:640 ../src/Filesystem.py:976
+msgid "Cluster name contains illegal character "
+msgstr "ক্লাস্টাৰৰ নামত অৱৈধ অক্ষৰ উপস্থিত আছে"
+
+#: ../src/Filesystem.py:643 ../src/Filesystem.py:979
+msgid "GFS name contains illegal character "
+msgstr "GFS-ৰ নামত অৱৈধ অক্ষৰ "
+
+#: ../src/Filesystem.py:646 ../src/Filesystem.py:982
+msgid "Missing Cluster Name"
+msgstr "ক্লাস্টাৰৰ নাম অনুপস্থিত"
+
+#: ../src/Filesystem.py:649 ../src/Filesystem.py:985
+msgid "Missing GFS Name"
+msgstr "GFS-ৰ নাম অনুপস্থিত"
+
+#: ../src/Filesystem.py:828
+msgid "GFS2 (local)"
+msgstr "GFS2 (স্থানীয়)"
+
+#: ../src/Filesystem.py:942
+msgid "GFS2 (clustered)"
+msgstr "GFS2 (ক্লাস্টাৰ বিশিষ্ট)"
+
+#: ../src/Filesystem.glade.h:1 ../src/lvui.glade.h:1
+#: ../src/lv_edit_props.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../src/Filesystem.glade.h:2
+msgid "Cluster name"
+msgstr "ক্লাস্টাৰৰ নাম"
+
+#: ../src/Filesystem.glade.h:3
+msgid "Clustered GFS Properties"
+msgstr "ক্লাস্টাৰ কৰা GFS-ৰ বৈশিষ্ট্য"
+
+#: ../src/Filesystem.glade.h:4
+msgid "DLM"
+msgstr "DLM"
+
+#: ../src/Filesystem.glade.h:5
+msgid "GFS name"
+msgstr "GFS-ৰ নাম"
+
+#: ../src/Filesystem.glade.h:6
+msgid "GULM"
+msgstr "GULM"
+
+#: ../src/Filesystem.glade.h:7
+msgid "Locking type"
+msgstr "লকিংৰ ধৰন"
+
+#: ../src/Filesystem.glade.h:8
+msgid "Number of journals"
+msgstr "জাৰ্নালৰ সংখ্যা:"
+
+#: ../src/Filesystem.glade.h:9
+msgid "Number of journals (one journal per cluster node)"
+msgstr "জাৰ্নালৰ সংখ্যা (প্ৰতি ক্লাস্টাৰ নোডৰ বাবে এটা জাৰ্নাল)"
+
+#: ../src/Filesystem.glade.h:10
+msgid "Unique GFS name"
+msgstr "GFS-ৰ স্বত্বন্ত্ৰ নাম"
+
+#: ../src/Segment.py:44
+msgid "Stripe"
+msgstr "স্ট্ৰাইপ কৰা"
+
+#: ../src/Segment.py:68
+msgid "Linear Mapping"
+msgstr "সমান্তৰাল ম্যাপিং"
+
+#: ../src/Segment.py:109
+msgid "Mirror"
+msgstr "মিৰৰ"
+
+#: ../src/PhysicalVolume.py:142
+#, python-format
+msgid "Partition %s"
+msgstr "পাৰ্টিশন %s"
+
+#: ../src/lvui.glade.h:2
+msgid "1024"
+msgstr "১০২৪"
+
+#: ../src/lvui.glade.h:3
+msgid "128"
+msgstr "১২৮"
+
+#: ../src/lvui.glade.h:4
+msgid "16"
+msgstr "১৬"
+
+#: ../src/lvui.glade.h:5
+msgid "2"
+msgstr "২"
+
+#: ../src/lvui.glade.h:6
+msgid "256"
+msgstr "২৫৬"
+
+#: ../src/lvui.glade.h:7
+msgid "32"
+msgstr "৩২"
+
+#: ../src/lvui.glade.h:8
+msgid "4"
+msgstr "৪"
+
+#: ../src/lvui.glade.h:9
+msgid "512"
+msgstr "৫১২"
+
+#: ../src/lvui.glade.h:10
+msgid "64"
+msgstr "৬৪"
+
+#: ../src/lvui.glade.h:11
+msgid "8"
+msgstr "৮"
+
+#: ../src/lvui.glade.h:12
+msgid "Add Physical Volume to VG"
+msgstr "আয়তন সমষ্টি (VG)-এ প্ৰকৃত আয়তন যোগ কৰক"
+
+#: ../src/lvui.glade.h:13
+msgid ""
+"Add to existing \n"
+"Volume Group"
+msgstr ""
+"বিদ্যমান আয়তন \n"
+"সমষ্টি যোগ কৰক"
+
+#: ../src/lvui.glade.h:15
+msgid "Clustered"
+msgstr "ক্লাস্টাৰ বিশিষ্ট"
+
+#: ../src/lvui.glade.h:16
+msgid ""
+"Create New\n"
+"Logical Volume"
+msgstr ""
+"নতুন লজিকেল\n"
+"আয়তন নিৰ্মাণ কৰক"
+
+#: ../src/lvui.glade.h:18
+msgid "Create Snapshot"
+msgstr "স্ন্যাপশট নিৰ্মাণ"
+
+#: ../src/lvui.glade.h:19
+msgid ""
+"Create new \n"
+"Volume Group"
+msgstr ""
+"নতুন আয়তন \n"
+"সমষ্টি নিৰ্মাণ কৰক"
+
+#: ../src/lvui.glade.h:21
+msgid "Edit Properties"
+msgstr "বৈশিষ্ট্যাবলী সম্পাদনা"
+
+#: ../src/lvui.glade.h:22
+msgid "Enter path of Block Device to initialize"
+msgstr "সক্ৰিয় কৰাৰ উদ্দশ্য ব্লক ডিভাইসৰ পাথ উল্লেখ কৰক"
+
+#: ../src/lvui.glade.h:23
+msgid ""
+"Extend\n"
+"Volume Group"
+msgstr ""
+"আয়তন সমষ্টি\n"
+"এক্সটন্ড কৰক"
+
+#: ../src/lvui.glade.h:25
+msgid "Extend Volume Group"
+msgstr "আয়তন সমষ্টি এক্সটন্ড কৰক"
+
+#: ../src/lvui.glade.h:26
+msgid "Format"
+msgstr "ফৰমা"
+
+#: ../src/lvui.glade.h:27
+msgid "Initialize"
+msgstr "সক্ৰিয়কৰণ"
+
+#: ../src/lvui.glade.h:28
+msgid "Initialize Block Device"
+msgstr "ব্লক ডিভাইস সক্ৰিয়কৰণ"
+
+#: ../src/lvui.glade.h:29
+msgid "Initialize Entity"
+msgstr "স্বত্বা সক্ৰিয় কৰক"
+
+#: ../src/lvui.glade.h:30
+msgid "Initialize _Block Device"
+msgstr "ব্লক ডিভাইস সক্ৰিয় কৰক (_B)"
+
+#: ../src/lvui.glade.h:31
+msgid "Kilo"
+msgstr "কিলো"
+
+#: ../src/lvui.glade.h:32 ../system-config-lvm.desktop.in.h:3
+msgid "Logical Volume Management"
+msgstr "লজিকেল আয়তন পৰিচালনা"
+
+#: ../src/lvui.glade.h:33
+msgid "Manage Volumes"
+msgstr "আয়তন পৰিচালনা"
+
+#: ../src/lvui.glade.h:34
+msgid "Mark Volume Group as 'clustered'"
+msgstr "আয়তন সমষ্টিটি 'ক্লাস্টাৰ বিশিষ্ট' ৰূপ চিহ্নিত কৰা হব"
+
+#: ../src/lvui.glade.h:35
+msgid "Maximum Logical Volumes"
+msgstr "লজিকেল আয়তনৰ সৰ্বোচ্চ সংখ্যা"
+
+#: ../src/lvui.glade.h:36
+msgid "Maximum Physical Volumes"
+msgstr "প্ৰকৃত আয়তনৰ সৰ্বোচ্চ সংখ্যা"
+
+#: ../src/lvui.glade.h:37
+msgid "Meg"
+msgstr "মগ"
+
+#: ../src/lvui.glade.h:38
+msgid ""
+"Migrate Selected\n"
+"Extent(s) From Volume"
+msgstr ""
+"নিৰ্বাচিত এক্সটন্টসমূহ আয়তন\n"
+"ৰ পৰা স্থানান্তৰ কৰক"
+
+#: ../src/lvui.glade.h:40
+msgid "New Volume Group"
+msgstr "নতুন আয়তন সমষ্টি"
+
+#: ../src/lvui.glade.h:41
+msgid "Physical Extent Size"
+msgstr "প্ৰকৃত এক্সটন্টৰ (PE)-ৰ আকাৰ"
+
+#: ../src/lvui.glade.h:42
+msgid ""
+"Remove \n"
+"Logical Volume"
+msgstr ""
+"লজিকেল \n"
+"আয়তন অপসাৰণ"
+
+#: ../src/lvui.glade.h:44
+msgid ""
+"Remove Selected\n"
+"Logical Volume(s)"
+msgstr ""
+"নিৰ্বাচিত লজিকেল\n"
+"আয়তন অপসাৰণ কৰক"
+
+#: ../src/lvui.glade.h:46
+msgid ""
+"Remove Selected\n"
+"Physical Volume(s)"
+msgstr ""
+"নিৰ্বাচিত প্ৰকৃত\n"
+"আয়তন অপসাৰণ কৰক"
+
+#: ../src/lvui.glade.h:48
+msgid ""
+"Remove Volume from\n"
+"Volume Group"
+msgstr ""
+"আয়তন সমষ্টি ৰ পৰা\n"
+"আয়তন অপসাৰণ কৰক"
+
+#: ../src/lvui.glade.h:50
+msgid ""
+"Remove volume \n"
+"from LVM"
+msgstr ""
+"LVM ৰ পৰা \n"
+"আয়তন মুছ ফলুন"
+
+#: ../src/lvui.glade.h:52
+msgid "Select a Volume Group to add this PV to:"
+msgstr "এই প্ৰকৃত আয়তন (PV) যোগ কৰাৰ বাব এটা আয়তন সমষ্টি নিৰ্ব্বাচন কৰক:"
+
+#: ../src/lvui.glade.h:53
+msgid "Some text"
+msgstr "কিছু টক্সট"
+
+#: ../src/lvui.glade.h:54
+msgid "Volume Group Name"
+msgstr "আয়তন সমষ্টিৰ নাম"
+
+#: ../src/lvui.glade.h:55
+msgid "_Reload"
+msgstr "পুনৰায় লোড (_R)"
+
+#: ../src/lvui.glade.h:56
+msgid "_Tools"
+msgstr "সৰঞ্জাম (_T)"
+
+#: ../src/lvui.glade.h:57
+msgid "extend vg message:"
+msgstr "এক্সটন্ড vg বাৰ্তা:"
+
+#: ../src/lv_edit_props.glade.h:2
+msgid "<b>Filesystem</b>"
+msgstr "<b>নথিপত্ৰ-প্ৰণালী</b>"
+
+#: ../src/lv_edit_props.glade.h:3
+msgid "<b>LV Properties</b>"
+msgstr "<b>LV-ৰ বৈশিষ্ট্য</b>"
+
+#: ../src/lv_edit_props.glade.h:4
+msgid "<b>Size</b>"
+msgstr "<b>আকাৰ</b>"
+
+#: ../src/lv_edit_props.glade.h:5
+msgid "Add entry to /etc/fstab"
+msgstr "/etc/fstab-এ তথ্য যোগ কৰক"
+
+#: ../src/lv_edit_props.glade.h:6
+msgid "Create New Logical Volume (LV)"
+msgstr "নতুন লজিকেল আয়তন নিৰ্মাণ"
+
+#: ../src/lv_edit_props.glade.h:7
+msgid "Filesystem is not resizable"
+msgstr "নথিপত্ৰ-প্ৰণালী পৰিবৰ্তন কৰা সম্ভৱ নহয়"
+
+#: ../src/lv_edit_props.glade.h:8
+msgid "Free space in Volume Group label"
+msgstr "আয়তন সমষ্টি লবল উপলব্ধ শূণ্যস্থান"
+
+#: ../src/lv_edit_props.glade.h:9
+msgid "Free space remaining label"
+msgstr "অৱশিষ্ট স্থানৰ বাব লবল"
+
+#: ../src/lv_edit_props.glade.h:10
+msgid "Kilobytes granularity"
+msgstr "কিলোবাইটৰ ক্ষুদ্ৰাংশ"
+
+#: ../src/lv_edit_props.glade.h:11
+msgid "LV name:"
+msgstr "LV-ৰ নাম:"
+
+#: ../src/lv_edit_props.glade.h:12
+msgid "LV size"
+msgstr "LV-ৰ আকাৰ"
+
+#: ../src/lv_edit_props.glade.h:13
+msgid "LVs under snapshots are not resizable"
+msgstr "স্ন্যাপশটৰ অধীন LVসমূহৰ আকাৰ পৰিবৰ্তনশীল নহয়"
+
+#: ../src/lv_edit_props.glade.h:14
+msgid "Linear"
+msgstr "সমান্তৰাল"
+
+#: ../src/lv_edit_props.glade.h:15
+msgid "Mirrored"
+msgstr "মিৰৰ কৰা"
+
+#: ../src/lv_edit_props.glade.h:16
+msgid "Mirrored LVs are not resizable"
+msgstr "মিৰৰ কৰা LVসমূহৰ আকাৰ পৰিবৰ্তন কৰা সম্ভৱ নহয়"
+
+#: ../src/lv_edit_props.glade.h:17
+msgid "Mount"
+msgstr "মাউন্ট কৰক"
+
+#: ../src/lv_edit_props.glade.h:18
+msgid "Mount point:"
+msgstr "অভ্যুত্থানৰ স্থান:"
+
+#: ../src/lv_edit_props.glade.h:19
+msgid "Mount when rebooted"
+msgstr "পুনৰায় বুট কৰাৰ পৰ তোলা হব"
+
+#: ../src/lv_edit_props.glade.h:20
+msgid "Size beg"
+msgstr "আকাৰৰ আৰম্ভ"
+
+#: ../src/lv_edit_props.glade.h:21
+msgid "Size end"
+msgstr "আকাৰৰ সআকাৰ্তি"
+
+#: ../src/lv_edit_props.glade.h:22
+msgid "Striped"
+msgstr "স্ট্ৰাইপ কৰা"
+
+#: ../src/lv_edit_props.glade.h:23
+msgid "Use remaining"
+msgstr "চিহ্নিত স্থানৰ অৱশিষ্ট"
+
+#: ../src/lv_edit_props.glade.h:24
+msgid "stripes"
+msgstr "স্ট্ৰাইপ"
+
+#: ../src/migrate_extents.glade.h:1
+msgid "<b>Destination</b>"
+msgstr "<b>গন্তব্য</b>"
+
+#: ../src/migrate_extents.glade.h:2
+msgid "<b>Migration Policy</b>"
+msgstr "<b>মাইগ্ৰশনৰ নিয়মনীতি</b>"
+
+#: ../src/migrate_extents.glade.h:3
+msgid "Anywhere - not implemented"
+msgstr "য কোনো স্থান - প্ৰয়োগ কৰা নহয়"
+
+#: ../src/migrate_extents.glade.h:4
+msgid "Automatically choose PVs to migrate to"
+msgstr "মাইগ্ৰট কৰাৰ বাব স্বয়ংক্ৰিয়ৰূপ PV নিৰ্ব্বাচন কৰা হব"
+
+#: ../src/migrate_extents.glade.h:5
+msgid "Contiguous"
+msgstr "অৱিচ্ছিন্ন"
+
+#: ../src/migrate_extents.glade.h:6
+msgid "Destination:"
+msgstr "গন্তব্য"
+
+#: ../src/migrate_extents.glade.h:7
+msgid ""
+"In order to remove PV, extents in use have to be migrated.\n"
+"Select extents' destination and migration policy."
+msgstr ""
+"PV অপসাৰণৰ বাব ব্যৱহৃত এক্সটন্টসমূহ মাইগ্ৰট কৰা আৱশ্যক ।\n"
+"এক্সটন্টৰ গন্তব্যস্থল আৰু মাইগ্ৰশনৰ নিয়মনীতি নিৰ্ব্বাচন কৰক ।"
+
+#: ../src/migrate_extents.glade.h:9
+msgid "Inherit"
+msgstr "উত্তৰাধিকাৰ"
+
+#: ../src/migrate_extents.glade.h:10
+msgid "Inherit policy from Volume Group"
+msgstr "আয়তন সমষ্টিৰ উত্তৰাধিকাৰ সংক্ৰান্ত নীতি"
+
+#: ../src/migrate_extents.glade.h:11
+msgid "Migrate Extents"
+msgstr "Extents মাইগ্ৰট কৰাৰ প্ৰণালী"
+
+#: ../src/migrate_extents.glade.h:12
+msgid "Migrate anywhere even if that reduces performance"
+msgstr "কৰ্মক্ষমতাৰ হানি হোৱা সত্বও য কোনো স্থান মাইগ্ৰট কৰা হব"
+
+#: ../src/migrate_extents.glade.h:13
+msgid "New extents are adjacent to existing ones"
+msgstr "নতুন এক্সটন্টসমূহ বৰ্তমান এক্সটন্টৰ পাৰ্শ্ববৰ্তী অৱস্থান"
+
+#: ../src/migrate_extents.glade.h:14
+msgid "Normal"
+msgstr "স্বাভাবিক"
+
+#: ../src/migrate_extents.glade.h:15
+msgid "Only migrate extents belonging to LV"
+msgstr "অকল LV-ৰ মালিকানাধীন এক্সটন্ট মাইগ্ৰট কৰা হব"
+
+#: ../src/migrate_extents.glade.h:16
+msgid "Use common sense"
+msgstr "সাধাৰণ বিচাৰ বিবচনা প্ৰয়োগ কৰা হব"
+
+#: ../src/Partition.py:103 ../src/Partition.py:108
+msgid "Unknown"
+msgstr "অজ্ঞাত"
+
+#: ../src/system-config-lvm.py:58
+msgid "system-config-lvm"
+msgstr "system-config-lvm"
+
+#: ../src/system-config-lvm.py:59
+#, python-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#: ../src/system-config-lvm.py:77
+msgid ""
+"LVM locks are disabled!!! \n"
+"Massive data corruption may occur.\n"
+"Enable locking (locking_type=1, 2 or 3 in /etc/lvm/lvm.conf)."
+msgstr ""
+"LVM লক নিষ্ক্ৰিয় কৰা হৈছে!!! \n"
+"বহুল পৰিমানে তথ্য ক্ষতিগ্ৰস্ত হোৱাৰ সম্ভাবনা আছে ।\n"
+"লক ব্যৱস্থা সক্ৰিয় কৰক (/etc/lvm/lvm.conf নথিপত্ৰত locking_type=1,2 অথবা 3 ধাৰ্য "
+"কৰক) ।"
+
+#: ../src/system-config-lvm.py:82
+msgid ""
+"LVM is configured to use Cluster Locking mechanism, but clvmd daemon is not "
+"running. Start daemon with command:\n"
+"service clvmd start \n"
+"or, turn off cluster locking (locking_type=1 in /etc/lvm/lvm.conf)."
+msgstr ""
+"ক্লাস্টাৰ লক ব্যৱস্থা ব্যৱহাৰৰ উদ্দেশ্যে LVM বিন্যাস কৰা হ'লেও clvmd ডেমন বৰ্তমানে "
+"নাই চলা । নিম্নলিখিত কমান্ড দ্বাৰা ডেমন আৰম্ভ কৰক:\n"
+"service clvmd start \n"
+"অথবা ক্লাস্টাৰ লক ব্যৱস্থা নিষ্ক্ৰিয় কৰক (/etc/lvm/lvm.conf নথিপত্ৰত locking_type=1 "
+"ধাৰ্য কৰক) ।"
+
+#: ../src/system-config-lvm.py:86
+msgid ""
+"LVM is configured to use Cluster Locking mechanism, but cluster is not "
+"quorate.\n"
+"Either wait until cluster is quorate or turn off cluster locking "
+"(locking_type=1 in /etc/lvm/lvm.conf)."
+msgstr ""
+"ক্লাস্টাৰ লক ব্যৱস্থা ব্যৱহাৰৰ উদ্দেশ্যে LVM বিন্যাস কৰা হ'লেও ক্লাস্টাৰ বৰ্তমানে "
+"quorate  নহয়:\n"
+"ক্লাস্টাৰ quorate অবধি অপেক্ষা কৰক অথবা ক্লাস্টাৰ লক ব্যৱস্থা নিষ্ক্ৰিয় কৰক (/etc/lvm/"
+"lvm.conf নথিপত্ৰত locking_type=1 ধাৰ্য কৰক) ।"
+
+#: ../src/system-config-lvm.py:89
+#, python-format
+msgid ""
+"%s only supports file and cluster based lockings (locking_type=1, 2 or 3 in /"
+"etc/lvm/lvm.conf)."
+msgstr ""
+"%s দ্বাৰা অকল নথিপত্ৰ আৰু ক্লাস্টাৰ ভিত্তিক লক ব্যৱস্থা সমৰ্থিত হয় (/etc/lvm/lvm.conf "
+"নথিপত্ৰত locking_type=1,2 অথবা 3 ধাৰ্য কৰক) ।"
+
+#. ## Don't specify version - already in ABOUT_VERSION
+#: ../src/system-config-lvm.py:122
+msgid "Copyright (c) 2004 Red Hat, Inc. All rights reserved."
+msgstr "Copyright (c) 2004 Red Hat, Inc. All rights reserved."
+
+#: ../src/system-config-lvm.py:123
+msgid "This software is licensed under the terms of the GPL."
+msgstr "এই চালনাজ্ঞান GPL-ৰ চৰ্ত অনুযায়ী প্ৰমাণীত কৰা হৈছে ।"
+
+#: ../src/system-config-lvm.py:172
+#, python-format
+msgid "Please restart %s with root permissions!"
+msgstr "অনুগ্ৰহ কৰি root-ৰ অধিকাৰসহ %s পুনৰাৰম্ভ কৰক!"
+
+#: ../system-config-lvm.desktop.in.h:1
+msgid "Configure LVM in a graphical setting"
+msgstr "চিত্ৰাঙ্কিত পৰিবেশত LVM বিন্যাস কৰক"
+
+#: ../system-config-lvm.desktop.in.h:2
+msgid "LVM"
+msgstr "LVM"
+

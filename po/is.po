@@ -1,0 +1,1794 @@
+# Icelandic translation of system-config-lvm
+# Copyright (C) 2004 Richard Allen <ra@ra.is>
+# This file is distributed under the same license as the PACKAGE package.
+# Richard Allen <ra@ra.is>, 2004
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-lvm\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-31 09:04-0500\n"
+"PO-Revision-Date: 2006-12-08 16:54+0000\n"
+"Last-Translator: Richard Allen <ra@ra.is>\n"
+"Language-Team: Icelandic <kde-isl@molar.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/InputController.py:39 src/Properties_Renderer.py:24
+#: src/Volume_Tab_View.py:32
+#, python-format
+msgid ""
+"\n"
+"  Unable to initialize graphical environment. Most likely cause of failure\n"
+"  is that the tool was not run using a graphical environment. Please either\n"
+"  start your graphical user interface or set your DISPLAY variable.\n"
+"                                                                                \n"
+"  Caught exception: %s\n"
+msgstr ""
+"\n"
+"  Get ekki ræst upp myndræna viðmótið. Algengasta skýring þessarar villu\n"
+"  er sú að tólið var ekki keyrt upp með myndræna gluggaumhverfið í gangi.\n"
+"  Vinsamlega ræstu myndræna umhverfið eða gakktu úr skugga um að DISPLAY\n"
+"  umhverfisbreytan er rétt stillt.\n"
+"                                                                                \n"
+"  Fékk villuboð: %s\n"
+
+#. ##TRANSLATOR: The string below is seen when adding a new Physical
+#. ##Volume to an existing Volume Group.
+#: src/InputController.py:59
+#, python-format
+msgid "Select a Volume Group to add %s to:"
+msgstr "Veldu sýndardiskhóp til að bæta %s í:"
+
+#. ##TRANSLATOR: The two strings below refer to the name and type of
+#. ##available disk entities on the system. There are two types --
+#. ##The first is an 'unallocated physical volume' which is a disk or
+#. ##partition that has been initialized for use with LVM, by writing
+#. ##a special label onto the first block of the partition. The other type
+#. ##is an 'uninitialized entity', which is an available disk or partition
+#. ##that is NOT yet initialized to be used with LVM. Hope this helps give
+#. ##some context.
+#: src/InputController.py:87
+msgid "Name"
+msgstr "Heiti"
+
+#: src/InputController.py:88
+msgid "Size"
+msgstr "Stærð"
+
+#: src/InputController.py:89
+msgid "Entity Type"
+msgstr "Gerð tækis"
+
+#: src/InputController.py:91
+msgid "Unallocated Physical Volume"
+msgstr "Ónotaður raundiskur"
+
+#: src/InputController.py:92
+msgid "Uninitialized Disk Entity"
+msgstr "Óuppsettur diskur"
+
+#: src/InputController.py:93
+#, python-format
+msgid "Select disk entities to add to the %s Volume Group:"
+msgstr "Veldu disk til að bæta í sýndardiskhópinn %s:"
+
+#: src/InputController.py:95
+msgid ""
+"A Volume Group must be made up of two or more Physical Volumes to support "
+"striping. This Volume Group does not meet that requirement."
+msgstr ""
+"Sýndardiskhópur verður að innihalda að minnsta kosti tvo diska til að hann "
+"styðji RAID 0. Þessi sýndardiskhópur uppfyllir ekki skilyrðin."
+
+#: src/InputController.py:97
+#, python-format
+msgid ""
+"A Logical Volume with the name %s already exists in this Volume Group. "
+"Please choose a unique name."
+msgstr ""
+"Sýndardiskur með heitinu %s er þegar til í þessum sýndardiskhóp. Vinsamlega "
+"veldu annað heiti."
+
+#: src/InputController.py:99
+#, python-format
+msgid ""
+"A Volume Group with the name %s already exists. Please choose a unique name."
+msgstr ""
+"Sýndardiskhópur með heitinu %s er þegar til. Vinsamlega veldu annað heiti."
+
+#: src/InputController.py:101
+msgid "A Name must be provided for the new Logical Volume"
+msgstr "Þú verður að gefa nýja sýndardisknum heiti"
+
+#: src/InputController.py:103
+msgid "A Name must be provided for the new Volume Group"
+msgstr "Þú verður að gefa nýja sýndardiskhópnum heiti"
+
+#: src/InputController.py:105
+#, python-format
+msgid ""
+"The specified mount point, %s, does not exist. Do you wish to create it?"
+msgstr "Tengipúnkturinn %s er ekki til. Viltu búa hann til núna?"
+
+#: src/InputController.py:107
+#, python-format
+msgid "The creation of mount point %s unexpectedly failed."
+msgstr "Það kom upp óvænt villa við að búa til tengipúnktinn %s."
+
+#: src/InputController.py:109
+msgid "This capability is not yet implemented in this version"
+msgstr "Þessi eiginleiki er enn ekki útfærður í þessari útgáfu"
+
+#: src/InputController.py:111
+msgid ""
+"The number of Logical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "Hámarksfjölda sýndardiska í þessum sýndardiskhóp er náð."
+
+#: src/InputController.py:113
+msgid ""
+"The number of Physical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "Hámarksfjölda raundiska í þessum sýndardiskhóp er náð."
+
+#: src/InputController.py:115
+#, python-format
+msgid ""
+"At most %s Physical Volumes can be added to this Volume Group before the "
+"limit is reached."
+msgstr "Það mega mest vera %s raundiskar í þessum sýndardiskhóp."
+
+#: src/InputController.py:117
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space for new Logical Volumes. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"Sýndardiskhópurinn %s hefur ekki nægilegt pláss fyrir nýja sýndardiska. "
+"Möguleg lausn er að bæta við raundisk í diskhópinn."
+
+#: src/InputController.py:119
+msgid "A snapshot of a snapshot is not supported."
+msgstr "Skyndimynd af skyndimynd er ekki stutt."
+
+#: src/InputController.py:120
+msgid "A snapshot of a mirrored Logical Volume is not supported."
+msgstr "Skyndimynd af spegluðum sýndardisk er ekki stutt."
+
+#: src/InputController.py:122
+#, python-format
+msgid ""
+"Logical volume %s has snapshot %s currently associated with it. Please "
+"remove the snapshot first."
+msgstr ""
+"Sýndardiskurinn %s hefur skyndimynd %s tengdann við sig. Vinsamlega "
+"fjarlægðu skyndimyndina first."
+
+#: src/InputController.py:123
+#, python-format
+msgid ""
+"Logical volume %s has snapshots: %s currently associated with it. Please "
+"remove snapshots first."
+msgstr ""
+"Sýndardiskurinn %s hefur skyndimyndir: %s tengdar við sig. Vinsamlega "
+"fjarlægðu skyndimyndina first."
+
+#: src/InputController.py:125
+msgid ""
+"Undefined type conversion error in model factory. Unable to complete task."
+msgstr "Óskilgreind gerð gagna í reit framleiðanda. Get ekki klárað verkið."
+
+#: src/InputController.py:127
+#, python-format
+msgid ""
+"BIG WARNING: Logical Volume %s has an %s file system on it and is currently "
+"mounted on %s. Are you absolutely certain that you wish to discard the data "
+"on this mounted filesystem?"
+msgstr ""
+"AÐVÖRUN: Sýndardiskurinn %s inniheldur %s skráarkerfi sem er tengt á %s. "
+"Ertu viss um að þú viljir helda gögnunum sem eru á þessu skráarkerfi?"
+
+#: src/InputController.py:129
+#, python-format
+msgid ""
+"Logical Volume %s is currently mounted on %s. In order to complete request, "
+"it has to be unmounted. Are you sure you want it unmounted?"
+msgstr ""
+"Sýndardiskurinn %s er þegar tengdur á %s. Til þess að klára beiðnina þarf að "
+"aftengja hann fyrst. Ertu viss um að þú viljir aftengja hann?"
+
+#. ##TRANSLATOR: An extent below is an abstract unit of storage. The size
+#. ##of an extent is user-definable.
+#: src/InputController.py:135
+#, python-format
+msgid "Unused space on %s"
+msgstr "Ónotað rými á %s"
+
+#: src/InputController.py:136
+#, python-format
+msgid "%s megabytes"
+msgstr "%s megabæti"
+
+#: src/InputController.py:137
+#, python-format
+msgid "%s kilobytes"
+msgstr "%s kílóbæti"
+
+#: src/InputController.py:138
+#, python-format
+msgid "%s gigabytes"
+msgstr "%s gígabæti"
+
+#: src/InputController.py:139
+#, python-format
+msgid "%s extents"
+msgstr "%s diskhlutar"
+
+#: src/InputController.py:141
+msgid "Remaining free space in Volume Group:\n"
+msgstr "Laust pláss í þessum sýndardiskhóp:\n"
+
+#: src/InputController.py:142
+msgid "Remaining space for this Volume:\n"
+msgstr "Laust pláss fyrir þennan disk:\n"
+
+#: src/InputController.py:144
+msgid "Extents"
+msgstr "Diskhlutar"
+
+#: src/InputController.py:145
+msgid "Gigabytes"
+msgstr "Gígabæti"
+
+#: src/InputController.py:146
+msgid "Megabytes"
+msgstr "Megabæti"
+
+#: src/InputController.py:147
+msgid "Kilobytes"
+msgstr "Kílóbæti"
+
+#: src/InputController.py:149
+#, python-format
+msgid "The %s should only contain number values"
+msgstr "Gildið %s ætti einungis að innihalda tölustafi"
+
+#: src/InputController.py:150
+msgid ""
+"The Maximum Physical Volumes field should contain only integer values "
+"between 1 and 256"
+msgstr ""
+"Sviðið fyrir hámarksfjölda raundiska ætti einungis að innihalda tölustafi á "
+"milli 1 og 256"
+
+#: src/InputController.py:151
+msgid ""
+"The Maximum Logical Volumes field should contain only integer values between "
+"1 and 256"
+msgstr ""
+"Sviðið fyrir hámarksfjölda sýndardiska ætti einungis að innihalda tölustafi "
+"á milli 1 og 256"
+
+#: src/InputController.py:153
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from Logical Volume "
+"Management?"
+msgstr "Ertu viss um að þú viljir fjarlægja %s úr sýndardiskstjóranum?"
+
+#: src/InputController.py:155
+#, python-format
+msgid ""
+"The Physical Volume named %s, that you wish to remove, has data from active "
+"Logical Volume(s) mapped to its extents. Because it is the only Physical "
+"Volume in the Volume Group, there is no place to move the data to. "
+"Recommended action is either to add a new Physical Volume before removing "
+"this one, or else remove the Logical Volumes that are associated with this "
+"Physical Volume."
+msgstr ""
+"Raundiskurinn %s sem þú vilt fjarlægja inniheldur gögn sem tilheyra virkum "
+"sýndardiskum. Þar sem hann er eini raundiskurinn í diskhópnum er ekki hægt "
+"að færa þessi gögn annað. Við mælum með að þú annaðhvort bætir við nýjum "
+"disk áður en þessi er fjarlægður eða fjarlægir sýndardiskinn sem gögnin á "
+"disknum tilheyrir."
+
+#: src/InputController.py:156
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from the %s Volume Group?"
+msgstr "Ertu viss um að þú viljir fjarlægja %s úr sýndardiskhópnum %s?"
+
+#: src/InputController.py:157
+#, python-format
+msgid ""
+"Removing Physical Volume %s from the Volume Group %s will leave the Volume "
+"group empty, and it will be removed as well. Do you wish to proceed?"
+msgstr ""
+"Ef raundiskurinn %s er fjarlægður er sýndardiskhópurinn %s tómur og því "
+"verður hópnum einnig eytt. Viltu halda áfram?"
+
+#: src/InputController.py:158
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space to move the data stored on %s. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"Sýndardiskhópurinn %s hefur ekki nægilegt pláss til að flytja gögnin sem eru "
+"á %s. Möguleg lausn er að bæta við raundisk í diskhópinn."
+
+#: src/InputController.py:159
+msgid ""
+"The dm-mirror module is either not loaded in your kernel, or your kernel "
+"does not support the dm-mirror target. If it is supported, try running "
+"\"modprobe dm-mirror\". Otherwise, operations that require moving data on "
+"Physical Extents are unavailable."
+msgstr ""
+"Eininguna dm-mirror er hvergi að finna í kjarnanum þínum eða kjarninn styður "
+"ekki dm-mirror vinnslu. Ef þetta er stutt skaltu reyna að keyra skipunina "
+"\"modprobe dm-mirror\". Annars eru aðgerðir sem flytja gögn á raundiskum "
+"ekki tiltækar."
+
+#: src/InputController.py:160
+msgid ""
+"The dm-snapshot module is either not loaded in your kernel, or your kernel "
+"does not support the dm-snapshot target. If it is supported, try running "
+"\"modprobe dm-snapshot\". Otherwise, creation of snapshots is unavailable."
+msgstr ""
+"Eininguna dm-snapshot er hvergi að finna í kjarnanum þínum eða kjarninn "
+"styður ekki dm-snapshot vinnslu. Ef þetta er stutt skaltu reyna að keyra "
+"skipunina \"modprobe dm-snapshot\". Annars eru skyndimyndir ekki studdar "
+
+#: src/InputController.py:162
+#, python-format
+msgid "Are you quite certain that you wish to remove logical volume %s?"
+msgstr "Ertu viss um að þú viljir fjarlægja sýndardiskinn %s?"
+
+#: src/InputController.py:163
+#, python-format
+msgid ""
+"Logical volume %s contains %s filesystem. All data on it will be lost! Are "
+"you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"Sýndardiskurinn %s inniheldur %s skráarkerfi. Öll gögn munu tapast! Ertu "
+"viss um að þú viljir fjarlægja sýndardiskinn %s?"
+
+#: src/InputController.py:164
+#, python-format
+msgid ""
+"Logical volume %s contains data from directory %s. All data in it will be "
+"lost! Are you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"Sýndardiskurinn %s inniheldur gögn í möppunni %s. Öll gögn munu tapast! Ertu "
+"viss um að þú viljir fjarlægja sýndardiskinn %s?"
+
+#: src/InputController.py:309
+#, fuzzy
+msgid ""
+"In order for Volume Group to be safely used in clustered environment, lvm2-"
+"cluster rpm has to be installed, `lvmconf --enable-cluster` has to be "
+"executed and clvmd service has to be running"
+msgstr ""
+"Til að hægt sé að nota diskhópinn í klösuðu umhverfi á öruggan máta þarf "
+"lvm2-cluster pakkinn að vera inni og clvmd þjónustan virk."
+
+#: src/InputController.py:368
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror log of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"Raundiskurinn %s inniheldur diskhluta sem tilheyra speglaannál af "
+"sýndardisknum %s. Þar sem það er ekki enn hægt að færa spegla er ekki hægt "
+"að eyða %s."
+
+#: src/InputController.py:371
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror image of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"Raundiskurinn %s inniheldur diskhluta sem tilheyra spegli af sýndardisknum %"
+"s. Þar sem það er ekki enn hægt að færa spegla er ekki hægt að eyða %s."
+
+#: src/InputController.py:374
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, a snapshot of %s. "
+"Snapshots are not yet migratable, so %s is not removable."
+msgstr ""
+"Raundiskurinn %s inniheldur diskhluta sem tilheyra %s sem er skyndimynd af %"
+"s. Þar sem það er ekki enn hægt að færa skyndimyndir er ekki hægt að eyða %s."
+
+#: src/InputController.py:379
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshot %"
+"s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"Raundiskurinn %s inniheldur diskhluta sem tilheyra %s sem er uppruni "
+"skyndimyndar %s. Þar sem það er ekki enn hægt að færa skyndimyndir er ekki "
+"hægt að eyða %s."
+
+#: src/InputController.py:381
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshots "
+"%s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"Raundiskurinn %s inniheldur diskhluta sem tilheyra %s sem er uppruni "
+"skyndimyndanna %s. Þar sem það er ekki enn hægt að færa skyndimyndir er ekki "
+"hægt að eyða %s."
+
+#: src/InputController.py:568
+#, python-format
+msgid ""
+"Logical Volume \"%s\" has snapshots that are not selected for removal. They "
+"must be removed as well."
+msgstr ""
+"Sýndardiskurinn \"%s\" hefur skyndmyndir sem ekki á að eyða. Þeim verður að "
+"eyða líka."
+
+#: src/InputController.py:583
+#, python-format
+msgid ""
+"\"%s\", an origin of snapshot \"%s\", has been deleted from removal list."
+msgstr ""
+"\"%s\" sem er uppruni skyndimyndarinnar \"%s\" hefur verið fjarlægð af lista "
+"þess sem á að eyða."
+
+#: src/InputController.py:614
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a mirror. Mirrors are "
+"not migratable, so %s is not removable."
+msgstr ""
+"Raundiskurinn \"%s\" inniheldur diskhluta sem tilheyra spegli. Þar sem það "
+"er ekki hægt að færa spegla er ekki hægt að eyða %s."
+
+#: src/InputController.py:617
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a snapshot or a "
+"snapshot's origin. Snapshots are not migratable, so %s is not removable."
+msgstr ""
+"Raundiskurinn \"%s\" inniheldur diskhluta sem tilheyra skyndimynd eða "
+"uppruni skyndimyndar. Þar sem það er ekki hægt að færa skyndimyndir er ekki "
+"hægt að eyða %s."
+
+#: src/InputController.py:682
+msgid "The path you specified does not exist."
+msgstr "Slóðin sem þú gafst upp er ekki til."
+
+#: src/InputController.py:689
+msgid "The path you specified is not a Block Device."
+msgstr "Slóðin sem þú gafst upp er ekki blokkartæki."
+
+#: src/InputController.py:760
+#, python-format
+msgid "Initialization of %s failed"
+msgstr "Frumstilling %s brást"
+
+#: src/InputController.py:998 src/InputController.py:1001
+msgid "Please select some extents first"
+msgstr "Vinsamlega veldu diskhluta fyrst"
+
+#: src/InputController.py:1035
+msgid ""
+"There are not enough free extents to perform the necessary migration. Adding "
+"more physical volumes would solve the problem."
+msgstr ""
+"Það er ekki nægilegt magn lausra diskhluta til að klára tilfærsluna. Ef "
+"fleiri raundiskum er bætt við, hverfur þessi vandi."
+
+#: src/InputController.py:1091
+#, python-format
+msgid ""
+"iSCSI Initiator rpm is not installed. \n"
+"Install %s rpm, and try again."
+msgstr ""
+
+#: src/InputController.py:1208
+msgid "Migrate extents"
+msgstr "Færa diskhluta"
+
+#: src/InputController.py:1336
+msgid "Options"
+msgstr "Eiginleikar"
+
+#: src/InputController.py:1370
+#, python-format
+msgid "Create A Snapshot of %s"
+msgstr "Búa til skyndimynd af %s"
+
+#: src/InputController.py:1372
+msgid "Create New Logical Volume"
+msgstr "Búa til nýjann sýndardisk"
+
+#: src/InputController.py:1375
+#, python-format
+msgid "Edit %s, a Snapshot of %s"
+msgstr "Sýsla með %s sem er skyndimynd af %s"
+
+#: src/InputController.py:1378
+msgid "Edit Logical Volume"
+msgstr "Sýsla með sýndardisk"
+
+#: src/InputController.py:1531
+msgid "Underlying Logical Volume Management does not support mirroring"
+msgstr "Sýndardiskstjórinn styður ekki speglun"
+
+#: src/InputController.py:1538
+msgid "Striped Logical Volumes cannot be mirrored."
+msgstr "Strípaða sýndardiska er ekki hægt að spegla."
+
+#: src/InputController.py:1545
+msgid "Logical Volumes with associated snapshots cannot be mirrored yet."
+msgstr "Sýndardiska með tengdar skyndimyndir er ekki enn hægt að spegla."
+
+#. mirror images placement: diff HDs or anywhere
+#. prompt
+#: src/InputController.py:1552
+msgid ""
+"The primary purpose of mirroring is to protect data in the case of hard "
+"drive failure. Do you want to place mirror images onto different hard drives?"
+msgstr ""
+"Helsti tilgangur speglunar er að varðveita gögn þegar harðir diskar bila. "
+"Viltu ekki setja speglana á mismunandi harða diska?"
+
+#: src/InputController.py:1561
+msgid ""
+"Less than 3 hard drives are available with free space. Disabling mirroring."
+msgstr "Það eru færri en 3 diskar með lausu plássi. Slekk á speglun."
+
+#: src/InputController.py:1566
+msgid ""
+"There must be free space on at least three Physical Volumes to enable "
+"mirroring"
+msgstr ""
+"Það verður að vera laust pláss á að missta kosti þrem raundiskum til að "
+"virkja speglun"
+
+#: src/InputController.py:1574
+msgid ""
+"The size of the Logical Volume has been adjusted to the maximum available "
+"size for mirrors."
+msgstr "Stærð sýndardisksins hefur verið breytt í hámarkið fyrir speglun."
+
+#: src/InputController.py:1579
+#, python-format
+msgid ""
+"There is not enough free space to add mirroring. Reduce size of Logical "
+"Volume to at most %s, or add Physical Volumes."
+msgstr ""
+"Það er ekki nægilegt pláss til að bæta við spegli. Minnkaðu stærð "
+"sýndardisksins í %s eða bættu við raundiskum."
+
+#: src/InputController.py:1943
+msgid "Names beginning with \"snapshot\" or \"pvmove\" are reserved keywords."
+msgstr "Heiti sem byrja á \"snapshot\" eða \"pvmove\" eru frátekin."
+
+#: src/InputController.py:1945
+msgid "Names containing \"_mlog\" or \"_mimage\" are reserved keywords."
+msgstr "Heiti sem innihalda \"_mlog\" eða \"_mimage\" eru frátekin."
+
+#: src/InputController.py:1947
+msgid "Names beginning with a \"-\" are invalid"
+msgstr "Heiti sem byrja á \"-\" eru ógild"
+
+#: src/InputController.py:1949
+msgid "Name can be neither \".\" nor \"..\""
+msgstr "Heitið má hvorki vera \".\" eða \"..\""
+
+#: src/InputController.py:1955
+msgid "Whitespaces are not allowed in Logical Volume names"
+msgstr "Orðabil mega ekki vera í heitum sýndardiska"
+
+#: src/InputController.py:1958
+#, python-format
+msgid "Invalid character \"%s\" in Logical Volume name"
+msgstr "Ógilt tákn \"%s\" í heiti sýndardisks"
+
+#: src/InputController.py:1978
+msgid "Please specify mount point"
+msgstr "Vinsamlega gefðu upp tengipunkt"
+
+#: src/InputController.py:2044
+msgid "Do you want to upgrade ext2 to ext3 preserving data on Logical Volume?"
+msgstr "Viltu uppfæra ext2 í ext3 og varðveita gögn á sýndardisknum?"
+
+#: src/InputController.py:2078
+msgid ""
+"Changing the filesystem will destroy all data on the Logical Volume! Are you "
+"sure you want to proceed?"
+msgstr ""
+"Að breyta skráarkerfinu verður til þess að öll gögn á sýndardisknum tapast! "
+"Ertu viss um að þú viljir halda áfram?"
+
+#. migration not performed, continue process with no mirroring
+#: src/InputController.py:2179
+msgid "Mirror not created. Completing remaining tasks."
+msgstr "Spegill ekki búinn til. Klára verkin sem eftir eru."
+
+#. create mirror
+#: src/InputController.py:2182
+msgid ""
+"Underlaying LVM doesn't support addition of mirrors to existing Logical "
+"Volumes. Completing remaining tasks."
+msgstr ""
+"LVM kerfi þessarar vélar styður ekki að bæta spegli við sýndardiska sem "
+"þegar eru til. Klára verkin sem eftir eru."
+
+#: src/InputController.py:2231
+msgid "In order to add mirroring, some extents need to be migrated."
+msgstr "Til þess að bæta við spegli þarf að færa suma diskhlutana."
+
+#: src/InputController.py:2231
+msgid "Do you want to migrate specified extents?"
+msgstr "Viltu færa þessa diskhluta?"
+
+#: src/CommandHandler.py:55
+msgid "Creating Logical Volume"
+msgstr "Bý til sýndardisk"
+
+#: src/CommandHandler.py:74 src/CommandHandler.py:91
+msgid "Resizing Logical Volume"
+msgstr "Breyti stærð sýndardisks"
+
+#: src/CommandHandler.py:124
+msgid "Adding Mirror to Logical Volume"
+msgstr "Bæti við spegil á sýndardisk"
+
+#: src/CommandHandler.py:135
+msgid "Removing Mirror from Logical Volume"
+msgstr "Fjarlægji spegil af sýndardisk"
+
+#: src/CommandHandler.py:160
+msgid "Initializing Physical Volume"
+msgstr "Frumstilli raundisk"
+
+#: src/CommandHandler.py:171
+msgid "Adding Physical Volume to Volume Group"
+msgstr "Bæti raundisk í sýndardiskhóp"
+
+#: src/CommandHandler.py:203
+msgid "Creating Volume Group"
+msgstr "Bý til sýndardiskahóp"
+
+#: src/CommandHandler.py:225
+msgid "Removing Volume Group"
+msgstr "Fjarlægi sýndardiskhóp"
+
+#: src/CommandHandler.py:235
+msgid "Removing Physical Volume"
+msgstr "Fjarlægi raundisk"
+
+#: src/CommandHandler.py:248
+msgid "Removing Logical Volume"
+msgstr "Fjarlægji sýndardisk"
+
+#: src/CommandHandler.py:263
+msgid "Renaming Logical Volume"
+msgstr "Fjarlægji sýndardisk"
+
+#: src/CommandHandler.py:285
+msgid "Removing Physical Volume from Volume Group"
+msgstr "Fjarlægji drif úr sýndardiskhóp"
+
+#: src/CommandHandler.py:320
+msgid "Migrating Extents"
+msgstr "Flyt diskhluta"
+
+#: src/CommandHandler.py:332
+msgid "Completing Extent Migration"
+msgstr "Lýk við flutning diskhluta"
+
+#: src/CommandHandler.py:383
+msgid "Rereading partition table"
+msgstr "Endurles disksneiðatöfluna"
+
+#: src/lvm_model.py:45 src/lvmui_constants.py:83
+msgid "Unused"
+msgstr "Ónotað"
+
+#: src/lvm_model.py:46
+msgid "Unused Space"
+msgstr "Ónotað pláss"
+
+#: src/lvm_model.py:48
+msgid "Unmounted"
+msgstr "Aftengt"
+
+#: src/lvm_model.py:58
+msgid "Volume Group Name:   "
+msgstr "Heiti sýndardiskhóps:   "
+
+#: src/lvm_model.py:59
+msgid "System ID:   "
+msgstr "Kerfisnúmer:   "
+
+#: src/lvm_model.py:60
+msgid "Format:   "
+msgstr "Forsnið:   "
+
+#: src/lvm_model.py:61 src/lvm_model.py:78 src/lvm_model.py:93
+msgid "Attributes:   "
+msgstr "Eiginleikar:  "
+
+#: src/lvm_model.py:62
+msgid "Volume Group Size:   "
+msgstr "Stærð sýndardiskhóps:   "
+
+#: src/lvm_model.py:63
+msgid "Available Space:   "
+msgstr "Tiltækt pláss:   "
+
+#: src/lvm_model.py:64
+msgid "Total Number of Extents:   "
+msgstr "Diskhlutar alls:   "
+
+#: src/lvm_model.py:65
+msgid "Number of Free Extents:   "
+msgstr "Fjöldi lausra diskhluta:   "
+
+#: src/lvm_model.py:66
+msgid "Extent Size:   "
+msgstr "Stærð diskbúta:   "
+
+#: src/lvm_model.py:67
+msgid "Maximum Allowed Physical Volumes:   "
+msgstr "Hámarksfjöldi raundiska:   "
+
+#: src/lvm_model.py:68
+msgid "Number of Physical Volumes:   "
+msgstr "Fjöldi raundiska:   "
+
+#: src/lvm_model.py:69
+msgid "Maximum Allowed Logical Volumes:   "
+msgstr "Hámarksfjöldi sýndardiska:   "
+
+#: src/lvm_model.py:70
+msgid "Number of Logical Volumes:   "
+msgstr "Fjöldi sýndardiska:   "
+
+#: src/lvm_model.py:71
+msgid "VG UUID:   "
+msgstr "VG UUID:   "
+
+#: src/lvm_model.py:73
+msgid "Logical Volume Name:   "
+msgstr "Heiti sýndardisks:   "
+
+#: src/lvm_model.py:74
+msgid "Logical Volume Size:   "
+msgstr "Stærð sýndardisks:   "
+
+#: src/lvm_model.py:75
+msgid "Number of Segments:   "
+msgstr "Fjöldi búta:   "
+
+#: src/lvm_model.py:76
+msgid "Number of Stripes:   "
+msgstr "Fjöldi strípa:   "
+
+#: src/lvm_model.py:77
+msgid "Stripe Size:   "
+msgstr "Stærð stípa:   "
+
+#: src/lvm_model.py:79
+msgid "LV UUID:   "
+msgstr "SD UUID:   "
+
+#: src/lvm_model.py:81
+msgid "Partition Type:   "
+msgstr "Disksneiðagerð:   "
+
+#: src/lvm_model.py:82
+msgid "Size:   "
+msgstr "Stærð:   "
+
+#: src/lvm_model.py:83
+msgid "Mount Point:   "
+msgstr "Tengipunktur:   "
+
+#: src/lvm_model.py:84
+msgid "Mount Point when Rebooted:   "
+msgstr "Tengipunktur við endurræsingu:   "
+
+#: src/lvm_model.py:85
+msgid "File System:   "
+msgstr "Skráarkerfi:   "
+
+#: src/lvm_model.py:87
+msgid "Physical Volume Name:   "
+msgstr "Heiti raundisks:   "
+
+#: src/lvm_model.py:88
+msgid "Physical Volume Size:   "
+msgstr "Stærð raundisks:   "
+
+#: src/lvm_model.py:89
+msgid "Space Used:   "
+msgstr "Notað pláss:   "
+
+#: src/lvm_model.py:90
+msgid "Space Free:   "
+msgstr "Laust pláss:   "
+
+#: src/lvm_model.py:91
+msgid "Total Physical Extents:   "
+msgstr "Raundiskhlutar alls:   "
+
+#: src/lvm_model.py:92
+msgid "Allocated Physical Extents:   "
+msgstr "Notaðir Raundiskhlutar:   "
+
+#: src/lvm_model.py:94
+msgid "PV UUID:   "
+msgstr "PV UUID:   "
+
+#: src/lvm_model.py:96
+msgid "Not initializable:"
+msgstr "Ekki frumstillanlegt:"
+
+#: src/lvm_model.py:97
+msgid "Extended partition"
+msgstr "Stækka disksneið"
+
+#. Translator: the line below refers to a standard linux swap partition.
+#: src/lvm_model.py:99
+msgid "Swap partition currently in use"
+msgstr "Diskminnissneiðin er þegar í notkun"
+
+#: src/lvm_model.py:100
+msgid "Foreign boot partition"
+msgstr "Óþekkt ræsisneið"
+
+#: src/lvm_model.py:101
+msgid "Autopartition failure"
+msgstr "Sjálfvirk sneiðing brást"
+
+#: src/lvm_model.py:259
+msgid "Partition manually"
+msgstr "Sneiða handvirkt"
+
+#: src/lvm_model.py:295
+msgid "Multipath device"
+msgstr "Fjölslóðatæki"
+
+#: src/lvm_model.py:298
+msgid "Note:"
+msgstr "Athugasemd:"
+
+#: src/lvm_model.py:298
+msgid "Initialize manually"
+msgstr "Frumstilla handvirkt"
+
+#: src/lvm_model.py:741
+msgid "Clustered:   "
+msgstr "Klasað:   "
+
+#: src/lvm_model.py:743 src/lvm_model.py:971
+msgid "True"
+msgstr "Satt"
+
+#: src/lvm_model.py:745
+msgid "False"
+msgstr "Falskt"
+
+#: src/lvm_model.py:803
+msgid "Number of mirror images:"
+msgstr "Fjöldi spegla:"
+
+#: src/lvm_model.py:806
+msgid "Snapshots:"
+msgstr "Skyndimyndir:"
+
+#: src/lvm_model.py:812
+msgid "Snapshot origin:"
+msgstr "Uppruni skyndimyndar:"
+
+#: src/lvm_model.py:819
+msgid "Snapshot usage:"
+msgstr "Notkun skyndimyndar:"
+
+#: src/lvm_model.py:842 src/lvm_model.py:848 src/lvm_model.py:891
+#: src/lvm_model.py:907
+msgid "/   Root Filesystem"
+msgstr "/   Rótarskráarkerfið"
+
+#: src/lvm_model.py:910 src/Filesystem.py:137
+msgid "None"
+msgstr "Ekkert"
+
+#: src/lvm_model.py:961
+#, fuzzy
+msgid "SCSI ID:   "
+msgstr "Kerfisnúmer:   "
+
+#: src/lvm_model.py:965
+msgid "NONE"
+msgstr ""
+
+#: src/lvm_model.py:970
+msgid "iSCSI Device:   "
+msgstr ""
+
+#. INIT_ENTITY=_("Are you certain that you wish to initialize disk entity %s? All data will be lost on this device/partition.")
+#: src/lvmui_constants.py:51
+#, python-format
+msgid ""
+"All data on disk entity %s will be lost! Are you certain that you wish to "
+"initialize it?"
+msgstr ""
+"Öll gögn á disknum %s munu tapast! Ertu viss um að þú viljir frumstilla hann?"
+
+#: src/lvmui_constants.py:52
+#, python-format
+msgid ""
+"Disk entity %s contains %s filesystem. All data on it will be lost! Are you "
+"certain that you wish to initialize disk entity %s?"
+msgstr ""
+"Tækið %s inniheldur %s skráarkerfið. Öll gögn á því munu tapast! Ertu viss "
+"um að þú viljir frumstilla diskinn %s?"
+
+#: src/lvmui_constants.py:53
+#, python-format
+msgid ""
+"Disk entity %s contains data from directory %s. All data in it will be lost! "
+"Are you certain that you wish to initialize disk entity %s?"
+msgstr ""
+"Tækið %s inniheldur gögn úr möppunni %s. Öll gögn í henni munu tapast! Ertu "
+"viss um að þú viljir frumstilla diskinn %s?"
+
+#: src/lvmui_constants.py:54
+#, python-format
+msgid ""
+"Are you certain that you wish to initialize %s of free space on disk %s?"
+msgstr ""
+"Ertu viss um að þú viljir frumstilla diskinn %s af lausu pláss í drifi %s?"
+
+#: src/lvmui_constants.py:55
+#, python-format
+msgid ""
+"You are about to initialize unpartitioned disk %s. It is advisable, although "
+"not required, to create a partition on it. Do you want to create a single "
+"partition encompassing the whole drive?"
+msgstr ""
+"Þú ert við það að frumstilla diskinn %s sem hefur engar disksneiðar. Þó það "
+"sé ekki nauðsynlegt mælum við með að disksneið verði búin til. Viltu búa til "
+"eina disksneið sem nær yfir allan diskinn?"
+
+#: src/lvmui_constants.py:57
+msgid "Reloading LVM. Please wait."
+msgstr "Endurles LVM. Vinsamlegast bíðið."
+
+#: src/lvmui_constants.py:59
+#, python-format
+msgid ""
+"Changes will take effect after computer is restarted. If device %s is used, "
+"before restart, data corruption WILL occur. It is advisable to restart your "
+"computer now."
+msgstr ""
+"Breytingarnar taka gildi eftir að búið er að endurræsa tölvuna. Ef tækið %s "
+"er notað áður en endurræst er MUN verða gagnatap. Því mælum við með að þú "
+"endurræsir núna."
+
+#: src/lvmui_constants.py:61
+msgid "Mirror Log"
+msgstr "Speglaannáll"
+
+#: src/lvmui_constants.py:63
+msgid "Unable to process request"
+msgstr "Get ekki framkvæmt beiðnina"
+
+#: src/lvmui_constants.py:65
+#, python-format
+msgid "%s command failed. Command attempted: \"%s\" - System Error Message: %s"
+msgstr "%s skipunin brást. Skipunin var: \"%s\" - Kerfisvilluskilaboð: %s"
+
+#: src/lvmui_constants.py:84
+msgid "Free"
+msgstr "Laust"
+
+#: src/lvmui_constants.py:85
+msgid "Free space"
+msgstr "Laust pláss"
+
+#: src/lvmui_constants.py:87
+msgid "Unpartitioned space"
+msgstr "Diskpláss utan disksneiða"
+
+#: src/lvmui_constants.py:88
+#, python-format
+msgid "Unpartitioned space on %s"
+msgstr "Ónotað rými á %s"
+
+#: src/lvmui_constants.py:90
+msgid "GB"
+msgstr "GB"
+
+#: src/lvmui_constants.py:91
+msgid "MB"
+msgstr "MB"
+
+#: src/lvmui_constants.py:92
+msgid "KB"
+msgstr "KB"
+
+#: src/lvmui_constants.py:93
+msgid "Bytes"
+msgstr "Bæti"
+
+#. File System Types
+#: src/lvmui_constants.py:97
+msgid "No Filesystem"
+msgstr "Ekkert skráarkerfi"
+
+#: src/lvmui_constants.py:98
+msgid "Ext2"
+msgstr "Ext2"
+
+#: src/lvmui_constants.py:99
+msgid "Ext3"
+msgstr "Ext3"
+
+#: src/lvmui_constants.py:100
+msgid "JFS"
+msgstr "JFS"
+
+#: src/lvmui_constants.py:101
+msgid "MSDOS"
+msgstr "MSDOS"
+
+#: src/lvmui_constants.py:102
+msgid "Reiserfs"
+msgstr "Reiserfs"
+
+#: src/lvmui_constants.py:103
+msgid "VFAT"
+msgstr "VFAT"
+
+#: src/lvmui_constants.py:104
+msgid "XFS"
+msgstr "XFS"
+
+#: src/lvmui_constants.py:105
+msgid "Cramfs"
+msgstr "Cramfs"
+
+#: src/Properties_Renderer.py:42
+msgid "Properties for"
+msgstr "Eiginleikar"
+
+#: src/Properties_Renderer.py:43 src/renderer.py:37
+msgid "Physical Volume"
+msgstr "raundiska"
+
+#. UNALLOCATED_MESSAGE=_("This Volume has not been allocated \n to a Volume Group yet.")
+#: src/Properties_Renderer.py:44 src/renderer.py:36
+msgid "Logical Volume"
+msgstr "sýndardiska"
+
+#: src/Properties_Renderer.py:45
+msgid "Unallocated Volume"
+msgstr "Ónotaður diskur"
+
+#: src/Properties_Renderer.py:46 src/renderer.py:43
+msgid "Disk Entity"
+msgstr "Diskur"
+
+#: src/Properties_Renderer.py:47 src/Properties_Renderer.py:48
+#: src/Properties_Renderer.py:49 src/renderer.py:38
+msgid "Volume Group"
+msgstr "Sýndardiskhópur"
+
+#. UNINITIALIZED_MESSAGE=_("This extent has not yet been \n initialized for use with LVM.")
+#: src/renderer.py:33
+msgid "No Volume Selected"
+msgstr "Enginn diskur valinn"
+
+#: src/renderer.py:34
+msgid "Multiple selection"
+msgstr "Margval"
+
+#: src/renderer.py:39 src/Volume_Tab_View.py:48
+msgid "Logical View"
+msgstr "Sýndardiskasýn"
+
+#: src/renderer.py:40 src/Volume_Tab_View.py:47
+msgid "Physical View"
+msgstr "Raundiskasýn"
+
+#: src/renderer.py:41
+msgid "Unallocated"
+msgstr "Ónotað"
+
+#: src/renderer.py:42
+msgid "Uninitialized"
+msgstr "Ófrumstillt"
+
+#: src/renderer.py:195
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a mirror log of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"Raundiskhlutarnir sem þú ert að reyna að velja tilheyra speglaannál af "
+"sýndardisknum %s. Það er ennþá ekki hægt að færa speglaða sýndardiska svo "
+"ekki er hægt að velja þessa diskhluta."
+
+#: src/renderer.py:197
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to mirror image of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"Raundiskhlutarnir sem þú ert að reyna að velja tilheyra spegli af "
+"sýndardisknum %s. Það er ennþá ekki hægt að færa speglaða sýndardiska svo "
+"ekki er hægt að velja þessa diskhluta."
+
+#: src/renderer.py:199
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to %s, a snapshot of %"
+"s. Snapshots are not yet migratable, so the extents are not selectable."
+msgstr ""
+"Raundiskhlutarnir sem þú ert að reyna að velja tilheyra %s sem er skyndimynd "
+"af %s. Það er ekki enn hægt að færa skyndimyndir svo ekki er hægt að velja "
+"þessa diskhluta."
+
+#: src/renderer.py:201
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a snapshot origin %"
+"s. Snapshot origins are not yet migratable, so the extents are not "
+"selectable."
+msgstr ""
+"Raundiskhlutarnir sem þú ert að reyna að velja tilheyra skyndimynd af %s. "
+"Það er ekki enn hægt að færa skyndimyndir svo ekki er hægt að velja þessa "
+"diskhluta."
+
+#: src/renderer.py:388
+#, python-format
+msgid "Snapshot of %s"
+msgstr "Skyndimynd af %s"
+
+#: src/renderer.py:490
+msgid "Origin"
+msgstr "Uppruni"
+
+#: src/renderer.py:496
+msgid "Snapshot"
+msgstr "Skyndimynd"
+
+#: src/renderer.py:540
+msgid "extent view"
+msgstr "hlutasýn"
+
+#: src/Volume_Tab_View.py:44
+msgid "Volume Groups"
+msgstr "Sýndardiskhópar"
+
+#: src/Volume_Tab_View.py:45
+msgid "Unallocated Volumes"
+msgstr "Ónotað tæki"
+
+#: src/Volume_Tab_View.py:46
+msgid "Uninitialized Entities"
+msgstr "Ófrumstiltir hlutir"
+
+#: src/Volume_Tab_View.py:233
+msgid "Clustered VG"
+msgstr "Klasaður diskhópur"
+
+#: src/Volume_Tab_View.py:619
+#, python-format
+msgid "%s mirror synchronisation"
+msgstr "Samstilling %s speglanna"
+
+#. no existing partitions, write
+#: src/fdisk_wrapper.py:192
+msgid "Please wait while partition is being created"
+msgstr "Vinsamlega bíðið meðan disksneiðin er búin til"
+
+#: src/Filesystem.py:20
+#, python-format
+msgid "Creating %s filesystem"
+msgstr "Bý til %s skráarkerfið"
+
+#: src/Filesystem.py:21
+#, python-format
+msgid "Resizing %s filesystem"
+msgstr "Breyti stærð %s skráarkerfisins"
+
+#: src/Filesystem.py:22
+#, python-format
+msgid "Checking %s filesystem"
+msgstr "Yfirferð %s skráarkerfið"
+
+#: src/Filesystem.py:23
+#, python-format
+msgid "Upgrading %s filesystem to %s"
+msgstr "Uppfæri skráarkerfið %s í %s"
+
+#: src/Filesystem.py:24
+#, python-format
+msgid ""
+"Creation of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"Gerð skráarkerfis brást. Skipunin var: \"%s\" - Kerfisvilluskilaboð: %s"
+
+#: src/Filesystem.py:25
+#, python-format
+msgid ""
+"Resize of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr "Stærðarbreyting brást. Skipunin var: \"%s\" - Kerfisvilluskilaboð: %s"
+
+#: src/Filesystem.py:26
+#, python-format
+msgid ""
+"Check of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"Yfirferð skráarkerfisins brást. Skipunin var: \"%s\" - Kerfisvilluskilaboð: %"
+"s"
+
+#: src/Filesystem.py:27
+#, python-format
+msgid ""
+"Upgrade of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"Uppfærsla skráarkerfis brást. Skipunin var: \"%s\" - Kerfisvilluskilaboð: %s"
+
+#: src/Filesystem.py:143
+msgid "Unknown filesystem"
+msgstr "Óþekkt skráarkerfi"
+
+#: src/Filesystem.py:387
+msgid "GFS (local)"
+msgstr "GFS (staðbundið)"
+
+#: src/Filesystem.py:485
+msgid "GFS (clustered)"
+msgstr "GFS (klasað)"
+
+#: src/Filesystem.py:517 src/Filesystem.py:761
+msgid "Cluster name contains illegal character "
+msgstr "Klasaheitið inniheldur ógilt tákn "
+
+#: src/Filesystem.py:520 src/Filesystem.py:764
+msgid "GFS name contains illegal character "
+msgstr "GFS heitið inniheldur ógilt tákn"
+
+#: src/Filesystem.py:523 src/Filesystem.py:767
+msgid "Missing Cluster Name"
+msgstr "Klasaheitið vantar"
+
+#: src/Filesystem.py:526 src/Filesystem.py:770
+msgid "Missing GFS Name"
+msgstr "GFS heitið vantar"
+
+#: src/Filesystem.py:631
+msgid "GFS2 (local)"
+msgstr "GFS2 (staðbundið)"
+
+#: src/Filesystem.py:729
+msgid "GFS2 (clustered)"
+msgstr "GFS2 (klasað)"
+
+#: src/Segment.py:44
+msgid "Stripe"
+msgstr "Strípa"
+
+#: src/Segment.py:68
+msgid "Linear Mapping"
+msgstr "Línuleg möppun"
+
+#: src/Segment.py:109
+msgid "Mirror"
+msgstr "Spegill"
+
+#: src/PhysicalVolume.py:142
+#, python-format
+msgid "Partition %s"
+msgstr "Disksneið %s"
+
+#: src/lvui.glade.h:1 src/lv_edit_props.glade.h:1 src/iscsi.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: src/lvui.glade.h:2
+msgid "1024"
+msgstr "1024"
+
+#: src/lvui.glade.h:3
+msgid "128"
+msgstr "128"
+
+#: src/lvui.glade.h:4
+msgid "16"
+msgstr "16"
+
+#: src/lvui.glade.h:5
+msgid "2"
+msgstr "2"
+
+#: src/lvui.glade.h:6
+msgid "256"
+msgstr "256"
+
+#: src/lvui.glade.h:7
+msgid "32"
+msgstr "32"
+
+#: src/lvui.glade.h:8
+msgid "4"
+msgstr "4"
+
+#: src/lvui.glade.h:9
+msgid "512"
+msgstr "512"
+
+#: src/lvui.glade.h:10
+msgid "64"
+msgstr "64"
+
+#: src/lvui.glade.h:11
+msgid "8"
+msgstr "8"
+
+#: src/lvui.glade.h:12
+msgid "Add Physical Volume to VG"
+msgstr "Bæta raundisk í sýndardiskhóp"
+
+#: src/lvui.glade.h:13
+msgid ""
+"Add to existing \n"
+"Volume Group"
+msgstr ""
+"Bæta við sýndardiskhóp \n"
+"sem þegar er til"
+
+#: src/lvui.glade.h:15
+msgid "Clustered"
+msgstr "Klasað"
+
+#: src/lvui.glade.h:16
+msgid ""
+"Create New\n"
+"Logical Volume"
+msgstr ""
+"Búa til nýjann\n"
+"sýndardisk"
+
+#: src/lvui.glade.h:18
+msgid "Create Snapshot"
+msgstr "Búa til skyndimynd"
+
+#: src/lvui.glade.h:19
+msgid ""
+"Create new \n"
+"Volume Group"
+msgstr ""
+"Búa til nýjann \n"
+"sýndardiskahóp"
+
+#: src/lvui.glade.h:21
+msgid "Edit Properties"
+msgstr "Eiginleikar"
+
+#: src/lvui.glade.h:22
+msgid "Enter path of Block Device to initialize"
+msgstr "Sláðu inn slóð að blokkartæki til að frumstilla"
+
+#: src/lvui.glade.h:23
+msgid ""
+"Extend\n"
+"Volume Group"
+msgstr ""
+"Stækka\n"
+"sýndardiskhóp"
+
+#: src/lvui.glade.h:25
+msgid "Extend Volume Group"
+msgstr "Stækka sýndardiskhóp"
+
+#: src/lvui.glade.h:26
+msgid "Format"
+msgstr "Forsníða"
+
+#: src/lvui.glade.h:27
+msgid "Initialize"
+msgstr "Frumstilla"
+
+#: src/lvui.glade.h:28
+msgid "Initialize Block Device"
+msgstr "Frumstilla blokkartæki"
+
+#: src/lvui.glade.h:29
+msgid "Initialize Entity"
+msgstr "Frumstilla hlutinn"
+
+#: src/lvui.glade.h:30
+msgid "Initialize _Block Device"
+msgstr "Frumstilla _blokkartæki"
+
+#: src/lvui.glade.h:31
+msgid "Kilo"
+msgstr "Kíló"
+
+#: src/lvui.glade.h:32
+msgid "Logical Volume Management"
+msgstr "Umsýsla sýndardiska"
+
+#: src/lvui.glade.h:33
+msgid "Manage Volumes"
+msgstr "Stýra drifum"
+
+#: src/lvui.glade.h:34
+msgid "Mark Volume Group as 'clustered'"
+msgstr "Merkja diskhópinn klasaðann"
+
+#: src/lvui.glade.h:35
+msgid "Maximum Logical Volumes"
+msgstr "Hámarksfjöldi sýndardiska"
+
+#: src/lvui.glade.h:36
+msgid "Maximum Physical Volumes"
+msgstr "Hámarksfjöldi raundiska"
+
+#: src/lvui.glade.h:37
+msgid "Meg"
+msgstr "Meg"
+
+#: src/lvui.glade.h:38
+msgid ""
+"Migrate Selected\n"
+"Extent(s) From Volume"
+msgstr ""
+"Færa valda diskhluta\n"
+"úr drifi"
+
+#: src/lvui.glade.h:40
+msgid "New Volume Group"
+msgstr "Nýr diskhópur"
+
+#: src/lvui.glade.h:41
+msgid "Physical Extent Size"
+msgstr "Stærð diskhluta"
+
+#: src/lvui.glade.h:42
+msgid ""
+"Remove \n"
+"Logical Volume"
+msgstr ""
+"Fjarlægja \n"
+"sýndardisk"
+
+#: src/lvui.glade.h:44
+msgid ""
+"Remove Selected\n"
+"Logical Volume(s)"
+msgstr ""
+"Fjarlægja valda\n"
+"sýndardiska"
+
+#: src/lvui.glade.h:46
+msgid ""
+"Remove Selected\n"
+"Physical Volume(s)"
+msgstr ""
+"Fjarlægja valda\n"
+"raundiska"
+
+#: src/lvui.glade.h:48
+msgid ""
+"Remove Volume from\n"
+"Volume Group"
+msgstr ""
+"Fjarlægja drif úr\n"
+"sýndardiskhóp"
+
+#: src/lvui.glade.h:50
+msgid ""
+"Remove volume \n"
+"from LVM"
+msgstr ""
+"Fjarlægja disk \n"
+"úr LVM"
+
+#: src/lvui.glade.h:52
+msgid "Select a Volume Group to add this PV to:"
+msgstr "Veldu sýndardiskhóp til að bæta þessum disk í:"
+
+#: src/lvui.glade.h:53
+msgid "Some text"
+msgstr "Einhver texti"
+
+#: src/lvui.glade.h:54
+msgid "Volume Group Name"
+msgstr "Heiti sýndardiskhóps"
+
+#: src/lvui.glade.h:55
+msgid "_Reload"
+msgstr "_Hressa"
+
+#: src/lvui.glade.h:56
+msgid "_Tools"
+msgstr "_Tól"
+
+#: src/lvui.glade.h:57
+msgid "_iSCSI Configuration"
+msgstr ""
+
+#: src/lvui.glade.h:58
+msgid "extend vg message:"
+msgstr "stækka sg skilaboð:"
+
+#: src/lv_edit_props.glade.h:2
+msgid ""
+"4\n"
+"8\n"
+"16\n"
+"32\n"
+"64\n"
+"128\n"
+"256\n"
+"512"
+msgstr ""
+"4\n"
+"8\n"
+"16\n"
+"32\n"
+"64\n"
+"128\n"
+"256\n"
+"512"
+
+#: src/lv_edit_props.glade.h:10
+msgid "<b>Filesystem</b>"
+msgstr "<b>Skráarkerfi</b>"
+
+#: src/lv_edit_props.glade.h:11
+msgid "<b>LV Properties</b>"
+msgstr "<b>Eiginleikar SD</b>"
+
+#: src/lv_edit_props.glade.h:12
+msgid "<b>Size</b>"
+msgstr "<b>Stærð</b>"
+
+#: src/lv_edit_props.glade.h:13
+msgid "Add entry to /etc/fstab"
+msgstr "Bæta við færslu í /etc/fstab"
+
+#: src/lv_edit_props.glade.h:14
+msgid "Create New Logical Volume (LV)"
+msgstr "Búa til nýjan sýndardisk (SD)"
+
+#: src/lv_edit_props.glade.h:15
+msgid "Filesystem is not resizable"
+msgstr "Það er ekki hægt að breyta stærð skráarkerfisins"
+
+#: src/lv_edit_props.glade.h:16
+msgid "Free space in Volume Group label"
+msgstr "Laust pláss í sýndardiskhóp merking"
+
+#: src/lv_edit_props.glade.h:17
+msgid "Free space remaining label"
+msgstr "Laust pláss merking"
+
+#: src/lv_edit_props.glade.h:18
+msgid "Kilobytes granularity"
+msgstr "Nákvæmni kílóbæta"
+
+#: src/lv_edit_props.glade.h:19
+msgid "LV name:"
+msgstr "Heiti SD:"
+
+#: src/lv_edit_props.glade.h:20
+msgid "LV size"
+msgstr "Stærð SD:"
+
+#: src/lv_edit_props.glade.h:21
+msgid "LVs under snapshots are not resizable"
+msgstr "Það er ekki hægt að breyta stærð skyndimynda sýndardiska"
+
+#: src/lv_edit_props.glade.h:22
+msgid "Linear"
+msgstr "Línulegt"
+
+#: src/lv_edit_props.glade.h:23
+msgid "Mirrored"
+msgstr "Speglað"
+
+#: src/lv_edit_props.glade.h:24
+msgid "Mirrored LVs are not resizable"
+msgstr "Það er ekki hægt að breyta stærð speglaðra sýndardiska"
+
+#: src/lv_edit_props.glade.h:25
+msgid "Mount"
+msgstr "Tengja"
+
+#: src/lv_edit_props.glade.h:26
+msgid "Mount point:"
+msgstr "Tengipunktur:"
+
+#: src/lv_edit_props.glade.h:27
+msgid "Mount when rebooted"
+msgstr "Tengja við ræsingu"
+
+#: src/lv_edit_props.glade.h:28
+msgid "Size beg"
+msgstr "Stærð byrjun"
+
+#: src/lv_edit_props.glade.h:29
+msgid "Size end"
+msgstr "Stærð endir"
+
+#: src/lv_edit_props.glade.h:30
+msgid "Striped"
+msgstr "Strípað"
+
+#: src/lv_edit_props.glade.h:31
+msgid "Use remaining"
+msgstr "Nota allt pláss sem er eftir"
+
+#: src/lv_edit_props.glade.h:32
+msgid "stripes"
+msgstr "strípur"
+
+#: src/migrate_extents.glade.h:1
+msgid "<b>Destination</b>"
+msgstr "<b>Áfangastaður</b>"
+
+#: src/migrate_extents.glade.h:2
+msgid "<b>Migration Policy</b>"
+msgstr "<b>Flutningseiginleikar</b>"
+
+#: src/migrate_extents.glade.h:3
+msgid "Anywhere - not implemented"
+msgstr "Hvert sem er - ekki útfært"
+
+#: src/migrate_extents.glade.h:4
+msgid "Automatically choose PVs to migrate to"
+msgstr "Velja sjálfkrafa hvert skal færa"
+
+#: src/migrate_extents.glade.h:5
+msgid "Contiguous"
+msgstr "Samhangandi"
+
+#: src/migrate_extents.glade.h:6
+msgid "Destination:"
+msgstr "Áfangastaður:"
+
+#: src/migrate_extents.glade.h:7
+msgid ""
+"In order to remove PV, extents in use have to be migrated.\n"
+"Select extents' destination and migration policy."
+msgstr ""
+"Til þess að fjarlægja RD þarf að færa diskhlutana sem eru í \n"
+"notkun annað. Veldu diskhluta, áfangastað og eiginleika."
+
+#: src/migrate_extents.glade.h:9
+msgid "Inherit"
+msgstr "Erfa"
+
+#: src/migrate_extents.glade.h:10
+msgid "Inherit policy from Volume Group"
+msgstr "Erfa fluttningseiginleika frá sýndardiskhópnum"
+
+#: src/migrate_extents.glade.h:11
+msgid "Migrate Extents"
+msgstr "Færa diskhluta"
+
+#: src/migrate_extents.glade.h:12
+msgid "Migrate anywhere even if that reduces performance"
+msgstr "Færa hvert sem er þó það hafi slæm áhrif á afköst"
+
+#: src/migrate_extents.glade.h:13
+msgid "New extents are adjacent to existing ones"
+msgstr "Nýjir diskhlutar eru við hlið þeirra sem þegar eru til"
+
+#: src/migrate_extents.glade.h:14
+msgid "Normal"
+msgstr "Venjulegt"
+
+#: src/migrate_extents.glade.h:15
+msgid "Only migrate extents belonging to LV"
+msgstr "Færa einungis diskbúta sem tilheyra SD"
+
+#: src/migrate_extents.glade.h:16
+msgid "Use common sense"
+msgstr "Nota almenna skynsemi"
+
+#: src/iscsi.glade.h:2
+#, fuzzy
+msgid "3260"
+msgstr "32"
+
+#: src/iscsi.glade.h:3
+msgid "Active iSCSI targets are selected "
+msgstr ""
+
+#: src/iscsi.glade.h:4
+msgid "Add New Target"
+msgstr ""
+
+#: src/iscsi.glade.h:5
+msgid "Default port is 3260"
+msgstr ""
+
+#: src/iscsi.glade.h:6
+msgid "Enter a hostname (or an IP address) of new target to add"
+msgstr ""
+
+#: src/iscsi.glade.h:7
+msgid "Hostname"
+msgstr ""
+
+#: src/iscsi.glade.h:8
+msgid "New iSCSI Target"
+msgstr ""
+
+#: src/iscsi.glade.h:9
+#, fuzzy
+msgid "Port"
+msgstr "Forsníða"
+
+#: src/iscsi.glade.h:10
+msgid ""
+"Specify a hostname of new target \n"
+"to add, and click \"OK\". "
+msgstr ""
+
+#: src/iscsi.glade.h:12
+msgid "iSCSI Initiator"
+msgstr ""
+
+#~ msgid ""
+#~ "LVM locks are disabled!!! \n"
+#~ "Massive data corruption may occur.\n"
+#~ "Enable locking (locking_type=1 or 2 in /etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "LVM lásar eru ekki virkir!!! \n"
+#~ "Þú gætir lent í meiriháttar gagnatapi.\n"
+#~ "Þú ættir að virkja lása (locking_type=1 or 2 in /etc/lvm/lvm.conf)."
+
+#~ msgid ""
+#~ "LVM is configured to use Cluster Locking mechanism, but clvmd daemon is "
+#~ "not running. Start daemon with command:\n"
+#~ "service clvmd start \n"
+#~ "or, turn off cluster locking (locking_type=1 in /etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "LVM er stilltur til að nota klasalæsingar en clvmd þjónustan er ekki í "
+#~ "gangi. Þú getur ræst hana með:\n"
+#~ "service clvmd start \n"
+#~ "eða slökkva á klasalæsingum (locking_type=1 in /etc/lvm/lvm.conf)."
+
+#~ msgid ""
+#~ "LVM is configured to use Cluster Locking mechanism, but cluster is not "
+#~ "quorate.\n"
+#~ "Either wait until cluster is quorate or turn off cluster locking "
+#~ "(locking_type=1 in /etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "LVM er stilltur til að nota klasalæsingar en klasinn er ekki í lagi.\n"
+#~ "Annað hvort þarftu að bíða þangað til klasinn er kominn í lag eða slökkva "
+#~ "á klasalæsingum (locking_type=1 in /etc/lvm/lvm.conf)."
+
+#~ msgid ""
+#~ "%s only supports file and cluster based locking (locking_type=1 or 2 in /"
+#~ "etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "%s styður einungis skráa og klasalæsingar (locking_type=1 eða 2 í /etc/"
+#~ "lvm/lvm.conf)."

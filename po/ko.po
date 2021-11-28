@@ -1,0 +1,1785 @@
+# translation of system-config-lvm.po to Korean
+# Michelle J Kim <mkim@redhat.com>, 2004.
+# hyunjun kim <hyunjun@gmail.com>, 2004.
+# Michelle Ji Yeen Kim <mkim@redhat.com>, 2005, 2006.
+# Eunju Kim <eukim@redhat.com>, 2006, 2009.
+# translation of ko.po to
+# translation of ko.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-lvm\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-14 15:50+0530\n"
+"PO-Revision-Date: 2010-04-18 22:34+1000\n"
+"Last-Translator: \n"
+"Language-Team: Korean <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=1; plural=0;\n"
+"\n"
+
+#: ../src/InputController.py:37 ../src/Properties_Renderer.py:24
+#: ../src/Volume_Tab_View.py:30 ../src/system-config-lvm.py:40
+#, python-format
+msgid ""
+"\n"
+"  Unable to initialize graphical environment. Most likely cause of failure\n"
+"  is that the tool was not run using a graphical environment. Please either\n"
+"  start your graphical user interface or set your DISPLAY variable.\n"
+"                                                                                \n"
+"  Caught exception: %s\n"
+msgstr ""
+"\n"
+" 그래픽 환경을 초기화할 수 없음. 가장 흔한 실패의 이유는 그래픽 환경을 사용하"
+"지 \n"
+" 않는 상태에서 툴이 실행되지 않은것에 있음. GUI를 시작시키거나, DISPLAY환경변"
+"수가 \n"
+" 사용가능하게 셋팅을 하십시오.\n"
+"                                                                                \n"
+"  감지된 예외상황: %s\n"
+
+#. ##TRANSLATOR: The string below is seen when adding a new Physical
+#. ##Volume to an existing Volume Group.
+#: ../src/InputController.py:57
+#, python-format
+msgid "Select a Volume Group to add %s to:"
+msgstr "다음에 %s를 추가하기위한 볼륨 그룹을 선택하십시오:"
+
+#. ##TRANSLATOR: The two strings below refer to the name and type of
+#. ##available disk entities on the system. There are two types --
+#. ##The first is an 'unallocated physical volume' which is a disk or
+#. ##partition that has been initialized for use with LVM, by writing
+#. ##a special label onto the first block of the partition. The other type
+#. ##is an 'uninitialized entity', which is an available disk or partition
+#. ##that is NOT yet initialized to be used with LVM. Hope this helps give
+#. ##some context.
+#: ../src/InputController.py:85
+msgid "Name"
+msgstr "이름"
+
+#: ../src/InputController.py:86
+msgid "Size"
+msgstr "크기"
+
+#: ../src/InputController.py:87
+msgid "Entity Type"
+msgstr "엔티티 타입"
+
+#: ../src/InputController.py:89
+msgid "Unallocated Physical Volume"
+msgstr "할당되지 않은 물리적인 볼륨"
+
+#: ../src/InputController.py:90
+msgid "Uninitialized Disk Entity"
+msgstr "초기화되지 않는 디스크 엔티티"
+
+#: ../src/InputController.py:91
+#, python-format
+msgid "Select disk entities to add to the %s Volume Group:"
+msgstr "볼륨 그룹 %s에 추가하기위한 디스크 엔티티를 선택하십시오:"
+
+#: ../src/InputController.py:93
+msgid ""
+"A Volume Group must be made up of two or more Physical Volumes to support "
+"striping. This Volume Group does not meet that requirement."
+msgstr ""
+"볼륨 그룹은 스트라이핑을 지원하기위해서 두개 이상의 물리적인 볼륨으로 구성되"
+"어야 합니다. 이 볼륨 그룹은 이 조건을 만족시키지 않습니다."
+
+#: ../src/InputController.py:95
+#, python-format
+msgid ""
+"A Logical Volume with the name %s already exists in this Volume Group. "
+"Please choose a unique name."
+msgstr ""
+"볼륨 그룹내에 논리적인 볼륨 이름 %s가 이미 존재합니다. 겹치지 않는 이름을 선"
+"택해 주십시오."
+
+#: ../src/InputController.py:97
+#, python-format
+msgid "A Volume Group with the name %s already exists. Please choose a unique name."
+msgstr "볼륨 그룹이름 %s가 이미 존재합니다. 겹치지 않는 이름을 선택해주십시오."
+
+#: ../src/InputController.py:99
+msgid "A Name must be provided for the new Logical Volume"
+msgstr "새로운 논리 볼륨에 대한 이름이 반드시 필요합니다."
+
+#: ../src/InputController.py:101
+msgid "A Name must be provided for the new Volume Group"
+msgstr "새로운 볼륨 그룹에 대한 이름이 필요합니다."
+
+#: ../src/InputController.py:103
+#, python-format
+msgid "The specified mount point, %s, does not exist. Do you wish to create it?"
+msgstr "특정 마운트 포인트 %s가 존재하지 않습니다. 생성할까요?"
+
+#: ../src/InputController.py:105
+#, python-format
+msgid "The creation of mount point %s unexpectedly failed."
+msgstr "마운트 위치 %s의 생성이 갑작스럽게 실패하였습니다."
+
+#: ../src/InputController.py:107
+msgid "This capability is not yet implemented in this version"
+msgstr "이 버전에서는 이 기능이 아직 구현되지 않습니다"
+
+#: ../src/InputController.py:109
+msgid ""
+"The number of Logical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "볼륨 그룹 내 논리 볼륨의 수가 최대수에 이르렀습니다."
+
+#: ../src/InputController.py:111
+msgid ""
+"The number of Physical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "볼륨 그룹 내 물리 볼륨의 수가 최대수에 이르렀습니다."
+
+#: ../src/InputController.py:113
+#, python-format
+msgid ""
+"At most %s Physical Volumes can be added to this Volume Group before the "
+"limit is reached."
+msgstr "볼륨 그룹 내에 추가할 수 있는 최대 물리 볼륨의 수는 %s 입니다."
+
+#: ../src/InputController.py:115
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space for new Logical Volumes. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"볼륨 그룹 %s에는 새 논리 볼륨을 위한 충분한 공간이 있지 않습니다. 볼륨 그룹"
+"에 추가 물리 볼륨을 추가하시는 것이 좋을 듯 합니다."
+
+#: ../src/InputController.py:117
+msgid "A snapshot of a snapshot is not supported."
+msgstr "스냅샷을 다시 스냅샷할 수 없습니다."
+
+#: ../src/InputController.py:118
+msgid "A snapshot of a mirrored Logical Volume is not supported."
+msgstr "미러 논리 볼륨의 스냅샷을 지원하지 않습니다."
+
+#: ../src/InputController.py:120
+#, python-format
+msgid ""
+"Logical volume %s has snapshot %s currently associated with it. Please "
+"remove the snapshot first."
+msgstr ""
+"%s 논리 볼륨에는 현재 %s 스냅샷이 있습니다. 이 스냅샷을 먼저 삭제하시기 바랍"
+"니다."
+
+#: ../src/InputController.py:121
+#, python-format
+msgid ""
+"Logical volume %s has snapshots: %s currently associated with it. Please "
+"remove snapshots first."
+msgstr ""
+"논리 볼륨 %s에 스냅샷이 있습니다: %s가 현재 연계되어 있습니다. 스냅샷 먼저 삭"
+"제하시기 바랍니다."
+
+#: ../src/InputController.py:123
+msgid "Undefined type conversion error in model factory. Unable to complete task."
+msgstr ""
+"모델 공장(model factory)에 정의되지 않은 형 변환 오류가 발생하여 작업을 완료"
+"하지 못했습니다."
+
+#: ../src/InputController.py:125
+#, python-format
+msgid ""
+"BIG WARNING: Logical Volume %s has an %s file system on it and is currently "
+"mounted on %s. Are you absolutely certain that you wish to discard the data "
+"on this mounted filesystem?"
+msgstr ""
+"중요한 경고: %s 논리 볼륨에 %s 파일 시스템을 있으며 현재 %s에 마운트되어있습"
+"니다. 정말로 이 마운트된 파일 시스템에 저장된 데이터를 모두 삭제하시겠습니까?"
+
+#: ../src/InputController.py:127
+#, python-format
+msgid ""
+"Logical Volume %s is currently mounted on %s. In order to complete request, "
+"it has to be unmounted. Are you sure you want it unmounted?"
+msgstr ""
+"%s 논리 볼륨이 현재 %s에 마운트되어있습니다. 이 요청을 완료하기 위해서는 마운"
+"트 해제해야 합니다. 정말로 마운트 해제하시겠습니까?"
+
+#. ##TRANSLATOR: An extent below is an abstract unit of storage. The size
+#. ##of an extent is user-definable.
+#: ../src/InputController.py:133
+#, python-format
+msgid "Unused space on %s"
+msgstr "%s에 사용되지 않는 공간"
+
+#: ../src/InputController.py:134
+#, python-format
+msgid "%s megabytes"
+msgstr "%s 메가바이트"
+
+#: ../src/InputController.py:135
+#, python-format
+msgid "%s kilobytes"
+msgstr "%s 킬로바이트"
+
+#: ../src/InputController.py:136
+#, python-format
+msgid "%s gigabytes"
+msgstr "%s 기가바이트"
+
+#: ../src/InputController.py:137
+#, python-format
+msgid "%s extents"
+msgstr "%s 익스텐트"
+
+#: ../src/InputController.py:139
+msgid "Remaining free space in Volume Group:\n"
+msgstr "볼륨 그룹에 남은 여유 공간:\n"
+
+#: ../src/InputController.py:140
+msgid "Remaining space for this Volume:\n"
+msgstr "이 볼륨 상에 남은 공간:\n"
+
+#: ../src/InputController.py:142
+msgid "Extents"
+msgstr "익스텐트(Extents)"
+
+#: ../src/InputController.py:143
+msgid "Gigabytes"
+msgstr "기가바이트"
+
+#: ../src/InputController.py:144
+msgid "Megabytes"
+msgstr "메가바이트"
+
+#: ../src/InputController.py:145
+msgid "Kilobytes"
+msgstr "킬로바이트"
+
+#: ../src/InputController.py:147
+#, python-format
+msgid "The %s should only contain number values"
+msgstr "%s는 숫자이어야 합니다."
+
+#: ../src/InputController.py:148
+msgid ""
+"The Maximum Physical Volumes field should contain only integer values "
+"between 1 and 256"
+msgstr "최대 물리 볼륨 입력값은 1부터 256사이의 정수이어야 합니다."
+
+#: ../src/InputController.py:149
+msgid ""
+"The Maximum Logical Volumes field should contain only integer values between "
+"1 and 256"
+msgstr "최대 물리 볼륨 입력값은 1부터 256사이의 정수이어야 합니다."
+
+#: ../src/InputController.py:151
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from Logical Volume "
+"Management?"
+msgstr "논리적인 볼륨 관리로부터 %s를 정말로 제거하시겠습니까?"
+
+#: ../src/InputController.py:153
+#, python-format
+msgid ""
+"The Physical Volume named %s, that you wish to remove, has data from active "
+"Logical Volume(s) mapped to its extents. Because it is the only Physical "
+"Volume in the Volume Group, there is no place to move the data to. "
+"Recommended action is either to add a new Physical Volume before removing "
+"this one, or else remove the Logical Volumes that are associated with this "
+"Physical Volume."
+msgstr ""
+"제거하시려는 물리 볼륨 %s에는 이 볼륨 extent를 사용하는 활성 논리 볼륨에 데이"
+"터가 저장되어 있습니다. 이 물리 볼륨은 볼륨 그룹 내의 유일한 물리 볼륨이므"
+"로, 이 데이터를 다른 곳이 이동시킬 수가 없습니다. 따라서 이 물리 볼륨을 제거"
+"하시기 전에 새 물리 볼륨을 추가하시거나 또는 이 물리 보륨과 연관된 논리 볼륨"
+"을 제거하시길 권장합니다."
+
+#: ../src/InputController.py:154
+#, python-format
+msgid "Are you quite certain that you wish to remove %s from the %s Volume Group?"
+msgstr "%s를 볼륨 그룹 %s로부터 정말로 제거하시겠습니까?"
+
+#: ../src/InputController.py:155
+#, python-format
+msgid ""
+"Removing Physical Volume %s from the Volume Group %s will leave the Volume "
+"group empty, and it will be removed as well. Do you wish to proceed?"
+msgstr ""
+"물리 볼륨 %s 를 볼륨 그룹 %s에서 삭제한다면 볼륨 그룹도 비어서 삭제될 것입니"
+"다. 그래도 계속 진행하시겠습니까?"
+
+#: ../src/InputController.py:156
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space to move the data stored on %s. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"볼륨 그룹 %s는 %s에 저장된 자료를 옮기기에 충분한 공간이 있지 않습니다. 볼륨 "
+"그룹에 추가 물리 볼륨을 추가하시는것이 좋을 듯 합니다."
+
+#: ../src/InputController.py:157
+msgid ""
+"The dm-mirror module is either not loaded in your kernel, or your kernel "
+"does not support the dm-mirror target. If it is supported, try running "
+"\"modprobe dm-mirror\". Otherwise, operations that require moving data on "
+"Physical Extents are unavailable."
+msgstr ""
+"dm-mirror 모듈이 커널에 로딩되지 않았거나 커널이 dm-mirror 타겟을 지원하지 않"
+"는 것 같습니다. 커널이 지원하는 경우, \"modprobe dm-mirror\" 명령을 입력해보"
+"십시오. 그렇지 않다면, 물리 extent에서 데이터를 이동하는 작업을 불가능합니다."
+
+#: ../src/InputController.py:158
+msgid ""
+"The dm-snapshot module is either not loaded in your kernel, or your kernel "
+"does not support the dm-snapshot target. If it is supported, try running "
+"\"modprobe dm-snapshot\". Otherwise, creation of snapshots is unavailable."
+msgstr ""
+"dm-snapshot 모듈이 커널에 로딩되지 않았거나 커널이 dm-snapshot 타겟을 지원하"
+"지 않는 것 같습니다. 커널이 지원하는 경우, \"modprobe dm-snapshot\" 명령을 입"
+"력해보십시오. 그렇지 않다면, 스냅샷을 생성하는 작업이 불가능합니다."
+
+#: ../src/InputController.py:160
+#, python-format
+msgid "Are you quite certain that you wish to remove logical volume %s?"
+msgstr "논리 볼륨 %s를 정말로 제거하시겠습니까?"
+
+#: ../src/InputController.py:161
+#, python-format
+msgid ""
+"Logical volume %s contains %s filesystem. All data on it will be lost! Are "
+"you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"%s 논리 볼륨에 %s 파일 시스템이 존재합니다. 정말로 %s 논리 볼륨을 삭제하시겠"
+"습니까?"
+
+#: ../src/InputController.py:162
+#, python-format
+msgid ""
+"Logical volume %s contains data from directory %s. All data in it will be "
+"lost! Are you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"%s 논리 볼륨은 %s 디렉토리의 데이터를 포함하고 있습니다. 모든 데이터를 잃게"
+"될 것입니다. 그래도 %s 논리 볼륨을 삭제하시겠습니까?"
+
+#: ../src/InputController.py:308
+msgid ""
+"In order for Volume Group to be safely used in clustered environment, lvm2-"
+"cluster rpm has to be installed, `lvmconf --enable-cluster` has to be "
+"executed and clvmd service has to be running"
+msgstr ""
+"클러스터된 환경에서 볼륨 그룹을 안전하게 사용하기 위하여, lvm2- 클러스터 rpm"
+"을 설치해야 하며, `lvmconf --enable-cluster`를 실행하고 clvmd 서비스를 수행해"
+"야 합니다 "
+
+#: ../src/InputController.py:367
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror log of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"%s 물리 볼륨은 %s 논리 볼륨의 미러 로그에 속한 익스텐트를 포함하고 있습니다. "
+"미러된 논리 볼륨은 이동할 수 없기 때문에, %s도 삭제 불가능합니다."
+
+#: ../src/InputController.py:370
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror image of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"%s 물리 볼륨은 %s 논리 볼륨의 미러 이미지에 속한 익스텐트를 포함하고 있습니"
+"다. 미러된 논리 볼륨은 이동할 수 없기 때문에, %s도 삭제 불가능합니다."
+
+#: ../src/InputController.py:373
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, a snapshot of %s. "
+"Snapshots are not yet migratable, so %s is not removable."
+msgstr ""
+"%s 물리 볼륨은 %s (%s의 스냅샷)에 속한 익스텐트를 포함하고 있습니다. 스냅샷"
+"은 이동할 수 없기 때문에, %s도 삭제 불가능합니다."
+
+#: ../src/InputController.py:378
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshot %"
+"s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"%s 물리 볼륨은 %s (%s 스냅샷의 원본)에 속한 익스텐트를 포함하고 있습니다. 스"
+"냅샷은 이동할 수 없기 때문에, %s도 삭제 불가능합니다."
+
+#: ../src/InputController.py:380
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshots "
+"%s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"%s 물리 볼륨은 %s (%s 스냅샷의 원본)에 속한 익스텐트를 포함하고 있습니다. 스"
+"냅샷은 이동할 수 없기 때문에, %s도 삭제 불가능합니다."
+
+#: ../src/InputController.py:567
+#, python-format
+msgid ""
+"Logical Volume \"%s\" has snapshots that are not selected for removal. They "
+"must be removed as well."
+msgstr ""
+"\"%s\" 논리 볼륨에 삭제하도록 선택되지 않은 스냅샷이 있습니다. 이 스냅샷도 삭"
+"제하셔야 합니다."
+
+#: ../src/InputController.py:582
+#, python-format
+msgid "\"%s\", an origin of snapshot \"%s\", has been deleted from removal list."
+msgstr "\"%s\"(스냅샷 \"%s\"의 원본)이 삭제 목록에서 제거되었습니다."
+
+#: ../src/InputController.py:613
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a mirror. Mirrors are "
+"not migratable, so %s is not removable."
+msgstr ""
+"%s 물리 볼륨은 미러에 속한 익스텐트를 포함하고 있습니다. 미러는 이동할 수 없"
+"기 때문에, %s도 삭제 불가능합니다."
+
+#: ../src/InputController.py:616
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a snapshot or a "
+"snapshot's origin. Snapshots are not migratable, so %s is not removable."
+msgstr ""
+"%s 물리 볼륨은 스냅샷 또는 스냅샷 원본에 속한 익스텐트를 포함하고 있습니다. "
+"스냅샷은 이동할 수 없기 때문에, %s도 삭제 불가능합니다."
+
+#: ../src/InputController.py:681
+msgid "The path you specified does not exist."
+msgstr "지정하신 경로는 존재하지 않습니다."
+
+#: ../src/InputController.py:688
+msgid "The path you specified is not a Block Device."
+msgstr "지정하신 경로는 블록 장치가 아닙니다."
+
+#: ../src/InputController.py:759
+#, python-format
+msgid "Initialization of %s failed"
+msgstr "%s 초기화 실패"
+
+#: ../src/InputController.py:1007 ../src/InputController.py:1010
+msgid "Please select some extents first"
+msgstr "익스텐트를 먼저 선택하시기 바랍니다"
+
+#: ../src/InputController.py:1044
+msgid ""
+"There are not enough free extents to perform the necessary migration. Adding "
+"more physical volumes would solve the problem."
+msgstr ""
+"필요한 이동 작업을 수행하는데 필요한 여유 익스텐트가 충분하지 않습니다. 물리 "
+"볼륨을 추가하시면 문제를 해결 가능합니다."
+
+#: ../src/InputController.py:1206
+msgid "Migrate extents"
+msgstr "익스텐트 이동"
+
+#: ../src/InputController.py:1334
+msgid "Options"
+msgstr "옵션"
+
+#: ../src/InputController.py:1368
+#, python-format
+msgid "Create A Snapshot of %s"
+msgstr "%s의 스냅샷 생성"
+
+#: ../src/InputController.py:1370
+msgid "Create New Logical Volume"
+msgstr "새로운 논리 볼륨 만듬"
+
+#: ../src/InputController.py:1373
+#, python-format
+msgid "Edit %s, a Snapshot of %s"
+msgstr "%s (%s의 스냅샷) 편집"
+
+#: ../src/InputController.py:1376
+msgid "Edit Logical Volume"
+msgstr "논리 볼륨 편집"
+
+#: ../src/InputController.py:1536
+msgid "Underlying Logical Volume Management does not support mirroring"
+msgstr "기본 논리 볼륨 관리는 미러링 기능을 지원하지 않습니다"
+
+#: ../src/InputController.py:1543
+msgid "Striped Logical Volumes cannot be mirrored."
+msgstr "Striped LV(논리 볼륨)은 미러할 수 없습니다."
+
+#: ../src/InputController.py:1550
+msgid "Logical Volumes with associated snapshots cannot be mirrored yet."
+msgstr "연계된 스냅샷이 있는 LV는 미러할 수 없습니다."
+
+#. mirror images placement: diff HDs or anywhere
+#. prompt
+#: ../src/InputController.py:1557
+msgid ""
+"The primary purpose of mirroring is to protect data in the case of hard "
+"drive failure. Do you want to place mirror images onto different hard drives?"
+msgstr ""
+"미러링을 하는 주된 목적은 하드 드라이브에 문제가 발생할 경우 데이터를 보호하"
+"기 위해서입니다. 다른 하드 드라이브에 미러 이미지를 저장하시겠습니까?"
+
+#: ../src/InputController.py:1566
+msgid "Less than 3 hard drives are available with free space. Disabling mirroring."
+msgstr "여유 공간이 있는 하드 드라이브가 3개 미만입니다. 미러링을 비활성화합니다."
+
+#: ../src/InputController.py:1571
+msgid ""
+"There must be free space on at least three Physical Volumes to enable "
+"mirroring"
+msgstr "미러링을 위해서는 여유 공간이 있는 PV(물리적 볼륨)이 3개 이상 있어야 합니다."
+
+#: ../src/InputController.py:1579
+msgid ""
+"The size of the Logical Volume has been adjusted to the maximum available "
+"size for mirrors."
+msgstr "LV의 용량이 미러 가능한 최대 용량으로 조정되었습니다."
+
+#: ../src/InputController.py:1584
+#, python-format
+msgid ""
+"There is not enough free space to add mirroring. Reduce size of Logical "
+"Volume to at most %s, or add Physical Volumes."
+msgstr ""
+"미러링을 추가할 수 있는 충분한 여유 공간이 없습니다. LV의 용량을 최대한 %s으"
+"로 줄이거나, PV를 추가하시기 바랍니다."
+
+#: ../src/InputController.py:1948
+msgid "Names beginning with \"snapshot\" or \"pvmove\" are reserved keywords."
+msgstr "\"snapshot\" 또는 \"pvmove\"로 시작하는 이름은 이미 지정된 키워드입니다."
+
+#: ../src/InputController.py:1950
+msgid "Names containing \"_mlog\" or \"_mimage\" are reserved keywords."
+msgstr "\"_mlog\" 또는 \"_mimage\" 단어를 포함하는 이름은 이미 지정된 키워드입니다."
+
+#: ../src/InputController.py:1952
+msgid "Names beginning with a \"-\" are invalid"
+msgstr "\"-\"로 시작하는 이름은 적당하지 않습니다."
+
+#: ../src/InputController.py:1954
+msgid "Name can be neither \".\" nor \"..\""
+msgstr "\".\"이나 \"..\"은 유효한 이름이 아닙니다."
+
+#: ../src/InputController.py:1960
+msgid "Whitespaces are not allowed in Logical Volume names"
+msgstr "LV 이름에 공백은 허용되지 않습니다."
+
+#: ../src/InputController.py:1963
+#, python-format
+msgid "Invalid character \"%s\" in Logical Volume name"
+msgstr "LV 이름에 속한 \"%s\"은 잘못된 문자입니다."
+
+#: ../src/InputController.py:1983
+msgid "Please specify mount point"
+msgstr "마운트 지점을 지정해주세요"
+
+#: ../src/InputController.py:2049
+msgid "Do you want to upgrade ext2 to ext3 preserving data on Logical Volume?"
+msgstr "LV에 저장된 자료를 보존하며 ext2에서 ext3로 업그레이드하시겠습니까?"
+
+#. # LV is probably exported to another computer(s)
+#: ../src/InputController.py:2089
+msgid ""
+"Logical volume is not mounted but is in use. Please close all applications "
+"using this device (eg iscsi)"
+msgstr "논리 볼륨이 마운트되지 않았는데, 사용중입니다. 이 장치(예: iscsi)를 사용하고 있는 모든 어플리케이션을 닫아주십시오."
+
+#: ../src/InputController.py:2093
+msgid ""
+"Changing the filesystem will destroy all data on the Logical Volume! Are you "
+"sure you want to proceed?"
+msgstr ""
+"파일 시스템을 변경하시면 LV에 저장된 모든 자료를 잃게됩니다! 계속 진행하시겠"
+"습니까?"
+
+#. migration not performed, continue process with no mirroring
+#: ../src/InputController.py:2194
+msgid "Mirror not created. Completing remaining tasks."
+msgstr "미러가 생성되지 않았습니다. 남은 작업을 완료합니다."
+
+#. create mirror
+#: ../src/InputController.py:2197
+msgid ""
+"Underlaying LVM doesn't support addition of mirrors to existing Logical "
+"Volumes. Completing remaining tasks."
+msgstr ""
+"기본 LVM은 존재하는 LV (Logical Volume)에 추가적인 미러를 지원하지 않습니다. "
+"남은 임무를 완료합니다."
+
+#: ../src/InputController.py:2252
+msgid "In order to add mirroring, some extents need to be migrated."
+msgstr "미러링을 추가하기 위해서는 일부 익스텐트를 이동시켜야 합니다."
+
+#: ../src/InputController.py:2252
+msgid "Do you want to migrate specified extents?"
+msgstr "선택된 익스텐트를 이동시키겠습니까?"
+
+#: ../src/CommandHandler.py:55
+msgid "Creating Logical Volume"
+msgstr "논리 볼륨 만들기"
+
+#: ../src/CommandHandler.py:76 ../src/CommandHandler.py:95
+msgid "Resizing Logical Volume"
+msgstr "논리 볼륨 크기 조정"
+
+#: ../src/CommandHandler.py:134
+msgid "Adding Mirror to Logical Volume"
+msgstr "논리 볼륨에 미러(mirror) 추가"
+
+#: ../src/CommandHandler.py:147
+msgid "Removing Mirror from Logical Volume"
+msgstr "논리 볼륨에서 미러 제거"
+
+#: ../src/CommandHandler.py:172
+msgid "Initializing Physical Volume"
+msgstr "물리 볼륨 초기화"
+
+#: ../src/CommandHandler.py:185
+msgid "Adding Physical Volume to Volume Group"
+msgstr "볼륨 그룹에 물리 볼륨 추가하기"
+
+#: ../src/CommandHandler.py:217
+msgid "Creating Volume Group"
+msgstr "볼륨 그룹 만들기"
+
+#: ../src/CommandHandler.py:243
+msgid "Removing Volume Group"
+msgstr "볼륨 그룹을 삭제"
+
+#: ../src/CommandHandler.py:255
+msgid "Removing Physical Volume"
+msgstr "물리 볼륨을 삭제"
+
+#: ../src/CommandHandler.py:272
+msgid "Removing Logical Volume"
+msgstr "논리 볼륨을 삭제"
+
+#: ../src/CommandHandler.py:289
+msgid "Renaming Logical Volume"
+msgstr "논리 볼륨 이름 변경"
+
+#: ../src/CommandHandler.py:313
+msgid "Removing Physical Volume from Volume Group"
+msgstr "볼륨 그룹으로부터 물리 볼륨을 제거"
+
+#: ../src/CommandHandler.py:350
+msgid "Migrating Extents"
+msgstr "익스텐트 이동"
+
+#: ../src/CommandHandler.py:364
+msgid "Completing Extent Migration"
+msgstr "익스텐트 이동 작업 완료 중"
+
+#: ../src/CommandHandler.py:415
+msgid "Rereading partition table"
+msgstr "파티션 테이블 다시 읽기"
+
+#: ../src/lvm_model.py:45 ../src/lvmui_constants.py:83
+msgid "Unused"
+msgstr "사용하지 않는"
+
+#: ../src/lvm_model.py:46
+msgid "Unused Space"
+msgstr "사용되지 않은 공간"
+
+#: ../src/lvm_model.py:48
+msgid "Unmounted"
+msgstr "마운트되지 않은"
+
+#: ../src/lvm_model.py:58
+msgid "Volume Group Name:   "
+msgstr "볼륨 그룹 이름"
+
+#: ../src/lvm_model.py:59
+msgid "System ID:   "
+msgstr "시스템 ID"
+
+#: ../src/lvm_model.py:60
+msgid "Format:   "
+msgstr "포맷"
+
+#: ../src/lvm_model.py:61 ../src/lvm_model.py:78 ../src/lvm_model.py:93
+msgid "Attributes:   "
+msgstr "속성"
+
+#: ../src/lvm_model.py:62
+msgid "Volume Group Size:   "
+msgstr "볼륨 그룹 크기"
+
+#: ../src/lvm_model.py:63
+msgid "Available Space:   "
+msgstr "사용가능한 공간"
+
+#: ../src/lvm_model.py:64
+msgid "Total Number of Extents:   "
+msgstr "익스텐트의 전체 개수:   "
+
+#: ../src/lvm_model.py:65
+msgid "Number of Free Extents:   "
+msgstr "빈 익스텐트의 개수:   "
+
+#: ../src/lvm_model.py:66
+msgid "Extent Size:   "
+msgstr "익스텐트 크기:   "
+
+#: ../src/lvm_model.py:67
+msgid "Maximum Allowed Physical Volumes:   "
+msgstr "최대 허용 물리 볼륨 개수"
+
+#: ../src/lvm_model.py:68
+msgid "Number of Physical Volumes:   "
+msgstr "물리 볼륨 개수"
+
+#: ../src/lvm_model.py:69
+msgid "Maximum Allowed Logical Volumes:   "
+msgstr "최대 허용 논리 볼륨 개수"
+
+#: ../src/lvm_model.py:70
+msgid "Number of Logical Volumes:   "
+msgstr "논리 볼륨 개수"
+
+#: ../src/lvm_model.py:71
+msgid "VG UUID:   "
+msgstr "VG UUID:   "
+
+#: ../src/lvm_model.py:73
+msgid "Logical Volume Name:   "
+msgstr "논리 볼륨 이름"
+
+#: ../src/lvm_model.py:74
+msgid "Logical Volume Size:   "
+msgstr "논리 볼륨 크기"
+
+#: ../src/lvm_model.py:75
+msgid "Number of Segments:   "
+msgstr "세그먼트의 개수"
+
+#: ../src/lvm_model.py:76
+msgid "Number of Stripes:   "
+msgstr "스트라입의 개수"
+
+#: ../src/lvm_model.py:77
+msgid "Stripe Size:   "
+msgstr "스트라입 크기:   "
+
+#: ../src/lvm_model.py:79
+msgid "LV UUID:   "
+msgstr "LV UUID:   "
+
+#: ../src/lvm_model.py:81
+msgid "Partition Type:   "
+msgstr "파티션 타입"
+
+#: ../src/lvm_model.py:82
+msgid "Size:   "
+msgstr "크기"
+
+#: ../src/lvm_model.py:83
+msgid "Mount Point:   "
+msgstr "마운트 위치"
+
+#: ../src/lvm_model.py:84
+msgid "Mount Point when Rebooted:   "
+msgstr "재부팅시 마운트 지점:   "
+
+#: ../src/lvm_model.py:85
+msgid "File System:   "
+msgstr "파일 시스템"
+
+#: ../src/lvm_model.py:87
+msgid "Physical Volume Name:   "
+msgstr "물리 볼륨 이름"
+
+#: ../src/lvm_model.py:88
+msgid "Physical Volume Size:   "
+msgstr "물리 볼륨 크기"
+
+#: ../src/lvm_model.py:89
+msgid "Space Used:   "
+msgstr "사용된 공간"
+
+#: ../src/lvm_model.py:90
+msgid "Space Free:   "
+msgstr "남은 공간"
+
+#: ../src/lvm_model.py:91
+msgid "Total Physical Extents:   "
+msgstr "총 물리 익스텐트:   "
+
+#: ../src/lvm_model.py:92
+msgid "Allocated Physical Extents:   "
+msgstr "할당된 물리 익스텐트:   "
+
+#: ../src/lvm_model.py:94
+msgid "PV UUID:   "
+msgstr "PV UUID:   "
+
+#: ../src/lvm_model.py:96
+msgid "Not initializable:"
+msgstr "초기화 불가능:"
+
+#: ../src/lvm_model.py:97
+msgid "Extended partition"
+msgstr "확장 파티션"
+
+#. Translator: the line below refers to a standard linux swap partition.
+#: ../src/lvm_model.py:99
+msgid "Swap partition currently in use"
+msgstr "현재 스왑 (swap) 파티션 사용중"
+
+#: ../src/lvm_model.py:100
+msgid "Foreign boot partition"
+msgstr "이종 부트 파티션"
+
+#: ../src/lvm_model.py:101
+msgid "Autopartition failure"
+msgstr "자동 파티션 실패"
+
+#: ../src/lvm_model.py:259
+msgid "Partition manually"
+msgstr "수동으로 파티션하기"
+
+#: ../src/lvm_model.py:295
+msgid "Multipath device"
+msgstr "멀티패스 장치"
+
+#: ../src/lvm_model.py:298
+msgid "Note:"
+msgstr "알림:"
+
+#: ../src/lvm_model.py:298
+msgid "Initialize manually"
+msgstr "수동으로 초기화하기"
+
+#: ../src/lvm_model.py:758
+msgid "Clustered:   "
+msgstr "클러스터된:   "
+
+#: ../src/lvm_model.py:760
+msgid "True"
+msgstr "참"
+
+#: ../src/lvm_model.py:762
+msgid "False"
+msgstr "거짓"
+
+#: ../src/lvm_model.py:820
+msgid "Number of mirror images:"
+msgstr "미러 이미지 개수:"
+
+#: ../src/lvm_model.py:823
+msgid "Snapshots:"
+msgstr "스냅샷:"
+
+#: ../src/lvm_model.py:829
+msgid "Snapshot origin:"
+msgstr "스냅샷 원본:"
+
+#: ../src/lvm_model.py:836
+msgid "Snapshot usage:"
+msgstr "스냅샷 사용법:"
+
+#: ../src/lvm_model.py:859 ../src/lvm_model.py:865 ../src/lvm_model.py:926
+#: ../src/lvm_model.py:942
+msgid "/   Root Filesystem"
+msgstr "/   루트 파일시스템"
+
+#: ../src/lvm_model.py:945 ../src/Filesystem.py:135
+msgid "None"
+msgstr "없음"
+
+#: ../src/lvm_model.py:999
+msgid "SCSI Address:  "
+msgstr "SCSI 주소:       "
+
+#: ../src/lvm_model.py:1001
+msgid "SCSI ID:  "
+msgstr "SCSI ID:   "
+
+#. INIT_ENTITY=_("Are you certain that you wish to initialize disk entity %s? All data will be lost on this device/partition.")
+#: ../src/lvmui_constants.py:51
+#, python-format
+msgid ""
+"All data on disk entity %s will be lost! Are you certain that you wish to "
+"initialize it?"
+msgstr "%s 디스크에 저장된 모든 자료를 잃게됩니다! 초기화하시겠습니까?"
+
+#: ../src/lvmui_constants.py:52
+#, python-format
+msgid ""
+"Disk entity %s contains %s filesystem. All data on it will be lost! Are you "
+"certain that you wish to initialize disk entity %s?"
+msgstr ""
+"%s 디스크는 %s 파일시스템을 포함하고 있으며, 모든 자료를 잃게될 것입니다! 그"
+"래도 %s 디스크를 초기화하시겠습니까?"
+
+#: ../src/lvmui_constants.py:53
+#, python-format
+msgid ""
+"Disk entity %s contains data from directory %s. All data in it will be lost! "
+"Are you certain that you wish to initialize disk entity %s?"
+msgstr ""
+"%s 디스크는 %s 디렉토리의 자료를 포함하고 있으며, 모든 자료를 잃게될 것입니"
+"다! 그래도 %s 디스크를 초기화하시겠습니까?"
+
+#: ../src/lvmui_constants.py:54
+#, python-format
+msgid "Are you certain that you wish to initialize %s of free space on disk %s?"
+msgstr "정말로 디스크 %s의 여유 공간에서 %s을(를) 초기화하시겠습니까?"
+
+#: ../src/lvmui_constants.py:55
+#, python-format
+msgid ""
+"You are about to initialize unpartitioned disk %s. It is advisable, although "
+"not required, to create a partition on it. Do you want to create a single "
+"partition encompassing the whole drive?"
+msgstr ""
+"파티션되지 않은 디스크 %s을(를) 초기화하려고 합니다. 비록 필수 사항은 아니지"
+"만, 이 디스크에 한개의 파티션을 생성하시길 권장합니다. 전체 드라이브를 포함하"
+"는 단독 파티션을 생성하시겠습니까?"
+
+#: ../src/lvmui_constants.py:57
+msgid "Reloading LVM. Please wait."
+msgstr "LVM을 로딩 중입니다. 잠시만 기다려주세요."
+
+#: ../src/lvmui_constants.py:59
+#, python-format
+msgid ""
+"Changes will take effect after computer is restarted. If device %s is used, "
+"before restart, data corruption WILL occur. It is advisable to restart your "
+"computer now."
+msgstr ""
+"컴퓨터를 재시작하시면 변경 사항이 적용될 것입니다. 만일 컴퓨터를 재시작하기 "
+"전에 %s 장치가 사용 중이라면, 데이터가 손상될 것입니다. 따라서 지금 바로 컴퓨"
+"터를 재시작하시기 권장합니다."
+
+#: ../src/lvmui_constants.py:61
+msgid "Mirror Log"
+msgstr "미러 로그"
+
+#: ../src/lvmui_constants.py:63
+msgid "Unable to process request"
+msgstr "요청을 처리할 수 없습니다"
+
+#: ../src/lvmui_constants.py:65
+#, python-format
+msgid "%s command failed. Command attempted: \"%s\" - System Error Message: %s"
+msgstr "%s 명령이 실패하였습니다. 수행했던 명령: \"%s\" - 시스템 오류 메시지: %s"
+
+#: ../src/lvmui_constants.py:84
+msgid "Free"
+msgstr "여유"
+
+#: ../src/lvmui_constants.py:85
+msgid "Free space"
+msgstr "여유 공간"
+
+#: ../src/lvmui_constants.py:87
+msgid "Unpartitioned space"
+msgstr "파티션되지 않은 공간"
+
+#: ../src/lvmui_constants.py:88
+#, python-format
+msgid "Unpartitioned space on %s"
+msgstr "%s에 파티션되지 않은 공간"
+
+#: ../src/lvmui_constants.py:90
+msgid "GB"
+msgstr "GB"
+
+#: ../src/lvmui_constants.py:91
+msgid "MB"
+msgstr "MB"
+
+#: ../src/lvmui_constants.py:92
+msgid "KB"
+msgstr "KB"
+
+#: ../src/lvmui_constants.py:93
+msgid "Bytes"
+msgstr "바이트"
+
+#. File System Types
+#: ../src/lvmui_constants.py:97
+msgid "No Filesystem"
+msgstr "파일 시스템 없음"
+
+#: ../src/lvmui_constants.py:98
+msgid "Ext2"
+msgstr "Ext2"
+
+#: ../src/lvmui_constants.py:99
+msgid "Ext3"
+msgstr "Ext3"
+
+#: ../src/lvmui_constants.py:100
+msgid "JFS"
+msgstr "JFS"
+
+#: ../src/lvmui_constants.py:101
+msgid "MSDOS"
+msgstr "MSDOS"
+
+#: ../src/lvmui_constants.py:102
+msgid "Reiserfs"
+msgstr "Reiserfs"
+
+#: ../src/lvmui_constants.py:103
+msgid "VFAT"
+msgstr "VFAT"
+
+#: ../src/lvmui_constants.py:104
+msgid "XFS"
+msgstr "XFS"
+
+#: ../src/lvmui_constants.py:105
+msgid "Cramfs"
+msgstr "Cramfs"
+
+#: ../src/Properties_Renderer.py:42
+msgid "Properties for"
+msgstr "에 대한 속성들"
+
+#: ../src/Properties_Renderer.py:43 ../src/renderer.py:37
+msgid "Physical Volume"
+msgstr "물리 볼륨"
+
+#. UNALLOCATED_MESSAGE=_("This Volume has not been allocated \n to a Volume Group yet.")
+#: ../src/Properties_Renderer.py:44 ../src/renderer.py:36
+msgid "Logical Volume"
+msgstr "논리 볼륨"
+
+#: ../src/Properties_Renderer.py:45
+msgid "Unallocated Volume"
+msgstr "할당되지 않은 볼륨"
+
+#: ../src/Properties_Renderer.py:46 ../src/renderer.py:43
+msgid "Disk Entity"
+msgstr "디스크 엔티티"
+
+#: ../src/Properties_Renderer.py:47 ../src/Properties_Renderer.py:48
+#: ../src/Properties_Renderer.py:49 ../src/renderer.py:38
+msgid "Volume Group"
+msgstr "볼륨 그룹"
+
+#. UNINITIALIZED_MESSAGE=_("This extent has not yet been \n initialized for use with LVM.")
+#: ../src/renderer.py:33
+msgid "No Volume Selected"
+msgstr "선택된 볼륨없음."
+
+#: ../src/renderer.py:34
+msgid "Multiple selection"
+msgstr "여러개 선택"
+
+#: ../src/renderer.py:39 ../src/Volume_Tab_View.py:46
+msgid "Logical View"
+msgstr "논리적인 뷰"
+
+#: ../src/renderer.py:40 ../src/Volume_Tab_View.py:45
+msgid "Physical View"
+msgstr "물리적인 뷰"
+
+#: ../src/renderer.py:41
+msgid "Unallocated"
+msgstr "할당되지 않은"
+
+#: ../src/renderer.py:42
+msgid "Uninitialized"
+msgstr "초기화되지 않은"
+
+#: ../src/renderer.py:195
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a mirror log of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"선택하시려는 익스텐트는 %s LV의 미러 로그에 속해 있습니다. 미러된 LV는 이동"
+"할 수 없기 때문에, 익스텐트도 선택 불가능합니다."
+
+#: ../src/renderer.py:197
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to mirror image of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"선택하시려는 익스텐트는 %s LV의 미러 이미지에 속해 있습니다. 미러된 LV는 이동"
+"할 수 없기 때문에, 익스텐트도 선택 불가능합니다."
+
+#: ../src/renderer.py:199
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to %s, a snapshot of %"
+"s. Snapshots are not yet migratable, so the extents are not selectable."
+msgstr ""
+"선택하시려는 익스텐트는 %s (%s의 스냅샷)에 속해 있습니다. 스냅샷은 이동할 수 "
+"없기 때문에, 익스텐트도 선택 불가능합니다."
+
+#: ../src/renderer.py:201
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a snapshot origin %"
+"s. Snapshot origins are not yet migratable, so the extents are not "
+"selectable."
+msgstr ""
+"선택하시려는 익스텐트는 %s 스냅샷 원본에 속해 있습니다. 스냅샷은 이동할 수 없"
+"기 때문에, 익스텐트도 선택 불가능합니다."
+
+#: ../src/renderer.py:388
+#, python-format
+msgid "Snapshot of %s"
+msgstr "%s 의 스냅샷"
+
+#: ../src/renderer.py:491
+msgid "Origin"
+msgstr "원본"
+
+#: ../src/renderer.py:497
+msgid "Snapshot"
+msgstr "스냅샷"
+
+#: ../src/renderer.py:541
+msgid "extent view"
+msgstr "익스텐트 보기"
+
+#: ../src/Volume_Tab_View.py:42
+msgid "Volume Groups"
+msgstr "볼륨 그룹들"
+
+#: ../src/Volume_Tab_View.py:43
+msgid "Unallocated Volumes"
+msgstr "할당되지 않은 볼륨들"
+
+#: ../src/Volume_Tab_View.py:44
+msgid "Uninitialized Entities"
+msgstr "초기화되지 않은 엔티티들"
+
+#: ../src/Volume_Tab_View.py:231
+msgid "Clustered VG"
+msgstr "클러스터된 VG"
+
+#: ../src/Volume_Tab_View.py:617
+#, python-format
+msgid "%s mirror synchronisation"
+msgstr "%s 미러 동기화"
+
+#. no existing partitions, write
+#: ../src/fdisk_wrapper.py:192
+msgid "Please wait while partition is being created"
+msgstr "파티션이 생성되는 동안 잠시만 기다려주십시오"
+
+#: ../src/Filesystem.py:20
+#, python-format
+msgid "Creating %s filesystem"
+msgstr "%s 파일 시스템을 생성합니다"
+
+#: ../src/Filesystem.py:21
+#, python-format
+msgid "Resizing %s filesystem"
+msgstr "%s 파일 시스템 크기를 재조정합니다"
+
+#: ../src/Filesystem.py:22
+#, python-format
+msgid "Checking %s filesystem"
+msgstr "%s 파일 시스템을 확인합니다"
+
+#: ../src/Filesystem.py:23
+#, python-format
+msgid "Upgrading %s filesystem to %s"
+msgstr "%s 파일 시스템을 %s 로 업그레이드합니다"
+
+#: ../src/Filesystem.py:24
+#, python-format
+msgid ""
+"Creation of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr "파티션 생성에 실패하였습니다. 수행했던 명령:\"%s\" - 시스템 오류 메시지: %s"
+
+#: ../src/Filesystem.py:25
+#, python-format
+msgid ""
+"Resize of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"파일 시스템 크기 재조정 작업에 실패하였습니다. 수행했던 명령: \"%s\" - 시스"
+"템 오류 메시지: %s"
+
+#: ../src/Filesystem.py:26
+#, python-format
+msgid ""
+"Check of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"파일 시스템 확인 작업에 실패하였습니다. 수행했던 명령: \"%s\" - 시스템 오류 "
+"메시지: %s"
+
+#: ../src/Filesystem.py:27
+#, python-format
+msgid ""
+"Upgrade of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"파일 시스템 업그레이드에 실패하였습니다. 수행했던 명령: \"%s\" - 시스템 오류 "
+"메시지: %s"
+
+#: ../src/Filesystem.py:141
+msgid "Unknown filesystem"
+msgstr "알 수 없는 파일 시스템"
+
+#: ../src/Filesystem.py:491
+msgid "GFS (local)"
+msgstr "GFS (local)"
+
+#: ../src/Filesystem.py:606
+msgid "GFS (clustered)"
+msgstr "GFS (clustered)"
+
+#: ../src/Filesystem.py:640 ../src/Filesystem.py:976
+msgid "Cluster name contains illegal character "
+msgstr "클러스터 이름에 부적절한 문자가 포함되어 있습니다"
+
+#: ../src/Filesystem.py:643 ../src/Filesystem.py:979
+msgid "GFS name contains illegal character "
+msgstr "GFS 이름에 부적절한 문자가 포함되어 있습니다"
+
+#: ../src/Filesystem.py:646 ../src/Filesystem.py:982
+msgid "Missing Cluster Name"
+msgstr "클러스터 이름이 없습니다"
+
+#: ../src/Filesystem.py:649 ../src/Filesystem.py:985
+msgid "Missing GFS Name"
+msgstr "GFS 이름이 없습니다"
+
+#: ../src/Filesystem.py:828
+msgid "GFS2 (local)"
+msgstr "GFS2 (local)"
+
+#: ../src/Filesystem.py:942
+msgid "GFS2 (clustered)"
+msgstr "GFS2 (clustered)"
+
+#: ../src/Filesystem.glade.h:1 ../src/lvui.glade.h:1
+#: ../src/lv_edit_props.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../src/Filesystem.glade.h:2
+msgid "Cluster name"
+msgstr "클러스터 이름 "
+
+#: ../src/Filesystem.glade.h:3
+msgid "Clustered GFS Properties"
+msgstr "클러스터 GFS 등록 정보   "
+
+#: ../src/Filesystem.glade.h:4
+msgid "DLM"
+msgstr "DLM"
+
+#: ../src/Filesystem.glade.h:5
+msgid "GFS name"
+msgstr "GFS 이름 "
+
+#: ../src/Filesystem.glade.h:6
+msgid "GULM"
+msgstr "GULM"
+
+#: ../src/Filesystem.glade.h:7
+msgid "Locking type"
+msgstr "잠금 유형 "
+
+#: ../src/Filesystem.glade.h:8
+msgid "Number of journals"
+msgstr "저널 수:  "
+
+#: ../src/Filesystem.glade.h:9
+msgid "Number of journals (one journal per cluster node)"
+msgstr "저널 수 (클러스터 노드 당 한 개의 저널) "
+
+#: ../src/Filesystem.glade.h:10
+msgid "Unique GFS name"
+msgstr "고유한 GFS 이름 "
+
+#: ../src/Segment.py:44
+msgid "Stripe"
+msgstr "Stripe"
+
+#: ../src/Segment.py:68
+msgid "Linear Mapping"
+msgstr "선형(Linear) 맵핑"
+
+#: ../src/Segment.py:109
+msgid "Mirror"
+msgstr "미러"
+
+#: ../src/PhysicalVolume.py:142
+#, python-format
+msgid "Partition %s"
+msgstr "파티션 %s"
+
+#: ../src/lvui.glade.h:2
+msgid "1024"
+msgstr "1024"
+
+#: ../src/lvui.glade.h:3
+msgid "128"
+msgstr "128"
+
+#: ../src/lvui.glade.h:4
+msgid "16"
+msgstr "16"
+
+#: ../src/lvui.glade.h:5
+msgid "2"
+msgstr "2"
+
+#: ../src/lvui.glade.h:6
+msgid "256"
+msgstr "256"
+
+#: ../src/lvui.glade.h:7
+msgid "32"
+msgstr "32"
+
+#: ../src/lvui.glade.h:8
+msgid "4"
+msgstr "4"
+
+#: ../src/lvui.glade.h:9
+msgid "512"
+msgstr "512"
+
+#: ../src/lvui.glade.h:10
+msgid "64"
+msgstr "64"
+
+#: ../src/lvui.glade.h:11
+msgid "8"
+msgstr "8"
+
+#: ../src/lvui.glade.h:12
+msgid "Add Physical Volume to VG"
+msgstr "VG에 물리 볼륨 추가하기"
+
+#: ../src/lvui.glade.h:13
+msgid ""
+"Add to existing \n"
+"Volume Group"
+msgstr ""
+"기존 볼륨 그룹에\n"
+"추가하기"
+
+#: ../src/lvui.glade.h:15
+msgid "Clustered"
+msgstr "클러스터된"
+
+#: ../src/lvui.glade.h:16
+msgid ""
+"Create New\n"
+"Logical Volume"
+msgstr ""
+"새로운 볼륨\n"
+"그룹 만들기"
+
+#: ../src/lvui.glade.h:18
+msgid "Create Snapshot"
+msgstr "스냅샷 만들기"
+
+#: ../src/lvui.glade.h:19
+msgid ""
+"Create new \n"
+"Volume Group"
+msgstr ""
+"새로운 볼륨\n"
+"그룹 만들기"
+
+#: ../src/lvui.glade.h:21
+msgid "Edit Properties"
+msgstr "등록 정보 수정"
+
+#: ../src/lvui.glade.h:22
+msgid "Enter path of Block Device to initialize"
+msgstr "초기화할 블록 장치의 경로를 입력해주세요"
+
+#: ../src/lvui.glade.h:23
+msgid ""
+"Extend\n"
+"Volume Group"
+msgstr ""
+"볼륨 그룹 \n"
+"익스텐트하기"
+
+#: ../src/lvui.glade.h:25
+msgid "Extend Volume Group"
+msgstr "익스텐트 볼륨 그룹"
+
+#: ../src/lvui.glade.h:26
+msgid "Format"
+msgstr "포맷"
+
+#: ../src/lvui.glade.h:27
+msgid "Initialize"
+msgstr "초기화"
+
+#: ../src/lvui.glade.h:28
+msgid "Initialize Block Device"
+msgstr "블록 장치 초기화"
+
+#: ../src/lvui.glade.h:29
+msgid "Initialize Entity"
+msgstr "엔티티 초기화하기"
+
+#: ../src/lvui.glade.h:30
+msgid "Initialize _Block Device"
+msgstr "블록 장치 초기화(_B)"
+
+#: ../src/lvui.glade.h:31
+msgid "Kilo"
+msgstr "킬로"
+
+#: ../src/lvui.glade.h:32 ../system-config-lvm.desktop.in.h:3
+msgid "Logical Volume Management"
+msgstr "논리적인 볼륨 관리"
+
+#: ../src/lvui.glade.h:33
+msgid "Manage Volumes"
+msgstr "볼륨 관리"
+
+#: ../src/lvui.glade.h:34
+msgid "Mark Volume Group as 'clustered'"
+msgstr "'clustered'로 볼륨 그룹을 표시"
+
+#: ../src/lvui.glade.h:35
+msgid "Maximum Logical Volumes"
+msgstr "최대 논리적인 볼륨"
+
+#: ../src/lvui.glade.h:36
+msgid "Maximum Physical Volumes"
+msgstr "최대 물리적인 볼륨"
+
+#: ../src/lvui.glade.h:37
+msgid "Meg"
+msgstr "Meg"
+
+#: ../src/lvui.glade.h:38
+msgid ""
+"Migrate Selected\n"
+"Extent(s) From Volume"
+msgstr ""
+"볼륨으로부터 \n"
+"선택된 익스텐트를 이동하기"
+
+#: ../src/lvui.glade.h:40
+msgid "New Volume Group"
+msgstr "새로운 볼륨 그룹"
+
+#: ../src/lvui.glade.h:41
+msgid "Physical Extent Size"
+msgstr "물리적 확장 용량 "
+
+#: ../src/lvui.glade.h:42
+msgid ""
+"Remove \n"
+"Logical Volume"
+msgstr ""
+"논리 볼륨 \n"
+"을 제거"
+
+#: ../src/lvui.glade.h:44
+msgid ""
+"Remove Selected\n"
+"Logical Volume(s)"
+msgstr ""
+"논리 볼륨(들)으로부터 \n"
+"볼륨을 제거"
+
+#: ../src/lvui.glade.h:46
+msgid ""
+"Remove Selected\n"
+"Physical Volume(s)"
+msgstr ""
+"물리 볼륨(들)으로부터 \n"
+"볼륨을 제거"
+
+#: ../src/lvui.glade.h:48
+msgid ""
+"Remove Volume from\n"
+"Volume Group"
+msgstr ""
+"볼륨 그룹으로부터 \n"
+"볼륨을 제거"
+
+#: ../src/lvui.glade.h:50
+msgid ""
+"Remove volume \n"
+"from LVM"
+msgstr ""
+"LVM으로부터 \n"
+"볼륨을 제거"
+
+#: ../src/lvui.glade.h:52
+msgid "Select a Volume Group to add this PV to:"
+msgstr "이 PV에 추가하기위한 볼륨 그룹을 선택하십시오."
+
+#: ../src/lvui.glade.h:53
+msgid "Some text"
+msgstr "일부 텍스트"
+
+#: ../src/lvui.glade.h:54
+msgid "Volume Group Name"
+msgstr "볼륨 그룹 이름"
+
+#: ../src/lvui.glade.h:55
+msgid "_Reload"
+msgstr "재로드(_R)"
+
+#: ../src/lvui.glade.h:56
+msgid "_Tools"
+msgstr "도구(_T)"
+
+#: ../src/lvui.glade.h:57
+msgid "extend vg message:"
+msgstr "vg 메시지 확장:"
+
+#: ../src/lv_edit_props.glade.h:2
+msgid "<b>Filesystem</b>"
+msgstr "<b>파일시스템</b>"
+
+#: ../src/lv_edit_props.glade.h:3
+msgid "<b>LV Properties</b>"
+msgstr "<b>LV 속성</b>"
+
+#: ../src/lv_edit_props.glade.h:4
+msgid "<b>Size</b>"
+msgstr "<b>크기</b>"
+
+#: ../src/lv_edit_props.glade.h:5
+msgid "Add entry to /etc/fstab"
+msgstr "/etc/fstab에 항목 추가"
+
+#: ../src/lv_edit_props.glade.h:6
+msgid "Create New Logical Volume (LV)"
+msgstr "새로운 논리 볼륨 (LV) 만듬"
+
+#: ../src/lv_edit_props.glade.h:7
+msgid "Filesystem is not resizable"
+msgstr "파일시스템 크기를 재조정할 수 없습니다"
+
+#: ../src/lv_edit_props.glade.h:8
+msgid "Free space in Volume Group label"
+msgstr "볼륨 그룹 레이블 내 여유 공간"
+
+#: ../src/lv_edit_props.glade.h:9
+msgid "Free space remaining label"
+msgstr "남은 여유 공간 레이블"
+
+#: ../src/lv_edit_props.glade.h:10
+msgid "Kilobytes granularity"
+msgstr "킬로바이트 세분성"
+
+#: ../src/lv_edit_props.glade.h:11
+msgid "LV name:"
+msgstr "LV(논리 볼륨) 이름:"
+
+#: ../src/lv_edit_props.glade.h:12
+msgid "LV size"
+msgstr "LV(논리 볼륨) 용량"
+
+#: ../src/lv_edit_props.glade.h:13
+msgid "LVs under snapshots are not resizable"
+msgstr "스냅샷에 속한 논리 볼륨은 크기를 재조정할 수 없습니다"
+
+#: ../src/lv_edit_props.glade.h:14
+msgid "Linear"
+msgstr "선형(Linear)"
+
+#: ../src/lv_edit_props.glade.h:15
+msgid "Mirrored"
+msgstr "미러(Mirrored)"
+
+#: ../src/lv_edit_props.glade.h:16
+msgid "Mirrored LVs are not resizable"
+msgstr "미러 LV(논리 볼륨)은 크기를 재조정할 수 없습니다"
+
+#: ../src/lv_edit_props.glade.h:17
+msgid "Mount"
+msgstr "마운트"
+
+#: ../src/lv_edit_props.glade.h:18
+msgid "Mount point:"
+msgstr "마운트 지점:"
+
+#: ../src/lv_edit_props.glade.h:19
+msgid "Mount when rebooted"
+msgstr "재부팅시 마운트하기"
+
+#: ../src/lv_edit_props.glade.h:20
+msgid "Size beg"
+msgstr "용량 시작"
+
+#: ../src/lv_edit_props.glade.h:21
+msgid "Size end"
+msgstr "용량 끝"
+
+#: ../src/lv_edit_props.glade.h:22
+msgid "Striped"
+msgstr "Striped"
+
+#: ../src/lv_edit_props.glade.h:23
+msgid "Use remaining"
+msgstr "남은 공간 사용하기"
+
+#: ../src/lv_edit_props.glade.h:24
+msgid "stripes"
+msgstr "다음의 스트라이프(striped)"
+
+#: ../src/migrate_extents.glade.h:1
+msgid "<b>Destination</b>"
+msgstr "<b>목적지</b>"
+
+#: ../src/migrate_extents.glade.h:2
+msgid "<b>Migration Policy</b>"
+msgstr "<b>이동 정책</b>"
+
+#: ../src/migrate_extents.glade.h:3
+msgid "Anywhere - not implemented"
+msgstr "어디든지 - 구현안됨"
+
+#: ../src/migrate_extents.glade.h:4
+msgid "Automatically choose PVs to migrate to"
+msgstr "PV가 자동으로"
+
+#: ../src/migrate_extents.glade.h:5
+msgid "Contiguous"
+msgstr "근접한 위치로 이동하도록 선택"
+
+#: ../src/migrate_extents.glade.h:6
+msgid "Destination:"
+msgstr "목적지:"
+
+#: ../src/migrate_extents.glade.h:7
+msgid ""
+"In order to remove PV, extents in use have to be migrated.\n"
+"Select extents' destination and migration policy."
+msgstr ""
+"PV를 삭제하기 위해서는, 사용 중인 익스텐트를 이동시켜야 합니다.\n"
+"익스텐트의 목적지와 이동 정책을 선택해주십시오."
+
+#: ../src/migrate_extents.glade.h:9
+msgid "Inherit"
+msgstr "물려받음"
+
+#: ../src/migrate_extents.glade.h:10
+msgid "Inherit policy from Volume Group"
+msgstr "볼륨 그룹으로부터 정책을 물려받음"
+
+#: ../src/migrate_extents.glade.h:11
+msgid "Migrate Extents"
+msgstr "익스텐트 이동"
+
+#: ../src/migrate_extents.glade.h:12
+msgid "Migrate anywhere even if that reduces performance"
+msgstr "성능이 감퇴되더라도 어디든지 이동시킴"
+
+#: ../src/migrate_extents.glade.h:13
+msgid "New extents are adjacent to existing ones"
+msgstr "새 익스텐트는 기존 익스텐트 바로 옆에 위치합니다"
+
+#: ../src/migrate_extents.glade.h:14
+msgid "Normal"
+msgstr "정상"
+
+#: ../src/migrate_extents.glade.h:15
+msgid "Only migrate extents belonging to LV"
+msgstr "논리 볼륨 (LV)에 속한 익스텐트만 이동하기"
+
+#: ../src/migrate_extents.glade.h:16
+msgid "Use common sense"
+msgstr "상식 이용"
+
+#: ../src/Partition.py:103 ../src/Partition.py:108
+msgid "Unknown"
+msgstr "알 수 없음 "
+
+#: ../src/system-config-lvm.py:58
+msgid "system-config-lvm"
+msgstr "system-config-lvm"
+
+#: ../src/system-config-lvm.py:59
+#, python-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#: ../src/system-config-lvm.py:77
+msgid ""
+"LVM locks are disabled!!! \n"
+"Massive data corruption may occur.\n"
+"Enable locking (locking_type=1, 2 or 3 in /etc/lvm/lvm.conf)."
+msgstr ""
+"LVM 잠금이 비활성화 상태입니다!!! \n"
+"대량의 데이타 충돌이 발생할 수 있습니다.\n"
+"잠금을 활성화합니다 (locking_type=1, 2 or 3 in /etc/lvm/lvm.conf). "
+
+#: ../src/system-config-lvm.py:82
+msgid ""
+"LVM is configured to use Cluster Locking mechanism, but clvmd daemon is not "
+"running. Start daemon with command:\n"
+"service clvmd start \n"
+"or, turn off cluster locking (locking_type=1 in /etc/lvm/lvm.conf)."
+msgstr ""
+"클러스터 잠금 메카니즘을 사용하기 위해 LVM이 설정되었으나, clvmd 데몬이 수행"
+"되지 않습니다. 명령어:\n"
+"를 사용하여 데몬을 시작합니다 서비스 clvmd를 시작합니다 \n"
+"또는, 클러스터 잠금을 끕니다 (locking_type=1 in /etc/lvm/lvm.conf).  "
+
+#: ../src/system-config-lvm.py:86
+msgid ""
+"LVM is configured to use Cluster Locking mechanism, but cluster is not "
+"quorate.\n"
+"Either wait until cluster is quorate or turn off cluster locking "
+"(locking_type=1 in /etc/lvm/lvm.conf)."
+msgstr ""
+"클러스터 잠금 메카니즘을 사용하기 위하여 LVM이 설정되었으나, 클러스터가 정족"
+"수에 달하지 않습니다.\n"
+"클러스터가 정족수에 달할 때 까지 기다리거나 클러스터 잠금을 끕니다 "
+"(locking_type=1 in /etc/lvm/lvm.conf)."
+
+#: ../src/system-config-lvm.py:89
+#, python-format
+msgid ""
+"%s only supports file and cluster based lockings (locking_type=1, 2 or 3 in /"
+"etc/lvm/lvm.conf)."
+msgstr ""
+"%s 는 파일과 클러스터 기반의 잠금 만을 지원합니다 (locking_type=1, 2 or 3 "
+"in /etc/lvm/lvm.conf).  "
+
+#. ## Don't specify version - already in ABOUT_VERSION
+#: ../src/system-config-lvm.py:122
+msgid "Copyright (c) 2004 Red Hat, Inc. All rights reserved."
+msgstr "Copyright (c) 2004 Red Hat, Inc. All rights reserved."
+
+#: ../src/system-config-lvm.py:123
+msgid "This software is licensed under the terms of the GPL."
+msgstr "이 소프트웨어의 저작권은 GPL의 조건을 따릅니다.  "
+
+#: ../src/system-config-lvm.py:172
+#, python-format
+msgid "Please restart %s with root permissions!"
+msgstr "root 권한을 사용하여 %s을(를) 다시 시작하십시오! "
+
+#: ../system-config-lvm.desktop.in.h:1
+msgid "Configure LVM in a graphical setting"
+msgstr "그래픽 설정에서 LVM 구성  "
+
+#: ../system-config-lvm.desktop.in.h:2
+msgid "LVM"
+msgstr "LVM "
+

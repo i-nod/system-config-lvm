@@ -1,0 +1,1809 @@
+# Slovak translations for system-config-lvm package
+# Slovenské preklady pre balík system-config-lvm.
+# Copyright (C) 2006 THE system-config-lvm'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the system-config-lvm package.
+# Mike Karas <zoliqe@gmail.com>, 2006.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-lvm\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-31 09:04-0500\n"
+"PO-Revision-Date: 2006-09-04 08:47+0100\n"
+"Last-Translator: Mike Karas <zoliqe@gmail.com>\n"
+"Language-Team: Slovak <sk-i18n@linux.sk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-Language: Slovak\n"
+"X-Poedit-Country: SLOVAKIA\n"
+
+#: src/InputController.py:39 src/Properties_Renderer.py:24
+#: src/Volume_Tab_View.py:32
+#, python-format
+msgid ""
+"\n"
+"  Unable to initialize graphical environment. Most likely cause of failure\n"
+"  is that the tool was not run using a graphical environment. Please either\n"
+"  start your graphical user interface or set your DISPLAY variable.\n"
+"                                                                                \n"
+"  Caught exception: %s\n"
+msgstr ""
+"\n"
+"  Nepodarilo sa nainicializovať grafické prostredie. Častou príčinou tohoto "
+"zlyhania\n"
+"  je, že nástroj nebol spustený z bežiaceho grafického prostredia. Prosím "
+"najskôr\n"
+"  spustite vaše grafické rozhranie alebo nastavte premennú DISPLAY.\n"
+"                                                                                \n"
+"  Zachytená výnimka: %s\n"
+
+#. ##TRANSLATOR: The string below is seen when adding a new Physical
+#. ##Volume to an existing Volume Group.
+#: src/InputController.py:59
+#, python-format
+msgid "Select a Volume Group to add %s to:"
+msgstr "Zvoľte skupinu zväzkov pre pridanie %s do:"
+
+#. ##TRANSLATOR: The two strings below refer to the name and type of
+#. ##available disk entities on the system. There are two types --
+#. ##The first is an 'unallocated physical volume' which is a disk or
+#. ##partition that has been initialized for use with LVM, by writing
+#. ##a special label onto the first block of the partition. The other type
+#. ##is an 'uninitialized entity', which is an available disk or partition
+#. ##that is NOT yet initialized to be used with LVM. Hope this helps give
+#. ##some context.
+#: src/InputController.py:87
+msgid "Name"
+msgstr "Názov"
+
+#: src/InputController.py:88
+msgid "Size"
+msgstr "Veľkosť"
+
+#: src/InputController.py:89
+msgid "Entity Type"
+msgstr "Typ jednotky"
+
+#: src/InputController.py:91
+msgid "Unallocated Physical Volume"
+msgstr "Nealokované fyzické zväzky"
+
+#: src/InputController.py:92
+msgid "Uninitialized Disk Entity"
+msgstr "Neinicializovaná disková jednotka"
+
+#: src/InputController.py:93
+#, python-format
+msgid "Select disk entities to add to the %s Volume Group:"
+msgstr "Zvoľte diskové jednotky pre pridanie do skupiny zväzkov %s:"
+
+#: src/InputController.py:95
+msgid ""
+"A Volume Group must be made up of two or more Physical Volumes to support "
+"striping. This Volume Group does not meet that requirement."
+msgstr ""
+"Skupina zväzkov musí byť pre podporu stripovania tvorená dvoma alebo "
+"viacerými fyzickými zväzkami. Táto skupina zväzkov nespĺňa uvedenú "
+"požiadavku."
+
+#: src/InputController.py:97
+#, python-format
+msgid ""
+"A Logical Volume with the name %s already exists in this Volume Group. "
+"Please choose a unique name."
+msgstr ""
+"Logický zväzok s názvom %s už existuje v tejto skupine zväzkov. Prosím "
+"zvoľte unikátny názov."
+
+#: src/InputController.py:99
+#, python-format
+msgid ""
+"A Volume Group with the name %s already exists. Please choose a unique name."
+msgstr "Skupina zväzkov s názvom %s už existuje. Prosím zvoľte unikátny názov."
+
+#: src/InputController.py:101
+msgid "A Name must be provided for the new Logical Volume"
+msgstr "Nový logický zväzok musí mať stanovený názov"
+
+#: src/InputController.py:103
+msgid "A Name must be provided for the new Volume Group"
+msgstr "Nová skupina zväzkov musí mať stanovený názov"
+
+#: src/InputController.py:105
+#, python-format
+msgid ""
+"The specified mount point, %s, does not exist. Do you wish to create it?"
+msgstr "Špecifikovaný prípojný bod %s neexistuje. Prajete si ho vytvoriť?"
+
+#: src/InputController.py:107
+#, python-format
+msgid "The creation of mount point %s unexpectedly failed."
+msgstr "Vytváranie prípojného bodu %s neočakávane zlyhalo."
+
+#: src/InputController.py:109
+msgid "This capability is not yet implemented in this version"
+msgstr "Táto možnosť nie je ešte implementovaná v tejto verzií"
+
+#: src/InputController.py:111
+msgid ""
+"The number of Logical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "Počet logických zväzkov v skupine zväzkov dosiahol maximálny limit."
+
+#: src/InputController.py:113
+msgid ""
+"The number of Physical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr "Počet fyzických zväzkov v skupine zväzkov dosiahol maximálny limit."
+
+#: src/InputController.py:115
+#, python-format
+msgid ""
+"At most %s Physical Volumes can be added to this Volume Group before the "
+"limit is reached."
+msgstr ""
+"Najviac %s fyzických zväzkov môže byť pridaných do tejto skupiny zväzkov "
+"pred dosiahnutím limitu."
+
+#: src/InputController.py:117
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space for new Logical Volumes. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"Skupina zväzkov %s nemá dostatok miesta pre nové logické zväzky. Možným "
+"riešením je pridanie ďaľšieho fyzického zväzku do skupiny zväzkov."
+
+#: src/InputController.py:119
+msgid "A snapshot of a snapshot is not supported."
+msgstr "Snímok zo snímku nie je podporovaný."
+
+#: src/InputController.py:120
+msgid "A snapshot of a mirrored Logical Volume is not supported."
+msgstr "Snímok zo zrkadleného logického zväzku nie je podporovaný."
+
+#: src/InputController.py:122
+#, python-format
+msgid ""
+"Logical volume %s has snapshot %s currently associated with it. Please "
+"remove the snapshot first."
+msgstr ""
+"Logický zväzok %s ma momentálne predelený snímok %s. Prosím najskôr "
+"odstráňte snímok."
+
+#: src/InputController.py:123
+#, python-format
+msgid ""
+"Logical volume %s has snapshots: %s currently associated with it. Please "
+"remove snapshots first."
+msgstr ""
+"Logický zväzok %s má momentálne pridelené snímky %s. Prosím najskôr "
+"odstráňte snímky."
+
+#: src/InputController.py:125
+msgid ""
+"Undefined type conversion error in model factory. Unable to complete task."
+msgstr ""
+"Chyba neznámeho prevodu typov v generátore modelu. Nepodarilo sa dokočiť "
+"úlohu."
+
+#: src/InputController.py:127
+#, python-format
+msgid ""
+"BIG WARNING: Logical Volume %s has an %s file system on it and is currently "
+"mounted on %s. Are you absolutely certain that you wish to discard the data "
+"on this mounted filesystem?"
+msgstr ""
+"DOLEŽITÉ VAROVANIE: Logický zväzok %s obsahuje súborový systém %s a je "
+"momentálne pripojený do %s. Ste absolútne presvedčení o tom, že chcete "
+"zničiť dáta na pripojenom súborovom systéme?"
+
+#: src/InputController.py:129
+#, python-format
+msgid ""
+"Logical Volume %s is currently mounted on %s. In order to complete request, "
+"it has to be unmounted. Are you sure you want it unmounted?"
+msgstr ""
+"Logický zväzok %s je momentálne pripojený do %s. Pre dokončenie požiadavky "
+"musí byť odpojený. Ste si istí, že ho chcete odpojiť?"
+
+#. ##TRANSLATOR: An extent below is an abstract unit of storage. The size
+#. ##of an extent is user-definable.
+#: src/InputController.py:135
+#, python-format
+msgid "Unused space on %s"
+msgstr "Nevyužité miesto na %s"
+
+#: src/InputController.py:136
+#, python-format
+msgid "%s megabytes"
+msgstr "%s megabajtov"
+
+#: src/InputController.py:137
+#, python-format
+msgid "%s kilobytes"
+msgstr "%s kilobajtov"
+
+#: src/InputController.py:138
+#, python-format
+msgid "%s gigabytes"
+msgstr "%s gigabajtov"
+
+#: src/InputController.py:139
+#, python-format
+msgid "%s extents"
+msgstr "%s oddielov"
+
+#: src/InputController.py:141
+msgid "Remaining free space in Volume Group:\n"
+msgstr "Zostávajúce voľné miesto v skupine zväzkov:\n"
+
+#: src/InputController.py:142
+msgid "Remaining space for this Volume:\n"
+msgstr "Zostávajúce miesto pre zväzok:\n"
+
+#: src/InputController.py:144
+msgid "Extents"
+msgstr "Oddiely"
+
+#: src/InputController.py:145
+msgid "Gigabytes"
+msgstr "Gigabajtov"
+
+#: src/InputController.py:146
+msgid "Megabytes"
+msgstr "Megabajtov"
+
+#: src/InputController.py:147
+msgid "Kilobytes"
+msgstr "Kilobajtov"
+
+#: src/InputController.py:149
+#, python-format
+msgid "The %s should only contain number values"
+msgstr "%s by mal obsahovať iba číselné hodnoty"
+
+#: src/InputController.py:150
+msgid ""
+"The Maximum Physical Volumes field should contain only integer values "
+"between 1 and 256"
+msgstr ""
+"Položka Maximum fyzických zväzkov môže obsahovať iba číslo v rozsahu od 1 po "
+"256"
+
+#: src/InputController.py:151
+msgid ""
+"The Maximum Logical Volumes field should contain only integer values between "
+"1 and 256"
+msgstr ""
+"Položka Maximum logických zväzkov môže obsahovať iba číslo v rozsahu od 1 po "
+"256"
+
+#: src/InputController.py:153
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from Logical Volume "
+"Management?"
+msgstr "Ste si úplne istí, že chcete odstrániť %s zo správy logických zväzkov?"
+
+#: src/InputController.py:155
+#, python-format
+msgid ""
+"The Physical Volume named %s, that you wish to remove, has data from active "
+"Logical Volume(s) mapped to its extents. Because it is the only Physical "
+"Volume in the Volume Group, there is no place to move the data to. "
+"Recommended action is either to add a new Physical Volume before removing "
+"this one, or else remove the Logical Volumes that are associated with this "
+"Physical Volume."
+msgstr ""
+"Fyzický zväzok nazvaný %s, ktorý chcete odstrániť, obsahuje dáta z aktívných "
+"logických zväzkov mapovaných do ich oddielov. Pretože je to jediný fyzický "
+"zväzok v skupine zväzkov, nie je kam premiestniť dáta. Odporúčaný postup je "
+"najskôr pridať nový fyzický zväzok pred odstránením tohoto, alebo "
+"odstránenie logických zväzkov asociovaných s týmto fyzickým zväzkom."
+
+#: src/InputController.py:156
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from the %s Volume Group?"
+msgstr "Ste si úplne istí, že chcete odstrániť %s zo skupiny zväzkov %s?"
+
+#: src/InputController.py:157
+#, python-format
+msgid ""
+"Removing Physical Volume %s from the Volume Group %s will leave the Volume "
+"group empty, and it will be removed as well. Do you wish to proceed?"
+msgstr ""
+"Po odstránení fyzického zväzku %s zo skupiny zväzkov %s bude táto skupina "
+"zväzkov prázdna a bude tiež odstránená. Chcete vykonať odstránenie?"
+
+#: src/InputController.py:158
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space to move the data stored on %s. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+"Skupina zväzkov %s nemá dostatok voľného miesta pre prenesenie dát uložených "
+"na %s. Možným riešením je pridanie ďaľšieho fyzického zväzku do skupiny "
+"zväzkov."
+
+#: src/InputController.py:159
+msgid ""
+"The dm-mirror module is either not loaded in your kernel, or your kernel "
+"does not support the dm-mirror target. If it is supported, try running "
+"\"modprobe dm-mirror\". Otherwise, operations that require moving data on "
+"Physical Extents are unavailable."
+msgstr ""
+"Modul dm-mirror nebol zatiaľ načítaný do jadra, alebo vaše jadro nepodporuje "
+"dm-mirror cieľ. Ak je podporovaný, skúste spustiť \"modprobe dm-mirror\". "
+"Inak operácie vyžadujúce presun dát na fyzických oddieloch budú nedostupné."
+
+#: src/InputController.py:160
+msgid ""
+"The dm-snapshot module is either not loaded in your kernel, or your kernel "
+"does not support the dm-snapshot target. If it is supported, try running "
+"\"modprobe dm-snapshot\". Otherwise, creation of snapshots is unavailable."
+msgstr ""
+"Modul dm-snapshot nebol zatiaľ načítaný do jadra, alebo vaše jadro "
+"nepodporuje dm-snapshot cieľ. Ak je podporovaný, skúste spustiť \"modprobe "
+"dm-snapshot\". Inak bude vytváranie snímkov nedostupné."
+
+#: src/InputController.py:162
+#, python-format
+msgid "Are you quite certain that you wish to remove logical volume %s?"
+msgstr "Ste úplne presvedčení, že chcete odstrániť logický zväzok %s?"
+
+#: src/InputController.py:163
+#, python-format
+msgid ""
+"Logical volume %s contains %s filesystem. All data on it will be lost! Are "
+"you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"Logický zväzok %s obsahuje súborový systém %s. Všetky dáta na ňom budú "
+"stratené! Ste si úplne istí, že chcete odstrániť logický zväzok %s?"
+
+#: src/InputController.py:164
+#, python-format
+msgid ""
+"Logical volume %s contains data from directory %s. All data in it will be "
+"lost! Are you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+"Logický zväzok %s obsahuje dáta z priečinku %s. Všetky dáta v ňom budú "
+"stratené! Ste si istí, že chcete odstrániť logický zväzok %s?"
+
+#: src/InputController.py:309
+#, fuzzy
+msgid ""
+"In order for Volume Group to be safely used in clustered environment, lvm2-"
+"cluster rpm has to be installed, `lvmconf --enable-cluster` has to be "
+"executed and clvmd service has to be running"
+msgstr ""
+"Pre zaistenie bezpečného použitia skupiny zväzkov v klástrovom prostredí, "
+"bol nainštalovaný rpm balík lvm2-cluster a spustená služba clvmd"
+
+#: src/InputController.py:368
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror log of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"Fyzický zväzok %s obsahuje oddiely patriace do záznamu zrkadlenia logického "
+"zväzku %s. Zrkadlené logické zväzky nie sú migrovateľné, takže %s nie je "
+"odstrániteľný."
+
+#: src/InputController.py:371
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror image of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+"Fyzický zväzok %s obsahuje oddiely patriace do obrazu zrkadlenia logického "
+"zväzku %s. Zrkadlené logické zväzky nie sú migrovateľné, takže %s nie je "
+"odstrániteľný."
+
+#: src/InputController.py:374
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, a snapshot of %s. "
+"Snapshots are not yet migratable, so %s is not removable."
+msgstr ""
+"Fyzický zväzok %s obsahuje oddiely patriace %s, snímku %s. Snímky nie sú "
+"migrovateľné, takže %s nie je odstrániteľný."
+
+#: src/InputController.py:379
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshot %"
+"s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"Fyzický zväzok %s obsahuje oddiely patriace %s, zdroj snímku %s. Zdroje "
+"snímkov nie sú migrovateľné, takže %s nie je odstrániteľný."
+
+#: src/InputController.py:381
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshots "
+"%s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+"Fyzický zväzok %s obsahuje oddiely patriace %s, zdroj snímkov %s. Zdroje "
+"snímkov nie sú migrovateľné, takže %s nie je odstrániteľný."
+
+#: src/InputController.py:568
+#, python-format
+msgid ""
+"Logical Volume \"%s\" has snapshots that are not selected for removal. They "
+"must be removed as well."
+msgstr ""
+"Logický zväzok \"%s\" má snímky, ktoré neboli označené pre odstránenie. Tie "
+"musia byť taktiež odstránené."
+
+#: src/InputController.py:583
+#, python-format
+msgid ""
+"\"%s\", an origin of snapshot \"%s\", has been deleted from removal list."
+msgstr "\"%s\", pôvod snímku \"%s\", bol zmazaný zo zoznamu pre odstránenie."
+
+#: src/InputController.py:614
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a mirror. Mirrors are "
+"not migratable, so %s is not removable."
+msgstr ""
+"Fyzický zväzok \"%s\" obsahuje oddiely patriace zrkadlu. Zrkadlá nie sú "
+"migrovateľné, takže %s nie je odstrániteľný."
+
+#: src/InputController.py:617
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a snapshot or a "
+"snapshot's origin. Snapshots are not migratable, so %s is not removable."
+msgstr ""
+"Fyzický zväzok \"%s\" obsahuje oddiely patriace snímku alebo zdroju snímku. "
+"Snímky nie sú migrovateľné, takže %s nie je odstrániteľný."
+
+#: src/InputController.py:682
+msgid "The path you specified does not exist."
+msgstr "Cesta, ktorú ste zadali neexistuje."
+
+#: src/InputController.py:689
+msgid "The path you specified is not a Block Device."
+msgstr "Cesta, ktorú ste zadali nie je blokovým zariadením."
+
+#: src/InputController.py:760
+#, python-format
+msgid "Initialization of %s failed"
+msgstr "Inicializácia %s zlyhala"
+
+#: src/InputController.py:998 src/InputController.py:1001
+msgid "Please select some extents first"
+msgstr "Prosím najskôr zvoľte nejaké oddiely"
+
+#: src/InputController.py:1035
+msgid ""
+"There are not enough free extents to perform the necessary migration. Adding "
+"more physical volumes would solve the problem."
+msgstr ""
+"Nie je dostatok voľných oddielov na vykonanie potrebnej migrácie. Problém "
+"môžete vyriešiť pridaním ďaľších fyzických zväzkov."
+
+#: src/InputController.py:1091
+#, python-format
+msgid ""
+"iSCSI Initiator rpm is not installed. \n"
+"Install %s rpm, and try again."
+msgstr ""
+
+#: src/InputController.py:1208
+msgid "Migrate extents"
+msgstr "Migrovať oddiely"
+
+#: src/InputController.py:1336
+msgid "Options"
+msgstr "Voľby"
+
+#: src/InputController.py:1370
+#, python-format
+msgid "Create A Snapshot of %s"
+msgstr "Vytvoriť snímok z %s"
+
+#: src/InputController.py:1372
+msgid "Create New Logical Volume"
+msgstr "Vytvoriť nový logický zväzok"
+
+#: src/InputController.py:1375
+#, python-format
+msgid "Edit %s, a Snapshot of %s"
+msgstr "Upraviť %s, snímok z %s"
+
+#: src/InputController.py:1378
+msgid "Edit Logical Volume"
+msgstr "Upraviť logický zväzok"
+
+#: src/InputController.py:1531
+msgid "Underlying Logical Volume Management does not support mirroring"
+msgstr "Správa logických zväzkov v zásade nepodporuje zrkadlenie"
+
+#: src/InputController.py:1538
+msgid "Striped Logical Volumes cannot be mirrored."
+msgstr "Stripované logické zväzky nemôžu byť zrkadlené."
+
+#: src/InputController.py:1545
+msgid "Logical Volumes with associated snapshots cannot be mirrored yet."
+msgstr "Logický zväzok s priradenými snímkami nemôže byť zrkadlený."
+
+#. mirror images placement: diff HDs or anywhere
+#. prompt
+#: src/InputController.py:1552
+msgid ""
+"The primary purpose of mirroring is to protect data in the case of hard "
+"drive failure. Do you want to place mirror images onto different hard drives?"
+msgstr ""
+"Hlavnou podstatou zrkadlenia je ochrana dát v prípade poškodenia pevného "
+"disku. Chcete umiestniť obrazy zrkadiel na rôzne pevné disky?"
+
+#: src/InputController.py:1561
+msgid ""
+"Less than 3 hard drives are available with free space. Disabling mirroring."
+msgstr ""
+"K dispozícií sú menej ako 3 pevné disky s voľným miestom. Zrkadlenie "
+"zakázané."
+
+#: src/InputController.py:1566
+msgid ""
+"There must be free space on at least three Physical Volumes to enable "
+"mirroring"
+msgstr ""
+"Pre povolenie zrkadlenia musí byť voľné miesto najmenej na troch fyzických "
+"zväzkoch"
+
+#: src/InputController.py:1574
+msgid ""
+"The size of the Logical Volume has been adjusted to the maximum available "
+"size for mirrors."
+msgstr ""
+"Veľkosť logického zväzku bola upravená na maximálnu možnú veľkosť pre "
+"zrkadlá."
+
+#: src/InputController.py:1579
+#, python-format
+msgid ""
+"There is not enough free space to add mirroring. Reduce size of Logical "
+"Volume to at most %s, or add Physical Volumes."
+msgstr ""
+"Nedostatok voľného miesta na pridanie zrkadlenia. Znížte veľkosť logického "
+"zväzku na najviac %s, alebo pridajte daľší fyzický zväzok."
+
+#: src/InputController.py:1943
+msgid "Names beginning with \"snapshot\" or \"pvmove\" are reserved keywords."
+msgstr ""
+"Názvy začínajúce na \"snapshot\" alebo \"pvmove\" sú rezervovanými slovami."
+
+#: src/InputController.py:1945
+msgid "Names containing \"_mlog\" or \"_mimage\" are reserved keywords."
+msgstr "Názvy obsahujúce \"_mlog\" alebo \"_mimage\" sú rezervovanými slovami."
+
+#: src/InputController.py:1947
+msgid "Names beginning with a \"-\" are invalid"
+msgstr "Názvy začínajúce na \"-\" sú nesprávne"
+
+#: src/InputController.py:1949
+msgid "Name can be neither \".\" nor \"..\""
+msgstr "Názvom nemôže byť \".\" ani \"..\""
+
+#: src/InputController.py:1955
+msgid "Whitespaces are not allowed in Logical Volume names"
+msgstr "V názvoch logických zväzkov nie sú povolené medzery"
+
+#: src/InputController.py:1958
+#, python-format
+msgid "Invalid character \"%s\" in Logical Volume name"
+msgstr "Neplatný znak \"%s\" v názve logického zväzku"
+
+#: src/InputController.py:1978
+msgid "Please specify mount point"
+msgstr "Prosím zadajte bod pripojenia"
+
+#: src/InputController.py:2044
+msgid "Do you want to upgrade ext2 to ext3 preserving data on Logical Volume?"
+msgstr "Chcete aktualizovať ext2 na ext3 so zachovaním dát na logickom zväzku?"
+
+#: src/InputController.py:2078
+msgid ""
+"Changing the filesystem will destroy all data on the Logical Volume! Are you "
+"sure you want to proceed?"
+msgstr ""
+"Zmena súborového systému spôsobí zničenie všetkých dát na logickom zväzku! "
+"Naozaj to chcete urobiť?"
+
+#. migration not performed, continue process with no mirroring
+#: src/InputController.py:2179
+msgid "Mirror not created. Completing remaining tasks."
+msgstr "Zrkadlo nebolo vytvorené. Dokončujem zvyšné úlohy."
+
+#. create mirror
+#: src/InputController.py:2182
+msgid ""
+"Underlaying LVM doesn't support addition of mirrors to existing Logical "
+"Volumes. Completing remaining tasks."
+msgstr ""
+"Použitá SLZ nepodporuje pridávanie zrkadiel do existujúcich logických "
+"zväzkov. Dokončujú sa zvyšné úlohy."
+
+#: src/InputController.py:2231
+msgid "In order to add mirroring, some extents need to be migrated."
+msgstr "Pred pridaním zrkadlenia musia byť niektoré oddiely migrované."
+
+#: src/InputController.py:2231
+msgid "Do you want to migrate specified extents?"
+msgstr "Chcete migrovať zvolené oddiely?"
+
+#: src/CommandHandler.py:55
+msgid "Creating Logical Volume"
+msgstr "Vytváranie logického zväzku"
+
+#: src/CommandHandler.py:74 src/CommandHandler.py:91
+msgid "Resizing Logical Volume"
+msgstr "Zmena veľkosti logického zväzku"
+
+#: src/CommandHandler.py:124
+msgid "Adding Mirror to Logical Volume"
+msgstr "Pridávanie zrkadla do logického zväzku"
+
+#: src/CommandHandler.py:135
+msgid "Removing Mirror from Logical Volume"
+msgstr "Odstraňovanie zrkadla z logického zväzku"
+
+#: src/CommandHandler.py:160
+msgid "Initializing Physical Volume"
+msgstr "Inicializácia fyzického zväzku"
+
+#: src/CommandHandler.py:171
+msgid "Adding Physical Volume to Volume Group"
+msgstr "Pridávanie fyzického zväzku do skupiny zväzkov"
+
+#: src/CommandHandler.py:203
+msgid "Creating Volume Group"
+msgstr "Vytváranie skupiny zväzkov"
+
+#: src/CommandHandler.py:225
+msgid "Removing Volume Group"
+msgstr "Odstraňovanie skupiny zväzkov"
+
+#: src/CommandHandler.py:235
+msgid "Removing Physical Volume"
+msgstr "Odstraňovanie fyzického zväzku"
+
+#: src/CommandHandler.py:248
+msgid "Removing Logical Volume"
+msgstr "Odstraňovanie logického zväzku"
+
+#: src/CommandHandler.py:263
+msgid "Renaming Logical Volume"
+msgstr "Premenovanie logického zväzku"
+
+#: src/CommandHandler.py:285
+msgid "Removing Physical Volume from Volume Group"
+msgstr "Odstraňovanie fyzického zväzku zo skupiny zväzkov"
+
+#: src/CommandHandler.py:320
+msgid "Migrating Extents"
+msgstr "Migrácia oddielov"
+
+#: src/CommandHandler.py:332
+msgid "Completing Extent Migration"
+msgstr "Dokončenie migrácie oddielu"
+
+#: src/CommandHandler.py:383
+msgid "Rereading partition table"
+msgstr "Načítava sa pôvodná tabuľka partícii"
+
+#: src/lvm_model.py:45 src/lvmui_constants.py:83
+msgid "Unused"
+msgstr "Nevyužité"
+
+#: src/lvm_model.py:46
+msgid "Unused Space"
+msgstr "Nevyužité miesto"
+
+#: src/lvm_model.py:48
+msgid "Unmounted"
+msgstr "Nepripojené"
+
+#: src/lvm_model.py:58
+msgid "Volume Group Name:   "
+msgstr "Názov skupiny zväzkov:   "
+
+#: src/lvm_model.py:59
+msgid "System ID:   "
+msgstr "ID systému:   "
+
+#: src/lvm_model.py:60
+msgid "Format:   "
+msgstr "Formát:   "
+
+#: src/lvm_model.py:61 src/lvm_model.py:78 src/lvm_model.py:93
+msgid "Attributes:   "
+msgstr "Atribúty:   "
+
+#: src/lvm_model.py:62
+msgid "Volume Group Size:   "
+msgstr "Veľkosť skupiny zväzkov:   "
+
+#: src/lvm_model.py:63
+msgid "Available Space:   "
+msgstr "Dostupná veľkosť:   "
+
+#: src/lvm_model.py:64
+msgid "Total Number of Extents:   "
+msgstr "Celkový počet oddielov:   "
+
+#: src/lvm_model.py:65
+msgid "Number of Free Extents:   "
+msgstr "Počet voľných oddielov:   "
+
+#: src/lvm_model.py:66
+msgid "Extent Size:   "
+msgstr "Veľkosť oddielu:   "
+
+#: src/lvm_model.py:67
+msgid "Maximum Allowed Physical Volumes:   "
+msgstr "Maximum povolených fyzických zväzkov:   "
+
+#: src/lvm_model.py:68
+msgid "Number of Physical Volumes:   "
+msgstr "Počet fyzických zväzkov:   "
+
+#: src/lvm_model.py:69
+msgid "Maximum Allowed Logical Volumes:   "
+msgstr "Maximum povolených logických zväzkov:   "
+
+#: src/lvm_model.py:70
+msgid "Number of Logical Volumes:   "
+msgstr "Počet logických zväzkov:   "
+
+#: src/lvm_model.py:71
+msgid "VG UUID:   "
+msgstr "UUID SZ:   "
+
+#: src/lvm_model.py:73
+msgid "Logical Volume Name:   "
+msgstr "Názov logického zväzku:   "
+
+#: src/lvm_model.py:74
+msgid "Logical Volume Size:   "
+msgstr "Veľkosť logického zväzku:   "
+
+#: src/lvm_model.py:75
+msgid "Number of Segments:   "
+msgstr "Počet segmentov:   "
+
+#: src/lvm_model.py:76
+msgid "Number of Stripes:   "
+msgstr "Počet stripov:   "
+
+#: src/lvm_model.py:77
+msgid "Stripe Size:   "
+msgstr "Veľkosť stripu:   "
+
+#: src/lvm_model.py:79
+msgid "LV UUID:   "
+msgstr "UUID LZ:   "
+
+#: src/lvm_model.py:81
+msgid "Partition Type:   "
+msgstr "Typ partície:   "
+
+#: src/lvm_model.py:82
+msgid "Size:   "
+msgstr "Veľkosť:   "
+
+#: src/lvm_model.py:83
+msgid "Mount Point:   "
+msgstr "Bod pripojenia:   "
+
+#: src/lvm_model.py:84
+msgid "Mount Point when Rebooted:   "
+msgstr "Bod pripojenia po reštarte:   "
+
+#: src/lvm_model.py:85
+msgid "File System:   "
+msgstr "Súborový systém:   "
+
+#: src/lvm_model.py:87
+msgid "Physical Volume Name:   "
+msgstr "Názov fyzického zväzku:   "
+
+#: src/lvm_model.py:88
+msgid "Physical Volume Size:   "
+msgstr "Veľkosť fyzického zväzku:   "
+
+#: src/lvm_model.py:89
+msgid "Space Used:   "
+msgstr "Použité miesto:   "
+
+#: src/lvm_model.py:90
+msgid "Space Free:   "
+msgstr "Voľné miesto:   "
+
+#: src/lvm_model.py:91
+msgid "Total Physical Extents:   "
+msgstr "Fyzických oddielov celkom:   "
+
+#: src/lvm_model.py:92
+msgid "Allocated Physical Extents:   "
+msgstr "Pridelených fyzických oddielov:   "
+
+#: src/lvm_model.py:94
+msgid "PV UUID:   "
+msgstr "UUID FZ:   "
+
+#: src/lvm_model.py:96
+msgid "Not initializable:"
+msgstr "Neinicializovateľné:"
+
+#: src/lvm_model.py:97
+msgid "Extended partition"
+msgstr "Rozšírená partícia"
+
+#. Translator: the line below refers to a standard linux swap partition.
+#: src/lvm_model.py:99
+msgid "Swap partition currently in use"
+msgstr "Swap partícia je momentálne používaná"
+
+#: src/lvm_model.py:100
+msgid "Foreign boot partition"
+msgstr "Cudzia štartovacia partícia"
+
+#: src/lvm_model.py:101
+msgid "Autopartition failure"
+msgstr "Zlyhanie automatického prerozdelenia"
+
+#: src/lvm_model.py:259
+msgid "Partition manually"
+msgstr "Rozdelenie ručne"
+
+#: src/lvm_model.py:295
+msgid "Multipath device"
+msgstr "Viac-cestné zariadenie"
+
+#: src/lvm_model.py:298
+msgid "Note:"
+msgstr "Poznámka:"
+
+#: src/lvm_model.py:298
+msgid "Initialize manually"
+msgstr "Inicializovať ručne"
+
+#: src/lvm_model.py:741
+msgid "Clustered:   "
+msgstr "Klástrované: "
+
+#: src/lvm_model.py:743 src/lvm_model.py:971
+msgid "True"
+msgstr "Áno"
+
+#: src/lvm_model.py:745
+msgid "False"
+msgstr "Nie"
+
+#: src/lvm_model.py:803
+msgid "Number of mirror images:"
+msgstr "Počet obrazov zrkadiel:"
+
+#: src/lvm_model.py:806
+msgid "Snapshots:"
+msgstr "Snímky:"
+
+#: src/lvm_model.py:812
+msgid "Snapshot origin:"
+msgstr "Pôvod snímku:"
+
+#: src/lvm_model.py:819
+msgid "Snapshot usage:"
+msgstr "Využitie snímku:"
+
+#: src/lvm_model.py:842 src/lvm_model.py:848 src/lvm_model.py:891
+#: src/lvm_model.py:907
+msgid "/   Root Filesystem"
+msgstr "/   Koreňový súborový systém"
+
+#: src/lvm_model.py:910 src/Filesystem.py:137
+msgid "None"
+msgstr "Žiaden"
+
+#: src/lvm_model.py:961
+#, fuzzy
+msgid "SCSI ID:   "
+msgstr "ID systému:   "
+
+#: src/lvm_model.py:965
+msgid "NONE"
+msgstr ""
+
+#: src/lvm_model.py:970
+msgid "iSCSI Device:   "
+msgstr ""
+
+#. INIT_ENTITY=_("Are you certain that you wish to initialize disk entity %s? All data will be lost on this device/partition.")
+#: src/lvmui_constants.py:51
+#, python-format
+msgid ""
+"All data on disk entity %s will be lost! Are you certain that you wish to "
+"initialize it?"
+msgstr ""
+"Všetky dáta na diskovej jednotke %s budú stratené! Ste si istí, že ju chcete "
+"inicializovať?"
+
+#: src/lvmui_constants.py:52
+#, python-format
+msgid ""
+"Disk entity %s contains %s filesystem. All data on it will be lost! Are you "
+"certain that you wish to initialize disk entity %s?"
+msgstr ""
+"Disková jednotka %s obsahuje súborový systém %s. Všetky dáta na nej budú "
+"stratené! Ste si istí, že chcete inicializovať diskovú jednotku %s?"
+
+#: src/lvmui_constants.py:53
+#, python-format
+msgid ""
+"Disk entity %s contains data from directory %s. All data in it will be lost! "
+"Are you certain that you wish to initialize disk entity %s?"
+msgstr ""
+"Disková jednotka %s obsahuje dáta z priečinku %s. Všetky dáta budú stratené! "
+"Ste si istí, že chcete inicializovať diskovú jednotku %s?"
+
+#: src/lvmui_constants.py:54
+#, python-format
+msgid ""
+"Are you certain that you wish to initialize %s of free space on disk %s?"
+msgstr "Ste si istí, že chcete inicializovať %s voľného miesta na disku %s?"
+
+#: src/lvmui_constants.py:55
+#, python-format
+msgid ""
+"You are about to initialize unpartitioned disk %s. It is advisable, although "
+"not required, to create a partition on it. Do you want to create a single "
+"partition encompassing the whole drive?"
+msgstr ""
+"Chystáte sa inicializovať nerozdelený disk %s. Je vhodné, ale nie je to "
+"nutné, aby ste vytvorili na ňom partíciu. Chcete vytvoriť jednu partíciu "
+"obsahujúcu celý disk?"
+
+#: src/lvmui_constants.py:57
+msgid "Reloading LVM. Please wait."
+msgstr "Reštartujem SLZ. Prosím čakajte."
+
+#: src/lvmui_constants.py:59
+#, python-format
+msgid ""
+"Changes will take effect after computer is restarted. If device %s is used, "
+"before restart, data corruption WILL occur. It is advisable to restart your "
+"computer now."
+msgstr ""
+"Zmeny sa prejavia až po reštarte počítača. Ak je pred reštartom zariadenie %"
+"s používané, dôjde k POŠKODENIU dát. Je vhodné teraz reštartovať počítač,"
+
+#: src/lvmui_constants.py:61
+msgid "Mirror Log"
+msgstr "Záznam zrkadla"
+
+#: src/lvmui_constants.py:63
+msgid "Unable to process request"
+msgstr "Nepodarilo sa spracovať požiadavku"
+
+#: src/lvmui_constants.py:65
+#, python-format
+msgid "%s command failed. Command attempted: \"%s\" - System Error Message: %s"
+msgstr ""
+"Príkaz %s zlyhal. Spúčťaný príkaz: \"%s\" - Systémová chybová správa: %s"
+
+#: src/lvmui_constants.py:84
+msgid "Free"
+msgstr "Voľné"
+
+#: src/lvmui_constants.py:85
+msgid "Free space"
+msgstr "Voľné miesto"
+
+#: src/lvmui_constants.py:87
+msgid "Unpartitioned space"
+msgstr "Nepridelené miesto"
+
+#: src/lvmui_constants.py:88
+#, python-format
+msgid "Unpartitioned space on %s"
+msgstr "Nepridelené miesto na %s"
+
+#: src/lvmui_constants.py:90
+msgid "GB"
+msgstr "GB"
+
+#: src/lvmui_constants.py:91
+msgid "MB"
+msgstr "MB"
+
+#: src/lvmui_constants.py:92
+msgid "KB"
+msgstr "KB"
+
+#: src/lvmui_constants.py:93
+msgid "Bytes"
+msgstr "Bajtov"
+
+#. File System Types
+#: src/lvmui_constants.py:97
+msgid "No Filesystem"
+msgstr "Bez súborového systému"
+
+#: src/lvmui_constants.py:98
+msgid "Ext2"
+msgstr "Ext2"
+
+#: src/lvmui_constants.py:99
+msgid "Ext3"
+msgstr "Ext3"
+
+#: src/lvmui_constants.py:100
+msgid "JFS"
+msgstr "JFS"
+
+#: src/lvmui_constants.py:101
+msgid "MSDOS"
+msgstr "MSDOS"
+
+#: src/lvmui_constants.py:102
+msgid "Reiserfs"
+msgstr "Reiserfs"
+
+#: src/lvmui_constants.py:103
+msgid "VFAT"
+msgstr "VFAT"
+
+#: src/lvmui_constants.py:104
+msgid "XFS"
+msgstr "XFS"
+
+#: src/lvmui_constants.py:105
+msgid "Cramfs"
+msgstr "Cramfs"
+
+#: src/Properties_Renderer.py:42
+msgid "Properties for"
+msgstr "Vlastnosti pre"
+
+#: src/Properties_Renderer.py:43 src/renderer.py:37
+msgid "Physical Volume"
+msgstr "Fyzický zväzok"
+
+#. UNALLOCATED_MESSAGE=_("This Volume has not been allocated \n to a Volume Group yet.")
+#: src/Properties_Renderer.py:44 src/renderer.py:36
+msgid "Logical Volume"
+msgstr "Logický zväzok"
+
+#: src/Properties_Renderer.py:45
+msgid "Unallocated Volume"
+msgstr "Nepridelený zväzok"
+
+#: src/Properties_Renderer.py:46 src/renderer.py:43
+msgid "Disk Entity"
+msgstr "Disková jednotka"
+
+#: src/Properties_Renderer.py:47 src/Properties_Renderer.py:48
+#: src/Properties_Renderer.py:49 src/renderer.py:38
+msgid "Volume Group"
+msgstr "Skupina zväzkov"
+
+#. UNINITIALIZED_MESSAGE=_("This extent has not yet been \n initialized for use with LVM.")
+#: src/renderer.py:33
+msgid "No Volume Selected"
+msgstr "Nebol zvolený zväzok"
+
+#: src/renderer.py:34
+msgid "Multiple selection"
+msgstr "Viacnásobný výber"
+
+#: src/renderer.py:39 src/Volume_Tab_View.py:48
+msgid "Logical View"
+msgstr "Logické zobrazenie"
+
+#: src/renderer.py:40 src/Volume_Tab_View.py:47
+msgid "Physical View"
+msgstr "Fyzické zobrazenie"
+
+#: src/renderer.py:41
+msgid "Unallocated"
+msgstr "Nepridelené"
+
+#: src/renderer.py:42
+msgid "Uninitialized"
+msgstr "Neinicializované"
+
+#: src/renderer.py:195
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a mirror log of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"Oddiely, ktoré sa pokúšate vybrať, patria do záznamu zrkadla logického "
+"zväzku %s. Zrkadlené logické zväzky nie sú migrovateľné, takže tieto oddiely "
+"nemožno vybrať."
+
+#: src/renderer.py:197
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to mirror image of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+"Oddiely, ktoré sa pokúšate vybrať, patria do obrazu zrkadla logického zväzku "
+"%s. Zrkadlené logické zväzky nie sú migrovateľné, takže tieto oddiely "
+"nemožno vybrať."
+
+#: src/renderer.py:199
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to %s, a snapshot of %"
+"s. Snapshots are not yet migratable, so the extents are not selectable."
+msgstr ""
+"Oddiely, ktoré sa pokúšate vybrať, patria do %s, snímku %s. Snímky nie sú "
+"migrovateľné, takže tieto oddiely nemožno vybrať."
+
+#: src/renderer.py:201
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a snapshot origin %"
+"s. Snapshot origins are not yet migratable, so the extents are not "
+"selectable."
+msgstr ""
+"Oddiely, ktoré sa pokúšate vybrať, patria do zdroja snímku %s. Zdroje "
+"snímkov nie sú migrovateľné, takže tieto oddiely nemožno vybrať."
+
+#: src/renderer.py:388
+#, python-format
+msgid "Snapshot of %s"
+msgstr "Snímok z %s"
+
+#: src/renderer.py:490
+msgid "Origin"
+msgstr "Pôvod"
+
+#: src/renderer.py:496
+msgid "Snapshot"
+msgstr "Snímok"
+
+#: src/renderer.py:540
+msgid "extent view"
+msgstr "pohľad oddielov"
+
+#: src/Volume_Tab_View.py:44
+msgid "Volume Groups"
+msgstr "Skupiny zväzkov"
+
+#: src/Volume_Tab_View.py:45
+msgid "Unallocated Volumes"
+msgstr "Nepridelené zväzky"
+
+#: src/Volume_Tab_View.py:46
+msgid "Uninitialized Entities"
+msgstr "Neinicializované jednotky"
+
+#: src/Volume_Tab_View.py:233
+msgid "Clustered VG"
+msgstr "Klástrovaná SZ"
+
+#: src/Volume_Tab_View.py:619
+#, python-format
+msgid "%s mirror synchronisation"
+msgstr "synchronizácia zrkadiel %s"
+
+#. no existing partitions, write
+#: src/fdisk_wrapper.py:192
+msgid "Please wait while partition is being created"
+msgstr "Prosím počkajte pokiaľ bude vytvorená partícia"
+
+#: src/Filesystem.py:20
+#, python-format
+msgid "Creating %s filesystem"
+msgstr "Vytváranie súborového systému %s"
+
+#: src/Filesystem.py:21
+#, python-format
+msgid "Resizing %s filesystem"
+msgstr "Zmena veľkosti súborového systému %s"
+
+#: src/Filesystem.py:22
+#, python-format
+msgid "Checking %s filesystem"
+msgstr "Kontrola súborového systému %s"
+
+#: src/Filesystem.py:23
+#, python-format
+msgid "Upgrading %s filesystem to %s"
+msgstr "Aktualizácia súborového systému %s na %s"
+
+#: src/Filesystem.py:24
+#, python-format
+msgid ""
+"Creation of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"Vytváranie súborového systému zlyhalo. Spustený príkaz: \"%s\" - Systémová "
+"chybová správa: %s"
+
+#: src/Filesystem.py:25
+#, python-format
+msgid ""
+"Resize of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"Zmena veľkosti súborového systému neuspešná. Spustený príkaz: \"%s\" - "
+"Systémová chybová správa: %s"
+
+#: src/Filesystem.py:26
+#, python-format
+msgid ""
+"Check of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"Kontrola súborového systému zlyhala. Spustený príkaz: \"%s\" - Systémová "
+"chybová správa: %s"
+
+#: src/Filesystem.py:27
+#, python-format
+msgid ""
+"Upgrade of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"Aktualizácia súborového systému zlyhala. Spustený príkaz: \"%s\" - Systémová "
+"chybová správa: %s"
+
+#: src/Filesystem.py:143
+msgid "Unknown filesystem"
+msgstr "Neznámy súborový systém"
+
+#: src/Filesystem.py:387
+msgid "GFS (local)"
+msgstr "GFS (lokálny)"
+
+#: src/Filesystem.py:485
+msgid "GFS (clustered)"
+msgstr "GFS (klástrovaný)"
+
+#: src/Filesystem.py:517 src/Filesystem.py:761
+msgid "Cluster name contains illegal character "
+msgstr "Názov klástra obsahuje nepovolené znaky "
+
+#: src/Filesystem.py:520 src/Filesystem.py:764
+msgid "GFS name contains illegal character "
+msgstr "Názov GFS obsahuje nepovolené znaky "
+
+#: src/Filesystem.py:523 src/Filesystem.py:767
+msgid "Missing Cluster Name"
+msgstr "Chýba názov klástra"
+
+#: src/Filesystem.py:526 src/Filesystem.py:770
+msgid "Missing GFS Name"
+msgstr "Chýba názov GFS"
+
+#: src/Filesystem.py:631
+msgid "GFS2 (local)"
+msgstr "GFS2 (lokálny)"
+
+#: src/Filesystem.py:729
+msgid "GFS2 (clustered)"
+msgstr "GFS2 (klástrovaný)"
+
+#: src/Segment.py:44
+msgid "Stripe"
+msgstr "Strip"
+
+#: src/Segment.py:68
+msgid "Linear Mapping"
+msgstr "Lineárne mapovanie"
+
+#: src/Segment.py:109
+msgid "Mirror"
+msgstr "Zrkadlo"
+
+#: src/PhysicalVolume.py:142
+#, python-format
+msgid "Partition %s"
+msgstr "Partícia %s"
+
+#: src/lvui.glade.h:1 src/lv_edit_props.glade.h:1 src/iscsi.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: src/lvui.glade.h:2
+msgid "1024"
+msgstr "1024"
+
+#: src/lvui.glade.h:3
+msgid "128"
+msgstr "128"
+
+#: src/lvui.glade.h:4
+msgid "16"
+msgstr "16"
+
+#: src/lvui.glade.h:5
+msgid "2"
+msgstr "2"
+
+#: src/lvui.glade.h:6
+msgid "256"
+msgstr "256"
+
+#: src/lvui.glade.h:7
+msgid "32"
+msgstr "32"
+
+#: src/lvui.glade.h:8
+msgid "4"
+msgstr "4"
+
+#: src/lvui.glade.h:9
+msgid "512"
+msgstr "512"
+
+#: src/lvui.glade.h:10
+msgid "64"
+msgstr "64"
+
+#: src/lvui.glade.h:11
+msgid "8"
+msgstr "8"
+
+#: src/lvui.glade.h:12
+msgid "Add Physical Volume to VG"
+msgstr "Pridať fyzický zväzok do SZ"
+
+#: src/lvui.glade.h:13
+msgid ""
+"Add to existing \n"
+"Volume Group"
+msgstr ""
+"Pridať do existujúcej \n"
+"skupiny zväzkov"
+
+#: src/lvui.glade.h:15
+msgid "Clustered"
+msgstr "Klástrovaný"
+
+#: src/lvui.glade.h:16
+msgid ""
+"Create New\n"
+"Logical Volume"
+msgstr ""
+"Vytvoriť nový\n"
+"logický zväzok"
+
+#: src/lvui.glade.h:18
+msgid "Create Snapshot"
+msgstr "Vytvoriť snímok"
+
+#: src/lvui.glade.h:19
+msgid ""
+"Create new \n"
+"Volume Group"
+msgstr ""
+"Vytvoriť novú \n"
+"skupinu zväzkov"
+
+#: src/lvui.glade.h:21
+msgid "Edit Properties"
+msgstr "Upraviť vlastnosti"
+
+#: src/lvui.glade.h:22
+msgid "Enter path of Block Device to initialize"
+msgstr "Zadajte cestu k blokovému zariadeniu pre inicializáciu"
+
+#: src/lvui.glade.h:23
+msgid ""
+"Extend\n"
+"Volume Group"
+msgstr ""
+"Rozšíriť\n"
+"skupinu zväzkov"
+
+#: src/lvui.glade.h:25
+msgid "Extend Volume Group"
+msgstr "Rozšíriť skupinu zväzkov"
+
+#: src/lvui.glade.h:26
+msgid "Format"
+msgstr "Formátovať"
+
+#: src/lvui.glade.h:27
+msgid "Initialize"
+msgstr "Inicializovať"
+
+#: src/lvui.glade.h:28
+msgid "Initialize Block Device"
+msgstr "Inicializovať blokové zariadenie"
+
+#: src/lvui.glade.h:29
+msgid "Initialize Entity"
+msgstr "Inicializovať jednotku"
+
+#: src/lvui.glade.h:30
+msgid "Initialize _Block Device"
+msgstr "Inicializovať _blokové zariadenie"
+
+#: src/lvui.glade.h:31
+msgid "Kilo"
+msgstr "Kilo"
+
+#: src/lvui.glade.h:32
+msgid "Logical Volume Management"
+msgstr "Správa logických zväzkov"
+
+#: src/lvui.glade.h:33
+msgid "Manage Volumes"
+msgstr "Spravovať zväzky"
+
+#: src/lvui.glade.h:34
+msgid "Mark Volume Group as 'clustered'"
+msgstr "Označiť skupinu zväzkov ako 'klástrovanú'"
+
+#: src/lvui.glade.h:35
+msgid "Maximum Logical Volumes"
+msgstr "Maximum logických zväzkov"
+
+#: src/lvui.glade.h:36
+msgid "Maximum Physical Volumes"
+msgstr "Maximum fyzických zväzkov"
+
+#: src/lvui.glade.h:37
+msgid "Meg"
+msgstr "Meg"
+
+#: src/lvui.glade.h:38
+msgid ""
+"Migrate Selected\n"
+"Extent(s) From Volume"
+msgstr ""
+"Migrovať zvolené\n"
+"oddiely zo zväzku"
+
+#: src/lvui.glade.h:40
+msgid "New Volume Group"
+msgstr "Nová skupina zväzkov"
+
+#: src/lvui.glade.h:41
+msgid "Physical Extent Size"
+msgstr "Veľkosť fyzického oddielu"
+
+#: src/lvui.glade.h:42
+msgid ""
+"Remove \n"
+"Logical Volume"
+msgstr ""
+"Odstrániť \n"
+"logický zväzok"
+
+#: src/lvui.glade.h:44
+msgid ""
+"Remove Selected\n"
+"Logical Volume(s)"
+msgstr ""
+"Odstrániť zvolené\n"
+"logické zväzky"
+
+#: src/lvui.glade.h:46
+msgid ""
+"Remove Selected\n"
+"Physical Volume(s)"
+msgstr ""
+"Odstrániť zvolené\n"
+"fyzické zväzky"
+
+#: src/lvui.glade.h:48
+msgid ""
+"Remove Volume from\n"
+"Volume Group"
+msgstr ""
+"Odstrániť zväzok\n"
+"zo skupiny zväzkov"
+
+#: src/lvui.glade.h:50
+msgid ""
+"Remove volume \n"
+"from LVM"
+msgstr ""
+"Odstrániť zväzok \n"
+"zo SLZ"
+
+#: src/lvui.glade.h:52
+msgid "Select a Volume Group to add this PV to:"
+msgstr "Zvoľte skupinu zväzkov, do ktorej pridať tento FZ:"
+
+#: src/lvui.glade.h:53
+msgid "Some text"
+msgstr "Nejaký text"
+
+#: src/lvui.glade.h:54
+msgid "Volume Group Name"
+msgstr "Názov skupiny zväzkov"
+
+#: src/lvui.glade.h:55
+msgid "_Reload"
+msgstr "_Reštartovať"
+
+#: src/lvui.glade.h:56
+msgid "_Tools"
+msgstr "Nás_troje"
+
+#: src/lvui.glade.h:57
+msgid "_iSCSI Configuration"
+msgstr ""
+
+#: src/lvui.glade.h:58
+msgid "extend vg message:"
+msgstr "správa rozšírenej sz:"
+
+#: src/lv_edit_props.glade.h:2
+msgid ""
+"4\n"
+"8\n"
+"16\n"
+"32\n"
+"64\n"
+"128\n"
+"256\n"
+"512"
+msgstr ""
+"4\n"
+"8\n"
+"16\n"
+"32\n"
+"64\n"
+"128\n"
+"256\n"
+"512"
+
+#: src/lv_edit_props.glade.h:10
+msgid "<b>Filesystem</b>"
+msgstr "<b>Súborový systém</b>"
+
+#: src/lv_edit_props.glade.h:11
+msgid "<b>LV Properties</b>"
+msgstr "<b>Vlastnosti LZ</b>"
+
+#: src/lv_edit_props.glade.h:12
+msgid "<b>Size</b>"
+msgstr "<b>Veľkosť</b>"
+
+#: src/lv_edit_props.glade.h:13
+msgid "Add entry to /etc/fstab"
+msgstr "Pridať položku do /etc/fstab"
+
+#: src/lv_edit_props.glade.h:14
+msgid "Create New Logical Volume (LV)"
+msgstr "Vytvoriť nový logický zväzok (LZ)"
+
+#: src/lv_edit_props.glade.h:15
+msgid "Filesystem is not resizable"
+msgstr "Súborový systém neumožňuje zmenu veľkosti"
+
+#: src/lv_edit_props.glade.h:16
+msgid "Free space in Volume Group label"
+msgstr "menovka Voľné miesto v skupine zväzkov"
+
+#: src/lv_edit_props.glade.h:17
+msgid "Free space remaining label"
+msgstr "menovka Zostávajúce voľné miesto"
+
+#: src/lv_edit_props.glade.h:18
+msgid "Kilobytes granularity"
+msgstr "Nespojitosť kilobajtov"
+
+#: src/lv_edit_props.glade.h:19
+msgid "LV name:"
+msgstr "Názov LZ:"
+
+#: src/lv_edit_props.glade.h:20
+msgid "LV size"
+msgstr "Veľkosť LZ"
+
+#: src/lv_edit_props.glade.h:21
+msgid "LVs under snapshots are not resizable"
+msgstr "LZy so snímkami nemôžu meniť veľkosť"
+
+#: src/lv_edit_props.glade.h:22
+msgid "Linear"
+msgstr "Lineárne"
+
+#: src/lv_edit_props.glade.h:23
+msgid "Mirrored"
+msgstr "Zrkadlené"
+
+#: src/lv_edit_props.glade.h:24
+msgid "Mirrored LVs are not resizable"
+msgstr "Zrkadlené LZy nemôžu meniť svoju veľkosť"
+
+#: src/lv_edit_props.glade.h:25
+msgid "Mount"
+msgstr "Pripojenie"
+
+#: src/lv_edit_props.glade.h:26
+msgid "Mount point:"
+msgstr "Bod pripojenia:"
+
+#: src/lv_edit_props.glade.h:27
+msgid "Mount when rebooted"
+msgstr "Pripojiť po reštarte"
+
+#: src/lv_edit_props.glade.h:28
+msgid "Size beg"
+msgstr "Veľkosť začiatok"
+
+#: src/lv_edit_props.glade.h:29
+msgid "Size end"
+msgstr "Veľkosť koniec"
+
+#: src/lv_edit_props.glade.h:30
+msgid "Striped"
+msgstr "Stripovaný"
+
+#: src/lv_edit_props.glade.h:31
+msgid "Use remaining"
+msgstr "Použiť zostávajúce"
+
+#: src/lv_edit_props.glade.h:32
+msgid "stripes"
+msgstr "stripy"
+
+#: src/migrate_extents.glade.h:1
+msgid "<b>Destination</b>"
+msgstr "<b>Cieľ</b>"
+
+#: src/migrate_extents.glade.h:2
+msgid "<b>Migration Policy</b>"
+msgstr "<b>Politika migrácie</b>"
+
+#: src/migrate_extents.glade.h:3
+msgid "Anywhere - not implemented"
+msgstr "Kdekoľvek - nie je implementované"
+
+#: src/migrate_extents.glade.h:4
+msgid "Automatically choose PVs to migrate to"
+msgstr "Automatický zvoliť FZy na migráciu"
+
+#: src/migrate_extents.glade.h:5
+msgid "Contiguous"
+msgstr "Priliehajúce"
+
+#: src/migrate_extents.glade.h:6
+msgid "Destination:"
+msgstr "Cieľ:"
+
+#: src/migrate_extents.glade.h:7
+msgid ""
+"In order to remove PV, extents in use have to be migrated.\n"
+"Select extents' destination and migration policy."
+msgstr ""
+"Pred odstránením FZ budú použité oddiely migrované.\n"
+"Zvoľte cieľ oddielov a politiku migrácie."
+
+#: src/migrate_extents.glade.h:9
+msgid "Inherit"
+msgstr "Prebrať"
+
+#: src/migrate_extents.glade.h:10
+msgid "Inherit policy from Volume Group"
+msgstr "Prebrať politiku zo skupiny zväzkov"
+
+#: src/migrate_extents.glade.h:11
+msgid "Migrate Extents"
+msgstr "Migrovať oddiely"
+
+#: src/migrate_extents.glade.h:12
+msgid "Migrate anywhere even if that reduces performance"
+msgstr "Migrovať kdekoľvek, aj keď to zníži výkonnosť"
+
+#: src/migrate_extents.glade.h:13
+msgid "New extents are adjacent to existing ones"
+msgstr "Nové oddiely boli priložené k už existujúcim"
+
+#: src/migrate_extents.glade.h:14
+msgid "Normal"
+msgstr "Normálne"
+
+#: src/migrate_extents.glade.h:15
+msgid "Only migrate extents belonging to LV"
+msgstr "Migrovať iba oddiely patriace do LZ"
+
+#: src/migrate_extents.glade.h:16
+msgid "Use common sense"
+msgstr "Použiť bežný postup"
+
+#: src/iscsi.glade.h:2
+#, fuzzy
+msgid "3260"
+msgstr "32"
+
+#: src/iscsi.glade.h:3
+msgid "Active iSCSI targets are selected "
+msgstr ""
+
+#: src/iscsi.glade.h:4
+msgid "Add New Target"
+msgstr ""
+
+#: src/iscsi.glade.h:5
+msgid "Default port is 3260"
+msgstr ""
+
+#: src/iscsi.glade.h:6
+msgid "Enter a hostname (or an IP address) of new target to add"
+msgstr ""
+
+#: src/iscsi.glade.h:7
+msgid "Hostname"
+msgstr ""
+
+#: src/iscsi.glade.h:8
+msgid "New iSCSI Target"
+msgstr ""
+
+#: src/iscsi.glade.h:9
+#, fuzzy
+msgid "Port"
+msgstr "Formátovať"
+
+#: src/iscsi.glade.h:10
+msgid ""
+"Specify a hostname of new target \n"
+"to add, and click \"OK\". "
+msgstr ""
+
+#: src/iscsi.glade.h:12
+msgid "iSCSI Initiator"
+msgstr ""
+
+#~ msgid ""
+#~ "LVM locks are disabled!!! \n"
+#~ "Massive data corruption may occur.\n"
+#~ "Enable locking (locking_type=1 or 2 in /etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "Zámky SLZ sú zakázané!!! \n"
+#~ "Môže nastať masívne poškodenie dát.\n"
+#~ "Povoľte zámky (locking_type=1 alebo 2 v /etc/lvm/lvm.conf)."
+
+#~ msgid ""
+#~ "LVM is configured to use Cluster Locking mechanism, but clvmd daemon is "
+#~ "not running. Start daemon with command:\n"
+#~ "service clvmd start \n"
+#~ "or, turn off cluster locking (locking_type=1 in /etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "SLZ je nastavená na použitie mechanizmu klástrových zámkov, ale démon "
+#~ "clvmd nie je spustený. Spustite démona príkazom:\n"
+#~ "service clvmd start \n"
+#~ "alebo, vypnite klástrové zámky (locking_type=1 v /etc/lvm/lvm.conf)."
+
+#~ msgid ""
+#~ "LVM is configured to use Cluster Locking mechanism, but cluster is not "
+#~ "quorate.\n"
+#~ "Either wait until cluster is quorate or turn off cluster locking "
+#~ "(locking_type=1 in /etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "SLZ je nastavená pre použitie mechanizmu klástrových zámkov, ale kláster  "
+#~ "nie je na to pripravený.\n"
+#~ "Počkajte pokiaľ kláster bude pripravený alebo vypnite klástrové zámky "
+#~ "(locking_type=1 v /etc/lvm/lvm.conf)."
+
+#~ msgid ""
+#~ "%s only supports file and cluster based locking (locking_type=1 or 2 in /"
+#~ "etc/lvm/lvm.conf)."
+#~ msgstr ""
+#~ "%s podporuje iba súborové a klástrové zámky (locking_type=1 alebo 2 v /"
+#~ "etc/lvm/lvm.conf)."

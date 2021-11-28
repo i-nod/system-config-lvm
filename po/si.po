@@ -1,0 +1,1695 @@
+# translation of si.po to Sinhala
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Danishka Navin <snavin@redhat.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: si\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-12 14:01+0200\n"
+"PO-Revision-Date: 2007-09-24 17:54+0530\n"
+"Last-Translator: Danishka Navin <snavin@redhat.com>\n"
+"Language-Team: Sinhala <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/InputController.py:36 ../src/Properties_Renderer.py:24
+#: ../src/Volume_Tab_View.py:30 ../src/system-config-lvm.py:40
+#, python-format
+msgid ""
+"\n"
+"  Unable to initialize graphical environment. Most likely cause of failure\n"
+"  is that the tool was not run using a graphical environment. Please either\n"
+"  start your graphical user interface or set your DISPLAY variable.\n"
+"                                                                                \n"
+"  Caught exception: %s\n"
+msgstr ""
+
+#. ##TRANSLATOR: The string below is seen when adding a new Physical
+#. ##Volume to an existing Volume Group.
+#: ../src/InputController.py:56
+#, python-format
+msgid "Select a Volume Group to add %s to:"
+msgstr ""
+
+#. ##TRANSLATOR: The two strings below refer to the name and type of
+#. ##available disk entities on the system. There are two types --
+#. ##The first is an 'unallocated physical volume' which is a disk or
+#. ##partition that has been initialized for use with LVM, by writing
+#. ##a special label onto the first block of the partition. The other type
+#. ##is an 'uninitialized entity', which is an available disk or partition
+#. ##that is NOT yet initialized to be used with LVM. Hope this helps give
+#. ##some context.
+#: ../src/InputController.py:84
+msgid "Name"
+msgstr "නම"
+
+#: ../src/InputController.py:85
+msgid "Size"
+msgstr "ප්‍රමාණය"
+
+#: ../src/InputController.py:86
+msgid "Entity Type"
+msgstr "වස්තු වර්‍ගය"
+
+#: ../src/InputController.py:88
+msgid "Unallocated Physical Volume"
+msgstr "නොයෙදවු භෞතික පරිමාව"
+
+#: ../src/InputController.py:89
+msgid "Uninitialized Disk Entity"
+msgstr "මුල නොපිරු තැටි වස්තු"
+
+#: ../src/InputController.py:90
+#, python-format
+msgid "Select disk entities to add to the %s Volume Group:"
+msgstr ""
+
+#: ../src/InputController.py:92
+msgid ""
+"A Volume Group must be made up of two or more Physical Volumes to support "
+"striping. This Volume Group does not meet that requirement."
+msgstr ""
+
+#: ../src/InputController.py:94
+#, python-format
+msgid ""
+"A Logical Volume with the name %s already exists in this Volume Group. "
+"Please choose a unique name."
+msgstr ""
+
+#: ../src/InputController.py:96
+#, python-format
+msgid ""
+"A Volume Group with the name %s already exists. Please choose a unique name."
+msgstr ""
+
+#: ../src/InputController.py:98
+msgid "A Name must be provided for the new Logical Volume"
+msgstr ""
+
+#: ../src/InputController.py:100
+msgid "A Name must be provided for the new Volume Group"
+msgstr ""
+
+#: ../src/InputController.py:102
+#, python-format
+msgid ""
+"The specified mount point, %s, does not exist. Do you wish to create it?"
+msgstr ""
+
+#: ../src/InputController.py:104
+#, python-format
+msgid "The creation of mount point %s unexpectedly failed."
+msgstr ""
+
+#: ../src/InputController.py:106
+msgid "This capability is not yet implemented in this version"
+msgstr ""
+
+#: ../src/InputController.py:108
+msgid ""
+"The number of Logical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr ""
+
+#: ../src/InputController.py:110
+msgid ""
+"The number of Physical Volumes in this Volume Group has reached its maximum "
+"limit."
+msgstr ""
+
+#: ../src/InputController.py:112
+#, python-format
+msgid ""
+"At most %s Physical Volumes can be added to this Volume Group before the "
+"limit is reached."
+msgstr ""
+
+#: ../src/InputController.py:114
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space for new Logical Volumes. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+
+#: ../src/InputController.py:116
+msgid "A snapshot of a snapshot is not supported."
+msgstr ""
+
+#: ../src/InputController.py:117
+msgid "A snapshot of a mirrored Logical Volume is not supported."
+msgstr ""
+
+#: ../src/InputController.py:119
+#, python-format
+msgid ""
+"Logical volume %s has snapshot %s currently associated with it. Please "
+"remove the snapshot first."
+msgstr ""
+
+#: ../src/InputController.py:120
+#, python-format
+msgid ""
+"Logical volume %s has snapshots: %s currently associated with it. Please "
+"remove snapshots first."
+msgstr ""
+
+#: ../src/InputController.py:122
+msgid ""
+"Undefined type conversion error in model factory. Unable to complete task."
+msgstr ""
+
+#: ../src/InputController.py:124
+#, python-format
+msgid ""
+"BIG WARNING: Logical Volume %s has an %s file system on it and is currently "
+"mounted on %s. Are you absolutely certain that you wish to discard the data "
+"on this mounted filesystem?"
+msgstr ""
+
+#: ../src/InputController.py:126
+#, python-format
+msgid ""
+"Logical Volume %s is currently mounted on %s. In order to complete request, "
+"it has to be unmounted. Are you sure you want it unmounted?"
+msgstr ""
+
+#. ##TRANSLATOR: An extent below is an abstract unit of storage. The size
+#. ##of an extent is user-definable.
+#: ../src/InputController.py:132
+#, python-format
+msgid "Unused space on %s"
+msgstr "%s මත භාවිත නොවු ඉඩ"
+
+#: ../src/InputController.py:133
+#, python-format
+msgid "%s megabytes"
+msgstr "මෙගා බයිට් %s ක්"
+
+#: ../src/InputController.py:134
+#, python-format
+msgid "%s kilobytes"
+msgstr "කිලෝ බයිට් %s ක්"
+
+#: ../src/InputController.py:135
+#, python-format
+msgid "%s gigabytes"
+msgstr "ගිගා බයිට් %s ක්"
+
+#: ../src/InputController.py:136
+#, python-format
+msgid "%s extents"
+msgstr "වපරිස %s ක්"
+
+#: ../src/InputController.py:138
+msgid "Remaining free space in Volume Group:\n"
+msgstr "පරිමා සමූහ තුළ ඉතිරිව ඇත නිදහස් ඉඩ:\n"
+
+#: ../src/InputController.py:139
+msgid "Remaining space for this Volume:\n"
+msgstr "මෙම පරිමා සමූහය තුළ ඉතිරිව ඇත නිදහස් ඉඩ:\n"
+
+#: ../src/InputController.py:141
+msgid "Extents"
+msgstr "එක්ස් ටෙන්ට්"
+
+#: ../src/InputController.py:142
+msgid "Gigabytes"
+msgstr "ගිගා බයිට්"
+
+#: ../src/InputController.py:143
+msgid "Megabytes"
+msgstr "මෙගා බයිට්"
+
+#: ../src/InputController.py:144
+msgid "Kilobytes"
+msgstr "කිලෝ බයිට්"
+
+#: ../src/InputController.py:146
+#, python-format
+msgid "The %s should only contain number values"
+msgstr ""
+
+#: ../src/InputController.py:147
+msgid ""
+"The Maximum Physical Volumes field should contain only integer values "
+"between 1 and 256"
+msgstr ""
+
+#: ../src/InputController.py:148
+msgid ""
+"The Maximum Logical Volumes field should contain only integer values between "
+"1 and 256"
+msgstr ""
+
+#: ../src/InputController.py:150
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from Logical Volume "
+"Management?"
+msgstr ""
+
+#: ../src/InputController.py:152
+#, python-format
+msgid ""
+"The Physical Volume named %s, that you wish to remove, has data from active "
+"Logical Volume(s) mapped to its extents. Because it is the only Physical "
+"Volume in the Volume Group, there is no place to move the data to. "
+"Recommended action is either to add a new Physical Volume before removing "
+"this one, or else remove the Logical Volumes that are associated with this "
+"Physical Volume."
+msgstr ""
+
+#: ../src/InputController.py:153
+#, python-format
+msgid ""
+"Are you quite certain that you wish to remove %s from the %s Volume Group?"
+msgstr ""
+
+#: ../src/InputController.py:154
+#, python-format
+msgid ""
+"Removing Physical Volume %s from the Volume Group %s will leave the Volume "
+"group empty, and it will be removed as well. Do you wish to proceed?"
+msgstr ""
+
+#: ../src/InputController.py:155
+#, python-format
+msgid ""
+"Volume Group %s does not have enough space to move the data stored on %s. A "
+"possible solution would be to add an additional Physical Volume to the "
+"Volume Group."
+msgstr ""
+
+#: ../src/InputController.py:156
+msgid ""
+"The dm-mirror module is either not loaded in your kernel, or your kernel "
+"does not support the dm-mirror target. If it is supported, try running "
+"\"modprobe dm-mirror\". Otherwise, operations that require moving data on "
+"Physical Extents are unavailable."
+msgstr ""
+
+#: ../src/InputController.py:157
+msgid ""
+"The dm-snapshot module is either not loaded in your kernel, or your kernel "
+"does not support the dm-snapshot target. If it is supported, try running "
+"\"modprobe dm-snapshot\". Otherwise, creation of snapshots is unavailable."
+msgstr ""
+
+#: ../src/InputController.py:159
+#, python-format
+msgid "Are you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+
+#: ../src/InputController.py:160
+#, python-format
+msgid ""
+"Logical volume %s contains %s filesystem. All data on it will be lost! Are "
+"you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+
+#: ../src/InputController.py:161
+#, python-format
+msgid ""
+"Logical volume %s contains data from directory %s. All data in it will be "
+"lost! Are you quite certain that you wish to remove logical volume %s?"
+msgstr ""
+
+#: ../src/InputController.py:306
+msgid ""
+"In order for Volume Group to be safely used in clustered environment, lvm2-"
+"cluster rpm has to be installed, `lvmconf --enable-cluster` has to be "
+"executed and clvmd service has to be running"
+msgstr ""
+
+#: ../src/InputController.py:365
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror log of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+
+#: ../src/InputController.py:368
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to a mirror image of Logical "
+"Volume %s. Mirrored Logical Volumes are not yet migratable, so %s is not "
+"removable."
+msgstr ""
+
+#: ../src/InputController.py:371
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, a snapshot of %s. "
+"Snapshots are not yet migratable, so %s is not removable."
+msgstr ""
+
+#: ../src/InputController.py:376
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshot %"
+"s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+
+#: ../src/InputController.py:378
+#, python-format
+msgid ""
+"Physical Volume %s contains extents belonging to %s, the origin of snapshots "
+"%s. Snapshot origins are not yet migratable, so %s is not removable."
+msgstr ""
+
+#: ../src/InputController.py:565
+#, python-format
+msgid ""
+"Logical Volume \"%s\" has snapshots that are not selected for removal. They "
+"must be removed as well."
+msgstr ""
+
+#: ../src/InputController.py:580
+#, python-format
+msgid ""
+"\"%s\", an origin of snapshot \"%s\", has been deleted from removal list."
+msgstr ""
+
+#: ../src/InputController.py:611
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a mirror. Mirrors are "
+"not migratable, so %s is not removable."
+msgstr ""
+
+#: ../src/InputController.py:614
+#, python-format
+msgid ""
+"Physical Volume \"%s\" contains extents belonging to a snapshot or a "
+"snapshot's origin. Snapshots are not migratable, so %s is not removable."
+msgstr ""
+
+#: ../src/InputController.py:679
+msgid "The path you specified does not exist."
+msgstr ""
+
+#: ../src/InputController.py:686
+msgid "The path you specified is not a Block Device."
+msgstr ""
+
+#: ../src/InputController.py:757
+#, python-format
+msgid "Initialization of %s failed"
+msgstr "%s හි මුලපිරීම අසමත් විය"
+
+#: ../src/InputController.py:994 ../src/InputController.py:997
+msgid "Please select some extents first"
+msgstr ""
+
+#: ../src/InputController.py:1031
+msgid ""
+"There are not enough free extents to perform the necessary migration. Adding "
+"more physical volumes would solve the problem."
+msgstr ""
+
+#: ../src/InputController.py:1193
+msgid "Migrate extents"
+msgstr ""
+
+#: ../src/InputController.py:1321
+msgid "Options"
+msgstr "විකල්ප"
+
+#: ../src/InputController.py:1355
+#, python-format
+msgid "Create A Snapshot of %s"
+msgstr ""
+
+#: ../src/InputController.py:1357
+msgid "Create New Logical Volume"
+msgstr "නව තාර්කික පරිමාවක් නිර්මාණය කරන්න"
+
+#: ../src/InputController.py:1360
+#, python-format
+msgid "Edit %s, a Snapshot of %s"
+msgstr ""
+
+#: ../src/InputController.py:1363
+msgid "Edit Logical Volume"
+msgstr "තාර්කික පරිමාව සකසන්න"
+
+#: ../src/InputController.py:1516
+msgid "Underlying Logical Volume Management does not support mirroring"
+msgstr ""
+
+#: ../src/InputController.py:1523
+msgid "Striped Logical Volumes cannot be mirrored."
+msgstr ""
+
+#: ../src/InputController.py:1530
+msgid "Logical Volumes with associated snapshots cannot be mirrored yet."
+msgstr ""
+
+#. mirror images placement: diff HDs or anywhere
+#. prompt
+#: ../src/InputController.py:1537
+msgid ""
+"The primary purpose of mirroring is to protect data in the case of hard "
+"drive failure. Do you want to place mirror images onto different hard drives?"
+msgstr ""
+
+#: ../src/InputController.py:1546
+msgid ""
+"Less than 3 hard drives are available with free space. Disabling mirroring."
+msgstr ""
+
+#: ../src/InputController.py:1551
+msgid ""
+"There must be free space on at least three Physical Volumes to enable "
+"mirroring"
+msgstr ""
+
+#: ../src/InputController.py:1559
+msgid ""
+"The size of the Logical Volume has been adjusted to the maximum available "
+"size for mirrors."
+msgstr ""
+
+#: ../src/InputController.py:1564
+#, python-format
+msgid ""
+"There is not enough free space to add mirroring. Reduce size of Logical "
+"Volume to at most %s, or add Physical Volumes."
+msgstr ""
+
+#: ../src/InputController.py:1928
+msgid "Names beginning with \"snapshot\" or \"pvmove\" are reserved keywords."
+msgstr ""
+
+#: ../src/InputController.py:1930
+msgid "Names containing \"_mlog\" or \"_mimage\" are reserved keywords."
+msgstr ""
+
+#: ../src/InputController.py:1932
+msgid "Names beginning with a \"-\" are invalid"
+msgstr ""
+
+#: ../src/InputController.py:1934
+msgid "Name can be neither \".\" nor \"..\""
+msgstr ""
+
+#: ../src/InputController.py:1940
+msgid "Whitespaces are not allowed in Logical Volume names"
+msgstr ""
+
+#: ../src/InputController.py:1943
+#, python-format
+msgid "Invalid character \"%s\" in Logical Volume name"
+msgstr ""
+
+#: ../src/InputController.py:1963
+msgid "Please specify mount point"
+msgstr "කරුණාකර ස්ථාපන ස්ථාන දක්වන්න"
+
+#: ../src/InputController.py:2029
+msgid "Do you want to upgrade ext2 to ext3 preserving data on Logical Volume?"
+msgstr ""
+
+#: ../src/InputController.py:2063
+msgid ""
+"Changing the filesystem will destroy all data on the Logical Volume! Are you "
+"sure you want to proceed?"
+msgstr ""
+
+#. migration not performed, continue process with no mirroring
+#: ../src/InputController.py:2164
+msgid "Mirror not created. Completing remaining tasks."
+msgstr ""
+
+#. create mirror
+#: ../src/InputController.py:2167
+msgid ""
+"Underlaying LVM doesn't support addition of mirrors to existing Logical "
+"Volumes. Completing remaining tasks."
+msgstr ""
+
+#: ../src/InputController.py:2216
+msgid "In order to add mirroring, some extents need to be migrated."
+msgstr ""
+
+#: ../src/InputController.py:2216
+msgid "Do you want to migrate specified extents?"
+msgstr ""
+
+#: ../src/CommandHandler.py:55
+msgid "Creating Logical Volume"
+msgstr "තාර්කික පරිමාව නිර්මාණය කරමින්"
+
+#: ../src/CommandHandler.py:74 ../src/CommandHandler.py:91
+msgid "Resizing Logical Volume"
+msgstr "තාර්කික පරිමාව යළි සකසමින්"
+
+#: ../src/CommandHandler.py:124
+msgid "Adding Mirror to Logical Volume"
+msgstr "තාර්කික පරිමාවට කැටපතක් එක් කරමින්"
+
+#: ../src/CommandHandler.py:135
+msgid "Removing Mirror from Logical Volume"
+msgstr "තාර්කික පරිමාවෙන් කැටපත ඉවත් කරමින්"
+
+#: ../src/CommandHandler.py:160
+msgid "Initializing Physical Volume"
+msgstr "භෞතික පරිමාව මුලපුරමින්"
+
+#: ../src/CommandHandler.py:171
+msgid "Adding Physical Volume to Volume Group"
+msgstr "පරිමා සමූහය වෙතට භෞතික පරිමාව එක් කරමින්"
+
+#: ../src/CommandHandler.py:203
+msgid "Creating Volume Group"
+msgstr "පරිමා සමූහය නිර්මාණය කරමින්"
+
+#: ../src/CommandHandler.py:225
+msgid "Removing Volume Group"
+msgstr "පරිමා සමූහය ඉවත් කරමින්"
+
+#: ../src/CommandHandler.py:235
+msgid "Removing Physical Volume"
+msgstr "භෞතික පරිමාව ඉවත් කරමින්"
+
+#: ../src/CommandHandler.py:248
+msgid "Removing Logical Volume"
+msgstr "තාර්කික පරිමාව ඉවත් කරමින්"
+
+#: ../src/CommandHandler.py:263
+msgid "Renaming Logical Volume"
+msgstr "තාර්කික පරිමාවේ නම වෙනස් කරමින්"
+
+#: ../src/CommandHandler.py:285
+msgid "Removing Physical Volume from Volume Group"
+msgstr "පරිමා සමූහය වෙතින් භෞතික පරිමාව ඉවත් කරමින්"
+
+#: ../src/CommandHandler.py:320
+msgid "Migrating Extents"
+msgstr ""
+
+#: ../src/CommandHandler.py:332
+msgid "Completing Extent Migration"
+msgstr ""
+
+#: ../src/CommandHandler.py:383
+msgid "Rereading partition table"
+msgstr "කොටස් වගුව යළි කියවමින්"
+
+#: ../src/lvm_model.py:45 ../src/lvmui_constants.py:83
+msgid "Unused"
+msgstr "භාවිතා නොකළ"
+
+#: ../src/lvm_model.py:46
+msgid "Unused Space"
+msgstr "භාවිතා නොකළ ඉඩිත"
+
+#: ../src/lvm_model.py:48
+msgid "Unmounted"
+msgstr "අස්ථාපිත"
+
+#: ../src/lvm_model.py:58
+msgid "Volume Group Name:   "
+msgstr "පරිමා සමූහයේ නම:   "
+
+#: ../src/lvm_model.py:59
+msgid "System ID:   "
+msgstr "පද්ධති අංකය:   "
+
+#: ../src/lvm_model.py:60
+msgid "Format:   "
+msgstr "සංයුතිය:   "
+
+#: ../src/lvm_model.py:61 ../src/lvm_model.py:78 ../src/lvm_model.py:93
+msgid "Attributes:   "
+msgstr "උපලක්‍ෂණ:   "
+
+#: ../src/lvm_model.py:62
+msgid "Volume Group Size:   "
+msgstr "පරිමා සමූහයේ ප්‍රමාණය:   "
+
+#: ../src/lvm_model.py:63
+msgid "Available Space:   "
+msgstr "භාවිතයට ඇති ඉඩ:   "
+
+#: ../src/lvm_model.py:64
+msgid "Total Number of Extents:   "
+msgstr "මුළු වපරිස ගණන:   "
+
+#: ../src/lvm_model.py:65
+msgid "Number of Free Extents:   "
+msgstr "නිදහස් වපරිස ගණන:   "
+
+#: ../src/lvm_model.py:66
+msgid "Extent Size:   "
+msgstr "වපරිස ප්‍රමාණය:   "
+
+#: ../src/lvm_model.py:67
+msgid "Maximum Allowed Physical Volumes:   "
+msgstr "අනුමත උපරිම භෞතික පරිමා:   "
+
+#: ../src/lvm_model.py:68
+msgid "Number of Physical Volumes:   "
+msgstr "භෞතික පරිමා ගණන:   "
+
+#: ../src/lvm_model.py:69
+msgid "Maximum Allowed Logical Volumes:   "
+msgstr "අනුමත උපරිම තාර්කික පරිමා:   "
+
+#: ../src/lvm_model.py:70
+msgid "Number of Logical Volumes:   "
+msgstr "තාර්කික පරිමා ගණන:   "
+
+#: ../src/lvm_model.py:71
+msgid "VG UUID:   "
+msgstr "VG UUID:   "
+
+#: ../src/lvm_model.py:73
+msgid "Logical Volume Name:   "
+msgstr "තාර්කික පරිමාවේ නම:   "
+
+#: ../src/lvm_model.py:74
+msgid "Logical Volume Size:   "
+msgstr "තාර්කික පරිමාවේ නම:   "
+
+#: ../src/lvm_model.py:75
+msgid "Number of Segments:   "
+msgstr "ඛණ්ඩ ගණන:   "
+
+#: ../src/lvm_model.py:76
+msgid "Number of Stripes:   "
+msgstr "ස්ට්‍රිප් ගණන:   "
+
+#: ../src/lvm_model.py:77
+msgid "Stripe Size:   "
+msgstr "ස්ට්‍රිප් ප්‍රමාණය:   "
+
+#: ../src/lvm_model.py:79
+msgid "LV UUID:   "
+msgstr "LV UUID:   "
+
+#: ../src/lvm_model.py:81
+msgid "Partition Type:   "
+msgstr "කොටස් වර්‍ගය:   "
+
+#: ../src/lvm_model.py:82
+msgid "Size:   "
+msgstr "ප්‍රමාණය:   "
+
+#: ../src/lvm_model.py:83
+msgid "Mount Point:   "
+msgstr "ස්ථාපන ස්ථානය:   "
+
+#: ../src/lvm_model.py:84
+msgid "Mount Point when Rebooted:   "
+msgstr "නැවත ආරම්ඹ වන විට ස්ථාපන ස්ථානය:   "
+
+#: ../src/lvm_model.py:85
+msgid "File System:   "
+msgstr "ගොනු පද්ධතිය:   "
+
+#: ../src/lvm_model.py:87
+msgid "Physical Volume Name:   "
+msgstr "භෞතික පරිමා නම:   "
+
+#: ../src/lvm_model.py:88
+msgid "Physical Volume Size:   "
+msgstr "භෞතික පරිමා ප්‍රමාණය:   "
+
+#: ../src/lvm_model.py:89
+msgid "Space Used:   "
+msgstr "භාවිතා කළ ඉඩ:   "
+
+#: ../src/lvm_model.py:90
+msgid "Space Free:   "
+msgstr "නිදහස් ඉඩ:   "
+
+#: ../src/lvm_model.py:91
+msgid "Total Physical Extents:   "
+msgstr "මුළු භෞතික වපරිස:   "
+
+#: ../src/lvm_model.py:92
+msgid "Allocated Physical Extents:   "
+msgstr "යෙදවූ භෞතික වපරිස:   "
+
+#: ../src/lvm_model.py:94
+msgid "PV UUID:   "
+msgstr "PV UUID:   "
+
+#: ../src/lvm_model.py:96
+msgid "Not initializable:"
+msgstr "මුලපිරිය නොහැකි:"
+
+#: ../src/lvm_model.py:97
+msgid "Extended partition"
+msgstr "විහිද වූ කොටස්"
+
+#. Translator: the line below refers to a standard linux swap partition.
+#: ../src/lvm_model.py:99
+msgid "Swap partition currently in use"
+msgstr "ස්වැප් කොටස් දැනට භාවිතයේ ඇත"
+
+#: ../src/lvm_model.py:100
+msgid "Foreign boot partition"
+msgstr "ආගන්තුක ආරම්ඹක කොටස්"
+
+#: ../src/lvm_model.py:101
+msgid "Autopartition failure"
+msgstr "ස්වයංක්‍රීය කොටස් කිරීම අසමත් විය"
+
+#: ../src/lvm_model.py:259
+msgid "Partition manually"
+msgstr "ශ්‍රමිකව කොටස් කරන්න"
+
+#: ../src/lvm_model.py:295
+msgid "Multipath device"
+msgstr "බහු මාර්‍ග ආම්පන්න"
+
+#: ../src/lvm_model.py:298
+msgid "Note:"
+msgstr "සටහන:"
+
+#: ../src/lvm_model.py:298
+msgid "Initialize manually"
+msgstr ""
+
+#: ../src/lvm_model.py:746
+msgid "Clustered:   "
+msgstr "සමූහගත:   "
+
+#: ../src/lvm_model.py:748
+msgid "True"
+msgstr "සත්‍ය"
+
+#: ../src/lvm_model.py:750
+msgid "False"
+msgstr "අසත්‍ය"
+
+#: ../src/lvm_model.py:808
+msgid "Number of mirror images:"
+msgstr "කැටපත් පිළිඹිබු ගණන:"
+
+#: ../src/lvm_model.py:811
+msgid "Snapshots:"
+msgstr "සැණරුවන්:"
+
+#: ../src/lvm_model.py:817
+msgid "Snapshot origin:"
+msgstr "සැණරු මූලය:"
+
+#: ../src/lvm_model.py:824
+msgid "Snapshot usage:"
+msgstr "සැණරුව භාවිතය:"
+
+#: ../src/lvm_model.py:847 ../src/lvm_model.py:853 ../src/lvm_model.py:896
+#: ../src/lvm_model.py:912
+msgid "/   Root Filesystem"
+msgstr "/   Root ගොනුපද්ධතිය"
+
+#: ../src/lvm_model.py:915 ../src/Filesystem.py:135
+msgid "None"
+msgstr "කිසිවක් නැත"
+
+#: ../src/lvm_model.py:969
+msgid "SCSI Address:  "
+msgstr "SCSI ලිපිනය:  "
+
+#: ../src/lvm_model.py:971
+msgid "SCSI ID:  "
+msgstr "SCSI අංකය:  "
+
+#. INIT_ENTITY=_("Are you certain that you wish to initialize disk entity %s? All data will be lost on this device/partition.")
+#: ../src/lvmui_constants.py:51
+#, python-format
+msgid ""
+"All data on disk entity %s will be lost! Are you certain that you wish to "
+"initialize it?"
+msgstr ""
+
+#: ../src/lvmui_constants.py:52
+#, python-format
+msgid ""
+"Disk entity %s contains %s filesystem. All data on it will be lost! Are you "
+"certain that you wish to initialize disk entity %s?"
+msgstr ""
+
+#: ../src/lvmui_constants.py:53
+#, python-format
+msgid ""
+"Disk entity %s contains data from directory %s. All data in it will be lost! "
+"Are you certain that you wish to initialize disk entity %s?"
+msgstr ""
+
+#: ../src/lvmui_constants.py:54
+#, python-format
+msgid ""
+"Are you certain that you wish to initialize %s of free space on disk %s?"
+msgstr ""
+
+#: ../src/lvmui_constants.py:55
+#, python-format
+msgid ""
+"You are about to initialize unpartitioned disk %s. It is advisable, although "
+"not required, to create a partition on it. Do you want to create a single "
+"partition encompassing the whole drive?"
+msgstr ""
+
+#: ../src/lvmui_constants.py:57
+msgid "Reloading LVM. Please wait."
+msgstr "LVM යළිපූරණය වෙමින්. කරුණාකර රැදී සිටින්න."
+
+#: ../src/lvmui_constants.py:59
+#, python-format
+msgid ""
+"Changes will take effect after computer is restarted. If device %s is used, "
+"before restart, data corruption WILL occur. It is advisable to restart your "
+"computer now."
+msgstr ""
+
+#: ../src/lvmui_constants.py:61
+msgid "Mirror Log"
+msgstr "කැටපත් සටහන්"
+
+#: ../src/lvmui_constants.py:63
+msgid "Unable to process request"
+msgstr "ඉල්ලීම සැකසිය නොහැක"
+
+#: ../src/lvmui_constants.py:65
+#, python-format
+msgid "%s command failed. Command attempted: \"%s\" - System Error Message: %s"
+msgstr ""
+
+#: ../src/lvmui_constants.py:84
+msgid "Free"
+msgstr "නිදහස්"
+
+#: ../src/lvmui_constants.py:85
+msgid "Free space"
+msgstr "නිදහස් ඉඩ"
+
+#: ../src/lvmui_constants.py:87
+msgid "Unpartitioned space"
+msgstr "කොටස් නොකළ ඉඩ"
+
+#: ../src/lvmui_constants.py:88
+#, python-format
+msgid "Unpartitioned space on %s"
+msgstr "%s මත කොටස් නොකළ ඉඩ"
+
+#: ../src/lvmui_constants.py:90
+msgid "GB"
+msgstr "ගිගා බයිට්"
+
+#: ../src/lvmui_constants.py:91
+msgid "MB"
+msgstr "මෙගා බයිට්"
+
+#: ../src/lvmui_constants.py:92
+msgid "KB"
+msgstr "කිලෝ බයිට්"
+
+#: ../src/lvmui_constants.py:93
+msgid "Bytes"
+msgstr "බයිට්"
+
+#. File System Types
+#: ../src/lvmui_constants.py:97
+msgid "No Filesystem"
+msgstr "ගොනු පද්ධතියක් නැත"
+
+#: ../src/lvmui_constants.py:98
+msgid "Ext2"
+msgstr "Ext2"
+
+#: ../src/lvmui_constants.py:99
+msgid "Ext3"
+msgstr "Ext3"
+
+#: ../src/lvmui_constants.py:100
+msgid "JFS"
+msgstr "JFS"
+
+#: ../src/lvmui_constants.py:101
+msgid "MSDOS"
+msgstr "MSDOS"
+
+#: ../src/lvmui_constants.py:102
+msgid "Reiserfs"
+msgstr ""
+
+#: ../src/lvmui_constants.py:103
+msgid "VFAT"
+msgstr "VFAT"
+
+#: ../src/lvmui_constants.py:104
+msgid "XFS"
+msgstr "XFS"
+
+#: ../src/lvmui_constants.py:105
+msgid "Cramfs"
+msgstr "Cramfs"
+
+#: ../src/Properties_Renderer.py:42
+msgid "Properties for"
+msgstr "වත්කම්"
+
+#: ../src/Properties_Renderer.py:43 ../src/renderer.py:37
+msgid "Physical Volume"
+msgstr "භෞතික පරිමාව"
+
+#. UNALLOCATED_MESSAGE=_("This Volume has not been allocated \n to a Volume Group yet.")
+#: ../src/Properties_Renderer.py:44 ../src/renderer.py:36
+msgid "Logical Volume"
+msgstr "තාර්කික පරිමාව"
+
+#: ../src/Properties_Renderer.py:45
+msgid "Unallocated Volume"
+msgstr "නොයෙදවූ පරිමාව"
+
+#: ../src/Properties_Renderer.py:46 ../src/renderer.py:43
+msgid "Disk Entity"
+msgstr "තැටි වස්තු"
+
+#: ../src/Properties_Renderer.py:47 ../src/Properties_Renderer.py:48
+#: ../src/Properties_Renderer.py:49 ../src/renderer.py:38
+msgid "Volume Group"
+msgstr "පරිමා සමූහය"
+
+#. UNINITIALIZED_MESSAGE=_("This extent has not yet been \n initialized for use with LVM.")
+#: ../src/renderer.py:33
+msgid "No Volume Selected"
+msgstr "කිසිදු පරිමාවක් තෝරාගෙන නැත"
+
+#: ../src/renderer.py:34
+msgid "Multiple selection"
+msgstr "බහු තේරිම්"
+
+#: ../src/renderer.py:39 ../src/Volume_Tab_View.py:46
+msgid "Logical View"
+msgstr "තාර්කික දසුන"
+
+#: ../src/renderer.py:40 ../src/Volume_Tab_View.py:45
+msgid "Physical View"
+msgstr "භෞතික දසුන"
+
+#: ../src/renderer.py:41
+msgid "Unallocated"
+msgstr "නොයෙදු"
+
+#: ../src/renderer.py:42
+msgid "Uninitialized"
+msgstr "මුල නොපිරු"
+
+#: ../src/renderer.py:195
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a mirror log of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+
+#: ../src/renderer.py:197
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to mirror image of "
+"Logical Volume %s. Mirrored Logical Volumes are not yet migratable, so the "
+"extents are not selectable."
+msgstr ""
+
+#: ../src/renderer.py:199
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to %s, a snapshot of %"
+"s. Snapshots are not yet migratable, so the extents are not selectable."
+msgstr ""
+
+#: ../src/renderer.py:201
+#, python-format
+msgid ""
+"The extents that you are attempting to select belong to a snapshot origin %"
+"s. Snapshot origins are not yet migratable, so the extents are not "
+"selectable."
+msgstr ""
+
+#: ../src/renderer.py:388
+#, python-format
+msgid "Snapshot of %s"
+msgstr "%s හි සැණරුව"
+
+#: ../src/renderer.py:491
+msgid "Origin"
+msgstr "මූලය"
+
+#: ../src/renderer.py:497
+msgid "Snapshot"
+msgstr "සැණරුව"
+
+#: ../src/renderer.py:541
+msgid "extent view"
+msgstr "වපරිස දසුන"
+
+#: ../src/Volume_Tab_View.py:42
+msgid "Volume Groups"
+msgstr "පරිමා සමූහ"
+
+#: ../src/Volume_Tab_View.py:43
+msgid "Unallocated Volumes"
+msgstr "නොයෙදු පරිමා"
+
+#: ../src/Volume_Tab_View.py:44
+msgid "Uninitialized Entities"
+msgstr "මුල නොපිරු තැටි වස්තු"
+
+#: ../src/Volume_Tab_View.py:231
+msgid "Clustered VG"
+msgstr "සමූහගත VG"
+
+#: ../src/Volume_Tab_View.py:617
+#, python-format
+msgid "%s mirror synchronisation"
+msgstr "%s කැටපත් සමකාලීක කිරීම"
+
+#. no existing partitions, write
+#: ../src/fdisk_wrapper.py:192
+msgid "Please wait while partition is being created"
+msgstr "කොටස නිර්මාණය වන තුරු කරුණාකර රැදී සිටින්න"
+
+#: ../src/Filesystem.py:20
+#, python-format
+msgid "Creating %s filesystem"
+msgstr "%s ගොනු පද්ධතිය නිර්මාණය වෙමින්"
+
+#: ../src/Filesystem.py:21
+#, python-format
+msgid "Resizing %s filesystem"
+msgstr "%s ගොනු පද්ධතිය යළි ප්‍රමාණය සකසමින්"
+
+#: ../src/Filesystem.py:22
+#, python-format
+msgid "Checking %s filesystem"
+msgstr "%s ගොනු පද්ධතිය පරීක්‍ෂා කරමින්"
+
+#: ../src/Filesystem.py:23
+#, python-format
+msgid "Upgrading %s filesystem to %s"
+msgstr "%s ගොනු පද්ධතිය %s වෙතට යාවත්කාලීන කරමින්"
+
+#: ../src/Filesystem.py:24
+#, python-format
+msgid ""
+"Creation of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr "ගොනු පද්ධතිය නිර්මාණය අසමත් විය. උත්සාහ කළ විධානය: \"%s\" - පද්ධති දෝෂ පණිවිඩය: %s"
+
+#: ../src/Filesystem.py:25
+#, python-format
+msgid ""
+"Resize of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"ගොනු පද්ධතිය යළි ප්‍රමාණය සැකසීම අසමත් විය. උත්සාහ කළ විධානය: \"%s\" - පද්ධති දෝෂ පණිවිඩය: %"
+"s"
+
+#: ../src/Filesystem.py:26
+#, python-format
+msgid ""
+"Check of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr "ගොනු පද්ධතිය පරීක්‍ෂා කරමින්. උත්සාහ කළ විධානය: \"%s\" - පද්ධති දෝෂ පණිවිඩය: %s"
+
+#: ../src/Filesystem.py:27
+#, python-format
+msgid ""
+"Upgrade of filesystem failed. Command attempted: \"%s\" - System Error "
+"Message: %s"
+msgstr ""
+"ගොනු පද්ධතිය යාවත් කාලීන කිරීම අසමත් විය. උත්සාහ කළ විධානය: \"%s\" - පද්ධති දෝෂ පණිවිඩය: %s"
+
+#: ../src/Filesystem.py:141
+msgid "Unknown filesystem"
+msgstr "නොදන්නා ගොනු පද්ධතිය"
+
+#: ../src/Filesystem.py:491
+msgid "GFS (local)"
+msgstr "GFS (ප්‍රදේශීය)"
+
+#: ../src/Filesystem.py:606
+msgid "GFS (clustered)"
+msgstr "GFS (සමූහගත)"
+
+#: ../src/Filesystem.py:640 ../src/Filesystem.py:976
+msgid "Cluster name contains illegal character "
+msgstr "සමූහගත නමෙ හි සාවද්‍ය අකුරු ඇත "
+
+#: ../src/Filesystem.py:643 ../src/Filesystem.py:979
+msgid "GFS name contains illegal character "
+msgstr "GFS නමෙ හි සාවද්‍ය අකුරු ඇත "
+
+#: ../src/Filesystem.py:646 ../src/Filesystem.py:982
+msgid "Missing Cluster Name"
+msgstr "සමූහයේ නම නොමැත"
+
+#: ../src/Filesystem.py:649 ../src/Filesystem.py:985
+msgid "Missing GFS Name"
+msgstr "GFS නම නොමැත"
+
+#: ../src/Filesystem.py:828
+msgid "GFS2 (local)"
+msgstr "GFS2 (ප්‍රාදේශිය)"
+
+#: ../src/Filesystem.py:942
+msgid "GFS2 (clustered)"
+msgstr "GFS2 (සමූහගත)"
+
+#: ../src/Filesystem.glade.h:1 ../src/lvui.glade.h:1
+#: ../src/lv_edit_props.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../src/Filesystem.glade.h:2
+#, fuzzy
+msgid "Cluster name"
+msgstr "සමූහගත"
+
+#: ../src/Filesystem.glade.h:3
+#, fuzzy
+msgid "Clustered GFS Properties"
+msgstr "වත්කම් සකසන්න"
+
+#: ../src/Filesystem.glade.h:4
+msgid "DLM"
+msgstr ""
+
+#: ../src/Filesystem.glade.h:5
+#, fuzzy
+msgid "GFS name"
+msgstr "LV නම:"
+
+#: ../src/Filesystem.glade.h:6
+msgid "GULM"
+msgstr ""
+
+#: ../src/Filesystem.glade.h:7
+msgid "Locking type"
+msgstr ""
+
+#: ../src/Filesystem.glade.h:8
+#, fuzzy
+msgid "Number of journals"
+msgstr "කැටපත් පිළිඹිබු ගණන:"
+
+#: ../src/Filesystem.glade.h:9
+msgid "Number of journals (one journal per cluster node)"
+msgstr ""
+
+#: ../src/Filesystem.glade.h:10
+msgid "Unique GFS name"
+msgstr ""
+
+#: ../src/Segment.py:44
+msgid "Stripe"
+msgstr "ස්ට්‍රිප්"
+
+#: ../src/Segment.py:68
+msgid "Linear Mapping"
+msgstr "රේඛිය අනුරූපණය"
+
+#: ../src/Segment.py:109
+msgid "Mirror"
+msgstr "කැටපත"
+
+#: ../src/PhysicalVolume.py:142
+#, python-format
+msgid "Partition %s"
+msgstr "%s කොටස"
+
+#: ../src/lvui.glade.h:2
+msgid "1024"
+msgstr "1024"
+
+#: ../src/lvui.glade.h:3
+msgid "128"
+msgstr "128"
+
+#: ../src/lvui.glade.h:4
+msgid "16"
+msgstr "16"
+
+#: ../src/lvui.glade.h:5
+msgid "2"
+msgstr "2"
+
+#: ../src/lvui.glade.h:6
+msgid "256"
+msgstr "256"
+
+#: ../src/lvui.glade.h:7
+msgid "32"
+msgstr "32"
+
+#: ../src/lvui.glade.h:8
+msgid "4"
+msgstr "4"
+
+#: ../src/lvui.glade.h:9
+msgid "512"
+msgstr "512"
+
+#: ../src/lvui.glade.h:10
+msgid "64"
+msgstr "64"
+
+#: ../src/lvui.glade.h:11
+msgid "8"
+msgstr "8"
+
+#: ../src/lvui.glade.h:12
+msgid "Add Physical Volume to VG"
+msgstr "VG වෙතට භෞතික පරිමාව එක් කරමින්"
+
+#: ../src/lvui.glade.h:13
+msgid ""
+"Add to existing \n"
+"Volume Group"
+msgstr ""
+"දැනට භාවිතා වන පරිමා සමූහයට \n"
+"එක් කරන්න"
+
+#: ../src/lvui.glade.h:15
+msgid "Clustered"
+msgstr "සමූහගත"
+
+#: ../src/lvui.glade.h:16
+msgid ""
+"Create New\n"
+"Logical Volume"
+msgstr ""
+"නව තාර්කික පරිමාව\n"
+"නිර්මාණය කරන්න"
+
+#: ../src/lvui.glade.h:18
+msgid "Create Snapshot"
+msgstr "සැණරුව නිර්මාණය කරන්න"
+
+#: ../src/lvui.glade.h:19
+msgid ""
+"Create new \n"
+"Volume Group"
+msgstr ""
+"නව පරිමා සමූහය\n"
+"නිර්මාණය කරන්න"
+
+#: ../src/lvui.glade.h:21
+msgid "Edit Properties"
+msgstr "වත්කම් සකසන්න"
+
+#: ../src/lvui.glade.h:22
+msgid "Enter path of Block Device to initialize"
+msgstr ""
+
+#: ../src/lvui.glade.h:23
+msgid ""
+"Extend\n"
+"Volume Group"
+msgstr ""
+"විහිදු\n"
+"පරිමා සමූහ"
+
+#: ../src/lvui.glade.h:25
+msgid "Extend Volume Group"
+msgstr "විහිදු පරිමා සමූහ"
+
+#: ../src/lvui.glade.h:26
+msgid "Format"
+msgstr "සංයුතිය"
+
+#: ../src/lvui.glade.h:27
+msgid "Initialize"
+msgstr ""
+
+#: ../src/lvui.glade.h:28
+msgid "Initialize Block Device"
+msgstr ""
+
+#: ../src/lvui.glade.h:29
+msgid "Initialize Entity"
+msgstr ""
+
+#: ../src/lvui.glade.h:30
+msgid "Initialize _Block Device"
+msgstr ""
+
+#: ../src/lvui.glade.h:31
+msgid "Kilo"
+msgstr "Kilo"
+
+#: ../src/lvui.glade.h:32 ../system-config-lvm.desktop.in.h:3
+msgid "Logical Volume Management"
+msgstr "තාර්කික පරිමා කළමනාකරණය"
+
+#: ../src/lvui.glade.h:33
+msgid "Manage Volumes"
+msgstr "පරිමා කළමනාකරණය කරන්න"
+
+#: ../src/lvui.glade.h:34
+msgid "Mark Volume Group as 'clustered'"
+msgstr "පරිමා සමූහ 'සමූහගත' ලෙස සළකුණු කරන්න"
+
+#: ../src/lvui.glade.h:35
+msgid "Maximum Logical Volumes"
+msgstr "උපරිම තාර්කික පරිමා"
+
+#: ../src/lvui.glade.h:36
+msgid "Maximum Physical Volumes"
+msgstr "උපරිම භෞතික පරිමා"
+
+#: ../src/lvui.glade.h:37
+msgid "Meg"
+msgstr "Meg"
+
+#: ../src/lvui.glade.h:38
+msgid ""
+"Migrate Selected\n"
+"Extent(s) From Volume"
+msgstr ""
+"පරිමාවෙන් තෝරාගත් වපරිස \n"
+"සංක්‍රමණය කරවන්න"
+
+#: ../src/lvui.glade.h:40
+msgid "New Volume Group"
+msgstr "නව පරිමා සමූහ"
+
+#: ../src/lvui.glade.h:41
+msgid "Physical Extent Size"
+msgstr "භෞතික වපරිස ප්‍රමාණ"
+
+#: ../src/lvui.glade.h:42
+msgid ""
+"Remove \n"
+"Logical Volume"
+msgstr ""
+"තාර්කික පරිමාව\n"
+"ඉවත් කරන්න"
+
+#: ../src/lvui.glade.h:44
+msgid ""
+"Remove Selected\n"
+"Logical Volume(s)"
+msgstr ""
+"තෝරාගත් තාර්කික\n"
+"පරිමා(ව) ඉවත් කරන්න"
+
+#: ../src/lvui.glade.h:46
+msgid ""
+"Remove Selected\n"
+"Physical Volume(s)"
+msgstr ""
+"තෝරාගත් භෞතික\n"
+"පරිමා(ව) ඉවත් කරන්න"
+
+#: ../src/lvui.glade.h:48
+msgid ""
+"Remove Volume from\n"
+"Volume Group"
+msgstr ""
+"පරිමා සමූහයෙන්\n"
+"පරිමාව ඉවත් කරන්න"
+
+#: ../src/lvui.glade.h:50
+msgid ""
+"Remove volume \n"
+"from LVM"
+msgstr ""
+"LVM වෙතින් පරිමාව\n"
+"ඉවත් කරන්න"
+
+#: ../src/lvui.glade.h:52
+msgid "Select a Volume Group to add this PV to:"
+msgstr "මෙම PV එක් කිරීම සඳහා පරිමා සමුහයක් තෝරන්න:"
+
+#: ../src/lvui.glade.h:53
+msgid "Some text"
+msgstr "යම් පෙළක්"
+
+#: ../src/lvui.glade.h:54
+msgid "Volume Group Name"
+msgstr "පරිමා සමූහ නම"
+
+#: ../src/lvui.glade.h:55
+msgid "_Reload"
+msgstr "ප්‍රතිපුරණය (_R)"
+
+#: ../src/lvui.glade.h:56
+msgid "_Tools"
+msgstr "මෙවලම් (_T)"
+
+#: ../src/lvui.glade.h:57
+msgid "extend vg message:"
+msgstr "විහිදු vg පණිවිඩ:"
+
+#: ../src/lv_edit_props.glade.h:2
+msgid ""
+"4\n"
+"8\n"
+"16\n"
+"32\n"
+"64\n"
+"128\n"
+"256\n"
+"512"
+msgstr ""
+"4\n"
+"8\n"
+"16\n"
+"32\n"
+"64\n"
+"128\n"
+"256\n"
+"512"
+
+#: ../src/lv_edit_props.glade.h:10
+msgid "<b>Filesystem</b>"
+msgstr "<b>ගොනු පද්ධතිය</b>"
+
+#: ../src/lv_edit_props.glade.h:11
+msgid "<b>LV Properties</b>"
+msgstr "<b>LV වත්කම්</b>"
+
+#: ../src/lv_edit_props.glade.h:12
+msgid "<b>Size</b>"
+msgstr "<b>ප්‍රමාණය</b>"
+
+#: ../src/lv_edit_props.glade.h:13
+msgid "Add entry to /etc/fstab"
+msgstr "/etc/fstab වෙත ඇතුළත් කරන්න"
+
+#: ../src/lv_edit_props.glade.h:14
+msgid "Create New Logical Volume (LV)"
+msgstr "නව තාර්කික පරිමා (LV) නිර්මාණය කරන්න"
+
+#: ../src/lv_edit_props.glade.h:15
+msgid "Filesystem is not resizable"
+msgstr "පද්ධතිය යළිසැකසිය නොහැක"
+
+#: ../src/lv_edit_props.glade.h:16
+msgid "Free space in Volume Group label"
+msgstr "තාර්කික සමූහ ලේබල තුළ නිදහස් ඉඩ"
+
+#: ../src/lv_edit_props.glade.h:17
+msgid "Free space remaining label"
+msgstr ""
+
+#: ../src/lv_edit_props.glade.h:18
+msgid "Kilobytes granularity"
+msgstr ""
+
+#: ../src/lv_edit_props.glade.h:19
+msgid "LV name:"
+msgstr "LV නම:"
+
+#: ../src/lv_edit_props.glade.h:20
+msgid "LV size"
+msgstr "LV ප්‍රමාණය"
+
+#: ../src/lv_edit_props.glade.h:21
+msgid "LVs under snapshots are not resizable"
+msgstr ""
+
+#: ../src/lv_edit_props.glade.h:22
+msgid "Linear"
+msgstr "රේඛීය"
+
+#: ../src/lv_edit_props.glade.h:23
+msgid "Mirrored"
+msgstr "කැඩපත් ලෙසට පත් කළ"
+
+#: ../src/lv_edit_props.glade.h:24
+msgid "Mirrored LVs are not resizable"
+msgstr ""
+
+#: ../src/lv_edit_props.glade.h:25
+msgid "Mount"
+msgstr "ස්ථාපනය"
+
+#: ../src/lv_edit_props.glade.h:26
+msgid "Mount point:"
+msgstr "ස්ථාපන ස්ථානය:"
+
+#: ../src/lv_edit_props.glade.h:27
+msgid "Mount when rebooted"
+msgstr "නැවත ආරම්ඹ කිරීමෙදි ස්ථාපනය"
+
+#: ../src/lv_edit_props.glade.h:28
+msgid "Size beg"
+msgstr ""
+
+#: ../src/lv_edit_props.glade.h:29
+msgid "Size end"
+msgstr ""
+
+#: ../src/lv_edit_props.glade.h:30
+msgid "Striped"
+msgstr ""
+
+#: ../src/lv_edit_props.glade.h:31
+msgid "Use remaining"
+msgstr "ඉතිරිය භාවිතා කරන්න"
+
+#: ../src/lv_edit_props.glade.h:32
+msgid "stripes"
+msgstr ""
+
+#: ../src/migrate_extents.glade.h:1
+msgid "<b>Destination</b>"
+msgstr "<b>ඉලක්කය</b>"
+
+#: ../src/migrate_extents.glade.h:2
+msgid "<b>Migration Policy</b>"
+msgstr "<b>සංක්‍රමණ ප්‍රතිපත්තිය</b>"
+
+#: ../src/migrate_extents.glade.h:3
+msgid "Anywhere - not implemented"
+msgstr ""
+
+#: ../src/migrate_extents.glade.h:4
+msgid "Automatically choose PVs to migrate to"
+msgstr ""
+
+#: ../src/migrate_extents.glade.h:5
+msgid "Contiguous"
+msgstr "සන්තතික"
+
+#: ../src/migrate_extents.glade.h:6
+msgid "Destination:"
+msgstr "ඉලක්කය:"
+
+#: ../src/migrate_extents.glade.h:7
+msgid ""
+"In order to remove PV, extents in use have to be migrated.\n"
+"Select extents' destination and migration policy."
+msgstr ""
+
+#: ../src/migrate_extents.glade.h:9
+msgid "Inherit"
+msgstr ""
+
+#: ../src/migrate_extents.glade.h:10
+msgid "Inherit policy from Volume Group"
+msgstr ""
+
+#: ../src/migrate_extents.glade.h:11
+msgid "Migrate Extents"
+msgstr "වපරිස සංක්‍රමණය කරන්න"
+
+#: ../src/migrate_extents.glade.h:12
+msgid "Migrate anywhere even if that reduces performance"
+msgstr ""
+
+#: ../src/migrate_extents.glade.h:13
+msgid "New extents are adjacent to existing ones"
+msgstr ""
+
+#: ../src/migrate_extents.glade.h:14
+msgid "Normal"
+msgstr "සාමාන්‍ය"
+
+#: ../src/migrate_extents.glade.h:15
+msgid "Only migrate extents belonging to LV"
+msgstr ""
+
+#: ../src/migrate_extents.glade.h:16
+msgid "Use common sense"
+msgstr ""
+
+#: ../src/Partition.py:103 ../src/Partition.py:108
+msgid "Unknown"
+msgstr ""
+
+#: ../src/system-config-lvm.py:58
+msgid "system-config-lvm"
+msgstr ""
+
+#: ../src/system-config-lvm.py:59
+#, python-format
+msgid "%s %s"
+msgstr ""
+
+#: ../src/system-config-lvm.py:77
+msgid ""
+"LVM locks are disabled!!! \n"
+"Massive data corruption may occur.\n"
+"Enable locking (locking_type=1, 2 or 3 in /etc/lvm/lvm.conf)."
+msgstr ""
+
+#: ../src/system-config-lvm.py:82
+msgid ""
+"LVM is configured to use Cluster Locking mechanism, but clvmd daemon is not "
+"running. Start daemon with command:\n"
+"service clvmd start \n"
+"or, turn off cluster locking (locking_type=1 in /etc/lvm/lvm.conf)."
+msgstr ""
+
+#: ../src/system-config-lvm.py:86
+msgid ""
+"LVM is configured to use Cluster Locking mechanism, but cluster is not "
+"quorate.\n"
+"Either wait until cluster is quorate or turn off cluster locking "
+"(locking_type=1 in /etc/lvm/lvm.conf)."
+msgstr ""
+
+#: ../src/system-config-lvm.py:89
+#, python-format
+msgid ""
+"%s only supports file and cluster based lockings (locking_type=1, 2 or 3 in /"
+"etc/lvm/lvm.conf)."
+msgstr ""
+
+#. ## Don't specify version - already in ABOUT_VERSION
+#: ../src/system-config-lvm.py:122
+msgid "Copyright (c) 2004 Red Hat, Inc. All rights reserved."
+msgstr ""
+
+#: ../src/system-config-lvm.py:123
+msgid "This software is licensed under the terms of the GPL."
+msgstr ""
+
+#: ../src/system-config-lvm.py:170
+#, python-format
+msgid "Please restart %s with root permissions!"
+msgstr ""
+
+#: ../system-config-lvm.desktop.in.h:1
+msgid "Configure LVM in a graphical setting"
+msgstr ""
+
+#: ../system-config-lvm.desktop.in.h:2
+msgid "LVM"
+msgstr ""
