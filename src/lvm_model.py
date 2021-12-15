@@ -517,14 +517,22 @@ class lvm_model:
         segment = LinearSegment(seg_start, seg_size)
         idx = devs[0].find('(')
         pvpath = devs[0][:idx]
+        #probably a redirect like a cache
+        #for now lets replace with the first device as a place holder        
+        #but since we don't have the full tree at this time just skip
+        if (pvpath[0] != '/'):
+          print("pv path likely has a cache and points at a lv\n");
         ph_ext_beg = int(devs[0][idx+1:len(devs[0])-1])
         pv = None
         for pv_t in self.__PVs:
           if pv_t.get_path() == pvpath:
             pv = pv_t
             break
-        extent_block = ExtentBlock(pv, lv, ph_ext_beg, seg_size)
-        segment.set_extent_block(extent_block)
+        if pv != None:
+          extent_block = ExtentBlock(pv, lv, ph_ext_beg, seg_size)
+          segment.set_extent_block(extent_block)
+        else:
+          continue
       else:
         # striped segment
         lv.set_stripes_num(int(words[LV_STRIPES_NUM_IDX]))
@@ -568,9 +576,11 @@ class lvm_model:
       for snap in snapshots:
         # find origin
         origin_name = snap.get_snapshot_info()[0]
-        origin = lv_dict[origin_name]
-        snap.set_snapshot_info(origin, snap.get_snapshot_info()[1]) # real object as origin
-        origin.add_snapshot(snap)
+        #check if hidden vg
+        if (origin_name[0] != "["):
+          origin = lv_dict[origin_name]
+          snap.set_snapshot_info(origin, snap.get_snapshot_info()[1]) # real object as origin
+          origin.add_snapshot(snap)
     
   def __link_mirrors(self):
     for vgname in self.__VGs:
@@ -845,14 +855,14 @@ class lvm_model:
       text_list.append(str(lv.get_snapshot_info()[1]) + '%')
     text_list.append(LV_SEG_COUNT)
     text_list.append(str(len(lv.get_segments())))
-    
-    segment0 = lv.get_segments()[0]
-    if segment0.get_type() == STRIPED_SEGMENT_ID:
-      # striped
-      text_list.append(LV_STRIPE_COUNT)
-      text_list.append(str(len(segment0.get_stripes().values())))
-      text_list.append(LV_STRIPE_SIZE)
-      text_list.append(str(segment0.get_stripe_size()/1024) + KILO_SUFFIX)
+    if (len(lv.get_segments()) > 0):
+      segment0 = lv.get_segments()[0]
+      if segment0.get_type() == STRIPED_SEGMENT_ID:
+        # striped
+        text_list.append(LV_STRIPE_COUNT)
+        text_list.append(str(len(segment0.get_stripes().values())))
+        text_list.append(LV_STRIPE_SIZE)
+        text_list.append(str(segment0.get_stripe_size()/1024) + KILO_SUFFIX)
     
     text_list.append(LV_ATTR)
     text_list.append(lv.get_attr())

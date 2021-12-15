@@ -1124,7 +1124,7 @@ class InputController:
   
   def errorMessage(self, message):
       dlg = Gtk.MessageDialog(None, 0,
-                              Gtk.MESSAGE_ERROR,
+                              Gtk.MessageType.ERROR,
                               Gtk.ButtonsType.OK,
                               message)
       dlg.show_all()
@@ -1134,7 +1134,7 @@ class InputController:
   
   def infoMessage(self, message):
       dlg = Gtk.MessageDialog(None, 0,
-                              Gtk.MESSAGE_INFO,
+                              Gtk.MessageType.INFO,
                               Gtk.ButtonsType.OK,
                               message)
       dlg.show_all()
@@ -1144,7 +1144,7 @@ class InputController:
   
   def simpleInfoMessage(self, message):
       dlg = Gtk.MessageDialog(None, 0,
-                              Gtk.MESSAGE_INFO,
+                              Gtk.MessageType.INFO,
                               Gtk.ButtonsType.OK,
                               message)
       dlg.show_all()
@@ -1177,8 +1177,8 @@ class MigrateDialog:
         gladepath = 'migrate_extents.glade'
         if not os.path.exists(gladepath):
             gladepath = "%s/%s" % (INSTALLDIR, gladepath)
-        Gtk.glade.bindtextdomain(PROGNAME)
-        self.glade_xml = Gtk.glade.XML (gladepath, domain=PROGNAME)
+        self.glade_xml = Gtk.Builder()
+        self.glade_xml.add_from_file(gladepath)
         
         # fill out lv selection combobox
         self.lv_combo = Gtk.ComboBoxText()
@@ -1412,7 +1412,7 @@ class LV_edit_props:
                 if max_stripes > 8:
                     max_stripes = 8
                 self.glade_xml.get_object('stripes_num').set_range(2, max_stripes)
-                self.glade_xml.get_object('stripes_num').set_update_policy(Gtk.UPDATE_IF_VALID)
+                self.glade_xml.get_object('stripes_num').set_update_policy(Gtk.SpinButtonUpdatePolicy.IF_VALID)
         else:
             if self.lv.is_snapshot():
                 self.glade_xml.get_object('lv_properties_frame').hide()
@@ -1930,7 +1930,7 @@ class LV_edit_props:
             mount_new = False
             mount_at_reboot_new = False 
             mountpoint_new = ''
-        
+        force_create = self.glade_xml.get_object('force_create').get_active()
         mirrored_new = self.glade_xml.get_object('enable_mirroring').get_active()
         striped = self.glade_xml.get_object('striped').get_active()
         stripe_size_combo = self.glade_xml.get_object('stripe_size')
@@ -2013,6 +2013,7 @@ class LV_edit_props:
             new_lv_command_set[NEW_LV_SIZE_ARG] = size_new
             new_lv_command_set[NEW_LV_IS_STRIPED_ARG] = striped
             new_lv_command_set[NEW_LV_MIRRORING] = mirrored_new
+            new_lv_command_set[NEW_LV_FORCE] = force_create
             if striped == True:
                 new_lv_command_set[NEW_LV_STRIPE_SIZE_ARG] = stripe_size
                 new_lv_command_set[NEW_LV_NUM_STRIPES_ARG] = stripes_num
@@ -2319,7 +2320,7 @@ class LV_edit_props:
     
     def errorMessage(self, message):
         dlg = Gtk.MessageDialog(None, 0,
-                                Gtk.MESSAGE_ERROR, Gtk.ButtonsType.OK,
+                                Gtk.MessageType.ERROR, Gtk.ButtonsType.OK,
                                 message)
         dlg.show_all()
         rc = dlg.run()
@@ -2328,7 +2329,7 @@ class LV_edit_props:
     
     def infoMessage(self, message):
         dlg = Gtk.MessageDialog(None, 0,
-                                Gtk.MESSAGE_INFO, Gtk.ButtonsType.OK,
+                                Gtk.MessageType.INFO, Gtk.ButtonsType.OK,
                                 message)
         dlg.show_all()
         rc = dlg.run()
@@ -2337,7 +2338,7 @@ class LV_edit_props:
     
     def questionMessage(self, message):
         dlg = Gtk.MessageDialog(None, 0,
-                                Gtk.MESSAGE_INFO, Gtk.ButtonsType.YES_NO,
+                                Gtk.MessageType.INFO, Gtk.ButtonsType.YES_NO,
                                 message)
         dlg.show_all()
         rc = dlg.run()

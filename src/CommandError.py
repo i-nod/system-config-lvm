@@ -2,7 +2,7 @@
    unsuccessfully run lvm command.
 """
 
-class CommandError:
+class CommandError(Exception):
     def __init__(self, severity, message):
         self.__severity     = severity
         self.__msg          = message

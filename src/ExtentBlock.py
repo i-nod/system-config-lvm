@@ -7,8 +7,8 @@ class ExtentBlock:
   def __init__(self, pv, lv, start, size): # physical range
     self.__pv = pv
     self.__lv = lv
-    self.__start = start
-    self.__size = size
+    self.__start = int(start)
+    self.__size = int(size)
     self.__annotation = ''
     
     self.__pv.add_extent_block(self)

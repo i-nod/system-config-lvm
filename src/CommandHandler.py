@@ -39,6 +39,8 @@ class CommandHandler:
     else:
       if cmd_args_dict[NEW_LV_MIRRORING]:
         arglist.append("-m1")
+      if cmd_args_dict[NEW_LV_FORCE]:
+        arglist.append("-y")
       if cmd_args_dict[NEW_LV_IS_STRIPED_ARG] == True:
         arglist.append("-i")
         arglist.append(str(cmd_args_dict[NEW_LV_NUM_STRIPES_ARG]))

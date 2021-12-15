@@ -360,7 +360,7 @@ class DisplayView:
         for lv in lv_list:
             selectable = lv.is_used()
             cyl = None
-            if lv.get_segments()[0].get_type() == MIRROR_SEGMENT_ID:
+            if len(lv.get_segments()) > 0 and lv.get_segments()[0].get_type() == MIRROR_SEGMENT_ID:
                 cyl = Subcylinder(self.lv_cyl_gen, 1, 0, selectable)
                 image_lv_cyls = []
                 for image_lv in lv.get_segments()[0].get_images():
