@@ -52,6 +52,8 @@ glade_DATA = $(GLADE_FILES)
 install-exec-local:
 	mkdir -p $(DESTDIR)$(sbindir) $(DESTDIR)$(bindir) $(DESTDIR)$(pkgdatadir) $(DESTDIR)$(pkgdatadir)/pixmaps/
 	sed -e 's/\@VERSION\@/@VERSION@/g' $(srcdir)/system-config-lvm.py > $(DESTDIR)$(pkgdatadir)/system-config-lvm.py
+	sed -e 's#^INSTALLDIR=\".*\"#INSTALLDIR=\"$(PYTHON_PREFIX)/share/system-config-lvm/\"#g' $(srcdir)/lvmui_constants.py > $(srcdir)/lvmui_constants.py.bak
+	mv $(srcdir)/lvmui_constants.py.bak $(srcdir)/lvmui_constants.py
 	chmod 755 $(DESTDIR)$(pkgdatadir)/system-config-lvm.py
 	install -m 0644 $(srcdir)/InputController.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0644 $(srcdir)/CommandHandler.py $(DESTDIR)$(pkgdatadir)/
